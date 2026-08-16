@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hermes Trading Lab</title>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #0a0e1a; color: #e0e0e0; padding: 15px; }
+h1 { text-align: center; color: #00ff99; font-size: 1.5em; margin: 10px 0; }
+h2 { text-align: center; color: #666; font-size: 0.9em; margin-bottom: 20px; }
+.controls { display: flex; gap: 8px; justify-content: center; margin: 15px 0; flex-wrap: wrap; }
+.btn { background: #1a1a2e; border: 2px solid #333; color: #aaa; padding: 10px 20px; border-radius: 8px; cursor: pointer; font-size: 0.95em; transition: all 0.3s; }
+.btn:hover { border-color: #00ff99; color: #00ff99; }
+.btn.active { background: #00ff99; color: #0a0e1a; border-color: #00ff99; font-weight: bold; }
+.btn-time { background: #1a1a2e; border: 1px solid #333; color: #aaa; padding: 6px 15px; border-radius: 6px; cursor: pointer; font-size: 0.85em; }
+.btn-time.active { background: #4da6ff; color: #0a0e1a; border-color: #4da6ff; }
+.params { background: #1a1a2e; border: 1px solid #333; border-radius: 8px; padding: 15px; margin: 10px 0; text-align: center; }
+.params h3 { color: #00ff99; margin-bottom: 10px; font-size: 0.95em; }
+.summary { display: flex; gap: 15px; justify-content: center; margin: 15px 0; flex-wrap: wrap; }
+.card { background: #1a1a2e; border-radius: 8px; padding: 12px 20px; text-align: center; min-width: 120px; border-left: 3px solid #00ff99; }
+.card .val { color: #00ff99; font-size: 1.5em; font-weight: bold; }
+.card .lbl { color: #888; font-size: 0.8em; }
+table { width: 100%; border-collapse: collapse; margin-top: 15px; font-size: 0.85em; }
+th { background: #1a1a2e; color: #00ff99; padding: 10px 8px; text-align: center; border-bottom: 2px solid #333; position: sticky; top: 0; }
+td { padding: 8px; border-bottom: 1px solid #222; text-align: center; }
+tr:hover { background: #1a1a2e; }
+.pos { color: #00ff99; }
+.neg { color: #ff4444; }
+.warn { color: #ffaa00; }
+.rank { color: #00ff99; font-weight: bold; }
+.table-wrap { max-height: 70vh; overflow-y: auto; border: 1px solid #222; border-radius: 8px; }
+.empty { text-align: center; padding: 30px; color: #666; }
+</style>
+</head>
+<body>
+<h1>🚀 Hermes Trading Lab</h1>
+<h2>LBank 5m | Live Results</h2>
+
+<div class="controls" id="strat-btns"></div>
+<div class="controls" id="time-btns"></div>
+
+<div class="params">
+<h3>⚙️ تنظیمات استراتژی</h3>
+<div id="param-fields"></div>
+<p style="color:#666;font-size:0.8em;margin-top:10px">⚠️ تغییر پارامترها نیاز به اجرای مجدد بک‌تست دارد (توسط هرمس)</p>
+</div>
+
+<div class="summary" id="summary"></div>
+
+<div class="table-wrap">
+<table>
+<thead><tr>
+<th>رتبه</th><th>نماد</th><th>معاملات</th><th>Win Rate%</th>
+<th>Total PnL%</th><th>Avg PnL%</th><th>Max DD%</th><th>Sharpe</th>
+</tr></thead>
+<tbody id="tbody"></tbody>
+</table>
+</div>
+
+<script>
+const SUPABASE_URL = 'https://cjkxfclghjgmpzcxakpy.supabase.co';
+const SUPABASE_ANON = 'sb_publishable_l0iz-k9CIEYXpry0B_suhA_qj0VuWu_';
+
+const STRATEGIES = {
+  'rf': 'RF (Range Filter)',
+  'zerolag': 'ZeroLag EMA',
+  'trend': 'Trend State',
+  'div': 'Div+STX4+RSI'
+};
+
+const TIME_FILTERS = {
+  'daily': 'روزانه (288 کندل)',
+  'weekly': 'هفتگی (2016 کندل)',
+  'monthly': 'ماهانه (8640 کندل)',
+  'quarterly': '۳ ماهه (25920 کندل)'
+};
+
+const PARAMS = {
+  'rf': 'Per=30, Mult=3.0',
+  'zerolag': 'LengthZ=75, MultZ=2.2',
+  'trend': 'Length=5, Mult=2.0',
+  'div': 'ShowLimit=3, PRD=15'
+};
+
+let allData = {};
+let currentStrat = 'rf';
+let currentTime = 'daily';
+
+async function init() {
+  const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON);
+  const { data, error } = await supabase
+    .from('strategy_results')
+    .select('*');
+  
+  if (error) {
+    document.getElementById('tbody').innerHTML = '<tr><td colspan="8" class="empty">خطا: ' + error.message + '</td></tr>';
+    return;
+  }
+  
+  // Group: strategy_time -> symbol -> metrics
+  allData = {};
+  data.forEach(row => {
+    const tf = row.time_filter || 'daily';
+    const key = row.strategy + '_' + tf;
+    if (!allData[key]) allData[key] = {};
+    allData[key][row.symbol] = {
+      trades: row.trades,
+      win_rate: row.win_rate,
+      total_pnl: row.total_pnl,
+      avg_pnl: row.avg_pnl,
+      max_dd: row.max_dd,
+      sharpe: row.sharpe
+    };
+  });
+  
+  renderButtons();
+  renderParams();
+  renderTable();
+}
+
+function renderButtons() {
+  // Strategy row
+  const div1 = document.createElement('div');
+  div1.style.cssText = 'text-align:center;color:#888;font-size:0.85em;margin-bottom:5px';
+  div1.textContent = 'استراتژی:';
+  const stratDiv = document.createElement('div');
+  stratDiv.className = 'controls';
+  Object.keys(STRATEGIES).forEach(s => {
+    const btn = document.createElement('button');
+    btn.className = 'btn' + (s === currentStrat ? ' active' : '');
+    btn.textContent = STRATEGIES[s];
+    btn.onclick = () => { currentStrat = s; renderButtons(); renderParams(); renderTable(); };
+    stratDiv.appendChild(btn);
+  });
+  
+  // Time row
+  const div2 = document.createElement('div');
+  div2.style.cssText = 'text-align:center;color:#888;font-size:0.85em;margin:15px 0 5px';
+  div2.textContent = 'بازه زمانی:';
+  const timeDiv = document.createElement('div');
+  timeDiv.className = 'controls';
+  Object.keys(TIME_FILTERS).forEach(tf => {
+    const btn = document.createElement('button');
+    btn.className = 'btn-time' + (tf === currentTime ? ' active' : '');
+    btn.textContent = TIME_FILTERS[tf];
+    btn.onclick = () => { currentTime = tf; renderButtons(); renderTable(); };
+    timeDiv.appendChild(btn);
+  });
+  
+  const container = document.getElementById('strat-btns');
+  container.innerHTML = '';
+  container.appendChild(div1);
+  container.appendChild(stratDiv);
+  container.appendChild(div2);
+  container.appendChild(timeDiv);
+}
+
+function renderParams() {
+  document.getElementById('param-fields').innerHTML = '<span style="color:#00ff99">' + PARAMS[currentStrat] + '</span>';
+}
+
+function renderTable() {
+  const key = currentStrat + '_' + currentTime;
+  const data = allData[key] || {};
+  const coins = Object.keys(data).filter(c => data[c] && !data[c].error);
+  
+  if (coins.length === 0) {
+    document.getElementById('tbody').innerHTML = '<tr><td colspan="8" class="empty">داده‌ای موجود نیست</td></tr>';
+    document.getElementById('summary').innerHTML = '';
+    return;
+  }
+  
+  coins.sort((a, b) => (data[b].total_pnl || 0) - (data[a].total_pnl || 0));
+  
+  const totalTrades = coins.reduce((s, c) => s + (data[c].trades || 0), 0);
+  const avgPnl = (coins.reduce((s, c) => s + (data[c].total_pnl || 0), 0) / coins.length).toFixed(2);
+  const avgWr = (coins.reduce((s, c) => s + (data[c].win_rate || 0), 0) / coins.length).toFixed(1);
+  const bestCoin = coins[0];
+  
+  document.getElementById('summary').innerHTML = 
+    '<div class="card"><div class="val">' + coins.length + '</div><div class="lbl">کوین فعال</div></div>' +
+    '<div class="card"><div class="val">' + totalTrades + '</div><div class="lbl">کل معاملات</div></div>' +
+    '<div class="card"><div class="val">' + avgWr + '%</div><div class="lbl">میانگین Win Rate</div></div>' +
+    '<div class="card"><div class="val" style="color:#00ff99">' + avgPnl + '%</div><div class="lbl">میانگین PnL</div></div>' +
+    '<div class="card"><div class="val" style="color:#00ff99">' + bestCoin + '</div><div class="lbl">بهترین کوین</div></div>';
+  
+  let rows = '';
+  coins.forEach((coin, i) => {
+    const d = data[coin];
+    const pnlClass = d.total_pnl > 0 ? 'pos' : d.total_pnl < 0 ? 'neg' : 'warn';
+    const wrClass = d.win_rate >= 50 ? 'pos' : d.win_rate >= 30 ? 'warn' : 'neg';
+    rows += '<tr>' +
+      '<td class="rank">' + (i+1) + '</td>' +
+      '<td><strong>' + coin + '/USDT</strong></td>' +
+      '<td>' + d.trades + '</td>' +
+      '<td class="' + wrClass + '">' + d.win_rate.toFixed(1) + '%</td>' +
+      '<td class="' + pnlClass + '">' + d.total_pnl.toFixed(2) + '%</td>' +
+      '<td>' + d.avg_pnl.toFixed(3) + '%</td>' +
+      '<td>' + d.max_dd.toFixed(1) + '%</td>' +
+      '<td>' + d.sharpe.toFixed(2) + '</td>' +
+      '</tr>';
+  });
+  
+  document.getElementById('tbody').innerHTML = rows;
+}
+
+init();
+</script>
+</body>
+</html>
