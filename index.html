@@ -71,10 +71,9 @@ const STRATEGIES = {
 };
 
 const TIME_FILTERS = {
-  'daily': 'روزانه (288 کندل)',
-  'weekly': 'هفتگی (2016 کندل)',
-  'monthly': 'ماهانه (8640 کندل)',
-  'quarterly': '۳ ماهه (25920 کندل)'
+  'w300': '۳۰۰ کندل (~۲۵ ساعت)',
+  'w2000': '۲۰۰۰ کندل (~۷ روز)',
+  'w4000': '۴۰۰۰ کندل (~۱۴ روز)'
 };
 
 const PARAMS = {
@@ -86,7 +85,7 @@ const PARAMS = {
 
 let allData = {};
 let currentStrat = 'rf';
-let currentTime = 'daily';
+let currentTime = 'w300';
 
 async function init() {
   const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON);
@@ -99,19 +98,14 @@ async function init() {
     return;
   }
   
-  // Group: strategy_time -> symbol -> metrics
   allData = {};
   data.forEach(row => {
-    const tf = row.time_filter || 'daily';
+    const tf = row.time_filter || 'w300';
     const key = row.strategy + '_' + tf;
     if (!allData[key]) allData[key] = {};
     allData[key][row.symbol] = {
-      trades: row.trades,
-      win_rate: row.win_rate,
-      total_pnl: row.total_pnl,
-      avg_pnl: row.avg_pnl,
-      max_dd: row.max_dd,
-      sharpe: row.sharpe
+      trades: row.trades, win_rate: row.win_rate, total_pnl: row.total_pnl,
+      avg_pnl: row.avg_pnl, max_dd: row.max_dd, sharpe: row.sharpe
     };
   });
   
@@ -121,7 +115,6 @@ async function init() {
 }
 
 function renderButtons() {
-  // Strategy row
   const div1 = document.createElement('div');
   div1.style.cssText = 'text-align:center;color:#888;font-size:0.85em;margin-bottom:5px';
   div1.textContent = 'استراتژی:';
@@ -135,7 +128,6 @@ function renderButtons() {
     stratDiv.appendChild(btn);
   });
   
-  // Time row
   const div2 = document.createElement('div');
   div2.style.cssText = 'text-align:center;color:#888;font-size:0.85em;margin:15px 0 5px';
   div2.textContent = 'بازه زمانی:';
