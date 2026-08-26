@@ -258,8 +258,13 @@ async function populateCoins() {
   const sel = document.getElementById('coin-select');
   if (!sel) return;
   const supa = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON);
-  const { data } = await supa.from('candles').select('symbol');
-  if (!data) return;
+  const { data, error } = await supa
+    .from('candles')
+    .select('symbol')
+    .gte('ts', Math.floor((Date.now() - 3600*1000)))  // coins with candle in last hour
+    .limit(500);
+  if (error) { console.error('populateCoins:', error); return; }
+  if (!data || data.length === 0) return;
   const coins = [...new Set(data.map(d => d.symbol))].sort();
   // Keep favorites first
   const favs = ['GALA/USDT','SOL/USDT','VIRTUAL/USDT','PEPE/USDT','WIF/USDT','BONK/USDT','SUI/USDT','TAO/USDT','INJ/USDT','SEI/USDT','TIA/USDT','FET/USDT'];
