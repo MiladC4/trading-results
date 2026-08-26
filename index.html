@@ -47,6 +47,14 @@ tr:hover { background: #1a1a2e; }
 <p style="color:#666;font-size:0.8em;margin-top:10px">⚠️ تغییر پارامترها نیاز به اجرای مجدد بک‌تست دارد (توسط هرمس)</p>
 </div>
 
+<div style="text-align:center;margin:20px 0 5px;color:#888;font-size:0.85em">نمودار کندل (برای مقایسه با TradingView):</div>
+<div class="controls">
+<select id="coin-select" onchange="renderChart()" style="background:#1a1a2e;border:1px solid #444;color:#fff;padding:8px 15px;border-radius:6px;font-size:0.95em;cursor:pointer">
+<option value="GALA/USDT">GALA/USDT</option>
+</select>
+</div>
+<div id="chart-box" style="width:100%;max-width:1100px;height:420px;margin:10px auto;border:1px solid #222;border-radius:8px;background:#0d1220"></div>
+
 <div class="summary" id="summary"></div>
 
 <div class="table-wrap">
@@ -59,6 +67,7 @@ tr:hover { background: #1a1a2e; }
 </table>
 </div>
 
+<script src="https://unpkg.com/lightweight-charts@4.1.3/dist/lightweight-charts.standalone.production.js"></script>
 <script>
 const SUPABASE_URL = 'https://cjkxfclghjgmpzcxakpy.supabase.co';
 const SUPABASE_ANON = 'sb_publishable_l0iz-k9CIEYXpry0B_suhA_qj0VuWu_';
@@ -198,7 +207,76 @@ function renderTable() {
   document.getElementById('tbody').innerHTML = rows;
 }
 
+let chart = null;
+let candleSeries = null;
+let chartLoaded = false;
+
+async function renderChart() {
+  const symbol = document.getElementById('coin-select').value;
+  const box = document.getElementById('chart-box');
+  if (!box) return;
+  
+  box.innerHTML = '<div class="empty">Loading candles...</div>';
+  
+  const supa = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON);
+  const { data, error } = await supa
+    .from('candles')
+    .select('ts,open,high,low,close,volume')
+    .eq('symbol', symbol)
+    .eq('timeframe', '5m')
+    .order('ts', { ascending: true });
+  
+  if (error || !data || data.length === 0) {
+    box.innerHTML = '<div class="empty">No candle data for ' + symbol + '</div>';
+    return;
+  }
+  
+  box.innerHTML = '';
+  chart = LightweightCharts.createChart(box, {
+    width: box.clientWidth,
+    height: 420,
+    layout: { background: { color: '#0d1220' }, textColor: '#aaa' },
+    grid: { vertLines: { color: '#1a1a2e' }, horzLines: { color: '#1a1a2e' } },
+    timeScale: { timeVisible: true, secondsVisible: false },
+  });
+  candleSeries = chart.addCandlestickSeries({
+    upColor: '#00ff99', downColor: '#ff4444',
+    borderUpColor: '#00ff99', borderDownColor: '#ff4444',
+    wickUpColor: '#00ff99', wickDownColor: '#ff4444',
+  });
+  const bars = data.map(d => ({
+    time: Math.floor(d.ts / 1000),
+    open: parseFloat(d.open), high: parseFloat(d.high),
+    low: parseFloat(d.low), close: parseFloat(d.close),
+  })).filter(b => !isNaN(b.open));
+  candleSeries.setData(bars);
+  chart.timeScale().fitContent();
+  chartLoaded = true;
+}
+
+async function populateCoins() {
+  const sel = document.getElementById('coin-select');
+  if (!sel) return;
+  const supa = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON);
+  const { data } = await supa.from('candles').select('symbol');
+  if (!data) return;
+  const coins = [...new Set(data.map(d => d.symbol))].sort();
+  // Keep favorites first
+  const favs = ['GALA/USDT','SOL/USDT','VIRTUAL/USDT','PEPE/USDT','WIF/USDT','BONK/USDT','SUI/USDT','TAO/USDT','INJ/USDT','SEI/USDT','TIA/USDT','FET/USDT'];
+  const ordered = [...favs.filter(f => coins.includes(f)), ...coins.filter(c => !favs.includes(c))];
+  sel.innerHTML = ordered.map(cn => '<option value="' + cn + '">' + cn + '</option>').join('');
+}
+
+window.addEventListener('resize', () => { if (chart && chartLoaded) { const box=document.getElementById('chart-box'); chart.applyOptions({width: box.clientWidth}); } });
+
 init();
-</script>
 </body>
 </html>
+
+<script>
+// After DOM ready, populate coin list and show default chart
+document.addEventListener('DOMContentLoaded', async () => {
+  await populateCoins();
+  renderChart();
+});
+</script>
