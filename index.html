@@ -143,7 +143,7 @@ async function loadChart(symbol, timeframe, rowEl) {
   
   try {
     // Fetch candles from Supabase (symbol format is SYMBOL/USDT)
-    const url = 'https://cjkxfclghjgmpzcxakpy.supabase.co/rest/v1/candles?symbol=eq.' + encodeURIComponent(symbol + '/USDT') + '&timeframe=eq.' + interval + '&order=timestamp.asc&limit=500';
+    const url = 'https://cjkxfclghjgmpzcxakpy.supabase.co/rest/v1/candles?symbol=eq.' + encodeURIComponent(symbol + '/USDT') + '&timeframe=eq.' + interval + '&order=ts.asc&limit=500';
     const response = await fetch(url, {headers: {'apikey': 'sb_publishable_l0iz-k9CIEYXpry0B_suhA_qj0VuWu_'}});
     const candles = await response.json();
     
@@ -154,7 +154,7 @@ async function loadChart(symbol, timeframe, rowEl) {
     
     // Format for lightweight-charts
     const chartData = candles.map(c => ({
-      time: Math.floor(c.timestamp / 1000),
+      time: Math.floor(c.ts / 1000),
       open: c.open,
       high: c.high,
       low: c.low,
