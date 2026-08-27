@@ -90,7 +90,13 @@ function renderSummary(rows) {
   const avgPnl = rows.length ? rows.reduce((s, r) => s + (r.total_pnl || 0), 0) / rows.length : 0;
   const best = rows.reduce((b, r) => (r.total_pnl || 0) > (b.total_pnl || 0) ? r : b, rows[0] || {});
   
-  document.getElementById('summary').innerHTML = ;
+  document.getElementById('summary').innerHTML = `
+    <div class="card"><div class="label">کل نمادها</div><div class="value">${totalCoins}</div></div>
+    <div class="card"><div class="label">کل معاملات</div><div class="value">${formatNum(totalTrades)}</div></div>
+    <div class="card"><div class="label">میانگین Win Rate</div><div class="value">${avgWin.toFixed(1)}%</div></div>
+    <div class="card"><div class="label">میانگین PnL</div><div class="value ${avgPnl >= 0 ? 'positive' : 'negative'}">${avgPnl.toFixed(2)}%</div></div>
+    <div class="card"><div class="label">بهترین نماد</div><div class="value">${best.symbol || '-'} (${formatNum(best.total_pnl)}%)</div></div>
+  `;
 }
 
 function applyFilters() {
