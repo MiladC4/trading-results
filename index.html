@@ -42,6 +42,7 @@ tbody tr.selected { background: #2b3139; box-shadow: inset 3px 0 0 #f0b90b; }
 .strat-zerolag { background: #1c2b3a; color: #4da8da; }
 .strat-trend { background: #2b1c3a; color: #b07cff; }
 .strat-div { background: #1c3a2b; color: #0ecb81; }
+.strat-regime { background: #2b1c3a; color: #f7931a; }
 .signals { margin-top: 20px; background: #1e2329; border-radius: 10px; border: 1px solid #2b3139; padding: 16px; }
 .signals h2 { margin: 0 0 12px; font-size: 1rem; }
 .sig-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #2b3139; font-size: 12px; }
@@ -104,11 +105,11 @@ let candleSeries = null;
 let sortCol = 'total_pnl';
 let sortDir = -1;
 
-const STRAT_CLASS = { rf: 'strat-rf', zerolag: 'strat-zerolag', trend: 'strat-trend', div: 'strat-div' };
+const STRAT_CLASS = { rf: 'strat-rf', zerolag: 'strat-zerolag', trend: 'strat-trend', div: 'strat-div', regime: 'strat-regime' };
 
 async function fetchSignals() {
   try {
-    const r = await fetch('https://cjkxfclghjgmpzcxakpy.supabase.co/rest/v1/live_signals?select=id,symbol,side,status,entry_price,tp,sl,pnl_pct,entry_time&order=entry_time.desc&limit=50', {headers:{'apikey':'sb_publishable_l0iz-k9CIEYXpry0B_suhA_qj0VuWu_'}});
+    const r = await fetch('https://cjkxfclghjgmpzcxakpy.supabase.co/rest/v1/live_signals?select=id,symbol,strategy,side,status,entry_price,tp,sl,pnl_pct,entry_time&order=entry_time.desc&limit=50', {headers:{'apikey':'sb_publishable_l0iz-k9CIEYXpry0B_suhA_qj0VuWu_'}});
     return await r.json();
   } catch(e) { return []; }
 }
@@ -185,8 +186,9 @@ async function renderSignals() {
     const statusCls = s.status === 'OPEN' ? 'sig-status-open' : 'sig-status-closed';
     const pnl = s.pnl_pct !== null ? (s.pnl_pct >= 0 ? '+' : '') + s.pnl_pct.toFixed(2) + '%' : '-';
     const pnlCls = s.pnl_pct > 0 ? 'positive' : (s.pnl_pct < 0 ? 'negative' : '');
+    const stratCls = STRAT_CLASS[s.strategy] || '';
     return `<div class="sig-row">
-      <span><span class="${sideCls}">${s.side}</span> ${s.symbol} • ${s.status}</span>
+      <span><span class="${sideCls}">${s.side}</span> ${s.symbol} <span class="strat-badge ${stratCls}">${(s.strategy||'').toUpperCase()}</span> • ${s.status}</span>
       <span class="${pnlCls}">${pnl}</span>
     </div>`;
   }).join('');
