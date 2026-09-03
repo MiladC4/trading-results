@@ -45,6 +45,13 @@ tbody tr.selected { background: #2b3139; box-shadow: inset 3px 0 0 #f0b90b; }
 .strat-regime { background: #2b1c3a; color: #f7931a; }
 .signals { margin-top: 20px; background: #1e2329; border-radius: 10px; border: 1px solid #2b3139; padding: 16px; }
 .signals h2 { margin: 0 0 12px; font-size: 1rem; }
+.signal-controls { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+.signal-controls input, .signal-controls select { padding: 8px 12px; font-size: 12px; }
+.signal-pnl-section { margin-top: 16px; padding-top: 16px; border-top: 1px solid #2b3139; }
+.signal-pnl-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+.signal-pnl-title { font-size: 0.9rem; font-weight: 600; }
+.signal-pnl-stats { font-size: 12px; color: #848e9c; }
+#signalPnlChart { height: 250px; background: #1e2329; border-radius: 8px; border: 1px solid #2b3139; overflow: hidden; }
 .sig-row { display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px solid #2b3139; font-size: 12px; }
 .sig-row:last-child { border-bottom: none; }
 .sig-long { color: #0ecb81; }
@@ -91,8 +98,29 @@ tbody tr.selected { background: #2b3139; box-shadow: inset 3px 0 0 #f0b90b; }
   </div>
   <div class="signals">
     <h2>📡 سیگنال‌های زنده</h2>
-    <div id="signalsList"></div>
-  </div>
+    <div class="signal-controls">
+      <input id="signalSearch" placeholder="جستجوی نماد..." oninput="filterSignals()">
+      <select id="signalSideFilter" onchange="filterSignals()">
+        <option value="">همه</option>
+        <option value="LONG">LONG</option>
+        <option value="SHORT">SHORT</option>
+     </select>
+      <select id="signalStatusFilter" onchange="filterSignals()">
+        <option value="">همه</option>
+        <option value="OPEN">باز</option>
+        <option value="CLOSED">بسته</option>
+     </select>
+      <button onclick="resetSignalFilters()" style="background:#2b3139;border-color:#2b3139;color:#eaecef;">ریست</button>
+   </div>
+    <div id="signalsList</div>
+    <div class="signal-pnl-section">
+      <div class="signal-pnl-header">
+        <div class="signal-pnl-title">📊 سود/ضرر تجمعی - ۱۰۰ سیگنال بسته آخر</div>
+        <div class="signal-pnl-stats" id="pnlStats</div>
+     </div>
+      <div id="signalPnlChart"><div class="loading">در حال بارگذاری</div</div>
+   </div>
+ </div>
 </div>
 
 <script>
@@ -181,18 +209,82 @@ async function renderSignals() {
   const el = document.getElementById('signalsList');
   if (!signals.length) { el.innerHTML = '<div style="color:#848e9c;padding:10px;">هنوز سیگنالی ثبت نشده</div>'; return; }
   const openCount = signals.filter(s => s.status === 'OPEN').length;
-  el.innerHTML = signals.map(s => {
+  window._allSignals = signals;
+  applySignalFilters();
+  renderPnlChart(signals);
+  return openCount;
+}
+
+function applySignalFilters() {
+  const signals = window._allSignals || [];
+  const q = (document.getElementById('signalSearch').value || '').trim().toUpperCase();
+  const side = document.getElementById('signalSideFilter').value;
+  const status = document.getElementById('signalStatusFilter').value;
+  let f = signals;
+  if (q) f = f.filter(s => (s.symbol||'').toUpperCase().includes(q));
+  if (side) f = f.filter(s => s.side === side);
+  if (status) f = f.filter(s => s.status === status);
+  const el = document.getElementById('signalsList');
+  if (!f.length) { el.innerHTML = '<div style="color:#848e9c;padding:10px;">سیگنالی با این فیلتر یافت نشد</div>'; return; }
+  el.innerHTML = f.map(s => {
     const sideCls = s.side === 'LONG' ? 'sig-long' : 'sig-short';
     const statusCls = s.status === 'OPEN' ? 'sig-status-open' : 'sig-status-closed';
     const pnl = s.pnl_pct !== null ? (s.pnl_pct >= 0 ? '+' : '') + s.pnl_pct.toFixed(2) + '%' : '-';
     const pnlCls = s.pnl_pct > 0 ? 'positive' : (s.pnl_pct < 0 ? 'negative' : '');
     const stratCls = STRAT_CLASS[s.strategy] || '';
     return `<div class="sig-row">
-      <span><span class="${sideCls}">${s.side}</span> ${s.symbol} <span class="strat-badge ${stratCls}">${(s.strategy||'').toUpperCase()}</span> • ${s.status}</span>
-      <span class="${pnlCls}">${pnl}</span>
-    </div>`;
+      <span><span class="${sideCls}">${s.side</span> ${s.symbol} <span class="strat-badge ${stratCls}">${(s.strategy||'').toUpperCase()</span> • ${s.status</span>
+      <span class="${pnlCls}">${pnl</span>
+   </div>`;
   }).join('');
-  return openCount;
+}
+
+function filterSignals() { applySignalFilters(); }
+
+function resetSignalFilters() {
+  document.getElementById('signalSearch').value = '';
+  document.getElementById('signalSideFilter').value = '';
+  document.getElementById('signalStatusFilter').value = '';
+  applySignalFilters();
+}
+
+function renderPnlChart(allSignals) {
+  const container = document.getElementById('signalPnlChart');
+  const statsEl = document.getElementById('pnlStats');
+  // Get last 100 CLOSED signals (newest first, then reverse for chart order)
+  const closed = (allSignals || []).filter(s => s.status !== 'OPEN' && s.pnl_pct !== null && s.pnl_pct !== undefined);
+  closed.sort((a,b) => new Date(a.entry_time) - new Date(b.entry_time));
+  const last100 = closed.slice(-100);
+  if (!last100.length) {
+    container.innerHTML = '<div class="loading">هنوز سیگنال بسته‌ای وجود ندارد</div>';
+    statsEl.innerHTML = '';
+    return;
+  }
+  let cum = 0;
+  const points = last100.map((s, i) => {
+    cum += (s.pnl_pct || 0);
+    return { x: i + 1, y: cum, meta: s };
+  });
+  const wins = last100.filter(s => s.pnl_pct > 0).length;
+  const losses = last100.filter(s => s.pnl_pct < 0).length;
+  const totalPnl = cum;
+  const wr = last100.length ? (wins / last100.length * 100) : 0;
+  statsEl.innerHTML = `<span class="${totalPnl>=0?'positive':'negative'}">تجمعی: ${totalPnl>=0?'+':''}${totalPnl.toFixed(2)}%</span> | Win: ${wins} | Loss: ${losses} | WR: ${wr.toFixed(1)}%`;
+  container.innerHTML = '';
+  const chart = LightweightCharts.createChart(container, {
+    width: container.clientWidth, height: 250,
+    layout: { background: { color:'#1e2329' }, textColor:'#848e9c' },
+    grid: { vertLines: { color:'#2b3139' }, horzLines: { color:'#2b3139' } },
+    rightPriceScale: { borderColor:'#2b3139' },
+    timeScale: { borderColor:'#2b3139', visible: false }
+  });
+  const series = chart.addAreaSeries({ topColor:'rgba(14, 203, 129, 0.4)', bottomColor:'rgba(14, 203, 129, 0.0)', lineColor:'#0ecb81', lineWidth: 2 });
+  // Color line by positive/negative final
+  const lastVal = points[points.length-1].y;
+  series.setData(points);
+  if (lastVal < 0) series.applyOptions({ topColor:'rgba(246, 70, 93, 0.4)', bottomColor:'rgba(246, 70, 93, 0.0)', lineColor:'#f6465d' });
+  chart.timeScale().fitContent();
+  window._pnlChart = chart;
 }
 
 function applyFilters() { const f = getFiltered(); renderTable(f); renderSummary(f, currentOpenCount); }
