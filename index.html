@@ -219,9 +219,17 @@ async function loadChart(symbol, strategy, rowEl) {
   container.innerHTML = '<div class="loading">در حال بارگذاری...</div>';
 
   try {
-    const resp = await fetch(`https://cjkxfclghjgmpzcxakpy.supabase.co/rest/v1/candles?symbol=eq.${encodeURIComponent(symbol+'/USDT')}}&timeframe=eq.5m&order=ts.asc&limit=1000`, {headers:{'apikey':'sb_publishable_l0iz-k9CIEYXpry0B_suhA_qj0VuWu_'}});
-    const candles = await resp.json();
-    if (!candles.length) { container.innerHTML = '<div class="loading">کندل یافت نشد</div>'; return; }
+    let candles = [];
+    // Try 1: symbol + timeframe
+    let resp = await fetch(`https://cjkxfclghjgmpzcxakpy.supabase.co/rest/v1/candles?symbol=eq.${encodeURIComponent(symbol+'/USDT')}&timeframe=eq.5m&order=ts.asc&limit=1000`, {headers:{'apikey':'sb_publishable_l0iz-k9CIEYXpry0B_suhA_qj0VuWu_'}});
+    candles = await resp.json();
+    // Try 2: symbol only (any timeframe)
+    if (!candles.length) {
+      resp = await fetch(`https://cjkxfclghjgmpzcxakpy.supabase.co/rest/v1/candles?symbol=eq.${encodeURIComponent(symbol+'/USDT')}&order=ts.asc&limit=1000`, {headers:{'apikey':'sb_publishable_l0iz-k9CIEYXpry0B_suhA_qj0VuWu_'}});
+      candles = await resp.json();
+      candles = candles.filter(c => c.timeframe === '5m');
+    }
+    if (!candles.length) { container.innerHTML = '<div class="loading">کندل یافت نشد - داده در دسترس نیست</div>'; return; }
 
     const chartData = candles.map(c=>({ time: Math.floor(c.ts/1000), open:c.open, high:c.high, low:c.low, close:c.close }));
 
