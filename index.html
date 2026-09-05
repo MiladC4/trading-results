@@ -139,8 +139,17 @@ const STRAT_CLASS = { rf: 'strat-rf', zerolag: 'strat-zerolag', trend: 'strat-tr
 async function fetchSignals() {
   try {
     const r = await fetch('https://cjkxfclghjgmpzcxakpy.supabase.co/rest/v1/live_signals?select=id,symbol,strategy,side,status,entry_price,tp,sl,pnl_pct,entry_time&order=entry_time.desc&limit=50', {headers:{'apikey':'sb_publishable_l0iz-k9CIEYXpry0B_suhA_qj0VuWu_'}});
-    return await r.json();
-  } catch(e) { return []; }
+    if (!r.ok) {
+      console.error('fetchSignals error:', r.status, r.statusText);
+      return [];
+    }
+    const data = await r.json();
+    console.log('Fetched signals:', data.length);
+    return data;
+  } catch(e) {
+    console.error('fetchSignals exception:', e);
+    return [];
+  }
 }
 
 function initDropdowns() {
@@ -206,14 +215,21 @@ function renderSummary(rows, openCount) {
 }
 
 async function renderSignals() {
-  const signals = await fetchSignals();
-  const el = document.getElementById('signalsList');
-  if (!signals.length) { el.innerHTML = '<div style="color:#848e9c;padding:10px;">هنوز سیگنالی ثبت نشده</div>'; return; }
-  const openCount = signals.filter(s => s.status === 'OPEN').length;
-  window._allSignals = signals;
-  applySignalFilters();
-  renderPnlChart(signals);
-  return openCount;
+  try {
+    const signals = await fetchSignals();
+    const el = document.getElementById('signalsList');
+    if (!signals.length) { el.innerHTML = '<div style="color:#848e9c;padding:10px;">هنوز سیگنالی ثبت نشده</div>'; return; }
+    const openCount = signals.filter(s => s.status === 'OPEN').length;
+    window._allSignals = signals;
+    console.log('Rendering', signals.length, 'signals');
+    applySignalFilters();
+    renderPnlChart(signals);
+    return openCount;
+  } catch(e) {
+    console.error('renderSignals error:', e);
+    const el = document.getElementById('signalsList');
+    el.innerHTML = '<div style="color:#f6465d;padding:10px;">خطا در بارگذاری سیگنال‌ها</div>';
+  }
 }
 function refreshAll() {
   renderSignals();
