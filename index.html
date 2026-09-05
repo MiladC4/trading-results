@@ -223,10 +223,12 @@ async function renderSignals() {
   try {
     const signals = await fetchSignals();
     const el = document.getElementById('signalsList');
+    console.log('renderSignals called, signals:', signals.length);
     if (!signals.length) { el.innerHTML = '<div style="color:#848e9c;padding:10px;">هنوز سیگنالی ثبت نشده</div>'; return; }
     const openCount = signals.filter(s => s.status === 'OPEN').length;
     window._allSignals = signals;
-    console.log('Rendering', signals.length, 'signals');
+    console.log('Rendering', signals.length, 'signals, open:', openCount);
+    console.log('Sample signal:', signals[0]);
     applySignalFilters();
     renderPnlChart(signals);
     return openCount;
@@ -247,10 +249,12 @@ function applySignalFilters() {
   const q = (document.getElementById('signalSearch').value || '').trim().toUpperCase();
   const side = document.getElementById('signalSideFilter').value;
   const status = document.getElementById('signalStatusFilter').value;
+  console.log('applySignalFilters called, total signals:', signals.length, 'side:', side, 'status:', status, 'search:', q);
   let f = signals;
   if (q) f = f.filter(s => (s.symbol||'').toUpperCase().includes(q));
   if (side) f = f.filter(s => s.side === side);
   if (status) f = f.filter(s => s.status === status);
+  console.log('Filtered signals:', f.length);
   const el = document.getElementById('signalsList');
   if (!f.length) { el.innerHTML = '<div style="color:#848e9c;padding:10px;">سیگنالی با این فیلتر یافت نشد</div>'; return; }
   el.innerHTML = f.map(s => {
