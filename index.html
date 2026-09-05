@@ -137,6 +137,11 @@ let sortDir = -1;
 const STRAT_CLASS = { rf: 'strat-rf', zerolag: 'strat-zerolag', trend: 'strat-trend', div: 'strat-div', regime: 'strat-regime' };
 
 async function fetchSignals() {
+  // Use embedded LIVE_SIGNALS as fallback
+  if (typeof LIVE_SIGNALS !== 'undefined' && LIVE_SIGNALS.length > 0) {
+    console.log('Using embedded LIVE_SIGNALS:', LIVE_SIGNALS.length);
+    return LIVE_SIGNALS;
+  }
   try {
     const r = await fetch('https://cjkxfclghjgmpzcxakpy.supabase.co/rest/v1/live_signals?select=id,symbol,strategy,side,status,entry_price,tp,sl,pnl_pct,entry_time&order=entry_time.desc&limit=50', {headers:{'apikey':'sb_publishable_l0iz-k9CIEYXpry0B_suhA_qj0VuWu_'}});
     if (!r.ok) {
