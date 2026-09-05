@@ -349,6 +349,10 @@ async function loadChart(symbol, strategy, rowEl) {
   }
 }
 
+function refreshAll() {
+  renderSignals();
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   initDropdowns();
   ALL_DATA.sort((a,b)=>b.total_pnl-a.total_pnl);
