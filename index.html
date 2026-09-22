@@ -364,7 +364,16 @@ function processPnlData(last50, container, statsEl) {
   const losses = last50.filter(s => (s.pnl_pct || 0) < 0).length;
   const totalPnl = cumPnl;
   const wr = last50.length ? (wins / last50.length * 100) : 0;
-  statsEl.innerHTML = `<span class="${totalPnl>=0?'positive':'negative'}">تجمعی: ${totalPnl>=0?'+':''}${totalPnl.toFixed(2)}%</span> | Win: ${wins} | Loss: ${losses} | WR: ${wr.toFixed(1)}%`;
+  const initialCapital = 10000;
+  const currentEquity = initialCapital * (1 + totalPnl / 100);
+  const equityChange = currentEquity - initialCapital;
+  const equitySign = equityChange >= 0 ? '+' : '';
+  const equityCls = equityChange >= 0 ? 'positive' : 'negative';
+
+  statsEl.innerHTML = `<div style="text-align:left;line-height:1.4;">
+    <div style="font-size:13px;font-weight:700;">💰 سرمایه جاری: <span class="${equityCls}">$${currentEquity.toLocaleString(undefined, {minimumFractionDigits:2, maximumFractionDigits:2})}</span> <span style="font-size:11px;font-weight:normal;" class="${equityCls}">(${equitySign}$${equityChange.toLocaleString(undefined, {minimumFractionDigits:2, maximumFractionDigits:2})})</span></div>
+    <div style="font-size:11px;color:#848e9c;"><span class="${totalPnl>=0?'positive':'negative'}">بازده: ${totalPnl>=0?'+':''}${totalPnl.toFixed(2)}%</span> | سرمایه اولیه: $10,000 | Win: ${wins} | Loss: ${losses} | WR: ${wr.toFixed(1)}%</div>
+  </div>`;
   container.innerHTML = '';
   const chart = LightweightCharts.createChart(container, {
     width: container.clientWidth, height: 250,
