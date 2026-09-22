@@ -150,7 +150,7 @@ const STRAT_CLASS = { rf: 'strat-rf', zerolag: 'strat-zerolag', trend: 'strat-tr
 async function fetchSignals() {
   try {
     console.log('fetchSignals: Starting API call...');
-    const r = await fetch('https://cjkxfclghjgmpzcxakpy.supabase.co/rest/v1/live_signals?select=id,symbol,strategy,side,status,entry_price,tp,sl,pnl_pct,entry_time&order=entry_time.desc&limit=50', {headers:{'apikey':'sb_publishable_l0iz-k9CIEYXpry0B_suhA_qj0VuWu_'}});
+    const r = await fetch('https://cjkxfclghjgmpzcxakpy.supabase.co/rest/v1/live_signals?select=id,symbol,strategy,side,status,entry_price,tp,sl,pnl_pct,entry_time,exit_price,exit_time,tp_method,sl_method,params&order=entry_time.desc&limit=50', {headers:{'apikey':'sb_publishable_l0iz-k9CIEYXpry0B_suhA_qj0VuWu_'}});
     console.log('fetchSignals: Response status:', r.status, r.statusText);
     if (!r.ok) {
       console.error('fetchSignals error:', r.status, r.statusText);
@@ -290,8 +290,29 @@ function applySignalFilters() {
     const pnl = s.pnl_pct !== null ? (s.pnl_pct >= 0 ? '+' : '') + s.pnl_pct.toFixed(2) + '%' : '-';
     const pnlCls = s.pnl_pct > 0 ? 'positive' : (s.pnl_pct < 0 ? 'negative' : '');
     const stratCls = STRAT_CLASS[s.strategy] || '';
-    return `<div class="sig-row">
-      <span><span class="${sideCls}">${s.side}</span> ${s.symbol} <span class="strat-badge ${stratCls}">${(s.strategy||'').toUpperCase()}</span> • ${s.status}</span>
+    
+    // Determine exit/SL/TP method display
+    let methodBadge = '';
+    if (s.status === 'TP_HIT') {
+      const m = s.tp_method || 'ATR/FIXED';
+      methodBadge = `<span style="background:#1c3a2b;color:#0ecb81;padding:2px 6px;border-radius:4px;font-size:10px;margin-right:4px;">🎯 TP: ${m}</span>`;
+    } else if (s.status === 'SL_HIT') {
+      const m = s.sl_method || 'ATR/FIXED';
+      methodBadge = `<span style="background:#3a1c24;color:#f6465d;padding:2px 6px;border-radius:4px;font-size:10px;margin-right:4px;">🛑 SL: ${m}</span>`;
+    } else if (s.status === 'CLOSED') {
+      const m = s.pnl_pct >= 0 ? (s.tp_method || 'TP') : (s.sl_method || 'SL');
+      methodBadge = `<span style="background:#2b3139;color:#848e9c;padding:2px 6px;border-radius:4px;font-size:10px;margin-right:4px;">${m}</span>`;
+    } else {
+      const slM = s.sl_method ? `SL:${s.sl_method}` : '';
+      const tpM = s.tp_method ? `TP:${s.tp_method}` : '';
+      const combined = [slM, tpM].filter(Boolean).join(' | ');
+      if (combined) {
+        methodBadge = `<span style="background:#2b3139;color:#f0b90b;padding:2px 6px;border-radius:4px;font-size:10px;margin-right:4px;">${combined}</span>`;
+      }
+    }
+
+    return `<div class="sig-row" style="flex-wrap:wrap;gap:4px;align-items:center;">
+      <span><span class="${sideCls}">${s.side}</span> <b>${s.symbol}</b> <span class="strat-badge ${stratCls}">${(s.strategy||'').toUpperCase()}</span> • <span class="${statusCls}">${s.status}</span> ${methodBadge}</span>
       <span class="${pnlCls}">${pnl}</span>
     </div>`;
   }).join('');
