@@ -402,17 +402,18 @@ async function loadChart(symbol, strategy, rowEl) {
   try {
     let candles = [];
 
-    let resp = await fetch(`https://cjkxfclghjgmpzcxakpy.supabase.co/rest/v1/candles?symbol=eq.${encodeURIComponent(symbol+'/USDT')}&timeframe=eq.5m&order=ts.asc&limit=1000`, {headers:{'apikey':'sb_publishable_l0iz-k9CIEYXpry0B_suhA_qj0VuWu_'}});
+    // Fetch NEWEST 1000 candles (order=ts.desc), then reverse for chart display
+    let resp = await fetch(`https://cjkxfclghjgmpzcxakpy.supabase.co/rest/v1/candles?symbol=eq.${encodeURIComponent(symbol+'/USDT')}&timeframe=eq.5m&order=ts.desc&limit=1000`, {headers:{'apikey':'sb_publishable_l0iz-k9CIEYXpry0B_suhA_qj0VuWu_'}});
     candles = await resp.json();
 
     if (!candles.length) {
-      resp = await fetch(`https://cjkxfclghjgmpzcxakpy.supabase.co/rest/v1/candles?symbol=eq.${encodeURIComponent(symbol+'/USDT')}&order=ts.asc&limit=1000`, {headers:{'apikey':'sb_publishable_l0iz-k9CIEYXpry0B_suhA_qj0VuWu_'}});
+      resp = await fetch(`https://cjkxfclghjgmpzcxakpy.supabase.co/rest/v1/candles?symbol=eq.${encodeURIComponent(symbol+'/USDT')}&order=ts.desc&limit=1000`, {headers:{'apikey':'sb_publishable_l0iz-k9CIEYXpry0B_suhA_qj0VuWu_'}});
       candles = await resp.json();
       candles = candles.filter(c => c.timeframe === '5m');
     }
 
     if (!candles.length) {
-      resp = await fetch(`https://cjkxfclghjgmpzcxakpy.supabase.co/rest/v1/candles?order=ts.asc&limit=1000`, {headers:{'apikey':'sb_publishable_l0iz-k9CIEYXpry0B_suhA_qj0VuWu_'}});
+      resp = await fetch(`https://cjkxfclghjgmpzcxakpy.supabase.co/rest/v1/candles?order=ts.desc&limit=1000`, {headers:{'apikey':'sb_publishable_l0iz-k9CIEYXpry0B_suhA_qj0VuWu_'}});
       candles = await resp.json();
       candles = candles.filter(c => c.symbol === symbol + '/USDT' && c.timeframe === '5m');
     }
@@ -424,6 +425,8 @@ async function loadChart(symbol, strategy, rowEl) {
       return;
     }
 
+    // Reverse to get ascending order for chart (oldest first)
+    candles.reverse();
     const chartData = candles.map(c=>({ time: Math.floor(c.ts/1000), open:c.open, high:c.high, low:c.low, close:c.close }));
 
     if (!chart) {
