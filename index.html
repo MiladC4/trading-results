@@ -150,7 +150,7 @@ const STRAT_CLASS = { rf: 'strat-rf', zerolag: 'strat-zerolag', trend: 'strat-tr
 async function fetchSignals() {
   try {
     console.log('fetchSignals: Starting API call...');
-    const r = await fetch('https://cjkxfclghjgmpzcxakpy.supabase.co/rest/v1/live_signals?select=id,symbol,strategy,side,status,entry_price,tp,sl,pnl_pct,entry_time,exit_price,exit_time,tp_method,sl_method,params&order=entry_time.desc&limit=50', {headers:{'apikey':'sb_publishable_l0iz-k9CIEYXpry0B_suhA_qj0VuWu_'}});
+    const r = await fetch('https://cjkxfclghjgmpzcxakpy.supabase.co/rest/v1/live_signals?select=id,symbol,strategy,side,status,entry_price,tp,sl,pnl_pct,entry_time,exit_price,exit_time,params&order=entry_time.desc&limit=50', {headers:{'apikey':'sb_publishable_l0iz-k9CIEYXpry0B_suhA_qj0VuWu_'}});
     console.log('fetchSignals: Response status:', r.status, r.statusText);
     if (!r.ok) {
       console.error('fetchSignals error:', r.status, r.statusText);
@@ -365,7 +365,13 @@ function processPnlData(last50, container, statsEl) {
   const totalPnl = cumPnl;
   const wr = last50.length ? (wins / last50.length * 100) : 0;
   const initialCapital = 10000;
-  const currentEquity = initialCapital * (1 + totalPnl / 100);
+  let currentEquity = initialCapital * (1 + totalPnl / 100);
+  try {
+    const p0 = JSON.parse((last50[0] && last50[0].params) || '{}');
+    if (p0 && typeof p0.acct_eq === 'number' && p0.acct_eq > 0) {
+      currentEquity = p0.acct_eq;
+    }
+  } catch (e) {}
   const equityChange = currentEquity - initialCapital;
   const equitySign = equityChange >= 0 ? '+' : '';
   const equityCls = equityChange >= 0 ? 'positive' : 'negative';
