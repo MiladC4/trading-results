@@ -402,8 +402,9 @@ async function loadChart(symbol, strategy, rowEl) {
   try {
     let candles = [];
 
-    // Fetch NEWEST 1000 candles (order=ts.desc), then reverse for chart display
-    let resp = await fetch(`https://cjkxfclghjgmpzcxakpy.supabase.co/rest/v1/candles?symbol=eq.${encodeURIComponent(symbol+'/USDT')}&timeframe=eq.5m&order=ts.desc&limit=1000`, {headers:{'apikey':'sb_publishable_l0iz-k9CIEYXpry0B_suhA_qj0VuWu_'}});
+    // Fetch NEWEST 7000 candles (covers ~24 days of 5m history after the
+    // Aug 30 2026 backfill), order=ts.desc then reverse for chart display
+    let resp = await fetch(`https://cjkxfclghjgmpzcxakpy.supabase.co/rest/v1/candles?symbol=eq.${encodeURIComponent(symbol+'/USDT')}&timeframe=eq.5m&order=ts.desc&limit=7000`, {headers:{'apikey':'sb_publishable_l0iz-k9CIEYXpry0B_suhA_qj0VuWu_'}});
     candles = await resp.json();
 
     if (!candles.length) {
