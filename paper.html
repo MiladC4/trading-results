@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Results - Live Paper Trading</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #0d1117; color: #c9d1d9; line-height: 1.6; padding: 20px; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        h1 { color: #58a6ff; text-align: center; margin-bottom: 10px; font-size: 2rem; }
+        .subtitle { text-align: center; color: #8b949e; margin-bottom: 30px; }
+        .card { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 20px; margin-bottom: 20px; }
+        .card h2 { color: #58a6ff; margin-bottom: 15px; font-size: 1.3rem; border-bottom: 1px solid #30363d; padding-bottom: 10px; }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 15px; margin-bottom: 20px; }
+        .stat { background: #21262d; border: 1px solid #30363d; border-radius: 6px; padding: 15px; text-align: center; }
+        .stat-value { font-size: 1.8rem; font-weight: bold; color: #58a6ff; }
+        .stat-label { color: #8b949e; font-size: 0.9rem; margin-top: 5px; }
+        .stat-value.positive { color: #3fb950; }
+        .stat-value.negative { color: #f85149; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { padding: 12px; text-align: right; border-bottom: 1px solid #30363d; }
+        th { color: #8b949e; font-weight: 600; background: #161b22; }
+        tr:hover { background: #21262d; }
+        .side-long { color: #3fb950; font-weight: bold; }
+        .side-short { color: #f85149; font-weight: bold; }
+        .pnl-positive { color: #3fb950; }
+        .pnl-negative { color: #f85149; }
+        .win { color: #3fb950; }
+        .loss { color: #f85149; }
+        .timestamp { color: #8b949e; font-size: 0.85rem; text-align: center; margin-top: 30px; }
+        .strategy-badge { display: inline-block; background: #21262d; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; font-family: monospace; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Trading Results</h1>
+        <p class="subtitle">Live Paper Trading Dashboard — 12 Strategies × 228 Symbols</p>
+        
+        <div class="card">
+            <h2>📈 Portfolio Overview</h2>
+            <div class="stats-grid" id="overview"></div>
+        </div>
+        
+        <div class="card">
+            <h2>🟢 Open Positions</h2>
+            <table id="open-table">
+                <thead>
+                    <tr>
+                        <th>Strategy</th>
+                        <th>Symbol</th>
+                        <th>Side</th>
+                        <th>Entry</th>
+                        <th>Current</th>
+                        <th>PnL %</th>
+                    </tr>
+                </thead>
+                <tbody id="open-body"></tbody>
+            </table>
+            <p id="no-open" style="display:none; color:#8b949e;">No open positions</p>
+        </div>
+        
+        <div class="card">
+            <h2>📋 Recent Closed Trades</h2>
+            <table id="closed-table">
+                <thead>
+                    <tr>
+                        <th>Strategy</th>
+                        <th>Symbol</th>
+                        <th>Result</th>
+                        <th>PnL %</th>
+                        <th>Exit Reason</th>
+                    </tr>
+                </thead>
+                <tbody id="closed-body"></tbody>
+            </table>
+            <p id="no-closed" style="display:none; color:#8b949e;">No closed trades yet</p>
+        </div>
+        
+        <div class="timestamp" id="last-update"></div>
+    </div>
+    
+    <script>
+        async function loadData() {
+            try {
+                const res = await fetch('daily_report_site.json?' + Date.now());
+                const data = await res.json();
+                render(data);
+            } catch (e) {
+                console.error('Failed to load data:', e);
+            }
+        }
+        
+        function render(data) {
+            // Overview
+            document.getElementById('overview').innerHTML = `
+                <div class="stat">
+                    <div class="stat-value">${data.equity.toLocaleString()}</div>
+                    <div class="stat-label">Equity ($)</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value ${data.pnl >= 0 ? 'positive' : 'negative'}">${data.pnl >= 0 ? '+' : ''}${data.pnl.toFixed(2)}</div>
+                    <div class="stat-label">PnL ($)</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value ${data.pnl_pct >= 0 ? 'positive' : 'negative'}">${data.pnl_pct >= 0 ? '+' : ''}${data.pnl_pct.toFixed(2)}%</div>
+                    <div class="stat-label">Return</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">${data.cash.toLocaleString()}</div>
+                    <div class="stat-label">Cash ($)</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">${data.open_positions}</div>
+                    <div class="stat-label">Open Positions</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">${data.closed_trades}</div>
+                    <div class="stat-label">Closed Trades</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value ${data.win_rate >= 50 ? 'positive' : ''}">${data.win_rate.toFixed(1)}%</div>
+                    <div class="stat-label">Win Rate</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">${data.avg_win.toFixed(3)}%</div>
+                    <div class="stat-label">Avg Win</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-value">${data.avg_loss.toFixed(3)}%</div>
+                    <div class="stat-label">Avg Loss</div>
+                </div>
+            `;
+            
+            // Open positions
+            const openBody = document.getElementById('open-body');
+            const noOpen = document.getElementById('no-open');
+            if (data.positions && data.positions.length > 0) {
+                noOpen.style.display = 'none';
+                openBody.innerHTML = data.positions.map(p => `
+                    <tr>
+                        <td><span class="strategy-badge">${p.strategy}</span></td>
+                        <td>${p.symbol}</td>
+                        <td class="${p.side === 'LONG' ? 'side-long' : 'side-short'}">${p.side}</td>
+                        <td>${p.entry.toFixed(4)}</td>
+                        <td>${p.current.toFixed(4)}</td>
+                        <td class="${p.pnl_pct >= 0 ? 'pnl-positive' : 'pnl-negative'}">${p.pnl_pct >= 0 ? '+' : ''}${p.pnl_pct.toFixed(2)}%</td>
+                    </tr>
+                `).join('');
+            } else {
+                noOpen.style.display = 'block';
+                openBody.innerHTML = '';
+            }
+            
+            // Closed trades
+            const closedBody = document.getElementById('closed-body');
+            const noClosed = document.getElementById('no-closed');
+            if (data.recent_trades && data.recent_trades.length > 0) {
+                noClosed.style.display = 'none';
+                closedBody.innerHTML = data.recent_trades.map(t => `
+                    <tr>
+                        <td><span class="strategy-badge">${t.strategy}</span></td>
+                        <td>${t.symbol}</td>
+                        <td class="${t.result === 'WIN' ? 'win' : 'loss'}">${t.result}</td>
+                        <td class="${t.pnl_pct >= 0 ? 'pnl-positive' : 'pnl-negative'}">${t.pnl_pct >= 0 ? '+' : ''}${t.pnl_pct.toFixed(3)}%</td>
+                        <td>${t.exit_reason}</td>
+                    </tr>
+                `).join('');
+            } else {
+                noClosed.style.display = 'block';
+                closedBody.innerHTML = '';
+            }
+            
+            document.getElementById('last-update').textContent = `Last updated: ${data.date}`;
+        }
+        
+        loadData();
+        setInterval(loadData, 60000); // Refresh every minute
+    </script>
+</body>
+</html>
