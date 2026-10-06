@@ -52,7 +52,10 @@
                         <th>Side</th>
                         <th>Entry</th>
                         <th>Current</th>
+                        <th>Change %</th>
                         <th>PnL %</th>
+                        <th>TP dist %</th>
+                        <th>SL dist %</th>
                     </tr>
                 </thead>
                 <tbody id="open-body"></tbody>
@@ -68,6 +71,9 @@
                         <th>Strategy</th>
                         <th>Symbol</th>
                         <th>Result</th>
+                        <th>Entry</th>
+                        <th>Exit</th>
+                        <th>Change %</th>
                         <th>PnL %</th>
                         <th>Exit Reason</th>
                     </tr>
@@ -144,7 +150,10 @@
                         <td class="${p.side === 'LONG' ? 'side-long' : 'side-short'}">${p.side}</td>
                         <td>${p.entry.toFixed(4)}</td>
                         <td>${p.current.toFixed(4)}</td>
+                        <td class="${p.chg_pct >= 0 ? 'pnl-positive' : 'pnl-negative'}">${p.chg_pct >= 0 ? '+' : ''}${p.chg_pct.toFixed(2)}%</td>
                         <td class="${p.pnl_pct >= 0 ? 'pnl-positive' : 'pnl-negative'}">${p.pnl_pct >= 0 ? '+' : ''}${p.pnl_pct.toFixed(2)}%</td>
+                        <td>${p.tp_dist_pct != null ? p.tp_dist_pct.toFixed(2) + '%' : '-'}</td>
+                        <td>${p.sl_dist_pct != null ? p.sl_dist_pct.toFixed(2) + '%' : '-'}</td>
                     </tr>
                 `).join('');
             } else {
@@ -162,6 +171,9 @@
                         <td><span class="strategy-badge">${t.strategy}</span></td>
                         <td>${t.symbol}</td>
                         <td class="${t.result === 'WIN' ? 'win' : 'loss'}">${t.result}</td>
+                        <td>${t.entry != null ? Number(t.entry).toFixed(4) : '-'}</td>
+                        <td>${t.exit != null ? Number(t.exit).toFixed(4) : '-'}</td>
+                        <td class="${(t.chg_pct || 0) >= 0 ? 'pnl-positive' : 'pnl-negative'}">${t.chg_pct != null ? (t.chg_pct >= 0 ? '+' : '') + Number(t.chg_pct).toFixed(3) + '%' : '-'}</td>
                         <td class="${t.pnl_pct >= 0 ? 'pnl-positive' : 'pnl-negative'}">${t.pnl_pct >= 0 ? '+' : ''}${t.pnl_pct.toFixed(3)}%</td>
                         <td>${t.exit_reason}</td>
                     </tr>
