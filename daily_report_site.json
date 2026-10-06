@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-06 10:02 UTC",
+  "date": "2026-10-06 10:04 UTC",
   "cash": 9001.4,
   "equity": 10001.14,
   "pnl": 1.14,
@@ -262,5 +262,92 @@
       "candles": 3,
       "exit_reason": "tp"
     }
-  ]
+  ],
+  "tuner": {
+    "ts": 1791280973988,
+    "n": 17,
+    "overall": {
+      "n": 17,
+      "wr": 58.8,
+      "exp": 0.00341,
+      "tot": 0.058
+    },
+    "sides": {
+      "long": {
+        "n": 9,
+        "wr": 33.3,
+        "exp": 0.00215,
+        "tot": 0.019,
+        "banned": false
+      },
+      "short": {
+        "n": 8,
+        "wr": 87.5,
+        "exp": 0.00483,
+        "tot": 0.039,
+        "banned": false
+      }
+    },
+    "problems": [],
+    "actions": [],
+    "quarantined": [],
+    "overrides": 0,
+    "rows": [
+      {
+        "uid": "3kv64PEa",
+        "name": "HTF-Candle",
+        "n": 5,
+        "wr": 60.0,
+        "exp": 0.00085,
+        "tot": 0.004,
+        "quarantined": false,
+        "tp": 2.0,
+        "sl": 2.0
+      },
+      {
+        "uid": "G7A2SXca",
+        "name": "ETH-Gate-15m",
+        "n": 1,
+        "wr": 0.0,
+        "exp": -0.00235,
+        "tot": -0.002,
+        "quarantined": false,
+        "tp": 4.0,
+        "sl": 1.0
+      },
+      {
+        "uid": "conv_O43CmL2z",
+        "name": "RSI-Divergence",
+        "n": 5,
+        "wr": 40.0,
+        "exp": 0.0047,
+        "tot": 0.023,
+        "quarantined": false,
+        "tp": 4.0,
+        "sl": 1.0
+      },
+      {
+        "uid": "conv_arIkKLKk",
+        "name": "HMA-Projection",
+        "n": 3,
+        "wr": 100.0,
+        "exp": 0.00606,
+        "tot": 0.018,
+        "quarantined": false,
+        "tp": 2.0,
+        "sl": 2.0
+      },
+      {
+        "uid": "conv_rPOx1NRY",
+        "name": "VolDiv-Bayes",
+        "n": 3,
+        "wr": 66.7,
+        "exp": 0.00482,
+        "tot": 0.014,
+        "quarantined": false,
+        "tp": 4.0,
+        "sl": 1.0
+      }
+    ]
+  }
 }
