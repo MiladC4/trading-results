@@ -157,9 +157,9 @@
       "symbol": "1INCH/USDT",
       "result": "WIN",
       "pnl_pct": 0.541,
-      "entry": null,
-      "exit": null,
-      "chg_pct": null,
+      "entry": 0.1053,
+      "exit": 0.10473,
+      "chg_pct": -0.541,
       "exit_reason": "tp"
     },
     {
@@ -167,9 +167,9 @@
       "symbol": "A/USDT",
       "result": "LOSS",
       "pnl_pct": -0.238,
-      "entry": null,
-      "exit": null,
-      "chg_pct": null,
+      "entry": 0.10132,
+      "exit": 0.101561,
+      "chg_pct": 0.238,
       "exit_reason": "sl"
     },
     {
@@ -177,9 +177,9 @@
       "symbol": "AB/USDT",
       "result": "WIN",
       "pnl_pct": 0.406,
-      "entry": null,
-      "exit": null,
-      "chg_pct": null,
+      "entry": 0.000587,
+      "exit": 0.000585,
+      "chg_pct": -0.406,
       "exit_reason": "tp"
     },
     {
@@ -187,9 +187,9 @@
       "symbol": "ADA/USDT",
       "result": "WIN",
       "pnl_pct": 0.585,
-      "entry": null,
-      "exit": null,
-      "chg_pct": null,
+      "entry": 0.2691,
+      "exit": 0.270674,
+      "chg_pct": 0.585,
       "exit_reason": "tp"
     },
     {
@@ -197,9 +197,9 @@
       "symbol": "AERO/USDT",
       "result": "WIN",
       "pnl_pct": 0.425,
-      "entry": null,
-      "exit": null,
-      "chg_pct": null,
+      "entry": 0.8379,
+      "exit": 0.841461,
+      "chg_pct": 0.425,
       "exit_reason": "tp"
     },
     {
@@ -207,9 +207,9 @@
       "symbol": "AGLD/USDT",
       "result": "LOSS",
       "pnl_pct": -0.239,
-      "entry": null,
-      "exit": null,
-      "chg_pct": null,
+      "entry": 0.2111,
+      "exit": 0.211605,
+      "chg_pct": 0.239,
       "exit_reason": "sl"
     },
     {
@@ -217,9 +217,9 @@
       "symbol": "ALGO/USDT",
       "result": "WIN",
       "pnl_pct": 0.937,
-      "entry": null,
-      "exit": null,
-      "chg_pct": null,
+      "entry": 0.12736,
+      "exit": 0.126167,
+      "chg_pct": -0.937,
       "exit_reason": "tp"
     },
     {
@@ -227,9 +227,9 @@
       "symbol": "ALICE/USDT",
       "result": "WIN",
       "pnl_pct": 0.706,
-      "entry": null,
-      "exit": null,
-      "chg_pct": null,
+      "entry": 0.1819,
+      "exit": 0.183184,
+      "chg_pct": 0.706,
       "exit_reason": "tp"
     },
     {
@@ -237,9 +237,9 @@
       "symbol": "ALLO/USDT",
       "result": "WIN",
       "pnl_pct": 0.357,
-      "entry": null,
-      "exit": null,
-      "chg_pct": null,
+      "entry": 0.26091,
+      "exit": 0.261841,
+      "chg_pct": 0.357,
       "exit_reason": "tp"
     },
     {
@@ -247,9 +247,9 @@
       "symbol": "APT/USDT",
       "result": "WIN",
       "pnl_pct": 1.115,
-      "entry": null,
-      "exit": null,
-      "chg_pct": null,
+      "entry": 0.8184,
+      "exit": 0.809275,
+      "chg_pct": -1.115,
       "exit_reason": "tp"
     }
   ]
