@@ -1,130 +1,165 @@
 {
-  "date": "2026-10-06 04:27 UTC",
-  "cash": 9001.58,
-  "equity": 10002.85,
-  "pnl": 2.85,
-  "pnl_pct": 0.03,
+  "date": "2026-10-06 04:36 UTC",
+  "cash": 9004.62,
+  "equity": 10011.07,
+  "pnl": 11.07,
+  "pnl_pct": 0.11,
   "open_positions": 10,
-  "closed_trades": 5,
+  "closed_trades": 15,
   "win_rate": 100.0,
-  "avg_win": 0.587,
+  "avg_win": 0.532,
   "avg_loss": 0,
   "positions": [
     {
-      "strategy": "3kv64PEa",
+      "strategy": "conv_arIkKLKk",
       "symbol": "1INCH/USDT",
       "side": "SHORT",
-      "entry": 0.1055,
-      "current": 0.1053,
-      "pnl_pct": 0.19
-    },
-    {
-      "strategy": "conv_rPOx1NRY",
-      "symbol": "2Z/USDT",
-      "side": "LONG",
-      "entry": 0.04223,
-      "current": 0.04261,
-      "pnl_pct": 0.9
-    },
-    {
-      "strategy": "conv_arIkKLKk",
-      "symbol": "A/USDT",
-      "side": "SHORT",
-      "entry": 0.09945,
-      "current": 0.10014,
-      "pnl_pct": -0.69
-    },
-    {
-      "strategy": "conv_arIkKLKk",
-      "symbol": "AAVE/USDT",
-      "side": "SHORT",
-      "entry": 183.08,
-      "current": 182.64,
-      "pnl_pct": 0.24
+      "entry": 0.1065,
+      "current": 0.1054,
+      "pnl_pct": 1.03
     },
     {
       "strategy": "conv_arIkKLKk",
       "symbol": "AB/USDT",
-      "side": "SHORT",
-      "entry": 0.000594,
-      "current": 0.000597,
-      "pnl_pct": -0.51
+      "side": "LONG",
+      "entry": 0.000593,
+      "current": 0.000611,
+      "pnl_pct": 3.04
     },
     {
-      "strategy": "conv_O43CmL2z",
-      "symbol": "ACE/USDT",
+      "strategy": "conv_ktvQHlq8",
+      "symbol": "ADA/USDT",
       "side": "LONG",
-      "entry": 0.189,
-      "current": 0.1915,
-      "pnl_pct": 1.32
+      "entry": 0.2657,
+      "current": 0.2682,
+      "pnl_pct": 0.94
     },
     {
       "strategy": "3kv64PEa",
       "symbol": "AERO/USDT",
       "side": "LONG",
-      "entry": 0.8417,
-      "current": 0.8507,
-      "pnl_pct": 1.07
+      "entry": 0.8377,
+      "current": 0.8511,
+      "pnl_pct": 1.6
+    },
+    {
+      "strategy": "G7A2SXca",
+      "symbol": "AGLD/USDT",
+      "side": "LONG",
+      "entry": 0.2087,
+      "current": 0.21,
+      "pnl_pct": 0.62
     },
     {
       "strategy": "3kv64PEa",
-      "symbol": "ALGO/USDT",
+      "symbol": "ALLO/USDT",
       "side": "SHORT",
-      "entry": 0.12801,
-      "current": 0.12757,
-      "pnl_pct": 0.34
+      "entry": 0.25731,
+      "current": 0.2567,
+      "pnl_pct": 0.24
     },
     {
       "strategy": "3kv64PEa",
-      "symbol": "ALICE/USDT",
+      "symbol": "APE/USDT",
+      "side": "LONG",
+      "entry": 0.1591,
+      "current": 0.16,
+      "pnl_pct": 0.57
+    },
+    {
+      "strategy": "conv_O43CmL2z",
+      "symbol": "APT/USDT",
       "side": "SHORT",
-      "entry": 0.1818,
-      "current": 0.1801,
-      "pnl_pct": 0.94
+      "entry": 0.8174,
+      "current": 0.815,
+      "pnl_pct": 0.29
     },
     {
       "strategy": "conv_arIkKLKk",
-      "symbol": "ALLO/USDT",
-      "side": "SHORT",
-      "entry": 0.2577,
-      "current": 0.25638,
-      "pnl_pct": 0.51
+      "symbol": "AR/USDT",
+      "side": "LONG",
+      "entry": 4.453,
+      "current": 4.491,
+      "pnl_pct": 0.85
+    },
+    {
+      "strategy": "ODMWP96S",
+      "symbol": "ASTER/USDT",
+      "side": "LONG",
+      "entry": 0.73177,
+      "current": 0.74201,
+      "pnl_pct": 1.4
     }
   ],
   "recent_trades": [
     {
+      "strategy": "3kv64PEa",
+      "symbol": "1INCH/USDT",
+      "result": "WIN",
+      "pnl_pct": 0.513,
+      "exit_reason": "tp"
+    },
+    {
+      "strategy": "conv_rPOx1NRY",
+      "symbol": "2Z/USDT",
+      "result": "WIN",
+      "pnl_pct": 0.933,
+      "exit_reason": "tp"
+    },
+    {
       "strategy": "conv_arIkKLKk",
-      "symbol": "BCH/USDT",
+      "symbol": "A/USDT",
       "result": "WIN",
-      "pnl_pct": 0.727,
-      "exit_reason": "tp"
-    },
-    {
-      "strategy": "conv_lwMEIL8n",
-      "symbol": "GRVT/USDT",
-      "result": "WIN",
-      "pnl_pct": 0.579,
+      "pnl_pct": 0.307,
       "exit_reason": "tp"
     },
     {
       "strategy": "conv_arIkKLKk",
-      "symbol": "BCH/USDT",
+      "symbol": "AAVE/USDT",
       "result": "WIN",
-      "pnl_pct": 0.727,
+      "pnl_pct": 0.41,
       "exit_reason": "tp"
     },
     {
-      "strategy": "conv_lwMEIL8n",
-      "symbol": "GRVT/USDT",
+      "strategy": "conv_arIkKLKk",
+      "symbol": "AB/USDT",
       "result": "WIN",
-      "pnl_pct": 0.579,
+      "pnl_pct": 0.67,
+      "exit_reason": "tp"
+    },
+    {
+      "strategy": "conv_O43CmL2z",
+      "symbol": "ACE/USDT",
+      "result": "WIN",
+      "pnl_pct": 0.726,
       "exit_reason": "tp"
     },
     {
       "strategy": "3kv64PEa",
-      "symbol": "DGB/USDT",
+      "symbol": "AERO/USDT",
       "result": "WIN",
-      "pnl_pct": 0.321,
+      "pnl_pct": 0.438,
+      "exit_reason": "tp"
+    },
+    {
+      "strategy": "3kv64PEa",
+      "symbol": "ALGO/USDT",
+      "result": "WIN",
+      "pnl_pct": 0.365,
+      "exit_reason": "tp"
+    },
+    {
+      "strategy": "3kv64PEa",
+      "symbol": "ALICE/USDT",
+      "result": "WIN",
+      "pnl_pct": 0.405,
+      "exit_reason": "tp"
+    },
+    {
+      "strategy": "conv_arIkKLKk",
+      "symbol": "ALLO/USDT",
+      "result": "WIN",
+      "pnl_pct": 0.28,
       "exit_reason": "tp"
     }
   ]
