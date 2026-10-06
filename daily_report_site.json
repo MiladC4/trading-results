@@ -1,165 +1,175 @@
 {
-  "date": "2026-10-06 04:36 UTC",
-  "cash": 9004.62,
-  "equity": 10011.07,
-  "pnl": 11.07,
-  "pnl_pct": 0.11,
+  "date": "2026-10-06 04:55 UTC",
+  "cash": 9008.33,
+  "equity": 10007.33,
+  "pnl": 7.33,
+  "pnl_pct": 0.07,
   "open_positions": 10,
-  "closed_trades": 15,
+  "closed_trades": 25,
   "win_rate": 100.0,
-  "avg_win": 0.532,
+  "avg_win": 0.548,
   "avg_loss": 0,
   "positions": [
     {
-      "strategy": "conv_arIkKLKk",
-      "symbol": "1INCH/USDT",
-      "side": "SHORT",
-      "entry": 0.1065,
-      "current": 0.1054,
-      "pnl_pct": 1.03
+      "strategy": "HTF-Candle",
+      "strategy_full": "HTF Candle Direction Strategy V1",
+      "symbol": "2Z/USDT",
+      "side": "LONG",
+      "entry": 0.04263,
+      "current": 0.04263,
+      "pnl_pct": 0.0
     },
     {
-      "strategy": "conv_arIkKLKk",
+      "strategy": "HTF-Candle",
+      "strategy_full": "HTF Candle Direction Strategy V1",
+      "symbol": "AAVE/USDT",
+      "side": "LONG",
+      "entry": 183.13,
+      "current": 183.13,
+      "pnl_pct": 0.0
+    },
+    {
+      "strategy": "HMA-Projection",
+      "strategy_full": "STRAT: Multi-Timeframe Hull Moving Average (HMA) Candle Projection",
       "symbol": "AB/USDT",
       "side": "LONG",
-      "entry": 0.000593,
-      "current": 0.000611,
-      "pnl_pct": 3.04
+      "entry": 0.000602,
+      "current": 0.000602,
+      "pnl_pct": 0.0
     },
     {
-      "strategy": "conv_ktvQHlq8",
+      "strategy": "HTF-Candle",
+      "strategy_full": "HTF Candle Direction Strategy V1",
       "symbol": "ADA/USDT",
       "side": "LONG",
-      "entry": 0.2657,
-      "current": 0.2682,
-      "pnl_pct": 0.94
+      "entry": 0.2696,
+      "current": 0.2696,
+      "pnl_pct": 0.0
     },
     {
-      "strategy": "3kv64PEa",
+      "strategy": "HTF-Candle",
+      "strategy_full": "HTF Candle Direction Strategy V1",
       "symbol": "AERO/USDT",
       "side": "LONG",
-      "entry": 0.8377,
-      "current": 0.8511,
-      "pnl_pct": 1.6
+      "entry": 0.8478,
+      "current": 0.8478,
+      "pnl_pct": 0.0
     },
     {
-      "strategy": "G7A2SXca",
+      "strategy": "Divergence-Scanner",
+      "strategy_full": "STRAT: Divergence Scanner - Multi-Oscillator Confirmation [Dots3Red]",
       "symbol": "AGLD/USDT",
       "side": "LONG",
-      "entry": 0.2087,
-      "current": 0.21,
-      "pnl_pct": 0.62
+      "entry": 0.2097,
+      "current": 0.2097,
+      "pnl_pct": 0.0
     },
     {
-      "strategy": "3kv64PEa",
+      "strategy": "HTF-Candle",
+      "strategy_full": "HTF Candle Direction Strategy V1",
+      "symbol": "ALGO/USDT",
+      "side": "SHORT",
+      "entry": 0.12786,
+      "current": 0.12786,
+      "pnl_pct": -0.0
+    },
+    {
+      "strategy": "VolDiv-Bayes",
+      "strategy_full": "STRAT: Volume Divergence & Bayesian Projection",
+      "symbol": "ALICE/USDT",
+      "side": "SHORT",
+      "entry": 0.1792,
+      "current": 0.1792,
+      "pnl_pct": -0.0
+    },
+    {
+      "strategy": "MoM-Levels",
+      "strategy_full": "STRAT: MoM LEVELS",
       "symbol": "ALLO/USDT",
       "side": "SHORT",
-      "entry": 0.25731,
-      "current": 0.2567,
-      "pnl_pct": 0.24
+      "entry": 0.2563,
+      "current": 0.2563,
+      "pnl_pct": -0.0
     },
     {
-      "strategy": "3kv64PEa",
+      "strategy": "HMA-Projection",
+      "strategy_full": "STRAT: Multi-Timeframe Hull Moving Average (HMA) Candle Projection",
       "symbol": "APE/USDT",
       "side": "LONG",
-      "entry": 0.1591,
-      "current": 0.16,
-      "pnl_pct": 0.57
-    },
-    {
-      "strategy": "conv_O43CmL2z",
-      "symbol": "APT/USDT",
-      "side": "SHORT",
-      "entry": 0.8174,
-      "current": 0.815,
-      "pnl_pct": 0.29
-    },
-    {
-      "strategy": "conv_arIkKLKk",
-      "symbol": "AR/USDT",
-      "side": "LONG",
-      "entry": 4.453,
-      "current": 4.491,
-      "pnl_pct": 0.85
-    },
-    {
-      "strategy": "ODMWP96S",
-      "symbol": "ASTER/USDT",
-      "side": "LONG",
-      "entry": 0.73177,
-      "current": 0.74201,
-      "pnl_pct": 1.4
+      "entry": 0.1598,
+      "current": 0.1598,
+      "pnl_pct": 0.0
     }
   ],
   "recent_trades": [
     {
-      "strategy": "3kv64PEa",
+      "strategy": "HMA-Projection",
       "symbol": "1INCH/USDT",
       "result": "WIN",
-      "pnl_pct": 0.513,
+      "pnl_pct": 0.494,
       "exit_reason": "tp"
     },
     {
-      "strategy": "conv_rPOx1NRY",
-      "symbol": "2Z/USDT",
-      "result": "WIN",
-      "pnl_pct": 0.933,
-      "exit_reason": "tp"
-    },
-    {
-      "strategy": "conv_arIkKLKk",
-      "symbol": "A/USDT",
-      "result": "WIN",
-      "pnl_pct": 0.307,
-      "exit_reason": "tp"
-    },
-    {
-      "strategy": "conv_arIkKLKk",
-      "symbol": "AAVE/USDT",
-      "result": "WIN",
-      "pnl_pct": 0.41,
-      "exit_reason": "tp"
-    },
-    {
-      "strategy": "conv_arIkKLKk",
+      "strategy": "HMA-Projection",
       "symbol": "AB/USDT",
       "result": "WIN",
-      "pnl_pct": 0.67,
+      "pnl_pct": 0.648,
       "exit_reason": "tp"
     },
     {
-      "strategy": "conv_O43CmL2z",
-      "symbol": "ACE/USDT",
+      "strategy": "Divergence-Scanner",
+      "symbol": "ADA/USDT",
       "result": "WIN",
-      "pnl_pct": 0.726,
+      "pnl_pct": 0.785,
       "exit_reason": "tp"
     },
     {
-      "strategy": "3kv64PEa",
+      "strategy": "HTF-Candle",
       "symbol": "AERO/USDT",
       "result": "WIN",
-      "pnl_pct": 0.438,
+      "pnl_pct": 0.434,
       "exit_reason": "tp"
     },
     {
-      "strategy": "3kv64PEa",
-      "symbol": "ALGO/USDT",
+      "strategy": "ETH-Gate-15m",
+      "symbol": "AGLD/USDT",
       "result": "WIN",
-      "pnl_pct": 0.365,
+      "pnl_pct": 0.761,
       "exit_reason": "tp"
     },
     {
-      "strategy": "3kv64PEa",
-      "symbol": "ALICE/USDT",
-      "result": "WIN",
-      "pnl_pct": 0.405,
-      "exit_reason": "tp"
-    },
-    {
-      "strategy": "conv_arIkKLKk",
+      "strategy": "HTF-Candle",
       "symbol": "ALLO/USDT",
       "result": "WIN",
-      "pnl_pct": 0.28,
+      "pnl_pct": 0.255,
+      "exit_reason": "tp"
+    },
+    {
+      "strategy": "HTF-Candle",
+      "symbol": "APE/USDT",
+      "result": "WIN",
+      "pnl_pct": 0.443,
+      "exit_reason": "tp"
+    },
+    {
+      "strategy": "RSI-Divergence",
+      "symbol": "APT/USDT",
+      "result": "WIN",
+      "pnl_pct": 0.971,
+      "exit_reason": "tp"
+    },
+    {
+      "strategy": "HMA-Projection",
+      "symbol": "AR/USDT",
+      "result": "WIN",
+      "pnl_pct": 0.351,
+      "exit_reason": "tp"
+    },
+    {
+      "strategy": "TH-DualMode",
+      "symbol": "ASTER/USDT",
+      "result": "WIN",
+      "pnl_pct": 0.572,
       "exit_reason": "tp"
     }
   ]
