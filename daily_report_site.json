@@ -1,22 +1,94 @@
 {
-  "date": "2026-10-06 04:18 UTC",
-  "cash": 9902.36,
-  "equity": 10001.63,
-  "pnl": 1.63,
-  "pnl_pct": 0.02,
-  "open_positions": 1,
-  "closed_trades": 4,
+  "date": "2026-10-06 04:27 UTC",
+  "cash": 9001.58,
+  "equity": 10002.85,
+  "pnl": 2.85,
+  "pnl_pct": 0.03,
+  "open_positions": 10,
+  "closed_trades": 5,
   "win_rate": 100.0,
-  "avg_win": 0.653,
+  "avg_win": 0.587,
   "avg_loss": 0,
   "positions": [
     {
       "strategy": "3kv64PEa",
-      "symbol": "DGB/USDT",
+      "symbol": "1INCH/USDT",
       "side": "SHORT",
-      "entry": 0.00426,
-      "current": 0.004233,
-      "pnl_pct": 0.63
+      "entry": 0.1055,
+      "current": 0.1053,
+      "pnl_pct": 0.19
+    },
+    {
+      "strategy": "conv_rPOx1NRY",
+      "symbol": "2Z/USDT",
+      "side": "LONG",
+      "entry": 0.04223,
+      "current": 0.04261,
+      "pnl_pct": 0.9
+    },
+    {
+      "strategy": "conv_arIkKLKk",
+      "symbol": "A/USDT",
+      "side": "SHORT",
+      "entry": 0.09945,
+      "current": 0.10014,
+      "pnl_pct": -0.69
+    },
+    {
+      "strategy": "conv_arIkKLKk",
+      "symbol": "AAVE/USDT",
+      "side": "SHORT",
+      "entry": 183.08,
+      "current": 182.64,
+      "pnl_pct": 0.24
+    },
+    {
+      "strategy": "conv_arIkKLKk",
+      "symbol": "AB/USDT",
+      "side": "SHORT",
+      "entry": 0.000594,
+      "current": 0.000597,
+      "pnl_pct": -0.51
+    },
+    {
+      "strategy": "conv_O43CmL2z",
+      "symbol": "ACE/USDT",
+      "side": "LONG",
+      "entry": 0.189,
+      "current": 0.1915,
+      "pnl_pct": 1.32
+    },
+    {
+      "strategy": "3kv64PEa",
+      "symbol": "AERO/USDT",
+      "side": "LONG",
+      "entry": 0.8417,
+      "current": 0.8507,
+      "pnl_pct": 1.07
+    },
+    {
+      "strategy": "3kv64PEa",
+      "symbol": "ALGO/USDT",
+      "side": "SHORT",
+      "entry": 0.12801,
+      "current": 0.12757,
+      "pnl_pct": 0.34
+    },
+    {
+      "strategy": "3kv64PEa",
+      "symbol": "ALICE/USDT",
+      "side": "SHORT",
+      "entry": 0.1818,
+      "current": 0.1801,
+      "pnl_pct": 0.94
+    },
+    {
+      "strategy": "conv_arIkKLKk",
+      "symbol": "ALLO/USDT",
+      "side": "SHORT",
+      "entry": 0.2577,
+      "current": 0.25638,
+      "pnl_pct": 0.51
     }
   ],
   "recent_trades": [
@@ -46,6 +118,13 @@
       "symbol": "GRVT/USDT",
       "result": "WIN",
       "pnl_pct": 0.579,
+      "exit_reason": "tp"
+    },
+    {
+      "strategy": "3kv64PEa",
+      "symbol": "DGB/USDT",
+      "result": "WIN",
+      "pnl_pct": 0.321,
       "exit_reason": "tp"
     }
   ]
