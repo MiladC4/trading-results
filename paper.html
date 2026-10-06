@@ -75,6 +75,7 @@
                         <th>Exit</th>
                         <th>Change %</th>
                         <th>PnL %</th>
+                        <th>Candles</th>
                         <th>Exit Reason</th>
                     </tr>
                 </thead>
@@ -175,6 +176,7 @@
                         <td>${t.exit != null ? Number(t.exit).toFixed(4) : '-'}</td>
                         <td class="${(t.chg_pct || 0) >= 0 ? 'pnl-positive' : 'pnl-negative'}">${t.chg_pct != null ? (t.chg_pct >= 0 ? '+' : '') + Number(t.chg_pct).toFixed(3) + '%' : '-'}</td>
                         <td class="${t.pnl_pct >= 0 ? 'pnl-positive' : 'pnl-negative'}">${t.pnl_pct >= 0 ? '+' : ''}${t.pnl_pct.toFixed(3)}%</td>
+                        <td>${t.candles != null ? t.candles : '-'}</td>
                         <td>${t.exit_reason}</td>
                     </tr>
                 `).join('');
