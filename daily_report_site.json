@@ -1,14 +1,14 @@
 {
-  "date": "2026-10-06 19:38 UTC",
-  "cash": 8992.56,
-  "equity": 9984.79,
-  "pnl": -15.21,
-  "pnl_pct": -0.15,
+  "date": "2026-10-06 19:53 UTC",
+  "cash": 8989.92,
+  "equity": 9982.3,
+  "pnl": -17.7,
+  "pnl_pct": -0.18,
   "open_positions": 10,
-  "closed_trades": 14,
-  "win_rate": 35.7,
+  "closed_trades": 16,
+  "win_rate": 31.2,
   "avg_win": 1.377,
-  "avg_loss": -1.17,
+  "avg_loss": -1.162,
   "positions": [
     {
       "strategy": "ETH-Gate-15m",
@@ -16,13 +16,13 @@
       "symbol": "1INCH/USDT",
       "side": "SHORT",
       "entry": 0.1042,
-      "current": 0.1033,
-      "pnl_pct": 0.86,
-      "chg_pct": -0.86,
+      "current": 0.1032,
+      "pnl_pct": 0.96,
+      "chg_pct": -0.96,
       "tp": 0.10304054639698515,
       "sl": 0.10506959020226114,
-      "tp_dist_pct": 0.25,
-      "sl_dist_pct": -1.71
+      "tp_dist_pct": 0.15,
+      "sl_dist_pct": -1.81
     },
     {
       "strategy": "HTF-Candle",
@@ -30,13 +30,13 @@
       "symbol": "AAVE/USDT",
       "side": "SHORT",
       "entry": 181.59,
-      "current": 181.53,
-      "pnl_pct": 0.03,
-      "chg_pct": -0.03,
+      "current": 181.32,
+      "pnl_pct": 0.15,
+      "chg_pct": -0.15,
       "tp": 179.53418385348937,
       "sl": 183.90279316482446,
-      "tp_dist_pct": 1.1,
-      "sl_dist_pct": -1.31
+      "tp_dist_pct": 0.98,
+      "sl_dist_pct": -1.42
     },
     {
       "strategy": "RSI-Divergence",
@@ -44,13 +44,13 @@
       "symbol": "ALGO/USDT",
       "side": "SHORT",
       "entry": 0.12452,
-      "current": 0.12388,
-      "pnl_pct": 0.51,
-      "chg_pct": -0.51,
+      "current": 0.12404,
+      "pnl_pct": 0.39,
+      "chg_pct": -0.39,
       "tp": 0.12266582466423263,
       "sl": 0.1256788595848546,
-      "tp_dist_pct": 0.98,
-      "sl_dist_pct": -1.45
+      "tp_dist_pct": 1.11,
+      "sl_dist_pct": -1.32
     },
     {
       "strategy": "HMA-Projection",
@@ -72,13 +72,13 @@
       "symbol": "AERO/USDT",
       "side": "SHORT",
       "entry": 0.8133,
-      "current": 0.8095,
-      "pnl_pct": 0.47,
-      "chg_pct": -0.47,
+      "current": 0.8116,
+      "pnl_pct": 0.21,
+      "chg_pct": -0.21,
       "tp": 0.794828785237978,
       "sl": 0.8271534110715165,
-      "tp_dist_pct": 1.81,
-      "sl_dist_pct": -2.18
+      "tp_dist_pct": 2.07,
+      "sl_dist_pct": -1.92
     },
     {
       "strategy": "HMA-Projection",
@@ -86,13 +86,13 @@
       "symbol": "ALICE/USDT",
       "side": "SHORT",
       "entry": 0.1905,
-      "current": 0.187,
-      "pnl_pct": 1.84,
-      "chg_pct": -1.84,
+      "current": 0.1858,
+      "pnl_pct": 2.47,
+      "chg_pct": -2.47,
       "tp": 0.18476192548130474,
       "sl": 0.1950904596149562,
-      "tp_dist_pct": 1.2,
-      "sl_dist_pct": -4.33
+      "tp_dist_pct": 0.56,
+      "sl_dist_pct": -5.0
     },
     {
       "strategy": "HTF-Candle",
@@ -100,41 +100,13 @@
       "symbol": "ACE/USDT",
       "side": "SHORT",
       "entry": 0.1971,
-      "current": 0.1959,
-      "pnl_pct": 0.61,
-      "chg_pct": -0.61,
+      "current": 0.1951,
+      "pnl_pct": 1.01,
+      "chg_pct": -1.01,
       "tp": 0.19322830877886207,
       "sl": 0.20000376841585343,
-      "tp_dist_pct": 1.36,
-      "sl_dist_pct": -2.09
-    },
-    {
-      "strategy": "HMA-Projection",
-      "strategy_full": "STRAT: Multi-Timeframe Hull Moving Average (HMA) Candle Projection",
-      "symbol": "2Z/USDT",
-      "side": "LONG",
-      "entry": 0.04208,
-      "current": 0.0418,
-      "pnl_pct": -0.67,
-      "chg_pct": -0.67,
-      "tp": 0.042712554565967835,
-      "sl": 0.04157395634722573,
-      "tp_dist_pct": 2.18,
-      "sl_dist_pct": -0.54
-    },
-    {
-      "strategy": "MoM-Levels",
-      "strategy_full": "STRAT: MoM LEVELS",
-      "symbol": "A/USDT",
-      "side": "LONG",
-      "entry": 0.10617,
-      "current": 0.10595,
-      "pnl_pct": -0.21,
-      "chg_pct": -0.21,
-      "tp": 0.1075568680063108,
-      "sl": 0.10506050559495136,
-      "tp_dist_pct": 1.52,
-      "sl_dist_pct": -0.84
+      "tp_dist_pct": 0.96,
+      "sl_dist_pct": -2.51
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -142,38 +114,44 @@
       "symbol": "ADA/USDT",
       "side": "SHORT",
       "entry": 0.2703,
-      "current": 0.2703,
-      "pnl_pct": -0.0,
-      "chg_pct": 0.0,
+      "current": 0.2707,
+      "pnl_pct": -0.15,
+      "chg_pct": 0.15,
       "tp": 0.2662187045473773,
       "sl": 0.27302086363508177,
-      "tp_dist_pct": 1.51,
-      "sl_dist_pct": -1.01
-    }
-  ],
-  "recent_trades": [
-    {
-      "strategy": "RSI-Divergence",
-      "symbol": "AB/USDT",
-      "result": "LOSS",
-      "pnl_pct": -1.419,
-      "entry": 0.000589,
-      "exit": 0.000581,
-      "chg_pct": -1.419,
-      "candles": 12,
-      "exit_reason": "sl"
+      "tp_dist_pct": 1.66,
+      "sl_dist_pct": -0.86
     },
     {
       "strategy": "HTF-Candle",
-      "symbol": "A/USDT",
-      "result": "WIN",
-      "pnl_pct": 1.563,
-      "entry": 0.10617,
-      "exit": 0.104511,
-      "chg_pct": -1.563,
-      "candles": 26,
-      "exit_reason": "tp"
+      "strategy_full": "HTF Candle Direction Strategy V1",
+      "symbol": "2Z/USDT",
+      "side": "SHORT",
+      "entry": 0.04161,
+      "current": 0.04161,
+      "pnl_pct": -0.0,
+      "chg_pct": 0.0,
+      "tp": 0.040872904098419136,
+      "sl": 0.042162821926185645,
+      "tp_dist_pct": 1.77,
+      "sl_dist_pct": -1.33
     },
+    {
+      "strategy": "HMA-Projection",
+      "strategy_full": "STRAT: Multi-Timeframe Hull Moving Average (HMA) Candle Projection",
+      "symbol": "A/USDT",
+      "side": "LONG",
+      "entry": 0.10592,
+      "current": 0.10592,
+      "pnl_pct": 0.0,
+      "chg_pct": 0.0,
+      "tp": 0.10781831215026703,
+      "sl": 0.10440135027978636,
+      "tp_dist_pct": 1.79,
+      "sl_dist_pct": -1.43
+    }
+  ],
+  "recent_trades": [
     {
       "strategy": "ETH-Gate-15m",
       "symbol": "ADA/USDT",
@@ -261,23 +239,45 @@
       "chg_pct": -1.252,
       "candles": 67,
       "exit_reason": "tp"
+    },
+    {
+      "strategy": "HMA-Projection",
+      "symbol": "2Z/USDT",
+      "result": "LOSS",
+      "pnl_pct": -1.203,
+      "entry": 0.04208,
+      "exit": 0.041574,
+      "chg_pct": -1.203,
+      "candles": 5,
+      "exit_reason": "sl"
+    },
+    {
+      "strategy": "MoM-Levels",
+      "symbol": "A/USDT",
+      "result": "LOSS",
+      "pnl_pct": -1.045,
+      "entry": 0.10617,
+      "exit": 0.105061,
+      "chg_pct": -1.045,
+      "candles": 4,
+      "exit_reason": "sl"
     }
   ],
   "tuner": {
-    "ts": 1791315480887,
-    "n": 14,
+    "ts": 1791316378745,
+    "n": 16,
     "overall": {
-      "n": 14,
-      "wr": 35.7,
-      "exp": -0.0026,
-      "tot": -0.036
+      "n": 16,
+      "wr": 31.2,
+      "exp": -0.00368,
+      "tot": -0.059
     },
     "sides": {
       "long": {
-        "n": 5,
+        "n": 7,
         "wr": 0.0,
-        "exp": -0.01055,
-        "tot": -0.053,
+        "exp": -0.01074,
+        "tot": -0.075,
         "banned": false
       },
       "short": {
@@ -292,8 +292,8 @@
       {
         "kind": "overall",
         "msg": "system is net negative",
-        "n": 14,
-        "exp": -0.0026
+        "n": 16,
+        "exp": -0.00368
       }
     ],
     "actions": [],
@@ -355,7 +355,7 @@
         "tp": 6.0,
         "sl": 4.5,
         "ap": 0.284,
-        "tp_pct": 1.71,
+        "tp_pct": 1.7,
         "sl_pct": 1.28,
         "src": "model",
         "quarantined": false
@@ -370,7 +370,7 @@
         "tp": 6.0,
         "sl": 4.5,
         "ap": 0.284,
-        "tp_pct": 1.71,
+        "tp_pct": 1.7,
         "sl_pct": 1.28,
         "src": "model",
         "quarantined": false
@@ -400,7 +400,7 @@
         "tp": 6.0,
         "sl": 4.5,
         "ap": 0.284,
-        "tp_pct": 1.71,
+        "tp_pct": 1.7,
         "sl_pct": 1.28,
         "src": "model",
         "quarantined": false
@@ -408,15 +408,15 @@
       {
         "uid": "conv_arIkKLKk",
         "name": "HMA-Projection",
-        "n": 3,
+        "n": 4,
         "wr": 0.0,
-        "exp": -0.01139,
-        "tot": -0.034,
+        "exp": -0.01155,
+        "tot": -0.046,
         "tp": 5.0,
         "sl": 4.0,
-        "ap": 0.285,
-        "tp_pct": 1.42,
-        "sl_pct": 1.14,
+        "ap": 0.289,
+        "tp_pct": 1.44,
+        "sl_pct": 1.15,
         "src": "model",
         "quarantined": false
       },
@@ -438,15 +438,15 @@
       {
         "uid": "conv_lwMEIL8n",
         "name": "MoM-Levels",
-        "n": 1,
+        "n": 2,
         "wr": 0.0,
-        "exp": -0.01349,
-        "tot": -0.013,
+        "exp": -0.01197,
+        "tot": -0.024,
         "tp": 5.0,
         "sl": 4.0,
-        "ap": 0.337,
-        "tp_pct": 1.69,
-        "sl_pct": 1.35,
+        "ap": 0.299,
+        "tp_pct": 1.5,
+        "sl_pct": 1.2,
         "src": "model",
         "quarantined": false
       },
@@ -475,7 +475,7 @@
         "tp": 6.0,
         "sl": 4.5,
         "ap": 0.284,
-        "tp_pct": 1.71,
+        "tp_pct": 1.7,
         "sl_pct": 1.28,
         "src": "model",
         "quarantined": false
