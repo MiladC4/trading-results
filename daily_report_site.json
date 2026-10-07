@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-07 07:18 UTC",
+  "date": "2026-10-07 07:28 UTC",
   "cash": 9009.87,
-  "equity": 10008.25,
-  "pnl": 8.25,
+  "equity": 10008.46,
+  "pnl": 8.46,
   "pnl_pct": 0.08,
   "open_positions": 10,
   "closed_trades": 32,
@@ -16,13 +16,13 @@
       "symbol": "AB/USDT",
       "side": "SHORT",
       "entry": 0.000569,
-      "current": 0.000574,
-      "pnl_pct": -0.88,
-      "chg_pct": 0.88,
+      "current": 0.000575,
+      "pnl_pct": -1.05,
+      "chg_pct": 1.05,
       "tp": 0.0005532116621519968,
       "sl": 0.0005816306702784025,
-      "tp_dist_pct": 3.62,
-      "sl_dist_pct": -1.33
+      "tp_dist_pct": 3.79,
+      "sl_dist_pct": -1.15
     },
     {
       "strategy": "HMA-Projection",
@@ -30,13 +30,13 @@
       "symbol": "1INCH/USDT",
       "side": "SHORT",
       "entry": 0.1001,
-      "current": 0.0999,
-      "pnl_pct": 0.2,
-      "chg_pct": -0.2,
+      "current": 0.0998,
+      "pnl_pct": 0.3,
+      "chg_pct": -0.3,
       "tp": 0.09712576607596518,
       "sl": 0.10247938713922784,
-      "tp_dist_pct": 2.78,
-      "sl_dist_pct": -2.58
+      "tp_dist_pct": 2.68,
+      "sl_dist_pct": -2.68
     },
     {
       "strategy": "HMA-Projection",
@@ -44,13 +44,13 @@
       "symbol": "A/USDT",
       "side": "SHORT",
       "entry": 0.10126,
-      "current": 0.10003,
-      "pnl_pct": 1.21,
-      "chg_pct": -1.21,
+      "current": 0.09992,
+      "pnl_pct": 1.32,
+      "chg_pct": -1.32,
       "tp": 0.09766676000465759,
       "sl": 0.10413459199627394,
-      "tp_dist_pct": 2.36,
-      "sl_dist_pct": -4.1
+      "tp_dist_pct": 2.26,
+      "sl_dist_pct": -4.22
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -58,13 +58,13 @@
       "symbol": "AAVE/USDT",
       "side": "SHORT",
       "entry": 174.4,
-      "current": 176.88,
-      "pnl_pct": -1.42,
-      "chg_pct": 1.42,
+      "current": 176.75,
+      "pnl_pct": -1.35,
+      "chg_pct": 1.35,
       "tp": 169.37191157420983,
       "sl": 177.7520589505268,
-      "tp_dist_pct": 4.24,
-      "sl_dist_pct": -0.49
+      "tp_dist_pct": 4.17,
+      "sl_dist_pct": -0.57
     },
     {
       "strategy": "RSI-Divergence",
@@ -72,13 +72,13 @@
       "symbol": "ADA/USDT",
       "side": "SHORT",
       "entry": 0.256,
-      "current": 0.2574,
-      "pnl_pct": -0.55,
-      "chg_pct": 0.55,
+      "current": 0.257,
+      "pnl_pct": -0.39,
+      "chg_pct": 0.39,
       "tp": 0.24573528136052025,
       "sl": 0.26241544914967485,
-      "tp_dist_pct": 4.53,
-      "sl_dist_pct": -1.95
+      "tp_dist_pct": 4.38,
+      "sl_dist_pct": -2.11
     },
     {
       "strategy": "RSI-Divergence",
@@ -86,13 +86,13 @@
       "symbol": "ALICE/USDT",
       "side": "SHORT",
       "entry": 0.1817,
-      "current": 0.1797,
-      "pnl_pct": 1.1,
-      "chg_pct": -1.1,
+      "current": 0.1796,
+      "pnl_pct": 1.16,
+      "chg_pct": -1.16,
       "tp": 0.17274619563082352,
       "sl": 0.18729612773073528,
-      "tp_dist_pct": 3.87,
-      "sl_dist_pct": -4.23
+      "tp_dist_pct": 3.82,
+      "sl_dist_pct": -4.29
     },
     {
       "strategy": "HTF-Candle",
@@ -100,13 +100,13 @@
       "symbol": "ALLO/USDT",
       "side": "SHORT",
       "entry": 0.25306,
-      "current": 0.25061,
-      "pnl_pct": 0.97,
-      "chg_pct": -0.97,
+      "current": 0.25073,
+      "pnl_pct": 0.92,
+      "chg_pct": -0.92,
       "tp": 0.24386412378414815,
       "sl": 0.2599569071618889,
-      "tp_dist_pct": 2.69,
-      "sl_dist_pct": -3.73
+      "tp_dist_pct": 2.74,
+      "sl_dist_pct": -3.68
     },
     {
       "strategy": "HMA-Projection",
@@ -114,13 +114,13 @@
       "symbol": "APE/USDT",
       "side": "SHORT",
       "entry": 0.1526,
-      "current": 0.1505,
-      "pnl_pct": 1.38,
-      "chg_pct": -1.38,
+      "current": 0.1502,
+      "pnl_pct": 1.57,
+      "chg_pct": -1.57,
       "tp": 0.14728013570889403,
       "sl": 0.1568558914328848,
-      "tp_dist_pct": 2.14,
-      "sl_dist_pct": -4.22
+      "tp_dist_pct": 1.94,
+      "sl_dist_pct": -4.43
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -128,13 +128,13 @@
       "symbol": "AQUR/USDT",
       "side": "LONG",
       "entry": 3.0875e-05,
-      "current": 3.0954e-05,
-      "pnl_pct": 0.26,
-      "chg_pct": 0.26,
+      "current": 3.1162e-05,
+      "pnl_pct": 0.93,
+      "chg_pct": 0.93,
       "tp": 3.1683122825882875e-05,
       "sl": 3.0336251449411415e-05,
-      "tp_dist_pct": 2.36,
-      "sl_dist_pct": -2.0
+      "tp_dist_pct": 1.67,
+      "sl_dist_pct": -2.65
     },
     {
       "strategy": "ETH-Gate-15m",
@@ -264,7 +264,7 @@
     }
   ],
   "tuner": {
-    "ts": 1791357482209,
+    "ts": 1791358076684,
     "n": 32,
     "overall": {
       "n": 32,
