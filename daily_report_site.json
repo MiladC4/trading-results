@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-07 12:28 UTC",
+  "date": "2026-10-07 12:48 UTC",
   "cash": 9017.24,
-  "equity": 10007.59,
-  "pnl": 7.59,
+  "equity": 10008.11,
+  "pnl": 8.11,
   "pnl_pct": 0.08,
   "open_positions": 10,
   "closed_trades": 37,
@@ -30,13 +30,13 @@
       "symbol": "1INCH/USDT",
       "side": "SHORT",
       "entry": 0.1001,
-      "current": 0.0985,
-      "pnl_pct": 1.6,
-      "chg_pct": -1.6,
+      "current": 0.0988,
+      "pnl_pct": 1.3,
+      "chg_pct": -1.3,
       "tp": 0.09712576607596518,
       "sl": 0.10247938713922784,
-      "tp_dist_pct": 1.4,
-      "sl_dist_pct": -4.04
+      "tp_dist_pct": 1.69,
+      "sl_dist_pct": -3.72
     },
     {
       "strategy": "HMA-Projection",
@@ -44,13 +44,13 @@
       "symbol": "A/USDT",
       "side": "SHORT",
       "entry": 0.10126,
-      "current": 0.09864,
-      "pnl_pct": 2.59,
-      "chg_pct": -2.59,
+      "current": 0.09915,
+      "pnl_pct": 2.08,
+      "chg_pct": -2.08,
       "tp": 0.09766676000465759,
       "sl": 0.10413459199627394,
-      "tp_dist_pct": 0.99,
-      "sl_dist_pct": -5.57
+      "tp_dist_pct": 1.5,
+      "sl_dist_pct": -5.03
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -58,13 +58,13 @@
       "symbol": "AAVE/USDT",
       "side": "SHORT",
       "entry": 174.4,
-      "current": 172.1,
-      "pnl_pct": 1.32,
-      "chg_pct": -1.32,
+      "current": 172.15,
+      "pnl_pct": 1.29,
+      "chg_pct": -1.29,
       "tp": 169.37191157420983,
       "sl": 177.7520589505268,
-      "tp_dist_pct": 1.59,
-      "sl_dist_pct": -3.28
+      "tp_dist_pct": 1.61,
+      "sl_dist_pct": -3.25
     },
     {
       "strategy": "RSI-Divergence",
@@ -72,13 +72,13 @@
       "symbol": "ADA/USDT",
       "side": "SHORT",
       "entry": 0.256,
-      "current": 0.2548,
-      "pnl_pct": 0.47,
-      "chg_pct": -0.47,
+      "current": 0.2554,
+      "pnl_pct": 0.23,
+      "chg_pct": -0.23,
       "tp": 0.24573528136052025,
       "sl": 0.26241544914967485,
-      "tp_dist_pct": 3.56,
-      "sl_dist_pct": -2.99
+      "tp_dist_pct": 3.78,
+      "sl_dist_pct": -2.75
     },
     {
       "strategy": "HTF-Candle",
@@ -86,13 +86,13 @@
       "symbol": "ALLO/USDT",
       "side": "SHORT",
       "entry": 0.25306,
-      "current": 0.25281,
-      "pnl_pct": 0.1,
-      "chg_pct": -0.1,
+      "current": 0.25192,
+      "pnl_pct": 0.45,
+      "chg_pct": -0.45,
       "tp": 0.24386412378414815,
       "sl": 0.2599569071618889,
-      "tp_dist_pct": 3.54,
-      "sl_dist_pct": -2.83
+      "tp_dist_pct": 3.2,
+      "sl_dist_pct": -3.19
     },
     {
       "strategy": "Divergence-Scanner",
@@ -100,13 +100,13 @@
       "symbol": "2Z/USDT",
       "side": "SHORT",
       "entry": 0.03911,
-      "current": 0.03871,
-      "pnl_pct": 1.02,
-      "chg_pct": -1.02,
+      "current": 0.03867,
+      "pnl_pct": 1.13,
+      "chg_pct": -1.13,
       "tp": 0.03796560064135255,
       "sl": 0.03996829951898559,
-      "tp_dist_pct": 1.92,
-      "sl_dist_pct": -3.25
+      "tp_dist_pct": 1.82,
+      "sl_dist_pct": -3.36
     },
     {
       "strategy": "HTF-Candle",
@@ -128,13 +128,13 @@
       "symbol": "AERO/USDT",
       "side": "SHORT",
       "entry": 0.7991,
-      "current": 0.8008,
-      "pnl_pct": -0.21,
-      "chg_pct": 0.21,
+      "current": 0.7995,
+      "pnl_pct": -0.05,
+      "chg_pct": 0.05,
       "tp": 0.7854443109399618,
       "sl": 0.8082037927066922,
-      "tp_dist_pct": 1.92,
-      "sl_dist_pct": -0.92
+      "tp_dist_pct": 1.76,
+      "sl_dist_pct": -1.09
     },
     {
       "strategy": "ETH-Gate-15m",
@@ -142,13 +142,13 @@
       "symbol": "ALGO/USDT",
       "side": "SHORT",
       "entry": 0.11635,
-      "current": 0.11694,
-      "pnl_pct": -0.51,
-      "chg_pct": 0.51,
+      "current": 0.11702,
+      "pnl_pct": -0.58,
+      "chg_pct": 0.58,
       "tp": 0.11484650634671556,
       "sl": 0.11747762023996332,
-      "tp_dist_pct": 1.79,
-      "sl_dist_pct": -0.46
+      "tp_dist_pct": 1.86,
+      "sl_dist_pct": -0.39
     }
   ],
   "recent_trades": [
@@ -264,7 +264,7 @@
     }
   ],
   "tuner": {
-    "ts": 1791376105969,
+    "ts": 1791377310136,
     "n": 37,
     "overall": {
       "n": 37,
