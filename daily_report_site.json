@@ -1,9 +1,9 @@
 {
-  "date": "2026-10-07 23:03 UTC",
+  "date": "2026-10-07 23:13 UTC",
   "cash": 9016.45,
-  "equity": 10017.18,
-  "pnl": 17.18,
-  "pnl_pct": 0.17,
+  "equity": 10017.52,
+  "pnl": 17.52,
+  "pnl_pct": 0.18,
   "open_positions": 10,
   "closed_trades": 53,
   "win_rate": 52.8,
@@ -16,13 +16,13 @@
       "symbol": "1INCH/USDT",
       "side": "SHORT",
       "entry": 0.1001,
-      "current": 0.0983,
-      "pnl_pct": 1.8,
-      "chg_pct": -1.8,
+      "current": 0.0984,
+      "pnl_pct": 1.7,
+      "chg_pct": -1.7,
       "tp": 0.09712576607596518,
       "sl": 0.10247938713922784,
-      "tp_dist_pct": 1.19,
-      "sl_dist_pct": -4.25
+      "tp_dist_pct": 1.29,
+      "sl_dist_pct": -4.15
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -30,13 +30,13 @@
       "symbol": "AAVE/USDT",
       "side": "SHORT",
       "entry": 174.4,
-      "current": 173.04,
-      "pnl_pct": 0.78,
-      "chg_pct": -0.78,
+      "current": 173.68,
+      "pnl_pct": 0.41,
+      "chg_pct": -0.41,
       "tp": 169.37191157420983,
       "sl": 177.7520589505268,
-      "tp_dist_pct": 2.12,
-      "sl_dist_pct": -2.72
+      "tp_dist_pct": 2.48,
+      "sl_dist_pct": -2.34
     },
     {
       "strategy": "RSI-Divergence",
@@ -44,13 +44,13 @@
       "symbol": "ADA/USDT",
       "side": "SHORT",
       "entry": 0.256,
-      "current": 0.2538,
-      "pnl_pct": 0.86,
-      "chg_pct": -0.86,
+      "current": 0.2544,
+      "pnl_pct": 0.62,
+      "chg_pct": -0.62,
       "tp": 0.24573528136052025,
       "sl": 0.26241544914967485,
-      "tp_dist_pct": 3.18,
-      "sl_dist_pct": -3.39
+      "tp_dist_pct": 3.41,
+      "sl_dist_pct": -3.15
     },
     {
       "strategy": "HTF-Candle",
@@ -58,13 +58,13 @@
       "symbol": "ALLO/USDT",
       "side": "SHORT",
       "entry": 0.25306,
-      "current": 0.25609,
-      "pnl_pct": -1.2,
-      "chg_pct": 1.2,
+      "current": 0.2571,
+      "pnl_pct": -1.6,
+      "chg_pct": 1.6,
       "tp": 0.24386412378414815,
       "sl": 0.2599569071618889,
-      "tp_dist_pct": 4.77,
-      "sl_dist_pct": -1.51
+      "tp_dist_pct": 5.15,
+      "sl_dist_pct": -1.11
     },
     {
       "strategy": "HMA-Projection",
@@ -100,13 +100,13 @@
       "symbol": "ALGO/USDT",
       "side": "SHORT",
       "entry": 0.11814,
-      "current": 0.11825,
-      "pnl_pct": -0.09,
-      "chg_pct": 0.09,
+      "current": 0.11837,
+      "pnl_pct": -0.19,
+      "chg_pct": 0.19,
       "tp": 0.11649352840653637,
       "sl": 0.11937485369509772,
-      "tp_dist_pct": 1.49,
-      "sl_dist_pct": -0.95
+      "tp_dist_pct": 1.59,
+      "sl_dist_pct": -0.85
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -114,13 +114,13 @@
       "symbol": "A/USDT",
       "side": "LONG",
       "entry": 0.09551,
-      "current": 0.09654,
-      "pnl_pct": 1.08,
-      "chg_pct": 1.08,
+      "current": 0.09653,
+      "pnl_pct": 1.07,
+      "chg_pct": 1.07,
       "tp": 0.09669842779725518,
       "sl": 0.09471771480182987,
-      "tp_dist_pct": 0.16,
-      "sl_dist_pct": -1.89
+      "tp_dist_pct": 0.17,
+      "sl_dist_pct": -1.88
     },
     {
       "strategy": "HTF-Candle",
@@ -128,13 +128,13 @@
       "symbol": "AERO/USDT",
       "side": "SHORT",
       "entry": 0.7928,
-      "current": 0.7958,
-      "pnl_pct": -0.38,
-      "chg_pct": 0.38,
+      "current": 0.7932,
+      "pnl_pct": -0.05,
+      "chg_pct": 0.05,
       "tp": 0.7833780432078995,
       "sl": 0.7998664675940753,
-      "tp_dist_pct": 1.56,
-      "sl_dist_pct": -0.51
+      "tp_dist_pct": 1.24,
+      "sl_dist_pct": -0.84
     },
     {
       "strategy": "HTF-Candle",
@@ -142,13 +142,13 @@
       "symbol": "AB/USDT",
       "side": "SHORT",
       "entry": 0.000567,
-      "current": 0.000567,
-      "pnl_pct": -0.0,
-      "chg_pct": 0.0,
+      "current": 0.000564,
+      "pnl_pct": 0.53,
+      "chg_pct": -0.53,
       "tp": 0.0005526107788925177,
       "sl": 0.0005777919158306118,
-      "tp_dist_pct": 2.54,
-      "sl_dist_pct": -1.9
+      "tp_dist_pct": 2.02,
+      "sl_dist_pct": -2.45
     }
   ],
   "recent_trades": [
@@ -264,7 +264,7 @@
     }
   ],
   "tuner": {
-    "ts": 1791414197944,
+    "ts": 1791414800903,
     "n": 53,
     "overall": {
       "n": 53,
