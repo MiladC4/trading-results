@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-07 08:38 UTC",
+  "date": "2026-10-07 08:47 UTC",
   "cash": 9012.29,
-  "equity": 10007.68,
-  "pnl": 7.68,
+  "equity": 10007.9,
+  "pnl": 7.9,
   "pnl_pct": 0.08,
   "open_positions": 10,
   "closed_trades": 33,
@@ -30,13 +30,13 @@
       "symbol": "1INCH/USDT",
       "side": "SHORT",
       "entry": 0.1001,
-      "current": 0.0997,
-      "pnl_pct": 0.4,
-      "chg_pct": -0.4,
+      "current": 0.1,
+      "pnl_pct": 0.1,
+      "chg_pct": -0.1,
       "tp": 0.09712576607596518,
       "sl": 0.10247938713922784,
-      "tp_dist_pct": 2.58,
-      "sl_dist_pct": -2.79
+      "tp_dist_pct": 2.87,
+      "sl_dist_pct": -2.48
     },
     {
       "strategy": "HMA-Projection",
@@ -44,13 +44,13 @@
       "symbol": "A/USDT",
       "side": "SHORT",
       "entry": 0.10126,
-      "current": 0.10017,
-      "pnl_pct": 1.08,
-      "chg_pct": -1.08,
+      "current": 0.10013,
+      "pnl_pct": 1.12,
+      "chg_pct": -1.12,
       "tp": 0.09766676000465759,
       "sl": 0.10413459199627394,
-      "tp_dist_pct": 2.5,
-      "sl_dist_pct": -3.96
+      "tp_dist_pct": 2.46,
+      "sl_dist_pct": -4.0
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -58,13 +58,13 @@
       "symbol": "AAVE/USDT",
       "side": "SHORT",
       "entry": 174.4,
-      "current": 176.07,
-      "pnl_pct": -0.96,
-      "chg_pct": 0.96,
+      "current": 176.14,
+      "pnl_pct": -1.0,
+      "chg_pct": 1.0,
       "tp": 169.37191157420983,
       "sl": 177.7520589505268,
-      "tp_dist_pct": 3.8,
-      "sl_dist_pct": -0.96
+      "tp_dist_pct": 3.84,
+      "sl_dist_pct": -0.92
     },
     {
       "strategy": "RSI-Divergence",
@@ -72,13 +72,13 @@
       "symbol": "ADA/USDT",
       "side": "SHORT",
       "entry": 0.256,
-      "current": 0.2576,
-      "pnl_pct": -0.62,
-      "chg_pct": 0.62,
+      "current": 0.2581,
+      "pnl_pct": -0.82,
+      "chg_pct": 0.82,
       "tp": 0.24573528136052025,
       "sl": 0.26241544914967485,
-      "tp_dist_pct": 4.61,
-      "sl_dist_pct": -1.87
+      "tp_dist_pct": 4.79,
+      "sl_dist_pct": -1.67
     },
     {
       "strategy": "RSI-Divergence",
@@ -100,13 +100,13 @@
       "symbol": "ALLO/USDT",
       "side": "SHORT",
       "entry": 0.25306,
-      "current": 0.25238,
-      "pnl_pct": 0.27,
-      "chg_pct": -0.27,
+      "current": 0.25155,
+      "pnl_pct": 0.6,
+      "chg_pct": -0.6,
       "tp": 0.24386412378414815,
       "sl": 0.2599569071618889,
-      "tp_dist_pct": 3.37,
-      "sl_dist_pct": -3.0
+      "tp_dist_pct": 3.06,
+      "sl_dist_pct": -3.34
     },
     {
       "strategy": "HMA-Projection",
@@ -114,13 +114,13 @@
       "symbol": "APE/USDT",
       "side": "SHORT",
       "entry": 0.1526,
-      "current": 0.1496,
-      "pnl_pct": 1.97,
-      "chg_pct": -1.97,
+      "current": 0.1497,
+      "pnl_pct": 1.9,
+      "chg_pct": -1.9,
       "tp": 0.14728013570889403,
       "sl": 0.1568558914328848,
-      "tp_dist_pct": 1.55,
-      "sl_dist_pct": -4.85
+      "tp_dist_pct": 1.62,
+      "sl_dist_pct": -4.78
     },
     {
       "strategy": "ETH-Gate-15m",
@@ -128,13 +128,13 @@
       "symbol": "AERO/USDT",
       "side": "SHORT",
       "entry": 0.7862,
-      "current": 0.7899,
-      "pnl_pct": -0.47,
-      "chg_pct": 0.47,
+      "current": 0.7892,
+      "pnl_pct": -0.38,
+      "chg_pct": 0.38,
       "tp": 0.7691235722978514,
       "sl": 0.7990073207766114,
-      "tp_dist_pct": 2.63,
-      "sl_dist_pct": -1.15
+      "tp_dist_pct": 2.54,
+      "sl_dist_pct": -1.24
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -142,13 +142,13 @@
       "symbol": "2Z/USDT",
       "side": "LONG",
       "entry": 0.03966,
-      "current": 0.03974,
-      "pnl_pct": 0.2,
-      "chg_pct": 0.2,
+      "current": 0.03977,
+      "pnl_pct": 0.28,
+      "chg_pct": 0.28,
       "tp": 0.04027066458863054,
       "sl": 0.03925289027424631,
-      "tp_dist_pct": 1.34,
-      "sl_dist_pct": -1.23
+      "tp_dist_pct": 1.26,
+      "sl_dist_pct": -1.3
     }
   ],
   "recent_trades": [
@@ -264,7 +264,7 @@
     }
   ],
   "tuner": {
-    "ts": 1791362279415,
+    "ts": 1791362868731,
     "n": 33,
     "overall": {
       "n": 33,
