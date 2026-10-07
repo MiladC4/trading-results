@@ -1,13 +1,13 @@
 {
-  "date": "2026-10-07 14:18 UTC",
-  "cash": 9023.31,
-  "equity": 10014.42,
-  "pnl": 14.42,
-  "pnl_pct": 0.14,
+  "date": "2026-10-07 14:29 UTC",
+  "cash": 9024.82,
+  "equity": 10017.65,
+  "pnl": 17.65,
+  "pnl_pct": 0.18,
   "open_positions": 10,
-  "closed_trades": 39,
-  "win_rate": 61.5,
-  "avg_win": 2.074,
+  "closed_trades": 40,
+  "win_rate": 62.5,
+  "avg_win": 2.06,
   "avg_loss": -1.176,
   "positions": [
     {
@@ -16,13 +16,13 @@
       "symbol": "AB/USDT",
       "side": "SHORT",
       "entry": 0.000569,
-      "current": 0.000573,
-      "pnl_pct": -0.7,
-      "chg_pct": 0.7,
+      "current": 0.000578,
+      "pnl_pct": -1.58,
+      "chg_pct": 1.58,
       "tp": 0.0005532116621519968,
       "sl": 0.0005816306702784025,
-      "tp_dist_pct": 3.45,
-      "sl_dist_pct": -1.51
+      "tp_dist_pct": 4.29,
+      "sl_dist_pct": -0.63
     },
     {
       "strategy": "HMA-Projection",
@@ -44,13 +44,13 @@
       "symbol": "AAVE/USDT",
       "side": "SHORT",
       "entry": 174.4,
-      "current": 171.8,
-      "pnl_pct": 1.49,
-      "chg_pct": -1.49,
+      "current": 171.66,
+      "pnl_pct": 1.57,
+      "chg_pct": -1.57,
       "tp": 169.37191157420983,
       "sl": 177.7520589505268,
-      "tp_dist_pct": 1.41,
-      "sl_dist_pct": -3.46
+      "tp_dist_pct": 1.33,
+      "sl_dist_pct": -3.55
     },
     {
       "strategy": "RSI-Divergence",
@@ -58,13 +58,13 @@
       "symbol": "ADA/USDT",
       "side": "SHORT",
       "entry": 0.256,
-      "current": 0.2539,
-      "pnl_pct": 0.82,
-      "chg_pct": -0.82,
+      "current": 0.2535,
+      "pnl_pct": 0.98,
+      "chg_pct": -0.98,
       "tp": 0.24573528136052025,
       "sl": 0.26241544914967485,
-      "tp_dist_pct": 3.22,
-      "sl_dist_pct": -3.35
+      "tp_dist_pct": 3.06,
+      "sl_dist_pct": -3.52
     },
     {
       "strategy": "HTF-Candle",
@@ -72,13 +72,13 @@
       "symbol": "ALLO/USDT",
       "side": "SHORT",
       "entry": 0.25306,
-      "current": 0.25036,
-      "pnl_pct": 1.07,
-      "chg_pct": -1.07,
+      "current": 0.24984,
+      "pnl_pct": 1.27,
+      "chg_pct": -1.27,
       "tp": 0.24386412378414815,
       "sl": 0.2599569071618889,
-      "tp_dist_pct": 2.59,
-      "sl_dist_pct": -3.83
+      "tp_dist_pct": 2.39,
+      "sl_dist_pct": -4.05
     },
     {
       "strategy": "HTF-Candle",
@@ -86,27 +86,13 @@
       "symbol": "ACE/USDT",
       "side": "LONG",
       "entry": 0.1708,
-      "current": 0.1679,
-      "pnl_pct": -1.7,
-      "chg_pct": -1.7,
+      "current": 0.1686,
+      "pnl_pct": -1.29,
+      "chg_pct": -1.29,
       "tp": 0.17910872104833925,
       "sl": 0.16456845921374558,
-      "tp_dist_pct": 6.68,
-      "sl_dist_pct": -1.98
-    },
-    {
-      "strategy": "VolDiv-Bayes",
-      "strategy_full": "STRAT: Volume Divergence & Bayesian Projection",
-      "symbol": "AERO/USDT",
-      "side": "SHORT",
-      "entry": 0.7991,
-      "current": 0.7871,
-      "pnl_pct": 1.5,
-      "chg_pct": -1.5,
-      "tp": 0.7854443109399618,
-      "sl": 0.8082037927066922,
-      "tp_dist_pct": 0.21,
-      "sl_dist_pct": -2.68
+      "tp_dist_pct": 6.23,
+      "sl_dist_pct": -2.39
     },
     {
       "strategy": "ETH-Gate-15m",
@@ -114,13 +100,13 @@
       "symbol": "ALGO/USDT",
       "side": "SHORT",
       "entry": 0.11635,
-      "current": 0.11616,
-      "pnl_pct": 0.16,
-      "chg_pct": -0.16,
+      "current": 0.11622,
+      "pnl_pct": 0.11,
+      "chg_pct": -0.11,
       "tp": 0.11484650634671556,
       "sl": 0.11747762023996332,
-      "tp_dist_pct": 1.13,
-      "sl_dist_pct": -1.13
+      "tp_dist_pct": 1.18,
+      "sl_dist_pct": -1.08
     },
     {
       "strategy": "HTF-Candle",
@@ -128,13 +114,13 @@
       "symbol": "A/USDT",
       "side": "SHORT",
       "entry": 0.09755,
-      "current": 0.09733,
-      "pnl_pct": 0.23,
-      "chg_pct": -0.23,
+      "current": 0.09713,
+      "pnl_pct": 0.43,
+      "chg_pct": -0.43,
       "tp": 0.0953701041365009,
       "sl": 0.09918492189762432,
-      "tp_dist_pct": 2.01,
-      "sl_dist_pct": -1.91
+      "tp_dist_pct": 1.81,
+      "sl_dist_pct": -2.12
     },
     {
       "strategy": "HMA-Projection",
@@ -142,27 +128,30 @@
       "symbol": "2Z/USDT",
       "side": "SHORT",
       "entry": 0.03829,
-      "current": 0.03843,
-      "pnl_pct": -0.37,
-      "chg_pct": 0.37,
+      "current": 0.03825,
+      "pnl_pct": 0.1,
+      "chg_pct": -0.1,
       "tp": 0.03751385882145966,
       "sl": 0.03891091294283227,
-      "tp_dist_pct": 2.38,
-      "sl_dist_pct": -1.25
+      "tp_dist_pct": 1.92,
+      "sl_dist_pct": -1.73
+    },
+    {
+      "strategy": "VolDiv-Bayes",
+      "strategy_full": "STRAT: Volume Divergence & Bayesian Projection",
+      "symbol": "AERO/USDT",
+      "side": "SHORT",
+      "entry": 0.7872,
+      "current": 0.7872,
+      "pnl_pct": -0.0,
+      "chg_pct": 0.0,
+      "tp": 0.7695233711709952,
+      "sl": 0.7989844192193365,
+      "tp_dist_pct": 2.25,
+      "sl_dist_pct": -1.5
     }
   ],
   "recent_trades": [
-    {
-      "strategy": "RSI-Divergence",
-      "symbol": "ADA/USDT",
-      "result": "WIN",
-      "pnl_pct": 1.419,
-      "entry": 0.264,
-      "exit": 0.260254,
-      "chg_pct": -1.419,
-      "candles": 3,
-      "exit_reason": "tp"
-    },
     {
       "strategy": "HTF-Candle",
       "symbol": "AGLD/USDT",
@@ -261,16 +250,27 @@
       "chg_pct": -2.926,
       "candles": 49,
       "exit_reason": "tp"
+    },
+    {
+      "strategy": "VolDiv-Bayes",
+      "symbol": "AERO/USDT",
+      "result": "WIN",
+      "pnl_pct": 1.709,
+      "entry": 0.7991,
+      "exit": 0.785443,
+      "chg_pct": -1.709,
+      "candles": 29,
+      "exit_reason": "tp"
     }
   ],
   "tuner": {
-    "ts": 1791382716716,
-    "n": 39,
+    "ts": 1791383361679,
+    "n": 40,
     "overall": {
-      "n": 39,
-      "wr": 61.5,
-      "exp": 0.00824,
-      "tot": 0.321
+      "n": 40,
+      "wr": 62.5,
+      "exp": 0.00846,
+      "tot": 0.338
     },
     "sides": {
       "long": {
@@ -281,30 +281,15 @@
         "banned": false
       },
       "short": {
-        "n": 28,
-        "wr": 82.1,
-        "exp": 0.01438,
-        "tot": 0.403,
+        "n": 29,
+        "wr": 82.8,
+        "exp": 0.01448,
+        "tot": 0.42,
         "banned": false
       }
     },
     "problems": [],
-    "actions": [
-      {
-        "action": "widen",
-        "strategy": "Grab-System",
-        "from": [
-          4.0,
-          1.0
-        ],
-        "to": [
-          4.0,
-          2.5
-        ],
-        "tp_pct": 1.36,
-        "sl_pct": 0.85
-      }
-    ],
+    "actions": [],
     "quarantined": [],
     "overrides": 13,
     "rows": [
@@ -362,9 +347,9 @@
         "tot": 0.0,
         "tp": 6.0,
         "sl": 4.5,
-        "ap": 0.339,
+        "ap": 0.338,
         "tp_pct": 2.03,
-        "sl_pct": 1.53,
+        "sl_pct": 1.52,
         "src": "model",
         "quarantined": false
       },
@@ -377,9 +362,9 @@
         "tot": 0.0,
         "tp": 6.0,
         "sl": 4.5,
-        "ap": 0.339,
+        "ap": 0.338,
         "tp_pct": 2.03,
-        "sl_pct": 1.53,
+        "sl_pct": 1.52,
         "src": "model",
         "quarantined": false
       },
@@ -407,9 +392,9 @@
         "tot": 0.0,
         "tp": 6.0,
         "sl": 4.5,
-        "ap": 0.339,
+        "ap": 0.338,
         "tp_pct": 2.03,
-        "sl_pct": 1.53,
+        "sl_pct": 1.52,
         "src": "model",
         "quarantined": false
       },
@@ -461,10 +446,10 @@
       {
         "uid": "conv_rPOx1NRY",
         "name": "VolDiv-Bayes",
-        "n": 5,
-        "wr": 60.0,
-        "exp": 0.00807,
-        "tot": 0.04,
+        "n": 6,
+        "wr": 66.7,
+        "exp": 0.00958,
+        "tot": 0.057,
         "tp": 6.0,
         "sl": 4.0,
         "ap": 0.285,
@@ -482,10 +467,10 @@
         "tot": 0.0,
         "tp": 4.0,
         "sl": 2.5,
-        "ap": 0.339,
-        "tp_pct": 1.36,
-        "sl_pct": 0.85,
-        "src": "widen",
+        "ap": 0.338,
+        "tp_pct": 1.35,
+        "sl_pct": 0.84,
+        "src": "model",
         "quarantined": false
       },
       {
@@ -497,9 +482,9 @@
         "tot": 0.0,
         "tp": 6.0,
         "sl": 4.5,
-        "ap": 0.339,
+        "ap": 0.338,
         "tp_pct": 2.03,
-        "sl_pct": 1.53,
+        "sl_pct": 1.52,
         "src": "model",
         "quarantined": false
       }
