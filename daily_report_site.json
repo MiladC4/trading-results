@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-08 19:43 UTC",
+  "date": "2026-10-08 19:44 UTC",
   "cash": 9040.65,
   "equity": 10045.75,
   "pnl": 45.75,
@@ -142,13 +142,13 @@
       "symbol": "AAVE/USDT",
       "side": "SHORT",
       "entry": 164.51,
-      "current": 165.4,
-      "pnl_pct": -0.54,
-      "chg_pct": 0.54,
+      "current": 165.24,
+      "pnl_pct": -0.44,
+      "chg_pct": 0.44,
       "tp": 160.91766796144194,
       "sl": 166.90488802570536,
-      "tp_dist_pct": 2.71,
-      "sl_dist_pct": -0.91
+      "tp_dist_pct": 2.62,
+      "sl_dist_pct": -1.01
     }
   ],
   "recent_trades": [
