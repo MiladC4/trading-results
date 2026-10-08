@@ -1,14 +1,14 @@
 {
-  "date": "2026-10-08 05:39 UTC",
-  "cash": 9017.65,
-  "equity": 10023.58,
-  "pnl": 23.58,
-  "pnl_pct": 0.24,
-  "open_positions": 10,
-  "closed_trades": 74,
-  "win_rate": 51.4,
-  "avg_win": 2.165,
-  "avg_loss": -1.355,
+  "date": "2026-10-08 06:12 UTC",
+  "cash": 9417.25,
+  "equity": 10018.5,
+  "pnl": 18.5,
+  "pnl_pct": 0.18,
+  "open_positions": 6,
+  "closed_trades": 51,
+  "win_rate": 51.0,
+  "avg_win": 1.887,
+  "avg_loss": -1.191,
   "positions": [
     {
       "strategy": "VolDiv-Bayes",
@@ -37,48 +37,6 @@
       "sl": 0.26241544914967485,
       "tp_dist_pct": 3.48,
       "sl_dist_pct": -3.07
-    },
-    {
-      "strategy": "HTF-Candle",
-      "strategy_full": "HTF Candle Direction Strategy V1",
-      "symbol": "ALLO/USDT",
-      "side": "SHORT",
-      "entry": 0.25306,
-      "current": 0.25835,
-      "pnl_pct": -2.09,
-      "chg_pct": 2.09,
-      "tp": 0.24386412378414815,
-      "sl": 0.2599569071618889,
-      "tp_dist_pct": 5.61,
-      "sl_dist_pct": -0.62
-    },
-    {
-      "strategy": "Divergence-Scanner",
-      "strategy_full": "STRAT: Divergence Scanner - Multi-Oscillator Confirmation [Dots3Red]",
-      "symbol": "ACE/USDT",
-      "side": "SHORT",
-      "entry": 0.1866,
-      "current": 0.1857,
-      "pnl_pct": 0.48,
-      "chg_pct": -0.48,
-      "tp": 0.16470465640604237,
-      "sl": 0.2030215076954682,
-      "tp_dist_pct": 11.31,
-      "sl_dist_pct": -9.33
-    },
-    {
-      "strategy": "Divergence-Scanner",
-      "strategy_full": "STRAT: Divergence Scanner - Multi-Oscillator Confirmation [Dots3Red]",
-      "symbol": "AB/USDT",
-      "side": "SHORT",
-      "entry": 0.000563,
-      "current": 0.000576,
-      "pnl_pct": -2.31,
-      "chg_pct": 2.31,
-      "tp": 0.0005410384107258243,
-      "sl": 0.0005794711919556318,
-      "tp_dist_pct": 6.07,
-      "sl_dist_pct": -0.6
     },
     {
       "strategy": "HTF-Candle",
@@ -135,32 +93,40 @@
       "sl": 0.7999675193255945,
       "tp_dist_pct": 2.21,
       "sl_dist_pct": -2.13
-    },
-    {
-      "strategy": "MoM-Levels",
-      "strategy_full": "STRAT: MoM LEVELS",
-      "symbol": "AGLD/USDT",
-      "side": "SHORT",
-      "entry": 0.1955,
-      "current": 0.1978,
-      "pnl_pct": -1.18,
-      "chg_pct": 1.18,
-      "tp": 0.19220445077920514,
-      "sl": 0.1981364393766359,
-      "tp_dist_pct": 2.83,
-      "sl_dist_pct": -0.17
     }
   ],
   "recent_trades": [
     {
-      "strategy": "ETH-Gate-15m",
-      "symbol": "ACE/USDT",
+      "strategy": "VolDiv-Bayes",
+      "symbol": "A/USDT",
+      "result": "WIN",
+      "pnl_pct": 1.208,
+      "entry": 0.09779,
+      "exit": 0.098971,
+      "chg_pct": 1.208,
+      "candles": 18,
+      "exit_reason": "tp"
+    },
+    {
+      "strategy": "HTF-Candle",
+      "symbol": "2Z/USDT",
+      "result": "WIN",
+      "pnl_pct": 1.242,
+      "entry": 0.03903,
+      "exit": 0.039515,
+      "chg_pct": 1.242,
+      "candles": 6,
+      "exit_reason": "tp"
+    },
+    {
+      "strategy": "HMA-Projection",
+      "symbol": "ALGO/USDT",
       "result": "LOSS",
-      "pnl_pct": -3.639,
-      "entry": 0.1938,
-      "exit": 0.186748,
-      "chg_pct": -3.639,
-      "candles": 13,
+      "pnl_pct": -0.832,
+      "entry": 0.11932,
+      "exit": 0.118327,
+      "chg_pct": -0.832,
+      "candles": 17,
       "exit_reason": "sl"
     },
     {
@@ -197,17 +163,6 @@
       "exit_reason": "sl"
     },
     {
-      "strategy": "HTF-Candle",
-      "symbol": "AB/USDT",
-      "result": "LOSS",
-      "pnl_pct": -1.564,
-      "entry": 0.000575,
-      "exit": 0.000566,
-      "chg_pct": -1.564,
-      "candles": 44,
-      "exit_reason": "sl"
-    },
-    {
       "strategy": "HMA-Projection",
       "symbol": "1INCH/USDT",
       "result": "WIN",
@@ -216,17 +171,6 @@
       "exit": 0.097126,
       "chg_pct": -2.971,
       "candles": 314,
-      "exit_reason": "tp"
-    },
-    {
-      "strategy": "Divergence-Scanner",
-      "symbol": "AGLD/USDT",
-      "result": "WIN",
-      "pnl_pct": 1.999,
-      "entry": 0.1981,
-      "exit": 0.19414,
-      "chg_pct": -1.999,
-      "candles": 28,
       "exit_reason": "tp"
     },
     {
