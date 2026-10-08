@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-08 03:34 UTC",
+  "date": "2026-10-08 03:58 UTC",
   "cash": 9012.94,
-  "equity": 10012.47,
-  "pnl": 12.47,
+  "equity": 10011.52,
+  "pnl": 11.52,
   "pnl_pct": 0.12,
   "open_positions": 10,
   "closed_trades": 68,
@@ -30,13 +30,13 @@
       "symbol": "AAVE/USDT",
       "side": "SHORT",
       "entry": 174.4,
-      "current": 174.74,
-      "pnl_pct": -0.19,
-      "chg_pct": 0.19,
+      "current": 173.86,
+      "pnl_pct": 0.31,
+      "chg_pct": -0.31,
       "tp": 169.37191157420983,
       "sl": 177.7520589505268,
-      "tp_dist_pct": 3.07,
-      "sl_dist_pct": -1.72
+      "tp_dist_pct": 2.58,
+      "sl_dist_pct": -2.24
     },
     {
       "strategy": "RSI-Divergence",
@@ -44,13 +44,13 @@
       "symbol": "ADA/USDT",
       "side": "SHORT",
       "entry": 0.256,
-      "current": 0.2545,
-      "pnl_pct": 0.59,
-      "chg_pct": -0.59,
+      "current": 0.2542,
+      "pnl_pct": 0.7,
+      "chg_pct": -0.7,
       "tp": 0.24573528136052025,
       "sl": 0.26241544914967485,
-      "tp_dist_pct": 3.44,
-      "sl_dist_pct": -3.11
+      "tp_dist_pct": 3.33,
+      "sl_dist_pct": -3.23
     },
     {
       "strategy": "HTF-Candle",
@@ -58,13 +58,13 @@
       "symbol": "ALLO/USDT",
       "side": "SHORT",
       "entry": 0.25306,
-      "current": 0.25614,
-      "pnl_pct": -1.22,
-      "chg_pct": 1.22,
+      "current": 0.25635,
+      "pnl_pct": -1.3,
+      "chg_pct": 1.3,
       "tp": 0.24386412378414815,
       "sl": 0.2599569071618889,
-      "tp_dist_pct": 4.79,
-      "sl_dist_pct": -1.49
+      "tp_dist_pct": 4.87,
+      "sl_dist_pct": -1.41
     },
     {
       "strategy": "HTF-Candle",
@@ -72,13 +72,13 @@
       "symbol": "AB/USDT",
       "side": "LONG",
       "entry": 0.000575,
-      "current": 0.000568,
-      "pnl_pct": -1.22,
-      "chg_pct": -1.22,
+      "current": 0.000573,
+      "pnl_pct": -0.35,
+      "chg_pct": -0.35,
       "tp": 0.0005869908227352929,
       "sl": 0.0005660068829485303,
-      "tp_dist_pct": 3.34,
-      "sl_dist_pct": -0.35
+      "tp_dist_pct": 2.44,
+      "sl_dist_pct": -1.22
     },
     {
       "strategy": "Divergence-Scanner",
@@ -86,13 +86,13 @@
       "symbol": "AGLD/USDT",
       "side": "SHORT",
       "entry": 0.1981,
-      "current": 0.1975,
-      "pnl_pct": 0.3,
-      "chg_pct": -0.3,
+      "current": 0.197,
+      "pnl_pct": 0.56,
+      "chg_pct": -0.56,
       "tp": 0.1941401527003887,
       "sl": 0.20106988547470847,
-      "tp_dist_pct": 1.7,
-      "sl_dist_pct": -1.81
+      "tp_dist_pct": 1.45,
+      "sl_dist_pct": -2.07
     },
     {
       "strategy": "Divergence-Scanner",
@@ -100,13 +100,13 @@
       "symbol": "ACE/USDT",
       "side": "SHORT",
       "entry": 0.1866,
-      "current": 0.1929,
-      "pnl_pct": -3.38,
-      "chg_pct": 3.38,
+      "current": 0.1914,
+      "pnl_pct": -2.57,
+      "chg_pct": 2.57,
       "tp": 0.16470465640604237,
       "sl": 0.2030215076954682,
-      "tp_dist_pct": 14.62,
-      "sl_dist_pct": -5.25
+      "tp_dist_pct": 13.95,
+      "sl_dist_pct": -6.07
     },
     {
       "strategy": "ETH-Gate-15m",
@@ -114,13 +114,13 @@
       "symbol": "ALGO/USDT",
       "side": "LONG",
       "entry": 0.11859,
-      "current": 0.11865,
-      "pnl_pct": 0.05,
-      "chg_pct": 0.05,
+      "current": 0.11852,
+      "pnl_pct": -0.06,
+      "chg_pct": -0.06,
       "tp": 0.12007495221750474,
       "sl": 0.11747628583687146,
-      "tp_dist_pct": 1.2,
-      "sl_dist_pct": -0.99
+      "tp_dist_pct": 1.31,
+      "sl_dist_pct": -0.88
     },
     {
       "strategy": "RSI-Divergence",
@@ -128,13 +128,13 @@
       "symbol": "2Z/USDT",
       "side": "SHORT",
       "entry": 0.03934,
-      "current": 0.0391,
-      "pnl_pct": 0.61,
-      "chg_pct": -0.61,
+      "current": 0.03905,
+      "pnl_pct": 0.74,
+      "chg_pct": -0.74,
       "tp": 0.03852249576295231,
       "sl": 0.03985094014815481,
-      "tp_dist_pct": 1.48,
-      "sl_dist_pct": -1.92
+      "tp_dist_pct": 1.35,
+      "sl_dist_pct": -2.05
     },
     {
       "strategy": "MoM-Levels",
@@ -142,13 +142,13 @@
       "symbol": "A/USDT",
       "side": "SHORT",
       "entry": 0.09787,
-      "current": 0.09787,
-      "pnl_pct": -0.0,
-      "chg_pct": 0.0,
+      "current": 0.09789,
+      "pnl_pct": -0.02,
+      "chg_pct": 0.02,
       "tp": 0.09653047543156028,
       "sl": 0.09894161965475178,
-      "tp_dist_pct": 1.37,
-      "sl_dist_pct": -1.09
+      "tp_dist_pct": 1.39,
+      "sl_dist_pct": -1.07
     }
   ],
   "recent_trades": [
@@ -264,7 +264,7 @@
     }
   ],
   "tuner": {
-    "ts": 1791430433313,
+    "ts": 1791431922633,
     "n": 68,
     "overall": {
       "n": 68,
