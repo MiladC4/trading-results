@@ -1,9 +1,9 @@
 {
-  "date": "2026-10-09 21:43 UTC",
+  "date": "2026-10-09 21:49 UTC",
   "cash": 9000.72,
-  "equity": 10000.53,
-  "pnl": 0.53,
-  "pnl_pct": 0.01,
+  "equity": 10001.67,
+  "pnl": 1.67,
+  "pnl_pct": 0.02,
   "open_positions": 10,
   "closed_trades": 175,
   "win_rate": 43.4,
@@ -16,13 +16,13 @@
       "symbol": "ADA/USDT",
       "side": "SHORT",
       "entry": 0.2351,
-      "current": 0.2406,
-      "pnl_pct": -2.34,
-      "chg_pct": 2.34,
+      "current": 0.2407,
+      "pnl_pct": -2.38,
+      "chg_pct": 2.38,
       "tp": 0.22335769808067768,
       "sl": 0.24390672643949174,
-      "tp_dist_pct": 7.17,
-      "sl_dist_pct": -1.37
+      "tp_dist_pct": 7.2,
+      "sl_dist_pct": -1.33
     },
     {
       "strategy": "Divergence-Scanner",
@@ -30,13 +30,13 @@
       "symbol": "AR/USDT",
       "side": "SHORT",
       "entry": 4.076,
-      "current": 4.068,
-      "pnl_pct": 0.2,
-      "chg_pct": -0.2,
+      "current": 4.075,
+      "pnl_pct": 0.02,
+      "chg_pct": -0.02,
       "tp": 3.980125829111736,
       "sl": 4.147905628166197,
-      "tp_dist_pct": 2.16,
-      "sl_dist_pct": -1.96
+      "tp_dist_pct": 2.33,
+      "sl_dist_pct": -1.79
     },
     {
       "strategy": "TJR-v4",
@@ -72,13 +72,13 @@
       "symbol": "AAVE/USDT",
       "side": "SHORT",
       "entry": 168.51,
-      "current": 168.38,
-      "pnl_pct": 0.08,
-      "chg_pct": -0.08,
+      "current": 168.07,
+      "pnl_pct": 0.26,
+      "chg_pct": -0.26,
       "tp": 166.23246515311527,
       "sl": 170.33202787750776,
-      "tp_dist_pct": 1.28,
-      "sl_dist_pct": -1.16
+      "tp_dist_pct": 1.09,
+      "sl_dist_pct": -1.35
     },
     {
       "strategy": "RSI-Divergence",
@@ -86,13 +86,13 @@
       "symbol": "APT/USDT",
       "side": "SHORT",
       "entry": 0.8164,
-      "current": 0.8084,
-      "pnl_pct": 0.98,
-      "chg_pct": -0.98,
+      "current": 0.8104,
+      "pnl_pct": 0.73,
+      "chg_pct": -0.73,
       "tp": 0.8001053822530606,
       "sl": 0.8265841360918371,
-      "tp_dist_pct": 1.03,
-      "sl_dist_pct": -2.25
+      "tp_dist_pct": 1.27,
+      "sl_dist_pct": -2.0
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -100,13 +100,13 @@
       "symbol": "A/USDT",
       "side": "SHORT",
       "entry": 0.10458,
-      "current": 0.10376,
-      "pnl_pct": 0.78,
-      "chg_pct": -0.78,
+      "current": 0.10377,
+      "pnl_pct": 0.77,
+      "chg_pct": -0.77,
       "tp": 0.10299276755067471,
       "sl": 0.10563815496621687,
-      "tp_dist_pct": 0.74,
-      "sl_dist_pct": -1.81
+      "tp_dist_pct": 0.75,
+      "sl_dist_pct": -1.8
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -114,13 +114,13 @@
       "symbol": "AERO/USDT",
       "side": "SHORT",
       "entry": 0.8034,
-      "current": 0.801,
-      "pnl_pct": 0.3,
-      "chg_pct": -0.3,
+      "current": 0.8019,
+      "pnl_pct": 0.19,
+      "chg_pct": -0.19,
       "tp": 0.7967276267653793,
       "sl": 0.8078482488230804,
-      "tp_dist_pct": 0.53,
-      "sl_dist_pct": -0.85
+      "tp_dist_pct": 0.65,
+      "sl_dist_pct": -0.74
     },
     {
       "strategy": "RSI-Divergence",
@@ -128,13 +128,13 @@
       "symbol": "ALGO/USDT",
       "side": "SHORT",
       "entry": 0.11343,
-      "current": 0.11352,
-      "pnl_pct": -0.08,
-      "chg_pct": 0.08,
+      "current": 0.11368,
+      "pnl_pct": -0.22,
+      "chg_pct": 0.22,
       "tp": 0.11176895729267763,
       "sl": 0.11446815169207648,
-      "tp_dist_pct": 1.54,
-      "sl_dist_pct": -0.84
+      "tp_dist_pct": 1.68,
+      "sl_dist_pct": -0.69
     },
     {
       "strategy": "RSI-Divergence",
@@ -142,13 +142,13 @@
       "symbol": "APE/USDT",
       "side": "SHORT",
       "entry": 0.1479,
-      "current": 0.1486,
-      "pnl_pct": -0.47,
-      "chg_pct": 0.47,
+      "current": 0.1495,
+      "pnl_pct": -1.08,
+      "chg_pct": 1.08,
       "tp": 0.145560256472159,
       "sl": 0.14936233970490062,
-      "tp_dist_pct": 2.05,
-      "sl_dist_pct": -0.51
+      "tp_dist_pct": 2.64,
+      "sl_dist_pct": 0.09
     }
   ],
   "recent_trades": [
@@ -264,7 +264,7 @@
     }
   ],
   "tuner": {
-    "ts": 1791582205215,
+    "ts": 1791582539460,
     "n": 175,
     "overall": {
       "n": 175,
