@@ -1,9 +1,9 @@
 {
-  "date": "2026-10-09 17:24 UTC",
+  "date": "2026-10-09 17:34 UTC",
   "cash": 9005.46,
-  "equity": 10006.02,
-  "pnl": 6.02,
-  "pnl_pct": 0.06,
+  "equity": 10007.54,
+  "pnl": 7.54,
+  "pnl_pct": 0.08,
   "open_positions": 10,
   "closed_trades": 160,
   "win_rate": 44.4,
@@ -16,13 +16,13 @@
       "symbol": "ADA/USDT",
       "side": "SHORT",
       "entry": 0.2351,
-      "current": 0.2376,
-      "pnl_pct": -1.06,
-      "chg_pct": 1.06,
+      "current": 0.238,
+      "pnl_pct": -1.23,
+      "chg_pct": 1.23,
       "tp": 0.22335769808067768,
       "sl": 0.24390672643949174,
-      "tp_dist_pct": 5.99,
-      "sl_dist_pct": -2.65
+      "tp_dist_pct": 6.15,
+      "sl_dist_pct": -2.48
     },
     {
       "strategy": "Divergence-Scanner",
@@ -44,13 +44,13 @@
       "symbol": "2Z/USDT",
       "side": "SHORT",
       "entry": 0.03604,
-      "current": 0.03615,
-      "pnl_pct": -0.31,
-      "chg_pct": 0.31,
+      "current": 0.03622,
+      "pnl_pct": -0.5,
+      "chg_pct": 0.5,
       "tp": 0.03558144108723052,
       "sl": 0.03638391918457711,
-      "tp_dist_pct": 1.57,
-      "sl_dist_pct": -0.65
+      "tp_dist_pct": 1.76,
+      "sl_dist_pct": -0.45
     },
     {
       "strategy": "Divergence-Scanner",
@@ -58,13 +58,13 @@
       "symbol": "A/USDT",
       "side": "SHORT",
       "entry": 0.09941,
-      "current": 0.10034,
-      "pnl_pct": -0.94,
-      "chg_pct": 0.94,
+      "current": 0.10068,
+      "pnl_pct": -1.28,
+      "chg_pct": 1.28,
       "tp": 0.09660747194551483,
       "sl": 0.10151189604086387,
-      "tp_dist_pct": 3.72,
-      "sl_dist_pct": -1.17
+      "tp_dist_pct": 4.05,
+      "sl_dist_pct": -0.83
     },
     {
       "strategy": "RSI-Divergence",
@@ -86,13 +86,13 @@
       "symbol": "1INCH/USDT",
       "side": "SHORT",
       "entry": 0.0969,
-      "current": 0.097,
-      "pnl_pct": -0.1,
-      "chg_pct": 0.1,
+      "current": 0.0974,
+      "pnl_pct": -0.52,
+      "chg_pct": 0.52,
       "tp": 0.09571569968323619,
       "sl": 0.09778822523757286,
-      "tp_dist_pct": 1.32,
-      "sl_dist_pct": -0.81
+      "tp_dist_pct": 1.73,
+      "sl_dist_pct": -0.4
     },
     {
       "strategy": "RSI-Divergence",
@@ -100,13 +100,13 @@
       "symbol": "APT/USDT",
       "side": "SHORT",
       "entry": 0.811,
-      "current": 0.8055,
-      "pnl_pct": 0.68,
-      "chg_pct": -0.68,
+      "current": 0.8085,
+      "pnl_pct": 0.31,
+      "chg_pct": -0.31,
       "tp": 0.7932857283922427,
       "sl": 0.8220714197548484,
-      "tp_dist_pct": 1.52,
-      "sl_dist_pct": -2.06
+      "tp_dist_pct": 1.88,
+      "sl_dist_pct": -1.68
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -128,13 +128,13 @@
       "symbol": "AERO/USDT",
       "side": "SHORT",
       "entry": 0.8046,
-      "current": 0.8046,
-      "pnl_pct": -0.0,
-      "chg_pct": 0.0,
+      "current": 0.8052,
+      "pnl_pct": -0.07,
+      "chg_pct": 0.07,
       "tp": 0.7939295049131123,
       "sl": 0.8112690594293048,
-      "tp_dist_pct": 1.33,
-      "sl_dist_pct": -0.83
+      "tp_dist_pct": 1.4,
+      "sl_dist_pct": -0.75
     },
     {
       "strategy": "RSI-Divergence",
@@ -142,13 +142,13 @@
       "symbol": "ALGO/USDT",
       "side": "SHORT",
       "entry": 0.11431,
-      "current": 0.11431,
-      "pnl_pct": -0.0,
-      "chg_pct": 0.0,
+      "current": 0.11427,
+      "pnl_pct": 0.03,
+      "chg_pct": -0.03,
       "tp": 0.11249772281693939,
       "sl": 0.11544267323941287,
-      "tp_dist_pct": 1.59,
-      "sl_dist_pct": -0.99
+      "tp_dist_pct": 1.55,
+      "sl_dist_pct": -1.03
     }
   ],
   "recent_trades": [
@@ -264,7 +264,7 @@
     }
   ],
   "tuner": {
-    "ts": 1791566645045,
+    "ts": 1791567258180,
     "n": 160,
     "overall": {
       "n": 160,
@@ -288,25 +288,8 @@
         "banned": false
       }
     },
-    "problems": [
-      {
-        "kind": "side",
-        "side": "long",
-        "n": 23,
-        "wr": 21.7,
-        "exp": -0.00635,
-        "msg": "long side losing money"
-      }
-    ],
-    "actions": [
-      {
-        "action": "ban_side",
-        "side": "long",
-        "n": 23,
-        "wr": 21.7,
-        "exp": -0.00635
-      }
-    ],
+    "problems": [],
+    "actions": [],
     "quarantined": [
       "HTF-Candle",
       "TH-DualMode",
