@@ -1,14 +1,14 @@
 {
-  "date": "2026-10-09 16:59 UTC",
-  "cash": 9002.7,
-  "equity": 10003.19,
-  "pnl": 3.19,
-  "pnl_pct": 0.03,
+  "date": "2026-10-09 17:09 UTC",
+  "cash": 9001.52,
+  "equity": 10001.05,
+  "pnl": 1.05,
+  "pnl_pct": 0.01,
   "open_positions": 10,
-  "closed_trades": 157,
-  "win_rate": 43.9,
+  "closed_trades": 158,
+  "win_rate": 43.7,
   "avg_win": 2.086,
-  "avg_loss": -1.336,
+  "avg_loss": -1.332,
   "positions": [
     {
       "strategy": "Divergence-Scanner",
@@ -16,13 +16,13 @@
       "symbol": "ADA/USDT",
       "side": "SHORT",
       "entry": 0.2351,
-      "current": 0.2381,
-      "pnl_pct": -1.28,
-      "chg_pct": 1.28,
+      "current": 0.238,
+      "pnl_pct": -1.23,
+      "chg_pct": 1.23,
       "tp": 0.22335769808067768,
       "sl": 0.24390672643949174,
-      "tp_dist_pct": 6.19,
-      "sl_dist_pct": -2.44
+      "tp_dist_pct": 6.15,
+      "sl_dist_pct": -2.48
     },
     {
       "strategy": "Po3-Minimal",
@@ -30,13 +30,13 @@
       "symbol": "ALGO/USDT",
       "side": "SHORT",
       "entry": 0.11887,
-      "current": 0.11641,
-      "pnl_pct": 2.07,
-      "chg_pct": -2.07,
+      "current": 0.11595,
+      "pnl_pct": 2.46,
+      "chg_pct": -2.46,
       "tp": 0.11558090575971008,
       "sl": 0.12133682068021744,
-      "tp_dist_pct": 0.71,
-      "sl_dist_pct": -4.23
+      "tp_dist_pct": 0.32,
+      "sl_dist_pct": -4.65
     },
     {
       "strategy": "Divergence-Scanner",
@@ -44,13 +44,13 @@
       "symbol": "AR/USDT",
       "side": "SHORT",
       "entry": 4.076,
-      "current": 4.119,
-      "pnl_pct": -1.05,
-      "chg_pct": 1.05,
+      "current": 4.118,
+      "pnl_pct": -1.03,
+      "chg_pct": 1.03,
       "tp": 3.980125829111736,
       "sl": 4.147905628166197,
-      "tp_dist_pct": 3.37,
-      "sl_dist_pct": -0.7
+      "tp_dist_pct": 3.35,
+      "sl_dist_pct": -0.73
     },
     {
       "strategy": "TJR-v4",
@@ -58,13 +58,13 @@
       "symbol": "2Z/USDT",
       "side": "SHORT",
       "entry": 0.03604,
-      "current": 0.03612,
-      "pnl_pct": -0.22,
-      "chg_pct": 0.22,
+      "current": 0.03613,
+      "pnl_pct": -0.25,
+      "chg_pct": 0.25,
       "tp": 0.03558144108723052,
       "sl": 0.03638391918457711,
-      "tp_dist_pct": 1.49,
-      "sl_dist_pct": -0.73
+      "tp_dist_pct": 1.52,
+      "sl_dist_pct": -0.7
     },
     {
       "strategy": "Divergence-Scanner",
@@ -72,13 +72,13 @@
       "symbol": "A/USDT",
       "side": "SHORT",
       "entry": 0.09941,
-      "current": 0.10057,
-      "pnl_pct": -1.17,
-      "chg_pct": 1.17,
+      "current": 0.10086,
+      "pnl_pct": -1.46,
+      "chg_pct": 1.46,
       "tp": 0.09660747194551483,
       "sl": 0.10151189604086387,
-      "tp_dist_pct": 3.94,
-      "sl_dist_pct": -0.94
+      "tp_dist_pct": 4.22,
+      "sl_dist_pct": -0.65
     },
     {
       "strategy": "Swing-OrderBlock",
@@ -86,13 +86,13 @@
       "symbol": "AERO/USDT",
       "side": "SHORT",
       "entry": 0.8177,
-      "current": 0.8122,
-      "pnl_pct": 0.67,
-      "chg_pct": -0.67,
+      "current": 0.8121,
+      "pnl_pct": 0.68,
+      "chg_pct": -0.68,
       "tp": 0.8048049186774885,
       "sl": 0.8273713109918835,
-      "tp_dist_pct": 0.91,
-      "sl_dist_pct": -1.87
+      "tp_dist_pct": 0.9,
+      "sl_dist_pct": -1.88
     },
     {
       "strategy": "RSI-Divergence",
@@ -100,27 +100,13 @@
       "symbol": "AAVE/USDT",
       "side": "SHORT",
       "entry": 170.65,
-      "current": 170.47,
-      "pnl_pct": 0.11,
-      "chg_pct": -0.11,
+      "current": 170.13,
+      "pnl_pct": 0.3,
+      "chg_pct": -0.3,
       "tp": 168.00041306334467,
       "sl": 172.3059918354096,
-      "tp_dist_pct": 1.45,
-      "sl_dist_pct": -1.08
-    },
-    {
-      "strategy": "Swing-OrderBlock",
-      "strategy_full": "STRAT: Swing H/L + Multi TF Order Blocks",
-      "symbol": "APE/USDT",
-      "side": "SHORT",
-      "entry": 0.1424,
-      "current": 0.1435,
-      "pnl_pct": -0.77,
-      "chg_pct": 0.77,
-      "tp": 0.14055462193498036,
-      "sl": 0.14378403354876473,
-      "tp_dist_pct": 2.05,
-      "sl_dist_pct": -0.2
+      "tp_dist_pct": 1.25,
+      "sl_dist_pct": -1.28
     },
     {
       "strategy": "Swing-OrderBlock",
@@ -142,27 +128,30 @@
       "symbol": "APT/USDT",
       "side": "SHORT",
       "entry": 0.811,
-      "current": 0.8081,
-      "pnl_pct": 0.36,
-      "chg_pct": -0.36,
+      "current": 0.8093,
+      "pnl_pct": 0.21,
+      "chg_pct": -0.21,
       "tp": 0.7932857283922427,
       "sl": 0.8220714197548484,
-      "tp_dist_pct": 1.83,
-      "sl_dist_pct": -1.73
+      "tp_dist_pct": 1.98,
+      "sl_dist_pct": -1.58
+    },
+    {
+      "strategy": "VolDiv-Bayes",
+      "strategy_full": "STRAT: Volume Divergence & Bayesian Projection",
+      "symbol": "ARB/USDT",
+      "side": "SHORT",
+      "entry": 0.181,
+      "current": 0.181,
+      "pnl_pct": -0.0,
+      "chg_pct": 0.0,
+      "tp": 0.17814034764030706,
+      "sl": 0.18290643490646197,
+      "tp_dist_pct": 1.58,
+      "sl_dist_pct": -1.05
     }
   ],
   "recent_trades": [
-    {
-      "strategy": "RSI-Divergence",
-      "symbol": "AERO/USDT",
-      "result": "WIN",
-      "pnl_pct": 0.838,
-      "entry": 0.8049,
-      "exit": 0.798155,
-      "chg_pct": -0.838,
-      "candles": 7,
-      "exit_reason": "tp"
-    },
     {
       "strategy": "RSI-Divergence",
       "symbol": "2Z/USDT",
@@ -261,16 +250,27 @@
       "chg_pct": 1.395,
       "candles": 31,
       "exit_reason": "sl"
+    },
+    {
+      "strategy": "Swing-OrderBlock",
+      "symbol": "APE/USDT",
+      "result": "LOSS",
+      "pnl_pct": -0.972,
+      "entry": 0.1424,
+      "exit": 0.143784,
+      "chg_pct": 0.972,
+      "candles": 16,
+      "exit_reason": "sl"
     }
   ],
   "tuner": {
-    "ts": 1791565139411,
-    "n": 157,
+    "ts": 1791565749722,
+    "n": 158,
     "overall": {
-      "n": 157,
-      "wr": 43.9,
-      "exp": 0.00168,
-      "tot": 0.263
+      "n": 158,
+      "wr": 43.7,
+      "exp": 0.0016,
+      "tot": 0.254
     },
     "sides": {
       "long": {
@@ -281,10 +281,10 @@
         "banned": true
       },
       "short": {
-        "n": 134,
-        "wr": 47.8,
-        "exp": 0.00306,
-        "tot": 0.409,
+        "n": 135,
+        "wr": 47.4,
+        "exp": 0.00296,
+        "tot": 0.4,
         "banned": false
       }
     },
@@ -360,15 +360,15 @@
       {
         "uid": "conv_MIo9AUAs",
         "name": "Swing-OrderBlock",
-        "n": 5,
-        "wr": 40.0,
-        "exp": -0.00703,
-        "tot": -0.035,
+        "n": 6,
+        "wr": 33.3,
+        "exp": -0.00748,
+        "tot": -0.045,
         "tp": 6.0,
         "sl": 4.5,
-        "ap": 0.319,
-        "tp_pct": 1.91,
-        "sl_pct": 1.44,
+        "ap": 0.302,
+        "tp_pct": 1.81,
+        "sl_pct": 1.36,
         "src": "model",
         "quarantined": false
       },
