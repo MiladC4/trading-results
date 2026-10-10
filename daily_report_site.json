@@ -1,9 +1,9 @@
 {
-  "date": "2026-10-10 11:18 UTC",
+  "date": "2026-10-10 11:24 UTC",
   "cash": 9671.52,
-  "equity": 9970.47,
-  "pnl": -29.53,
-  "pnl_pct": -0.3,
+  "equity": 9970.53,
+  "pnl": -29.47,
+  "pnl_pct": -0.29,
   "open_positions": 3,
   "closed_trades": 215,
   "win_rate": 39.1,
@@ -16,13 +16,13 @@
       "symbol": "ADA/USDT",
       "side": "SHORT",
       "entry": 0.2544,
-      "current": 0.2549,
-      "pnl_pct": -0.2,
-      "chg_pct": 0.2,
+      "current": 0.2546,
+      "pnl_pct": -0.08,
+      "chg_pct": 0.08,
       "tp": 0.24933588414116997,
       "sl": 0.25819808689412255,
-      "tp_dist_pct": 2.18,
-      "sl_dist_pct": -1.29
+      "tp_dist_pct": 2.07,
+      "sl_dist_pct": -1.41
     },
     {
       "strategy": "RSI-Divergence",
@@ -30,13 +30,13 @@
       "symbol": "1INCH/USDT",
       "side": "SHORT",
       "entry": 0.098,
-      "current": 0.0977,
-      "pnl_pct": 0.31,
-      "chg_pct": -0.31,
+      "current": 0.0979,
+      "pnl_pct": 0.1,
+      "chg_pct": -0.1,
       "tp": 0.09719996614924248,
       "sl": 0.09850002115672346,
-      "tp_dist_pct": 0.51,
-      "sl_dist_pct": -0.82
+      "tp_dist_pct": 0.72,
+      "sl_dist_pct": -0.61
     },
     {
       "strategy": "RSI-Divergence",
@@ -44,13 +44,13 @@
       "symbol": "AAVE/USDT",
       "side": "LONG",
       "entry": 173.83,
-      "current": 172.71,
-      "pnl_pct": -0.64,
-      "chg_pct": -0.64,
+      "current": 172.67,
+      "pnl_pct": -0.67,
+      "chg_pct": -0.67,
       "tp": 176.7721860188696,
       "sl": 171.9911337382065,
-      "tp_dist_pct": 2.35,
-      "sl_dist_pct": -0.42
+      "tp_dist_pct": 2.38,
+      "sl_dist_pct": -0.39
     }
   ],
   "recent_trades": [
@@ -166,7 +166,7 @@
     }
   ],
   "tuner": {
-    "ts": 1791631095600,
+    "ts": 1791631467801,
     "n": 215,
     "overall": {
       "n": 215,
@@ -198,8 +198,7 @@
       "Swing-OrderBlock",
       "HMA-Projection",
       "Divergence-Scanner",
-      "MoM-Levels",
-      "TJR-v4"
+      "MoM-Levels"
     ],
     "overrides": 13,
     "rows": [
@@ -381,7 +380,7 @@
         "tp_pct": 1.5,
         "sl_pct": 1.12,
         "src": "model",
-        "quarantined": true
+        "quarantined": false
       }
     ]
   }
