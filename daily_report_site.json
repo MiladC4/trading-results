@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-10 09:23 UTC",
+  "date": "2026-10-10 09:29 UTC",
   "cash": 9671.52,
-  "equity": 9972.12,
-  "pnl": -27.88,
+  "equity": 9972.42,
+  "pnl": -27.58,
   "pnl_pct": -0.28,
   "open_positions": 3,
   "closed_trades": 215,
@@ -16,13 +16,13 @@
       "symbol": "ADA/USDT",
       "side": "SHORT",
       "entry": 0.2544,
-      "current": 0.2562,
-      "pnl_pct": -0.71,
-      "chg_pct": 0.71,
+      "current": 0.2561,
+      "pnl_pct": -0.67,
+      "chg_pct": 0.67,
       "tp": 0.24933588414116997,
       "sl": 0.25819808689412255,
-      "tp_dist_pct": 2.68,
-      "sl_dist_pct": -0.78
+      "tp_dist_pct": 2.64,
+      "sl_dist_pct": -0.82
     },
     {
       "strategy": "RSI-Divergence",
@@ -44,13 +44,13 @@
       "symbol": "AAVE/USDT",
       "side": "LONG",
       "entry": 173.83,
-      "current": 173.81,
-      "pnl_pct": -0.01,
-      "chg_pct": -0.01,
+      "current": 174.4,
+      "pnl_pct": 0.33,
+      "chg_pct": 0.33,
       "tp": 176.7721860188696,
       "sl": 171.9911337382065,
-      "tp_dist_pct": 1.7,
-      "sl_dist_pct": -1.05
+      "tp_dist_pct": 1.36,
+      "sl_dist_pct": -1.38
     }
   ],
   "recent_trades": [
@@ -166,7 +166,7 @@
     }
   ],
   "tuner": {
-    "ts": 1791624226484,
+    "ts": 1791624542308,
     "n": 215,
     "overall": {
       "n": 215,
