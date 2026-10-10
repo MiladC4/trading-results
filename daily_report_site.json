@@ -1,13 +1,13 @@
 {
-  "date": "2026-10-10 07:29 UTC",
-  "cash": 9471.1,
-  "equity": 9969.26,
-  "pnl": -30.74,
-  "pnl_pct": -0.31,
-  "open_positions": 5,
-  "closed_trades": 213,
-  "win_rate": 39.0,
-  "avg_win": 2.002,
+  "date": "2026-10-10 07:54 UTC",
+  "cash": 9572.36,
+  "equity": 9970.84,
+  "pnl": -29.16,
+  "pnl_pct": -0.29,
+  "open_positions": 4,
+  "closed_trades": 214,
+  "win_rate": 39.3,
+  "avg_win": 1.994,
   "avg_loss": -1.237,
   "positions": [
     {
@@ -16,13 +16,13 @@
       "symbol": "ADA/USDT",
       "side": "SHORT",
       "entry": 0.2544,
-      "current": 0.253,
-      "pnl_pct": 0.55,
-      "chg_pct": -0.55,
+      "current": 0.2528,
+      "pnl_pct": 0.63,
+      "chg_pct": -0.63,
       "tp": 0.24933588414116997,
       "sl": 0.25819808689412255,
-      "tp_dist_pct": 1.45,
-      "sl_dist_pct": -2.05
+      "tp_dist_pct": 1.37,
+      "sl_dist_pct": -2.14
     },
     {
       "strategy": "RSI-Divergence",
@@ -39,32 +39,18 @@
       "sl_dist_pct": -0.61
     },
     {
-      "strategy": "TJR-v4",
-      "strategy_full": "TJR v4 Strategy",
-      "symbol": "APE/USDT",
-      "side": "SHORT",
-      "entry": 0.1535,
-      "current": 0.1521,
-      "pnl_pct": 0.91,
-      "chg_pct": -0.91,
-      "tp": 0.1514116319133764,
-      "sl": 0.1550662760649677,
-      "tp_dist_pct": 0.45,
-      "sl_dist_pct": -1.95
-    },
-    {
       "strategy": "RSI-Divergence",
       "strategy_full": "STRAT: RSI Divergence Confirmation",
       "symbol": "AAVE/USDT",
       "side": "LONG",
       "entry": 173.83,
-      "current": 174.09,
-      "pnl_pct": 0.15,
-      "chg_pct": 0.15,
+      "current": 173.86,
+      "pnl_pct": 0.02,
+      "chg_pct": 0.02,
       "tp": 176.7721860188696,
       "sl": 171.9911337382065,
-      "tp_dist_pct": 1.54,
-      "sl_dist_pct": -1.21
+      "tp_dist_pct": 1.68,
+      "sl_dist_pct": -1.07
     },
     {
       "strategy": "Po3-Minimal",
@@ -72,27 +58,16 @@
       "symbol": "ALGO/USDT",
       "side": "LONG",
       "entry": 0.11625,
-      "current": 0.11633,
-      "pnl_pct": 0.07,
-      "chg_pct": 0.07,
+      "current": 0.11578,
+      "pnl_pct": -0.4,
+      "chg_pct": -0.4,
       "tp": 0.11739798635805543,
       "sl": 0.11538901023145844,
-      "tp_dist_pct": 0.92,
-      "sl_dist_pct": -0.81
+      "tp_dist_pct": 1.4,
+      "sl_dist_pct": -0.34
     }
   ],
   "recent_trades": [
-    {
-      "strategy": "MoM-Levels",
-      "symbol": "ALGO/USDT",
-      "result": "LOSS",
-      "pnl_pct": -0.711,
-      "entry": 0.11409,
-      "exit": 0.114901,
-      "chg_pct": 0.711,
-      "candles": 5,
-      "exit_reason": "sl"
-    },
     {
       "strategy": "TJR-v4",
       "symbol": "AERO/USDT",
@@ -191,16 +166,27 @@
       "chg_pct": -1.571,
       "candles": 61,
       "exit_reason": "tp"
+    },
+    {
+      "strategy": "TJR-v4",
+      "symbol": "APE/USDT",
+      "result": "WIN",
+      "pnl_pct": 1.361,
+      "entry": 0.1535,
+      "exit": 0.151411,
+      "chg_pct": -1.361,
+      "candles": 43,
+      "exit_reason": "tp"
     }
   ],
   "tuner": {
-    "ts": 1791617345215,
-    "n": 213,
+    "ts": 1791618846487,
+    "n": 214,
     "overall": {
-      "n": 213,
-      "wr": 39.0,
-      "exp": 0.00025,
-      "tot": 0.054
+      "n": 214,
+      "wr": 39.3,
+      "exp": 0.00032,
+      "tot": 0.068
     },
     "sides": {
       "long": {
@@ -211,10 +197,10 @@
         "banned": true
       },
       "short": {
-        "n": 187,
-        "wr": 40.6,
-        "exp": 0.001,
-        "tot": 0.187,
+        "n": 188,
+        "wr": 41.0,
+        "exp": 0.00107,
+        "tot": 0.201,
         "banned": false
       }
     },
@@ -399,15 +385,15 @@
       {
         "uid": "xXrbltSH",
         "name": "TJR-v4",
-        "n": 10,
-        "wr": 40.0,
-        "exp": 0.00155,
-        "tot": 0.015,
+        "n": 11,
+        "wr": 45.5,
+        "exp": 0.00264,
+        "tot": 0.029,
         "tp": 6.0,
         "sl": 4.5,
-        "ap": 0.252,
-        "tp_pct": 1.51,
-        "sl_pct": 1.13,
+        "ap": 0.25,
+        "tp_pct": 1.5,
+        "sl_pct": 1.12,
         "src": "model",
         "quarantined": true
       }
