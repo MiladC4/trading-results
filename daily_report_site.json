@@ -1,14 +1,14 @@
 {
-  "date": "2026-10-10 00:39 UTC",
-  "cash": 8991.19,
-  "equity": 9991.42,
-  "pnl": -8.58,
-  "pnl_pct": -0.09,
+  "date": "2026-10-10 01:09 UTC",
+  "cash": 8989.39,
+  "equity": 9988.53,
+  "pnl": -11.47,
+  "pnl_pct": -0.11,
   "open_positions": 10,
-  "closed_trades": 185,
-  "win_rate": 42.2,
+  "closed_trades": 187,
+  "win_rate": 41.7,
   "avg_win": 2.041,
-  "avg_loss": -1.297,
+  "avg_loss": -1.286,
   "positions": [
     {
       "strategy": "Divergence-Scanner",
@@ -16,13 +16,13 @@
       "symbol": "AR/USDT",
       "side": "SHORT",
       "entry": 4.076,
-      "current": 4.091,
-      "pnl_pct": -0.37,
-      "chg_pct": 0.37,
+      "current": 4.081,
+      "pnl_pct": -0.12,
+      "chg_pct": 0.12,
       "tp": 3.980125829111736,
       "sl": 4.147905628166197,
-      "tp_dist_pct": 2.71,
-      "sl_dist_pct": -1.39
+      "tp_dist_pct": 2.47,
+      "sl_dist_pct": -1.64
     },
     {
       "strategy": "MoM-Levels",
@@ -30,13 +30,13 @@
       "symbol": "AAVE/USDT",
       "side": "SHORT",
       "entry": 168.51,
-      "current": 168.05,
-      "pnl_pct": 0.27,
-      "chg_pct": -0.27,
+      "current": 168.15,
+      "pnl_pct": 0.21,
+      "chg_pct": -0.21,
       "tp": 166.23246515311527,
       "sl": 170.33202787750776,
-      "tp_dist_pct": 1.08,
-      "sl_dist_pct": -1.36
+      "tp_dist_pct": 1.14,
+      "sl_dist_pct": -1.3
     },
     {
       "strategy": "RSI-Divergence",
@@ -44,27 +44,13 @@
       "symbol": "APT/USDT",
       "side": "SHORT",
       "entry": 0.8164,
-      "current": 0.8178,
-      "pnl_pct": -0.17,
-      "chg_pct": 0.17,
+      "current": 0.8218,
+      "pnl_pct": -0.66,
+      "chg_pct": 0.66,
       "tp": 0.8001053822530606,
       "sl": 0.8265841360918371,
-      "tp_dist_pct": 2.16,
-      "sl_dist_pct": -1.07
-    },
-    {
-      "strategy": "VolDiv-Bayes",
-      "strategy_full": "STRAT: Volume Divergence & Bayesian Projection",
-      "symbol": "AERO/USDT",
-      "side": "SHORT",
-      "entry": 0.8034,
-      "current": 0.8036,
-      "pnl_pct": -0.02,
-      "chg_pct": 0.02,
-      "tp": 0.7967276267653793,
-      "sl": 0.8078482488230804,
-      "tp_dist_pct": 0.86,
-      "sl_dist_pct": -0.53
+      "tp_dist_pct": 2.64,
+      "sl_dist_pct": -0.58
     },
     {
       "strategy": "RSI-Divergence",
@@ -72,13 +58,13 @@
       "symbol": "A/USDT",
       "side": "SHORT",
       "entry": 0.10468,
-      "current": 0.10529,
-      "pnl_pct": -0.58,
-      "chg_pct": 0.58,
+      "current": 0.10426,
+      "pnl_pct": 0.4,
+      "chg_pct": -0.4,
       "tp": 0.10300599993923741,
       "sl": 0.1057262500379766,
-      "tp_dist_pct": 2.17,
-      "sl_dist_pct": -0.41
+      "tp_dist_pct": 1.2,
+      "sl_dist_pct": -1.41
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -86,27 +72,13 @@
       "symbol": "APE/USDT",
       "side": "SHORT",
       "entry": 0.152,
-      "current": 0.1518,
-      "pnl_pct": 0.13,
-      "chg_pct": -0.13,
+      "current": 0.1514,
+      "pnl_pct": 0.39,
+      "chg_pct": -0.39,
       "tp": 0.14911352307165557,
       "sl": 0.1539243179522296,
-      "tp_dist_pct": 1.77,
-      "sl_dist_pct": -1.4
-    },
-    {
-      "strategy": "TJR-v4",
-      "strategy_full": "TJR v4 Strategy",
-      "symbol": "2Z/USDT",
-      "side": "SHORT",
-      "entry": 0.03672,
-      "current": 0.0369,
-      "pnl_pct": -0.49,
-      "chg_pct": 0.49,
-      "tp": 0.03630342238347664,
-      "sl": 0.037032433212392524,
-      "tp_dist_pct": 1.62,
-      "sl_dist_pct": -0.36
+      "tp_dist_pct": 1.51,
+      "sl_dist_pct": -1.67
     },
     {
       "strategy": "RSI-Divergence",
@@ -114,13 +86,13 @@
       "symbol": "ADA/USDT",
       "side": "SHORT",
       "entry": 0.245,
-      "current": 0.245,
-      "pnl_pct": -0.0,
-      "chg_pct": 0.0,
+      "current": 0.2446,
+      "pnl_pct": 0.16,
+      "chg_pct": -0.16,
       "tp": 0.24194760846414679,
       "sl": 0.24690774470990826,
-      "tp_dist_pct": 1.25,
-      "sl_dist_pct": -0.78
+      "tp_dist_pct": 1.08,
+      "sl_dist_pct": -0.94
     },
     {
       "strategy": "Swing-OrderBlock",
@@ -128,13 +100,13 @@
       "symbol": "ALGO/USDT",
       "side": "SHORT",
       "entry": 0.11613,
-      "current": 0.11613,
-      "pnl_pct": -0.0,
-      "chg_pct": 0.0,
+      "current": 0.11605,
+      "pnl_pct": 0.07,
+      "chg_pct": -0.07,
       "tp": 0.1148362073023028,
       "sl": 0.11710034452327289,
-      "tp_dist_pct": 1.11,
-      "sl_dist_pct": -0.84
+      "tp_dist_pct": 1.05,
+      "sl_dist_pct": -0.91
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -142,38 +114,44 @@
       "symbol": "ARB/USDT",
       "side": "SHORT",
       "entry": 0.1843,
-      "current": 0.1843,
-      "pnl_pct": -0.0,
-      "chg_pct": 0.0,
+      "current": 0.1854,
+      "pnl_pct": -0.6,
+      "chg_pct": 0.6,
       "tp": 0.18153481909724073,
       "sl": 0.18614345393517284,
-      "tp_dist_pct": 1.5,
-      "sl_dist_pct": -1.0
-    }
-  ],
-  "recent_trades": [
-    {
-      "strategy": "RSI-Divergence",
-      "symbol": "APE/USDT",
-      "result": "LOSS",
-      "pnl_pct": -0.989,
-      "entry": 0.1479,
-      "exit": 0.149363,
-      "chg_pct": 0.989,
-      "candles": 3,
-      "exit_reason": "sl"
+      "tp_dist_pct": 2.08,
+      "sl_dist_pct": -0.4
     },
     {
       "strategy": "VolDiv-Bayes",
-      "symbol": "A/USDT",
-      "result": "WIN",
-      "pnl_pct": 1.518,
-      "entry": 0.10458,
-      "exit": 0.102992,
-      "chg_pct": -1.518,
-      "candles": 9,
-      "exit_reason": "tp"
+      "strategy_full": "STRAT: Volume Divergence & Bayesian Projection",
+      "symbol": "1INCH/USDT",
+      "side": "SHORT",
+      "entry": 0.0975,
+      "current": 0.0975,
+      "pnl_pct": -0.0,
+      "chg_pct": 0.0,
+      "tp": 0.09668284694605177,
+      "sl": 0.09804476870263217,
+      "tp_dist_pct": 0.84,
+      "sl_dist_pct": -0.56
     },
+    {
+      "strategy": "VolDiv-Bayes",
+      "strategy_full": "STRAT: Volume Divergence & Bayesian Projection",
+      "symbol": "2Z/USDT",
+      "side": "SHORT",
+      "entry": 0.03718,
+      "current": 0.03718,
+      "pnl_pct": -0.0,
+      "chg_pct": 0.0,
+      "tp": 0.036814401523945016,
+      "sl": 0.037423732317369986,
+      "tp_dist_pct": 0.98,
+      "sl_dist_pct": -0.66
+    }
+  ],
+  "recent_trades": [
     {
       "strategy": "RSI-Divergence",
       "symbol": "A/USDT",
@@ -261,16 +239,38 @@
       "chg_pct": 1.176,
       "candles": 13,
       "exit_reason": "tp"
+    },
+    {
+      "strategy": "VolDiv-Bayes",
+      "symbol": "AERO/USDT",
+      "result": "LOSS",
+      "pnl_pct": -0.554,
+      "entry": 0.8034,
+      "exit": 0.807851,
+      "chg_pct": 0.554,
+      "candles": 42,
+      "exit_reason": "sl"
+    },
+    {
+      "strategy": "TJR-v4",
+      "symbol": "2Z/USDT",
+      "result": "LOSS",
+      "pnl_pct": -0.851,
+      "entry": 0.03672,
+      "exit": 0.037032,
+      "chg_pct": 0.851,
+      "candles": 7,
+      "exit_reason": "sl"
     }
   ],
   "tuner": {
-    "ts": 1791592742818,
-    "n": 185,
+    "ts": 1791594542890,
+    "n": 187,
     "overall": {
-      "n": 185,
-      "wr": 42.2,
-      "exp": 0.0011,
-      "tot": 0.204
+      "n": 187,
+      "wr": 41.7,
+      "exp": 0.00102,
+      "tot": 0.19
     },
     "sides": {
       "long": {
@@ -281,32 +281,15 @@
         "banned": true
       },
       "short": {
-        "n": 161,
-        "wr": 44.7,
-        "exp": 0.0021,
-        "tot": 0.339,
+        "n": 163,
+        "wr": 44.2,
+        "exp": 0.00199,
+        "tot": 0.325,
         "banned": false
       }
     },
-    "problems": [
-      {
-        "kind": "strategy",
-        "strategy": "Swing-OrderBlock",
-        "n": 8,
-        "wr": 37.5,
-        "exp": -0.00478,
-        "msg": "win rate < 45% and negative expectancy"
-      }
-    ],
-    "actions": [
-      {
-        "action": "quarantine",
-        "strategy": "Swing-OrderBlock",
-        "n": 8,
-        "wr": 37.5,
-        "exp": -0.00478
-      }
-    ],
+    "problems": [],
+    "actions": [],
     "quarantined": [
       "HTF-Candle",
       "TH-DualMode",
@@ -468,30 +451,30 @@
       {
         "uid": "conv_rPOx1NRY",
         "name": "VolDiv-Bayes",
-        "n": 49,
-        "wr": 44.9,
-        "exp": 0.00252,
-        "tot": 0.124,
+        "n": 50,
+        "wr": 44.0,
+        "exp": 0.00236,
+        "tot": 0.118,
         "tp": 6.0,
         "sl": 4.0,
-        "ap": 0.306,
-        "tp_pct": 1.83,
-        "sl_pct": 1.22,
+        "ap": 0.302,
+        "tp_pct": 1.81,
+        "sl_pct": 1.21,
         "src": "model",
         "quarantined": false
       },
       {
         "uid": "xXrbltSH",
         "name": "TJR-v4",
-        "n": 6,
-        "wr": 50.0,
-        "exp": 0.00467,
-        "tot": 0.028,
+        "n": 7,
+        "wr": 42.9,
+        "exp": 0.00279,
+        "tot": 0.02,
         "tp": 6.0,
         "sl": 4.5,
-        "ap": 0.271,
-        "tp_pct": 1.63,
-        "sl_pct": 1.22,
+        "ap": 0.26,
+        "tp_pct": 1.56,
+        "sl_pct": 1.17,
         "src": "model",
         "quarantined": false
       }
