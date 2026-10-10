@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-10 10:19 UTC",
+  "date": "2026-10-10 10:24 UTC",
   "cash": 9671.52,
   "equity": 9971.89,
   "pnl": -28.11,
@@ -166,7 +166,7 @@
     }
   ],
   "tuner": {
-    "ts": 1791627536379,
+    "ts": 1791627874484,
     "n": 215,
     "overall": {
       "n": 215,
@@ -190,25 +190,8 @@
         "banned": false
       }
     },
-    "problems": [
-      {
-        "kind": "strategy",
-        "strategy": "MoM-Levels",
-        "n": 16,
-        "wr": 31.2,
-        "exp": -0.00153,
-        "msg": "win rate < 45% and negative expectancy"
-      }
-    ],
-    "actions": [
-      {
-        "action": "quarantine",
-        "strategy": "MoM-Levels",
-        "n": 16,
-        "wr": 31.2,
-        "exp": -0.00153
-      }
-    ],
+    "problems": [],
+    "actions": [],
     "quarantined": [
       "HTF-Candle",
       "TH-DualMode",
