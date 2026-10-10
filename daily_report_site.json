@@ -1,9 +1,9 @@
 {
-  "date": "2026-10-10 23:10 UTC",
+  "date": "2026-10-10 23:19 UTC",
   "cash": 9665.08,
-  "equity": 9964.62,
-  "pnl": -35.38,
-  "pnl_pct": -0.35,
+  "equity": 9964.47,
+  "pnl": -35.53,
+  "pnl_pct": -0.36,
   "open_positions": 3,
   "closed_trades": 232,
   "win_rate": 38.8,
@@ -44,13 +44,13 @@
       "symbol": "AR/USDT",
       "side": "LONG",
       "entry": 4.144,
-      "current": 4.133,
-      "pnl_pct": -0.27,
-      "chg_pct": -0.27,
+      "current": 4.127,
+      "pnl_pct": -0.41,
+      "chg_pct": -0.41,
       "tp": 4.186431373171456,
       "sl": 4.115712417885696,
-      "tp_dist_pct": 1.29,
-      "sl_dist_pct": -0.42
+      "tp_dist_pct": 1.44,
+      "sl_dist_pct": -0.27
     }
   ],
   "recent_trades": [
@@ -166,7 +166,7 @@
     }
   ],
   "tuner": {
-    "ts": 1791673849492,
+    "ts": 1791674344791,
     "n": 232,
     "overall": {
       "n": 232,
