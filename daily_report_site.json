@@ -1,9 +1,9 @@
 {
-  "date": "2026-10-10 21:49 UTC",
+  "date": "2026-10-10 21:59 UTC",
   "cash": 9565.69,
-  "equity": 9966.73,
-  "pnl": -33.27,
-  "pnl_pct": -0.33,
+  "equity": 9966.07,
+  "pnl": -33.93,
+  "pnl_pct": -0.34,
   "open_positions": 4,
   "closed_trades": 231,
   "win_rate": 39.0,
@@ -16,13 +16,13 @@
       "symbol": "1INCH/USDT",
       "side": "LONG",
       "entry": 0.0984,
-      "current": 0.0984,
-      "pnl_pct": 0.0,
-      "chg_pct": 0.0,
+      "current": 0.0982,
+      "pnl_pct": -0.2,
+      "chg_pct": -0.2,
       "tp": 0.09915712905065292,
       "sl": 0.09789524729956472,
-      "tp_dist_pct": 0.77,
-      "sl_dist_pct": -0.51
+      "tp_dist_pct": 0.97,
+      "sl_dist_pct": -0.31
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -30,13 +30,13 @@
       "symbol": "2Z/USDT",
       "side": "LONG",
       "entry": 0.03724,
-      "current": 0.03745,
-      "pnl_pct": 0.56,
-      "chg_pct": 0.56,
+      "current": 0.03743,
+      "pnl_pct": 0.51,
+      "chg_pct": 0.51,
       "tp": 0.037504515550075904,
       "sl": 0.0370636562999494,
-      "tp_dist_pct": 0.15,
-      "sl_dist_pct": -1.03
+      "tp_dist_pct": 0.2,
+      "sl_dist_pct": -0.98
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -44,13 +44,13 @@
       "symbol": "APE/USDT",
       "side": "LONG",
       "entry": 0.1529,
-      "current": 0.1538,
-      "pnl_pct": 0.59,
-      "chg_pct": 0.59,
+      "current": 0.1534,
+      "pnl_pct": 0.33,
+      "chg_pct": 0.33,
       "tp": 0.15410686032270013,
       "sl": 0.15209542645153326,
-      "tp_dist_pct": 0.2,
-      "sl_dist_pct": -1.11
+      "tp_dist_pct": 0.46,
+      "sl_dist_pct": -0.85
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -58,13 +58,13 @@
       "symbol": "AR/USDT",
       "side": "LONG",
       "entry": 4.144,
-      "current": 4.156,
-      "pnl_pct": 0.29,
-      "chg_pct": 0.29,
+      "current": 4.15,
+      "pnl_pct": 0.14,
+      "chg_pct": 0.14,
       "tp": 4.186431373171456,
       "sl": 4.115712417885696,
-      "tp_dist_pct": 0.73,
-      "sl_dist_pct": -0.97
+      "tp_dist_pct": 0.88,
+      "sl_dist_pct": -0.83
     }
   ],
   "recent_trades": [
@@ -180,7 +180,7 @@
     }
   ],
   "tuner": {
-    "ts": 1791668973383,
+    "ts": 1791669545023,
     "n": 231,
     "overall": {
       "n": 231,
