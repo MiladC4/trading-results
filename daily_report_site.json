@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-10 06:43 UTC",
+  "date": "2026-10-10 06:54 UTC",
   "cash": 9168.98,
-  "equity": 9964.53,
-  "pnl": -35.47,
+  "equity": 9965.48,
+  "pnl": -34.52,
   "pnl_pct": -0.35,
   "open_positions": 8,
   "closed_trades": 210,
@@ -16,13 +16,13 @@
       "symbol": "ADA/USDT",
       "side": "SHORT",
       "entry": 0.2544,
-      "current": 0.2529,
-      "pnl_pct": 0.59,
-      "chg_pct": -0.59,
+      "current": 0.2532,
+      "pnl_pct": 0.47,
+      "chg_pct": -0.47,
       "tp": 0.24933588414116997,
       "sl": 0.25819808689412255,
-      "tp_dist_pct": 1.41,
-      "sl_dist_pct": -2.09
+      "tp_dist_pct": 1.53,
+      "sl_dist_pct": -1.97
     },
     {
       "strategy": "TJR-v4",
@@ -30,13 +30,13 @@
       "symbol": "APT/USDT",
       "side": "SHORT",
       "entry": 0.8342,
-      "current": 0.8303,
-      "pnl_pct": 0.47,
-      "chg_pct": -0.47,
+      "current": 0.8284,
+      "pnl_pct": 0.7,
+      "chg_pct": -0.7,
       "tp": 0.8210931686890961,
       "sl": 0.844030123483178,
-      "tp_dist_pct": 1.11,
-      "sl_dist_pct": -1.65
+      "tp_dist_pct": 0.88,
+      "sl_dist_pct": -1.89
     },
     {
       "strategy": "RSI-Divergence",
@@ -44,13 +44,13 @@
       "symbol": "2Z/USDT",
       "side": "SHORT",
       "entry": 0.03785,
-      "current": 0.03721,
-      "pnl_pct": 1.69,
-      "chg_pct": -1.69,
+      "current": 0.0373,
+      "pnl_pct": 1.45,
+      "chg_pct": -1.45,
       "tp": 0.037190451209316376,
       "sl": 0.03826221799417727,
-      "tp_dist_pct": 0.05,
-      "sl_dist_pct": -2.83
+      "tp_dist_pct": 0.29,
+      "sl_dist_pct": -2.58
     },
     {
       "strategy": "RSI-Divergence",
@@ -58,13 +58,13 @@
       "symbol": "1INCH/USDT",
       "side": "SHORT",
       "entry": 0.098,
-      "current": 0.0982,
-      "pnl_pct": -0.2,
-      "chg_pct": 0.2,
+      "current": 0.0983,
+      "pnl_pct": -0.31,
+      "chg_pct": 0.31,
       "tp": 0.09719996614924248,
       "sl": 0.09850002115672346,
-      "tp_dist_pct": 1.02,
-      "sl_dist_pct": -0.31
+      "tp_dist_pct": 1.12,
+      "sl_dist_pct": -0.2
     },
     {
       "strategy": "TJR-v4",
@@ -72,13 +72,13 @@
       "symbol": "APE/USDT",
       "side": "SHORT",
       "entry": 0.1535,
-      "current": 0.1532,
-      "pnl_pct": 0.2,
-      "chg_pct": -0.2,
+      "current": 0.1539,
+      "pnl_pct": -0.26,
+      "chg_pct": 0.26,
       "tp": 0.1514116319133764,
       "sl": 0.1550662760649677,
-      "tp_dist_pct": 1.17,
-      "sl_dist_pct": -1.22
+      "tp_dist_pct": 1.62,
+      "sl_dist_pct": -0.76
     },
     {
       "strategy": "RSI-Divergence",
@@ -86,13 +86,13 @@
       "symbol": "AAVE/USDT",
       "side": "LONG",
       "entry": 173.83,
-      "current": 173.6,
-      "pnl_pct": -0.13,
-      "chg_pct": -0.13,
+      "current": 173.98,
+      "pnl_pct": 0.09,
+      "chg_pct": 0.09,
       "tp": 176.7721860188696,
       "sl": 171.9911337382065,
-      "tp_dist_pct": 1.83,
-      "sl_dist_pct": -0.93
+      "tp_dist_pct": 1.6,
+      "sl_dist_pct": -1.14
     },
     {
       "strategy": "Po3-Minimal",
@@ -100,13 +100,13 @@
       "symbol": "ALGO/USDT",
       "side": "LONG",
       "entry": 0.11625,
-      "current": 0.11601,
-      "pnl_pct": -0.21,
-      "chg_pct": -0.21,
+      "current": 0.11603,
+      "pnl_pct": -0.19,
+      "chg_pct": -0.19,
       "tp": 0.11739798635805543,
       "sl": 0.11538901023145844,
-      "tp_dist_pct": 1.2,
-      "sl_dist_pct": -0.54
+      "tp_dist_pct": 1.18,
+      "sl_dist_pct": -0.55
     },
     {
       "strategy": "RSI-Divergence",
@@ -114,13 +114,13 @@
       "symbol": "AR/USDT",
       "side": "LONG",
       "entry": 4.18,
-      "current": 4.156,
-      "pnl_pct": -0.57,
-      "chg_pct": -0.57,
+      "current": 4.157,
+      "pnl_pct": -0.55,
+      "chg_pct": -0.55,
       "tp": 4.239502117888807,
       "sl": 4.142811176319495,
-      "tp_dist_pct": 2.01,
-      "sl_dist_pct": -0.32
+      "tp_dist_pct": 1.98,
+      "sl_dist_pct": -0.34
     }
   ],
   "recent_trades": [
@@ -236,7 +236,7 @@
     }
   ],
   "tuner": {
-    "ts": 1791614618933,
+    "ts": 1791615244169,
     "n": 210,
     "overall": {
       "n": 210,
