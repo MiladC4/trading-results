@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-10 07:09 UTC",
+  "date": "2026-10-10 07:16 UTC",
   "cash": 9369.63,
-  "equity": 9966.54,
-  "pnl": -33.46,
+  "equity": 9967.12,
+  "pnl": -32.88,
   "pnl_pct": -0.33,
   "open_positions": 6,
   "closed_trades": 212,
@@ -16,13 +16,13 @@
       "symbol": "ADA/USDT",
       "side": "SHORT",
       "entry": 0.2544,
-      "current": 0.2529,
-      "pnl_pct": 0.59,
-      "chg_pct": -0.59,
+      "current": 0.2538,
+      "pnl_pct": 0.24,
+      "chg_pct": -0.24,
       "tp": 0.24933588414116997,
       "sl": 0.25819808689412255,
-      "tp_dist_pct": 1.41,
-      "sl_dist_pct": -2.09
+      "tp_dist_pct": 1.76,
+      "sl_dist_pct": -1.73
     },
     {
       "strategy": "TJR-v4",
@@ -30,13 +30,13 @@
       "symbol": "APT/USDT",
       "side": "SHORT",
       "entry": 0.8342,
-      "current": 0.8227,
-      "pnl_pct": 1.38,
-      "chg_pct": -1.38,
+      "current": 0.8223,
+      "pnl_pct": 1.43,
+      "chg_pct": -1.43,
       "tp": 0.8210931686890961,
       "sl": 0.844030123483178,
-      "tp_dist_pct": 0.2,
-      "sl_dist_pct": -2.59
+      "tp_dist_pct": 0.15,
+      "sl_dist_pct": -2.64
     },
     {
       "strategy": "RSI-Divergence",
@@ -58,13 +58,13 @@
       "symbol": "APE/USDT",
       "side": "SHORT",
       "entry": 0.1535,
-      "current": 0.1528,
-      "pnl_pct": 0.46,
-      "chg_pct": -0.46,
+      "current": 0.1526,
+      "pnl_pct": 0.59,
+      "chg_pct": -0.59,
       "tp": 0.1514116319133764,
       "sl": 0.1550662760649677,
-      "tp_dist_pct": 0.91,
-      "sl_dist_pct": -1.48
+      "tp_dist_pct": 0.78,
+      "sl_dist_pct": -1.62
     },
     {
       "strategy": "RSI-Divergence",
@@ -72,13 +72,13 @@
       "symbol": "AAVE/USDT",
       "side": "LONG",
       "entry": 173.83,
-      "current": 174.18,
-      "pnl_pct": 0.2,
-      "chg_pct": 0.2,
+      "current": 174.09,
+      "pnl_pct": 0.15,
+      "chg_pct": 0.15,
       "tp": 176.7721860188696,
       "sl": 171.9911337382065,
-      "tp_dist_pct": 1.49,
-      "sl_dist_pct": -1.26
+      "tp_dist_pct": 1.54,
+      "sl_dist_pct": -1.21
     },
     {
       "strategy": "Po3-Minimal",
@@ -86,13 +86,13 @@
       "symbol": "ALGO/USDT",
       "side": "LONG",
       "entry": 0.11625,
-      "current": 0.11582,
-      "pnl_pct": -0.37,
-      "chg_pct": -0.37,
+      "current": 0.11634,
+      "pnl_pct": 0.08,
+      "chg_pct": 0.08,
       "tp": 0.11739798635805543,
       "sl": 0.11538901023145844,
-      "tp_dist_pct": 1.36,
-      "sl_dist_pct": -0.37
+      "tp_dist_pct": 0.91,
+      "sl_dist_pct": -0.82
     }
   ],
   "recent_trades": [
@@ -208,7 +208,7 @@
     }
   ],
   "tuner": {
-    "ts": 1791616145779,
+    "ts": 1791616488474,
     "n": 212,
     "overall": {
       "n": 212,
