@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-10 09:29 UTC",
+  "date": "2026-10-10 09:34 UTC",
   "cash": 9671.52,
-  "equity": 9972.42,
-  "pnl": -27.58,
+  "equity": 9972.43,
+  "pnl": -27.57,
   "pnl_pct": -0.28,
   "open_positions": 3,
   "closed_trades": 215,
@@ -16,13 +16,13 @@
       "symbol": "ADA/USDT",
       "side": "SHORT",
       "entry": 0.2544,
-      "current": 0.2561,
-      "pnl_pct": -0.67,
-      "chg_pct": 0.67,
+      "current": 0.2562,
+      "pnl_pct": -0.71,
+      "chg_pct": 0.71,
       "tp": 0.24933588414116997,
       "sl": 0.25819808689412255,
-      "tp_dist_pct": 2.64,
-      "sl_dist_pct": -0.82
+      "tp_dist_pct": 2.68,
+      "sl_dist_pct": -0.78
     },
     {
       "strategy": "RSI-Divergence",
@@ -30,13 +30,13 @@
       "symbol": "1INCH/USDT",
       "side": "SHORT",
       "entry": 0.098,
-      "current": 0.0982,
-      "pnl_pct": -0.2,
-      "chg_pct": 0.2,
+      "current": 0.098,
+      "pnl_pct": -0.0,
+      "chg_pct": 0.0,
       "tp": 0.09719996614924248,
       "sl": 0.09850002115672346,
-      "tp_dist_pct": 1.02,
-      "sl_dist_pct": -0.31
+      "tp_dist_pct": 0.82,
+      "sl_dist_pct": -0.51
     },
     {
       "strategy": "RSI-Divergence",
@@ -44,13 +44,13 @@
       "symbol": "AAVE/USDT",
       "side": "LONG",
       "entry": 173.83,
-      "current": 174.4,
-      "pnl_pct": 0.33,
-      "chg_pct": 0.33,
+      "current": 174.7,
+      "pnl_pct": 0.5,
+      "chg_pct": 0.5,
       "tp": 176.7721860188696,
       "sl": 171.9911337382065,
-      "tp_dist_pct": 1.36,
-      "sl_dist_pct": -1.38
+      "tp_dist_pct": 1.19,
+      "sl_dist_pct": -1.55
     }
   ],
   "recent_trades": [
@@ -166,7 +166,7 @@
     }
   ],
   "tuner": {
-    "ts": 1791624542308,
+    "ts": 1791624837182,
     "n": 215,
     "overall": {
       "n": 215,
