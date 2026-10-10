@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-10 10:09 UTC",
+  "date": "2026-10-10 10:19 UTC",
   "cash": 9671.52,
-  "equity": 9972.21,
-  "pnl": -27.79,
+  "equity": 9971.89,
+  "pnl": -28.11,
   "pnl_pct": -0.28,
   "open_positions": 3,
   "closed_trades": 215,
@@ -30,13 +30,13 @@
       "symbol": "1INCH/USDT",
       "side": "SHORT",
       "entry": 0.098,
-      "current": 0.0982,
-      "pnl_pct": -0.2,
-      "chg_pct": 0.2,
+      "current": 0.0979,
+      "pnl_pct": 0.1,
+      "chg_pct": -0.1,
       "tp": 0.09719996614924248,
       "sl": 0.09850002115672346,
-      "tp_dist_pct": 1.02,
-      "sl_dist_pct": -0.31
+      "tp_dist_pct": 0.72,
+      "sl_dist_pct": -0.61
     },
     {
       "strategy": "RSI-Divergence",
@@ -44,13 +44,13 @@
       "symbol": "AAVE/USDT",
       "side": "LONG",
       "entry": 173.83,
-      "current": 174.45,
-      "pnl_pct": 0.36,
-      "chg_pct": 0.36,
+      "current": 174.41,
+      "pnl_pct": 0.33,
+      "chg_pct": 0.33,
       "tp": 176.7721860188696,
       "sl": 171.9911337382065,
-      "tp_dist_pct": 1.33,
-      "sl_dist_pct": -1.41
+      "tp_dist_pct": 1.35,
+      "sl_dist_pct": -1.39
     }
   ],
   "recent_trades": [
@@ -166,7 +166,7 @@
     }
   ],
   "tuner": {
-    "ts": 1791626983988,
+    "ts": 1791627536379,
     "n": 215,
     "overall": {
       "n": 215,
@@ -190,8 +190,25 @@
         "banned": false
       }
     },
-    "problems": [],
-    "actions": [],
+    "problems": [
+      {
+        "kind": "strategy",
+        "strategy": "MoM-Levels",
+        "n": 16,
+        "wr": 31.2,
+        "exp": -0.00153,
+        "msg": "win rate < 45% and negative expectancy"
+      }
+    ],
+    "actions": [
+      {
+        "action": "quarantine",
+        "strategy": "MoM-Levels",
+        "n": 16,
+        "wr": 31.2,
+        "exp": -0.00153
+      }
+    ],
     "quarantined": [
       "HTF-Candle",
       "TH-DualMode",
