@@ -1,9 +1,9 @@
 {
-  "date": "2026-10-10 20:28 UTC",
+  "date": "2026-10-10 20:39 UTC",
   "cash": 9365.15,
-  "equity": 9965.05,
-  "pnl": -34.95,
-  "pnl_pct": -0.35,
+  "equity": 9965.6,
+  "pnl": -34.4,
+  "pnl_pct": -0.34,
   "open_positions": 6,
   "closed_trades": 229,
   "win_rate": 38.9,
@@ -16,13 +16,13 @@
       "symbol": "1INCH/USDT",
       "side": "LONG",
       "entry": 0.0984,
-      "current": 0.0984,
-      "pnl_pct": 0.0,
-      "chg_pct": 0.0,
+      "current": 0.0986,
+      "pnl_pct": 0.2,
+      "chg_pct": 0.2,
       "tp": 0.09915712905065292,
       "sl": 0.09789524729956472,
-      "tp_dist_pct": 0.77,
-      "sl_dist_pct": -0.51
+      "tp_dist_pct": 0.57,
+      "sl_dist_pct": -0.71
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -30,13 +30,13 @@
       "symbol": "2Z/USDT",
       "side": "LONG",
       "entry": 0.03724,
-      "current": 0.03722,
-      "pnl_pct": -0.05,
-      "chg_pct": -0.05,
+      "current": 0.03732,
+      "pnl_pct": 0.21,
+      "chg_pct": 0.21,
       "tp": 0.037504515550075904,
       "sl": 0.0370636562999494,
-      "tp_dist_pct": 0.76,
-      "sl_dist_pct": -0.42
+      "tp_dist_pct": 0.49,
+      "sl_dist_pct": -0.69
     },
     {
       "strategy": "RSI-Divergence",
@@ -44,13 +44,13 @@
       "symbol": "AAVE/USDT",
       "side": "LONG",
       "entry": 170.7,
-      "current": 170.35,
-      "pnl_pct": -0.21,
-      "chg_pct": -0.21,
+      "current": 170.29,
+      "pnl_pct": -0.24,
+      "chg_pct": -0.24,
       "tp": 171.90450263827964,
       "sl": 169.9471858510752,
-      "tp_dist_pct": 0.91,
-      "sl_dist_pct": -0.24
+      "tp_dist_pct": 0.95,
+      "sl_dist_pct": -0.2
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -72,13 +72,13 @@
       "symbol": "AR/USDT",
       "side": "LONG",
       "entry": 4.144,
-      "current": 4.141,
-      "pnl_pct": -0.07,
-      "chg_pct": -0.07,
+      "current": 4.148,
+      "pnl_pct": 0.1,
+      "chg_pct": 0.1,
       "tp": 4.186431373171456,
       "sl": 4.115712417885696,
-      "tp_dist_pct": 1.1,
-      "sl_dist_pct": -0.61
+      "tp_dist_pct": 0.93,
+      "sl_dist_pct": -0.78
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -86,13 +86,13 @@
       "symbol": "ATH/USDT",
       "side": "LONG",
       "entry": 0.006589,
-      "current": 0.006618,
-      "pnl_pct": 0.44,
-      "chg_pct": 0.44,
+      "current": 0.006614,
+      "pnl_pct": 0.38,
+      "chg_pct": 0.38,
       "tp": 0.006666725677039747,
       "sl": 0.006537182881973502,
-      "tp_dist_pct": 0.74,
-      "sl_dist_pct": -1.22
+      "tp_dist_pct": 0.8,
+      "sl_dist_pct": -1.16
     }
   ],
   "recent_trades": [
@@ -208,7 +208,7 @@
     }
   ],
   "tuner": {
-    "ts": 1791664107928,
+    "ts": 1791664741664,
     "n": 229,
     "overall": {
       "n": 229,
