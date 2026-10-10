@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-10 21:29 UTC",
+  "date": "2026-10-10 21:35 UTC",
   "cash": 9565.69,
-  "equity": 9966.55,
-  "pnl": -33.45,
+  "equity": 9966.66,
+  "pnl": -33.34,
   "pnl_pct": -0.33,
   "open_positions": 4,
   "closed_trades": 231,
@@ -44,13 +44,13 @@
       "symbol": "APE/USDT",
       "side": "LONG",
       "entry": 0.1529,
-      "current": 0.1537,
-      "pnl_pct": 0.52,
-      "chg_pct": 0.52,
+      "current": 0.154,
+      "pnl_pct": 0.72,
+      "chg_pct": 0.72,
       "tp": 0.15410686032270013,
       "sl": 0.15209542645153326,
-      "tp_dist_pct": 0.26,
-      "sl_dist_pct": -1.04
+      "tp_dist_pct": 0.07,
+      "sl_dist_pct": -1.24
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -58,13 +58,13 @@
       "symbol": "AR/USDT",
       "side": "LONG",
       "entry": 4.144,
-      "current": 4.161,
-      "pnl_pct": 0.41,
-      "chg_pct": 0.41,
+      "current": 4.159,
+      "pnl_pct": 0.36,
+      "chg_pct": 0.36,
       "tp": 4.186431373171456,
       "sl": 4.115712417885696,
-      "tp_dist_pct": 0.61,
-      "sl_dist_pct": -1.09
+      "tp_dist_pct": 0.66,
+      "sl_dist_pct": -1.04
     }
   ],
   "recent_trades": [
@@ -180,7 +180,7 @@
     }
   ],
   "tuner": {
-    "ts": 1791667748010,
+    "ts": 1791668096247,
     "n": 231,
     "overall": {
       "n": 231,
@@ -204,25 +204,8 @@
         "banned": false
       }
     },
-    "problems": [
-      {
-        "kind": "strategy",
-        "strategy": "HMA-Projection",
-        "n": 22,
-        "wr": 31.8,
-        "exp": -0.00132,
-        "msg": "win rate < 45% and negative expectancy"
-      }
-    ],
-    "actions": [
-      {
-        "action": "quarantine",
-        "strategy": "HMA-Projection",
-        "n": 22,
-        "wr": 31.8,
-        "exp": -0.00132
-      }
-    ],
+    "problems": [],
+    "actions": [],
     "quarantined": [
       "HTF-Candle",
       "TH-DualMode",
