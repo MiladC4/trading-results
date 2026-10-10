@@ -1,9 +1,9 @@
 {
-  "date": "2026-10-10 06:19 UTC",
+  "date": "2026-10-10 06:39 UTC",
   "cash": 9168.98,
-  "equity": 9966.7,
-  "pnl": -33.3,
-  "pnl_pct": -0.33,
+  "equity": 9964.41,
+  "pnl": -35.59,
+  "pnl_pct": -0.36,
   "open_positions": 8,
   "closed_trades": 210,
   "win_rate": 38.6,
@@ -16,13 +16,13 @@
       "symbol": "ADA/USDT",
       "side": "SHORT",
       "entry": 0.2544,
-      "current": 0.2531,
-      "pnl_pct": 0.51,
-      "chg_pct": -0.51,
+      "current": 0.2532,
+      "pnl_pct": 0.47,
+      "chg_pct": -0.47,
       "tp": 0.24933588414116997,
       "sl": 0.25819808689412255,
-      "tp_dist_pct": 1.49,
-      "sl_dist_pct": -2.01
+      "tp_dist_pct": 1.53,
+      "sl_dist_pct": -1.97
     },
     {
       "strategy": "TJR-v4",
@@ -30,13 +30,13 @@
       "symbol": "APT/USDT",
       "side": "SHORT",
       "entry": 0.8342,
-      "current": 0.8289,
-      "pnl_pct": 0.64,
-      "chg_pct": -0.64,
+      "current": 0.8323,
+      "pnl_pct": 0.23,
+      "chg_pct": -0.23,
       "tp": 0.8210931686890961,
       "sl": 0.844030123483178,
-      "tp_dist_pct": 0.94,
-      "sl_dist_pct": -1.83
+      "tp_dist_pct": 1.35,
+      "sl_dist_pct": -1.41
     },
     {
       "strategy": "RSI-Divergence",
@@ -44,13 +44,13 @@
       "symbol": "2Z/USDT",
       "side": "SHORT",
       "entry": 0.03785,
-      "current": 0.03773,
-      "pnl_pct": 0.32,
-      "chg_pct": -0.32,
+      "current": 0.0372,
+      "pnl_pct": 1.72,
+      "chg_pct": -1.72,
       "tp": 0.037190451209316376,
       "sl": 0.03826221799417727,
-      "tp_dist_pct": 1.43,
-      "sl_dist_pct": -1.41
+      "tp_dist_pct": 0.03,
+      "sl_dist_pct": -2.86
     },
     {
       "strategy": "RSI-Divergence",
@@ -58,13 +58,13 @@
       "symbol": "1INCH/USDT",
       "side": "SHORT",
       "entry": 0.098,
-      "current": 0.0984,
-      "pnl_pct": -0.41,
-      "chg_pct": 0.41,
+      "current": 0.0982,
+      "pnl_pct": -0.2,
+      "chg_pct": 0.2,
       "tp": 0.09719996614924248,
       "sl": 0.09850002115672346,
-      "tp_dist_pct": 1.22,
-      "sl_dist_pct": -0.1
+      "tp_dist_pct": 1.02,
+      "sl_dist_pct": -0.31
     },
     {
       "strategy": "TJR-v4",
@@ -72,13 +72,13 @@
       "symbol": "APE/USDT",
       "side": "SHORT",
       "entry": 0.1535,
-      "current": 0.1528,
-      "pnl_pct": 0.46,
-      "chg_pct": -0.46,
+      "current": 0.1524,
+      "pnl_pct": 0.72,
+      "chg_pct": -0.72,
       "tp": 0.1514116319133764,
       "sl": 0.1550662760649677,
-      "tp_dist_pct": 0.91,
-      "sl_dist_pct": -1.48
+      "tp_dist_pct": 0.65,
+      "sl_dist_pct": -1.75
     },
     {
       "strategy": "RSI-Divergence",
@@ -86,13 +86,13 @@
       "symbol": "AAVE/USDT",
       "side": "LONG",
       "entry": 173.83,
-      "current": 175.46,
-      "pnl_pct": 0.94,
-      "chg_pct": 0.94,
+      "current": 174.56,
+      "pnl_pct": 0.42,
+      "chg_pct": 0.42,
       "tp": 176.7721860188696,
       "sl": 171.9911337382065,
-      "tp_dist_pct": 0.75,
-      "sl_dist_pct": -1.98
+      "tp_dist_pct": 1.27,
+      "sl_dist_pct": -1.47
     },
     {
       "strategy": "Po3-Minimal",
@@ -100,13 +100,13 @@
       "symbol": "ALGO/USDT",
       "side": "LONG",
       "entry": 0.11625,
-      "current": 0.11572,
-      "pnl_pct": -0.46,
-      "chg_pct": -0.46,
+      "current": 0.11559,
+      "pnl_pct": -0.57,
+      "chg_pct": -0.57,
       "tp": 0.11739798635805543,
       "sl": 0.11538901023145844,
-      "tp_dist_pct": 1.45,
-      "sl_dist_pct": -0.29
+      "tp_dist_pct": 1.56,
+      "sl_dist_pct": -0.17
     },
     {
       "strategy": "RSI-Divergence",
@@ -114,13 +114,13 @@
       "symbol": "AR/USDT",
       "side": "LONG",
       "entry": 4.18,
-      "current": 4.161,
-      "pnl_pct": -0.45,
-      "chg_pct": -0.45,
+      "current": 4.151,
+      "pnl_pct": -0.69,
+      "chg_pct": -0.69,
       "tp": 4.239502117888807,
       "sl": 4.142811176319495,
-      "tp_dist_pct": 1.89,
-      "sl_dist_pct": -0.44
+      "tp_dist_pct": 2.13,
+      "sl_dist_pct": -0.2
     }
   ],
   "recent_trades": [
@@ -236,7 +236,7 @@
     }
   ],
   "tuner": {
-    "ts": 1791613148727,
+    "ts": 1791614344312,
     "n": 210,
     "overall": {
       "n": 210,
@@ -260,8 +260,25 @@
         "banned": false
       }
     },
-    "problems": [],
-    "actions": [],
+    "problems": [
+      {
+        "kind": "strategy",
+        "strategy": "Swing-OrderBlock",
+        "n": 9,
+        "wr": 44.4,
+        "exp": -0.00301,
+        "msg": "win rate < 45% and negative expectancy"
+      }
+    ],
+    "actions": [
+      {
+        "action": "quarantine",
+        "strategy": "Swing-OrderBlock",
+        "n": 9,
+        "wr": 44.4,
+        "exp": -0.00301
+      }
+    ],
     "quarantined": [
       "HTF-Candle",
       "TH-DualMode",
