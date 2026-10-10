@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-10 23:49 UTC",
+  "date": "2026-10-10 23:54 UTC",
   "cash": 9665.08,
-  "equity": 9965.11,
-  "pnl": -34.89,
+  "equity": 9965.04,
+  "pnl": -34.96,
   "pnl_pct": -0.35,
   "open_positions": 3,
   "closed_trades": 232,
@@ -44,13 +44,13 @@
       "symbol": "AR/USDT",
       "side": "LONG",
       "entry": 4.144,
-      "current": 4.137,
-      "pnl_pct": -0.17,
-      "chg_pct": -0.17,
+      "current": 4.134,
+      "pnl_pct": -0.24,
+      "chg_pct": -0.24,
       "tp": 4.186431373171456,
       "sl": 4.115712417885696,
-      "tp_dist_pct": 1.19,
-      "sl_dist_pct": -0.51
+      "tp_dist_pct": 1.27,
+      "sl_dist_pct": -0.44
     }
   ],
   "recent_trades": [
@@ -166,7 +166,7 @@
     }
   ],
   "tuner": {
-    "ts": 1791676152235,
+    "ts": 1791676485373,
     "n": 232,
     "overall": {
       "n": 232,
@@ -190,8 +190,25 @@
         "banned": false
       }
     },
-    "problems": [],
-    "actions": [],
+    "problems": [
+      {
+        "kind": "side",
+        "side": "long",
+        "n": 42,
+        "wr": 31.0,
+        "exp": -0.0036,
+        "msg": "long side losing money"
+      }
+    ],
+    "actions": [
+      {
+        "action": "ban_side",
+        "side": "long",
+        "n": 42,
+        "wr": 31.0,
+        "exp": -0.0036
+      }
+    ],
     "quarantined": [
       "HTF-Candle",
       "TH-DualMode",
