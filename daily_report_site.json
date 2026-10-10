@@ -1,9 +1,9 @@
 {
-  "date": "2026-10-10 14:14 UTC",
+  "date": "2026-10-10 14:24 UTC",
   "cash": 9568.83,
-  "equity": 9968.42,
-  "pnl": -31.58,
-  "pnl_pct": -0.32,
+  "equity": 9969.61,
+  "pnl": -30.39,
+  "pnl_pct": -0.3,
   "open_positions": 4,
   "closed_trades": 221,
   "win_rate": 38.9,
@@ -16,13 +16,13 @@
       "symbol": "ADA/USDT",
       "side": "SHORT",
       "entry": 0.2544,
-      "current": 0.2546,
-      "pnl_pct": -0.08,
-      "chg_pct": 0.08,
+      "current": 0.2554,
+      "pnl_pct": -0.39,
+      "chg_pct": 0.39,
       "tp": 0.24933588414116997,
       "sl": 0.25819808689412255,
-      "tp_dist_pct": 2.07,
-      "sl_dist_pct": -1.41
+      "tp_dist_pct": 2.37,
+      "sl_dist_pct": -1.1
     },
     {
       "strategy": "RSI-Divergence",
@@ -30,13 +30,13 @@
       "symbol": "1INCH/USDT",
       "side": "SHORT",
       "entry": 0.098,
-      "current": 0.0978,
-      "pnl_pct": 0.2,
-      "chg_pct": -0.2,
+      "current": 0.0979,
+      "pnl_pct": 0.1,
+      "chg_pct": -0.1,
       "tp": 0.09719996614924248,
       "sl": 0.09850002115672346,
-      "tp_dist_pct": 0.61,
-      "sl_dist_pct": -0.72
+      "tp_dist_pct": 0.72,
+      "sl_dist_pct": -0.61
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -44,13 +44,13 @@
       "symbol": "ALGO/USDT",
       "side": "LONG",
       "entry": 0.11502,
-      "current": 0.11557,
-      "pnl_pct": 0.48,
-      "chg_pct": 0.48,
+      "current": 0.11596,
+      "pnl_pct": 0.82,
+      "chg_pct": 0.82,
       "tp": 0.11620604391899661,
       "sl": 0.11422930405400225,
-      "tp_dist_pct": 0.55,
-      "sl_dist_pct": -1.16
+      "tp_dist_pct": 0.21,
+      "sl_dist_pct": -1.49
     },
     {
       "strategy": "RSI-Divergence",
@@ -58,13 +58,13 @@
       "symbol": "AR/USDT",
       "side": "LONG",
       "entry": 4.101,
-      "current": 4.086,
-      "pnl_pct": -0.37,
-      "chg_pct": -0.37,
+      "current": 4.104,
+      "pnl_pct": 0.07,
+      "chg_pct": 0.07,
       "tp": 4.131398172140409,
       "sl": 4.082001142412244,
-      "tp_dist_pct": 1.11,
-      "sl_dist_pct": -0.1
+      "tp_dist_pct": 0.67,
+      "sl_dist_pct": -0.54
     }
   ],
   "recent_trades": [
@@ -180,7 +180,7 @@
     }
   ],
   "tuner": {
-    "ts": 1791641643859,
+    "ts": 1791642244556,
     "n": 221,
     "overall": {
       "n": 221,
@@ -204,8 +204,40 @@
         "banned": false
       }
     },
-    "problems": [],
-    "actions": [],
+    "problems": [
+      {
+        "kind": "strategy",
+        "strategy": "TH-DualMode",
+        "n": 9,
+        "wr": 22.2,
+        "exp": -0.00116,
+        "msg": "win rate < 45% and negative expectancy"
+      },
+      {
+        "kind": "strategy",
+        "strategy": "Divergence-Scanner",
+        "n": 9,
+        "wr": 44.4,
+        "exp": -0.00047,
+        "msg": "win rate < 45% and negative expectancy"
+      }
+    ],
+    "actions": [
+      {
+        "action": "quarantine",
+        "strategy": "TH-DualMode",
+        "n": 9,
+        "wr": 22.2,
+        "exp": -0.00116
+      },
+      {
+        "action": "quarantine",
+        "strategy": "Divergence-Scanner",
+        "n": 9,
+        "wr": 44.4,
+        "exp": -0.00047
+      }
+    ],
     "quarantined": [
       "HTF-Candle",
       "TH-DualMode",
