@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-10 19:04 UTC",
+  "date": "2026-10-10 19:08 UTC",
   "cash": 9066.53,
-  "equity": 9964.66,
-  "pnl": -35.34,
+  "equity": 9964.83,
+  "pnl": -35.17,
   "pnl_pct": -0.35,
   "open_positions": 9,
   "closed_trades": 226,
@@ -16,13 +16,13 @@
       "symbol": "1INCH/USDT",
       "side": "LONG",
       "entry": 0.0984,
-      "current": 0.0982,
-      "pnl_pct": -0.2,
-      "chg_pct": -0.2,
+      "current": 0.0983,
+      "pnl_pct": -0.1,
+      "chg_pct": -0.1,
       "tp": 0.09915712905065292,
       "sl": 0.09789524729956472,
-      "tp_dist_pct": 0.97,
-      "sl_dist_pct": -0.31
+      "tp_dist_pct": 0.87,
+      "sl_dist_pct": -0.41
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -30,13 +30,13 @@
       "symbol": "2Z/USDT",
       "side": "LONG",
       "entry": 0.03724,
-      "current": 0.03722,
-      "pnl_pct": -0.05,
-      "chg_pct": -0.05,
+      "current": 0.03723,
+      "pnl_pct": -0.03,
+      "chg_pct": -0.03,
       "tp": 0.037504515550075904,
       "sl": 0.0370636562999494,
-      "tp_dist_pct": 0.76,
-      "sl_dist_pct": -0.42
+      "tp_dist_pct": 0.74,
+      "sl_dist_pct": -0.45
     },
     {
       "strategy": "Harmonic-Pro",
@@ -44,13 +44,13 @@
       "symbol": "A/USDT",
       "side": "LONG",
       "entry": 0.10479,
-      "current": 0.10413,
-      "pnl_pct": -0.63,
-      "chg_pct": -0.63,
+      "current": 0.10422,
+      "pnl_pct": -0.54,
+      "chg_pct": -0.54,
       "tp": 0.10570615631209018,
       "sl": 0.10410288276593235,
-      "tp_dist_pct": 1.51,
-      "sl_dist_pct": -0.03
+      "tp_dist_pct": 1.43,
+      "sl_dist_pct": -0.11
     },
     {
       "strategy": "RSI-Divergence",
@@ -58,13 +58,13 @@
       "symbol": "AAVE/USDT",
       "side": "LONG",
       "entry": 170.7,
-      "current": 170.9,
-      "pnl_pct": 0.12,
-      "chg_pct": 0.12,
+      "current": 170.75,
+      "pnl_pct": 0.03,
+      "chg_pct": 0.03,
       "tp": 171.90450263827964,
       "sl": 169.9471858510752,
-      "tp_dist_pct": 0.59,
-      "sl_dist_pct": -0.56
+      "tp_dist_pct": 0.68,
+      "sl_dist_pct": -0.47
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -72,13 +72,13 @@
       "symbol": "ALGO/USDT",
       "side": "LONG",
       "entry": 0.11964,
-      "current": 0.11858,
-      "pnl_pct": -0.89,
-      "chg_pct": -0.89,
+      "current": 0.11845,
+      "pnl_pct": -0.99,
+      "chg_pct": -0.99,
       "tp": 0.12212581556571529,
       "sl": 0.11798278962285647,
-      "tp_dist_pct": 2.99,
-      "sl_dist_pct": -0.5
+      "tp_dist_pct": 3.1,
+      "sl_dist_pct": -0.39
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -100,13 +100,13 @@
       "symbol": "AR/USDT",
       "side": "LONG",
       "entry": 4.144,
-      "current": 4.153,
-      "pnl_pct": 0.22,
-      "chg_pct": 0.22,
+      "current": 4.15,
+      "pnl_pct": 0.14,
+      "chg_pct": 0.14,
       "tp": 4.186431373171456,
       "sl": 4.115712417885696,
-      "tp_dist_pct": 0.8,
-      "sl_dist_pct": -0.9
+      "tp_dist_pct": 0.88,
+      "sl_dist_pct": -0.83
     },
     {
       "strategy": "RSI-Divergence",
@@ -114,13 +114,13 @@
       "symbol": "ARB/USDT",
       "side": "LONG",
       "entry": 0.1859,
-      "current": 0.1864,
-      "pnl_pct": 0.27,
-      "chg_pct": 0.27,
+      "current": 0.1865,
+      "pnl_pct": 0.32,
+      "chg_pct": 0.32,
       "tp": 0.18769197333851276,
       "sl": 0.18478001666342952,
-      "tp_dist_pct": 0.69,
-      "sl_dist_pct": -0.87
+      "tp_dist_pct": 0.64,
+      "sl_dist_pct": -0.92
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -128,13 +128,13 @@
       "symbol": "ATH/USDT",
       "side": "LONG",
       "entry": 0.006589,
-      "current": 0.006598,
-      "pnl_pct": 0.14,
-      "chg_pct": 0.14,
+      "current": 0.006609,
+      "pnl_pct": 0.3,
+      "chg_pct": 0.3,
       "tp": 0.006666725677039747,
       "sl": 0.006537182881973502,
-      "tp_dist_pct": 1.04,
-      "sl_dist_pct": -0.92
+      "tp_dist_pct": 0.87,
+      "sl_dist_pct": -1.09
     }
   ],
   "recent_trades": [
@@ -250,7 +250,7 @@
     }
   ],
   "tuner": {
-    "ts": 1791659049987,
+    "ts": 1791659310388,
     "n": 226,
     "overall": {
       "n": 226,
