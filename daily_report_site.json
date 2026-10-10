@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-10 22:43 UTC",
+  "date": "2026-10-10 22:49 UTC",
   "cash": 9565.69,
-  "equity": 9965.45,
-  "pnl": -34.55,
+  "equity": 9965.06,
+  "pnl": -34.94,
   "pnl_pct": -0.35,
   "open_positions": 4,
   "closed_trades": 231,
@@ -16,13 +16,13 @@
       "symbol": "1INCH/USDT",
       "side": "LONG",
       "entry": 0.0984,
-      "current": 0.0982,
-      "pnl_pct": -0.2,
-      "chg_pct": -0.2,
+      "current": 0.098,
+      "pnl_pct": -0.41,
+      "chg_pct": -0.41,
       "tp": 0.09915712905065292,
       "sl": 0.09789524729956472,
-      "tp_dist_pct": 0.97,
-      "sl_dist_pct": -0.31
+      "tp_dist_pct": 1.18,
+      "sl_dist_pct": -0.11
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -30,13 +30,13 @@
       "symbol": "2Z/USDT",
       "side": "LONG",
       "entry": 0.03724,
-      "current": 0.03731,
-      "pnl_pct": 0.19,
-      "chg_pct": 0.19,
+      "current": 0.0373,
+      "pnl_pct": 0.16,
+      "chg_pct": 0.16,
       "tp": 0.037504515550075904,
       "sl": 0.0370636562999494,
-      "tp_dist_pct": 0.52,
-      "sl_dist_pct": -0.66
+      "tp_dist_pct": 0.55,
+      "sl_dist_pct": -0.63
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -58,13 +58,13 @@
       "symbol": "AR/USDT",
       "side": "LONG",
       "entry": 4.144,
-      "current": 4.146,
-      "pnl_pct": 0.05,
-      "chg_pct": 0.05,
+      "current": 4.139,
+      "pnl_pct": -0.12,
+      "chg_pct": -0.12,
       "tp": 4.186431373171456,
       "sl": 4.115712417885696,
-      "tp_dist_pct": 0.98,
-      "sl_dist_pct": -0.73
+      "tp_dist_pct": 1.15,
+      "sl_dist_pct": -0.56
     }
   ],
   "recent_trades": [
@@ -180,7 +180,7 @@
     }
   ],
   "tuner": {
-    "ts": 1791672214288,
+    "ts": 1791672542067,
     "n": 231,
     "overall": {
       "n": 231,
