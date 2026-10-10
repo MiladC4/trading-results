@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-10 21:20 UTC",
+  "date": "2026-10-10 21:29 UTC",
   "cash": 9565.69,
-  "equity": 9967.1,
-  "pnl": -32.9,
+  "equity": 9966.55,
+  "pnl": -33.45,
   "pnl_pct": -0.33,
   "open_positions": 4,
   "closed_trades": 231,
@@ -30,13 +30,13 @@
       "symbol": "2Z/USDT",
       "side": "LONG",
       "entry": 0.03724,
-      "current": 0.03739,
-      "pnl_pct": 0.4,
-      "chg_pct": 0.4,
+      "current": 0.0374,
+      "pnl_pct": 0.43,
+      "chg_pct": 0.43,
       "tp": 0.037504515550075904,
       "sl": 0.0370636562999494,
-      "tp_dist_pct": 0.31,
-      "sl_dist_pct": -0.87
+      "tp_dist_pct": 0.28,
+      "sl_dist_pct": -0.9
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -44,13 +44,13 @@
       "symbol": "APE/USDT",
       "side": "LONG",
       "entry": 0.1529,
-      "current": 0.1541,
-      "pnl_pct": 0.78,
-      "chg_pct": 0.78,
+      "current": 0.1537,
+      "pnl_pct": 0.52,
+      "chg_pct": 0.52,
       "tp": 0.15410686032270013,
       "sl": 0.15209542645153326,
-      "tp_dist_pct": 0.0,
-      "sl_dist_pct": -1.3
+      "tp_dist_pct": 0.26,
+      "sl_dist_pct": -1.04
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -58,13 +58,13 @@
       "symbol": "AR/USDT",
       "side": "LONG",
       "entry": 4.144,
-      "current": 4.174,
-      "pnl_pct": 0.72,
-      "chg_pct": 0.72,
+      "current": 4.161,
+      "pnl_pct": 0.41,
+      "chg_pct": 0.41,
       "tp": 4.186431373171456,
       "sl": 4.115712417885696,
-      "tp_dist_pct": 0.3,
-      "sl_dist_pct": -1.4
+      "tp_dist_pct": 0.61,
+      "sl_dist_pct": -1.09
     }
   ],
   "recent_trades": [
@@ -180,7 +180,7 @@
     }
   ],
   "tuner": {
-    "ts": 1791667246658,
+    "ts": 1791667748010,
     "n": 231,
     "overall": {
       "n": 231,
@@ -204,8 +204,25 @@
         "banned": false
       }
     },
-    "problems": [],
-    "actions": [],
+    "problems": [
+      {
+        "kind": "strategy",
+        "strategy": "HMA-Projection",
+        "n": 22,
+        "wr": 31.8,
+        "exp": -0.00132,
+        "msg": "win rate < 45% and negative expectancy"
+      }
+    ],
+    "actions": [
+      {
+        "action": "quarantine",
+        "strategy": "HMA-Projection",
+        "n": 22,
+        "wr": 31.8,
+        "exp": -0.00132
+      }
+    ],
     "quarantined": [
       "HTF-Candle",
       "TH-DualMode",
