@@ -1,9 +1,9 @@
 {
-  "date": "2026-10-10 08:24 UTC",
+  "date": "2026-10-10 08:34 UTC",
   "cash": 9572.36,
-  "equity": 9972.53,
-  "pnl": -27.47,
-  "pnl_pct": -0.27,
+  "equity": 9972.0,
+  "pnl": -28.0,
+  "pnl_pct": -0.28,
   "open_positions": 4,
   "closed_trades": 214,
   "win_rate": 39.3,
@@ -16,13 +16,13 @@
       "symbol": "ADA/USDT",
       "side": "SHORT",
       "entry": 0.2544,
-      "current": 0.2562,
-      "pnl_pct": -0.71,
-      "chg_pct": 0.71,
+      "current": 0.2554,
+      "pnl_pct": -0.39,
+      "chg_pct": 0.39,
       "tp": 0.24933588414116997,
       "sl": 0.25819808689412255,
-      "tp_dist_pct": 2.68,
-      "sl_dist_pct": -0.78
+      "tp_dist_pct": 2.37,
+      "sl_dist_pct": -1.1
     },
     {
       "strategy": "RSI-Divergence",
@@ -44,13 +44,13 @@
       "symbol": "AAVE/USDT",
       "side": "LONG",
       "entry": 173.83,
-      "current": 174.41,
-      "pnl_pct": 0.33,
-      "chg_pct": 0.33,
+      "current": 174.09,
+      "pnl_pct": 0.15,
+      "chg_pct": 0.15,
       "tp": 176.7721860188696,
       "sl": 171.9911337382065,
-      "tp_dist_pct": 1.35,
-      "sl_dist_pct": -1.39
+      "tp_dist_pct": 1.54,
+      "sl_dist_pct": -1.21
     },
     {
       "strategy": "Po3-Minimal",
@@ -58,13 +58,13 @@
       "symbol": "ALGO/USDT",
       "side": "LONG",
       "entry": 0.11625,
-      "current": 0.11558,
-      "pnl_pct": -0.58,
-      "chg_pct": -0.58,
+      "current": 0.11555,
+      "pnl_pct": -0.6,
+      "chg_pct": -0.6,
       "tp": 0.11739798635805543,
       "sl": 0.11538901023145844,
-      "tp_dist_pct": 1.57,
-      "sl_dist_pct": -0.17
+      "tp_dist_pct": 1.6,
+      "sl_dist_pct": -0.14
     }
   ],
   "recent_trades": [
@@ -180,7 +180,7 @@
     }
   ],
   "tuner": {
-    "ts": 1791620637749,
+    "ts": 1791621266129,
     "n": 214,
     "overall": {
       "n": 214,
@@ -204,40 +204,8 @@
         "banned": false
       }
     },
-    "problems": [
-      {
-        "kind": "strategy",
-        "strategy": "TH-DualMode",
-        "n": 9,
-        "wr": 22.2,
-        "exp": -0.00116,
-        "msg": "win rate < 45% and negative expectancy"
-      },
-      {
-        "kind": "strategy",
-        "strategy": "Divergence-Scanner",
-        "n": 9,
-        "wr": 44.4,
-        "exp": -0.00047,
-        "msg": "win rate < 45% and negative expectancy"
-      }
-    ],
-    "actions": [
-      {
-        "action": "quarantine",
-        "strategy": "TH-DualMode",
-        "n": 9,
-        "wr": 22.2,
-        "exp": -0.00116
-      },
-      {
-        "action": "quarantine",
-        "strategy": "Divergence-Scanner",
-        "n": 9,
-        "wr": 44.4,
-        "exp": -0.00047
-      }
-    ],
+    "problems": [],
+    "actions": [],
     "quarantined": [
       "HTF-Candle",
       "TH-DualMode",
