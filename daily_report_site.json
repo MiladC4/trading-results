@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-10 21:59 UTC",
+  "date": "2026-10-10 22:05 UTC",
   "cash": 9565.69,
-  "equity": 9966.07,
-  "pnl": -33.93,
+  "equity": 9965.88,
+  "pnl": -34.12,
   "pnl_pct": -0.34,
   "open_positions": 4,
   "closed_trades": 231,
@@ -21,8 +21,8 @@
       "chg_pct": -0.2,
       "tp": 0.09915712905065292,
       "sl": 0.09789524729956472,
-      "tp_dist_pct": 0.97,
-      "sl_dist_pct": -0.31
+      "tp_dist_pct": 0.77,
+      "sl_dist_pct": -0.51
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -30,13 +30,13 @@
       "symbol": "2Z/USDT",
       "side": "LONG",
       "entry": 0.03724,
-      "current": 0.03743,
-      "pnl_pct": 0.51,
-      "chg_pct": 0.51,
+      "current": 0.03738,
+      "pnl_pct": 0.38,
+      "chg_pct": 0.38,
       "tp": 0.037504515550075904,
       "sl": 0.0370636562999494,
-      "tp_dist_pct": 0.2,
-      "sl_dist_pct": -0.98
+      "tp_dist_pct": 0.33,
+      "sl_dist_pct": -0.85
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -44,13 +44,13 @@
       "symbol": "APE/USDT",
       "side": "LONG",
       "entry": 0.1529,
-      "current": 0.1534,
-      "pnl_pct": 0.33,
-      "chg_pct": 0.33,
+      "current": 0.1531,
+      "pnl_pct": 0.13,
+      "chg_pct": 0.13,
       "tp": 0.15410686032270013,
       "sl": 0.15209542645153326,
-      "tp_dist_pct": 0.46,
-      "sl_dist_pct": -0.85
+      "tp_dist_pct": 0.66,
+      "sl_dist_pct": -0.66
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -58,13 +58,13 @@
       "symbol": "AR/USDT",
       "side": "LONG",
       "entry": 4.144,
-      "current": 4.15,
-      "pnl_pct": 0.14,
-      "chg_pct": 0.14,
+      "current": 4.141,
+      "pnl_pct": -0.07,
+      "chg_pct": -0.07,
       "tp": 4.186431373171456,
       "sl": 4.115712417885696,
-      "tp_dist_pct": 0.88,
-      "sl_dist_pct": -0.83
+      "tp_dist_pct": 1.1,
+      "sl_dist_pct": -0.61
     }
   ],
   "recent_trades": [
@@ -180,7 +180,7 @@
     }
   ],
   "tuner": {
-    "ts": 1791669545023,
+    "ts": 1791669896793,
     "n": 231,
     "overall": {
       "n": 231,
