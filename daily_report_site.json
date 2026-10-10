@@ -1,42 +1,16 @@
 {
-  "date": "2026-10-10 14:53 UTC",
-  "cash": 9868.81,
-  "equity": 9969.22,
-  "pnl": -30.78,
-  "pnl_pct": -0.31,
-  "open_positions": 1,
-  "closed_trades": 224,
-  "win_rate": 39.3,
+  "date": "2026-10-10 15:04 UTC",
+  "cash": 9968.2,
+  "equity": 9968.2,
+  "pnl": -31.8,
+  "pnl_pct": -0.32,
+  "open_positions": 0,
+  "closed_trades": 225,
+  "win_rate": 39.1,
   "avg_win": 1.94,
-  "avg_loss": -1.219,
-  "positions": [
-    {
-      "strategy": "RSI-Divergence",
-      "strategy_full": "STRAT: RSI Divergence Confirmation",
-      "symbol": "1INCH/USDT",
-      "side": "SHORT",
-      "entry": 0.098,
-      "current": 0.0985,
-      "pnl_pct": -0.51,
-      "chg_pct": 0.51,
-      "tp": 0.09719996614924248,
-      "sl": 0.09850002115672346,
-      "tp_dist_pct": 1.32,
-      "sl_dist_pct": -0.0
-    }
-  ],
+  "avg_loss": -1.214,
+  "positions": [],
   "recent_trades": [
-    {
-      "strategy": "Po3-Minimal",
-      "symbol": "ALGO/USDT",
-      "result": "LOSS",
-      "pnl_pct": -0.741,
-      "entry": 0.11625,
-      "exit": 0.115389,
-      "chg_pct": -0.741,
-      "candles": 34,
-      "exit_reason": "sl"
-    },
     {
       "strategy": "Harmonic-Pro",
       "symbol": "2Z/USDT",
@@ -135,16 +109,27 @@
       "chg_pct": 0.741,
       "candles": 34,
       "exit_reason": "tp"
+    },
+    {
+      "strategy": "RSI-Divergence",
+      "symbol": "1INCH/USDT",
+      "result": "LOSS",
+      "pnl_pct": -0.51,
+      "entry": 0.098,
+      "exit": 0.0985,
+      "chg_pct": 0.51,
+      "candles": 138,
+      "exit_reason": "sl"
     }
   ],
   "tuner": {
-    "ts": 1791644006359,
-    "n": 224,
+    "ts": 1791644645516,
+    "n": 225,
     "overall": {
-      "n": 224,
-      "wr": 39.3,
-      "exp": 0.00022,
-      "tot": 0.049
+      "n": 225,
+      "wr": 39.1,
+      "exp": 0.0002,
+      "tot": 0.044
     },
     "sides": {
       "long": {
@@ -155,10 +140,10 @@
         "banned": true
       },
       "short": {
-        "n": 189,
-        "wr": 40.7,
-        "exp": 0.00098,
-        "tot": 0.186,
+        "n": 190,
+        "wr": 40.5,
+        "exp": 0.00095,
+        "tot": 0.181,
         "banned": false
       }
     },
@@ -252,15 +237,15 @@
       {
         "uid": "conv_O43CmL2z",
         "name": "RSI-Divergence",
-        "n": 39,
-        "wr": 38.5,
-        "exp": 0.00027,
-        "tot": 0.011,
+        "n": 40,
+        "wr": 37.5,
+        "exp": 0.00014,
+        "tot": 0.005,
         "tp": 6.0,
         "sl": 3.75,
-        "ap": 0.281,
-        "tp_pct": 1.69,
-        "sl_pct": 1.06,
+        "ap": 0.278,
+        "tp_pct": 1.67,
+        "sl_pct": 1.04,
         "src": "model",
         "quarantined": false
       },
