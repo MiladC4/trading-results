@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-10 09:39 UTC",
+  "date": "2026-10-10 09:43 UTC",
   "cash": 9671.52,
-  "equity": 9972.6,
-  "pnl": -27.4,
+  "equity": 9972.72,
+  "pnl": -27.28,
   "pnl_pct": -0.27,
   "open_positions": 3,
   "closed_trades": 215,
@@ -16,13 +16,13 @@
       "symbol": "ADA/USDT",
       "side": "SHORT",
       "entry": 0.2544,
-      "current": 0.2561,
-      "pnl_pct": -0.67,
-      "chg_pct": 0.67,
+      "current": 0.2564,
+      "pnl_pct": -0.79,
+      "chg_pct": 0.79,
       "tp": 0.24933588414116997,
       "sl": 0.25819808689412255,
-      "tp_dist_pct": 2.64,
-      "sl_dist_pct": -0.82
+      "tp_dist_pct": 2.76,
+      "sl_dist_pct": -0.7
     },
     {
       "strategy": "RSI-Divergence",
@@ -166,7 +166,7 @@
     }
   ],
   "tuner": {
-    "ts": 1791625156407,
+    "ts": 1791625402545,
     "n": 215,
     "overall": {
       "n": 215,
