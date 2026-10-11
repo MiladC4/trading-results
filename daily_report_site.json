@@ -1,14 +1,14 @@
 {
-  "date": "2026-10-11 11:19 UTC",
-  "cash": 8956.54,
-  "equity": 9953.96,
-  "pnl": -46.04,
-  "pnl_pct": -0.46,
+  "date": "2026-10-11 11:23 UTC",
+  "cash": 8956.11,
+  "equity": 9955.55,
+  "pnl": -44.45,
+  "pnl_pct": -0.44,
   "open_positions": 10,
-  "closed_trades": 250,
-  "win_rate": 38.4,
+  "closed_trades": 251,
+  "win_rate": 38.2,
   "avg_win": 1.861,
-  "avg_loss": -1.168,
+  "avg_loss": -1.162,
   "positions": [
     {
       "strategy": "RSI-Divergence",
@@ -16,13 +16,13 @@
       "symbol": "AAVE/USDT",
       "side": "SHORT",
       "entry": 167.83,
-      "current": 166.87,
-      "pnl_pct": 0.57,
-      "chg_pct": -0.57,
+      "current": 167.07,
+      "pnl_pct": 0.45,
+      "chg_pct": -0.45,
       "tp": 166.55336596778946,
       "sl": 168.6278962701316,
-      "tp_dist_pct": 0.19,
-      "sl_dist_pct": -1.05
+      "tp_dist_pct": 0.31,
+      "sl_dist_pct": -0.93
     },
     {
       "strategy": "Po3-Minimal",
@@ -30,13 +30,13 @@
       "symbol": "AR/USDT",
       "side": "LONG",
       "entry": 4.095,
-      "current": 4.08,
-      "pnl_pct": -0.37,
-      "chg_pct": -0.37,
+      "current": 4.09,
+      "pnl_pct": -0.12,
+      "chg_pct": -0.12,
       "tp": 4.138456923750414,
       "sl": 4.062407307187189,
-      "tp_dist_pct": 1.43,
-      "sl_dist_pct": -0.43
+      "tp_dist_pct": 1.18,
+      "sl_dist_pct": -0.67
     },
     {
       "strategy": "Harmonic-Pro",
@@ -44,13 +44,13 @@
       "symbol": "A/USDT",
       "side": "SHORT",
       "entry": 0.10197,
-      "current": 0.10131,
-      "pnl_pct": 0.65,
-      "chg_pct": -0.65,
+      "current": 0.10152,
+      "pnl_pct": 0.44,
+      "chg_pct": -0.44,
       "tp": 0.10073445455403084,
       "sl": 0.10289665908447689,
-      "tp_dist_pct": 0.57,
-      "sl_dist_pct": -1.57
+      "tp_dist_pct": 0.77,
+      "sl_dist_pct": -1.36
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -58,13 +58,13 @@
       "symbol": "ALGO/USDT",
       "side": "SHORT",
       "entry": 0.11822,
-      "current": 0.11807,
-      "pnl_pct": 0.13,
-      "chg_pct": -0.13,
+      "current": 0.11829,
+      "pnl_pct": -0.06,
+      "chg_pct": 0.06,
       "tp": 0.11718276090566414,
       "sl": 0.11891149272955724,
-      "tp_dist_pct": 0.75,
-      "sl_dist_pct": -0.71
+      "tp_dist_pct": 0.94,
+      "sl_dist_pct": -0.53
     },
     {
       "strategy": "Po3-Minimal",
@@ -72,13 +72,13 @@
       "symbol": "APE/USDT",
       "side": "SHORT",
       "entry": 0.1549,
-      "current": 0.1548,
-      "pnl_pct": 0.06,
-      "chg_pct": -0.06,
+      "current": 0.1551,
+      "pnl_pct": -0.13,
+      "chg_pct": 0.13,
       "tp": 0.15237393900710544,
       "sl": 0.15679454574467094,
-      "tp_dist_pct": 1.57,
-      "sl_dist_pct": -1.29
+      "tp_dist_pct": 1.76,
+      "sl_dist_pct": -1.09
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -86,13 +86,13 @@
       "symbol": "ARB/USDT",
       "side": "SHORT",
       "entry": 0.1974,
-      "current": 0.1976,
-      "pnl_pct": -0.1,
-      "chg_pct": 0.1,
+      "current": 0.199,
+      "pnl_pct": -0.81,
+      "chg_pct": 0.81,
       "tp": 0.19269045196819679,
       "sl": 0.2005396986878688,
-      "tp_dist_pct": 2.48,
-      "sl_dist_pct": -1.49
+      "tp_dist_pct": 3.17,
+      "sl_dist_pct": -0.77
     },
     {
       "strategy": "TJR-v4",
@@ -100,13 +100,13 @@
       "symbol": "ASTER/USDT",
       "side": "SHORT",
       "entry": 0.70966,
-      "current": 0.71041,
-      "pnl_pct": -0.11,
-      "chg_pct": 0.11,
+      "current": 0.71094,
+      "pnl_pct": -0.18,
+      "chg_pct": 0.18,
       "tp": 0.7069162338727596,
       "sl": 0.7117178245954303,
-      "tp_dist_pct": 0.49,
-      "sl_dist_pct": -0.18
+      "tp_dist_pct": 0.57,
+      "sl_dist_pct": -0.11
     },
     {
       "strategy": "TJR-v4",
@@ -114,13 +114,13 @@
       "symbol": "ATH/USDT",
       "side": "SHORT",
       "entry": 0.006431,
-      "current": 0.006422,
-      "pnl_pct": 0.14,
-      "chg_pct": -0.14,
+      "current": 0.006442,
+      "pnl_pct": -0.17,
+      "chg_pct": 0.17,
       "tp": 0.006373128810460899,
       "sl": 0.006474403392154326,
-      "tp_dist_pct": 0.76,
-      "sl_dist_pct": -0.82
+      "tp_dist_pct": 1.07,
+      "sl_dist_pct": -0.5
     },
     {
       "strategy": "TJR-v4",
@@ -137,32 +137,21 @@
       "sl_dist_pct": -0.5
     },
     {
-      "strategy": "Harmonic-Pro",
-      "strategy_full": "STRAT: MSX Harmonic Pro",
-      "symbol": "AVAX/USDT",
+      "strategy": "VolDiv-Bayes",
+      "strategy_full": "STRAT: Volume Divergence & Bayesian Projection",
+      "symbol": "1INCH/USDT",
       "side": "SHORT",
-      "entry": 10.327,
-      "current": 10.33,
-      "pnl_pct": -0.03,
-      "chg_pct": 0.03,
-      "tp": 10.295907998008632,
-      "sl": 10.350319001493526,
-      "tp_dist_pct": 0.33,
-      "sl_dist_pct": -0.2
+      "entry": 0.0969,
+      "current": 0.0969,
+      "pnl_pct": -0.0,
+      "chg_pct": 0.0,
+      "tp": 0.09620772633132321,
+      "sl": 0.09736151577911786,
+      "tp_dist_pct": 0.71,
+      "sl_dist_pct": -0.48
     }
   ],
   "recent_trades": [
-    {
-      "strategy": "Harmonic-Pro",
-      "symbol": "ADA/USDT",
-      "result": "LOSS",
-      "pnl_pct": -0.753,
-      "entry": 0.246,
-      "exit": 0.247852,
-      "chg_pct": 0.753,
-      "candles": 13,
-      "exit_reason": "sl"
-    },
     {
       "strategy": "RSI-Divergence",
       "symbol": "ASTER/USDT",
@@ -261,16 +250,27 @@
       "chg_pct": -0.677,
       "candles": 23,
       "exit_reason": "sl"
+    },
+    {
+      "strategy": "Harmonic-Pro",
+      "symbol": "AVAX/USDT",
+      "result": "LOSS",
+      "pnl_pct": -0.226,
+      "entry": 10.327,
+      "exit": 10.350339,
+      "chg_pct": 0.226,
+      "candles": 8,
+      "exit_reason": "sl"
     }
   ],
   "tuner": {
-    "ts": 1791717546004,
-    "n": 250,
+    "ts": 1791717801604,
+    "n": 251,
     "overall": {
-      "n": 250,
-      "wr": 38.4,
-      "exp": -5e-05,
-      "tot": -0.013
+      "n": 251,
+      "wr": 38.2,
+      "exp": -6e-05,
+      "tot": -0.015
     },
     "sides": {
       "long": {
@@ -281,10 +281,10 @@
         "banned": true
       },
       "short": {
-        "n": 199,
-        "wr": 38.7,
-        "exp": 0.0005,
-        "tot": 0.1,
+        "n": 200,
+        "wr": 38.5,
+        "exp": 0.00049,
+        "tot": 0.097,
         "banned": false
       }
     },
@@ -292,8 +292,8 @@
       {
         "kind": "overall",
         "msg": "system is net negative",
-        "n": 250,
-        "exp": -5e-05
+        "n": 251,
+        "exp": -6e-05
       }
     ],
     "actions": [],
@@ -401,15 +401,15 @@
       {
         "uid": "conv_Ww3aoTN9",
         "name": "Harmonic-Pro",
-        "n": 10,
-        "wr": 40.0,
-        "exp": 0.00311,
-        "tot": 0.031,
+        "n": 11,
+        "wr": 36.4,
+        "exp": 0.00262,
+        "tot": 0.029,
         "tp": 6.0,
         "sl": 4.5,
-        "ap": 0.377,
-        "tp_pct": 2.26,
-        "sl_pct": 1.7,
+        "ap": 0.348,
+        "tp_pct": 2.09,
+        "sl_pct": 1.56,
         "src": "model",
         "quarantined": false
       },
