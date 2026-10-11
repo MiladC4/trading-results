@@ -1,9 +1,9 @@
 {
-  "date": "2026-10-11 12:59 UTC",
+  "date": "2026-10-11 13:09 UTC",
   "cash": 9249.68,
-  "equity": 9949.02,
-  "pnl": -50.98,
-  "pnl_pct": -0.51,
+  "equity": 9948.49,
+  "pnl": -51.51,
+  "pnl_pct": -0.52,
   "open_positions": 7,
   "closed_trades": 258,
   "win_rate": 37.2,
@@ -16,13 +16,13 @@
       "symbol": "AAVE/USDT",
       "side": "SHORT",
       "entry": 167.83,
-      "current": 167.04,
-      "pnl_pct": 0.47,
-      "chg_pct": -0.47,
+      "current": 167.13,
+      "pnl_pct": 0.42,
+      "chg_pct": -0.42,
       "tp": 166.55336596778946,
       "sl": 168.6278962701316,
-      "tp_dist_pct": 0.29,
-      "sl_dist_pct": -0.95
+      "tp_dist_pct": 0.35,
+      "sl_dist_pct": -0.9
     },
     {
       "strategy": "Po3-Minimal",
@@ -30,13 +30,13 @@
       "symbol": "AR/USDT",
       "side": "LONG",
       "entry": 4.095,
-      "current": 4.117,
-      "pnl_pct": 0.54,
-      "chg_pct": 0.54,
+      "current": 4.12,
+      "pnl_pct": 0.61,
+      "chg_pct": 0.61,
       "tp": 4.138456923750414,
       "sl": 4.062407307187189,
-      "tp_dist_pct": 0.52,
-      "sl_dist_pct": -1.33
+      "tp_dist_pct": 0.45,
+      "sl_dist_pct": -1.4
     },
     {
       "strategy": "Harmonic-Pro",
@@ -44,13 +44,13 @@
       "symbol": "A/USDT",
       "side": "SHORT",
       "entry": 0.10197,
-      "current": 0.10122,
-      "pnl_pct": 0.74,
-      "chg_pct": -0.74,
+      "current": 0.10086,
+      "pnl_pct": 1.09,
+      "chg_pct": -1.09,
       "tp": 0.10073445455403084,
       "sl": 0.10289665908447689,
-      "tp_dist_pct": 0.48,
-      "sl_dist_pct": -1.66
+      "tp_dist_pct": 0.12,
+      "sl_dist_pct": -2.02
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -58,13 +58,13 @@
       "symbol": "ALGO/USDT",
       "side": "SHORT",
       "entry": 0.11822,
-      "current": 0.11838,
-      "pnl_pct": -0.14,
-      "chg_pct": 0.14,
+      "current": 0.11806,
+      "pnl_pct": 0.14,
+      "chg_pct": -0.14,
       "tp": 0.11718276090566414,
       "sl": 0.11891149272955724,
-      "tp_dist_pct": 1.01,
-      "sl_dist_pct": -0.45
+      "tp_dist_pct": 0.74,
+      "sl_dist_pct": -0.72
     },
     {
       "strategy": "Po3-Minimal",
@@ -72,13 +72,13 @@
       "symbol": "APE/USDT",
       "side": "SHORT",
       "entry": 0.1549,
-      "current": 0.156,
-      "pnl_pct": -0.71,
-      "chg_pct": 0.71,
+      "current": 0.1561,
+      "pnl_pct": -0.77,
+      "chg_pct": 0.77,
       "tp": 0.15237393900710544,
       "sl": 0.15679454574467094,
-      "tp_dist_pct": 2.32,
-      "sl_dist_pct": -0.51
+      "tp_dist_pct": 2.39,
+      "sl_dist_pct": -0.44
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -86,13 +86,13 @@
       "symbol": "1INCH/USDT",
       "side": "SHORT",
       "entry": 0.0969,
-      "current": 0.097,
-      "pnl_pct": -0.1,
-      "chg_pct": 0.1,
+      "current": 0.0971,
+      "pnl_pct": -0.21,
+      "chg_pct": 0.21,
       "tp": 0.09620772633132321,
       "sl": 0.09736151577911786,
-      "tp_dist_pct": 0.82,
-      "sl_dist_pct": -0.37
+      "tp_dist_pct": 0.92,
+      "sl_dist_pct": -0.27
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -100,13 +100,13 @@
       "symbol": "ADA/USDT",
       "side": "LONG",
       "entry": 0.2483,
-      "current": 0.2477,
-      "pnl_pct": -0.24,
-      "chg_pct": -0.24,
+      "current": 0.2472,
+      "pnl_pct": -0.44,
+      "chg_pct": -0.44,
       "tp": 0.2500033296243819,
       "sl": 0.24716444691707876,
-      "tp_dist_pct": 0.93,
-      "sl_dist_pct": -0.22
+      "tp_dist_pct": 1.13,
+      "sl_dist_pct": -0.01
     }
   ],
   "recent_trades": [
@@ -222,7 +222,7 @@
     }
   ],
   "tuner": {
-    "ts": 1791723545763,
+    "ts": 1791724150872,
     "n": 258,
     "overall": {
       "n": 258,
@@ -252,9 +252,25 @@
         "msg": "system is net negative",
         "n": 258,
         "exp": -0.00026
+      },
+      {
+        "kind": "strategy",
+        "strategy": "Swing-OrderBlock",
+        "n": 9,
+        "wr": 44.4,
+        "exp": -0.00301,
+        "msg": "win rate < 45% and negative expectancy"
       }
     ],
-    "actions": [],
+    "actions": [
+      {
+        "action": "quarantine",
+        "strategy": "Swing-OrderBlock",
+        "n": 9,
+        "wr": 44.4,
+        "exp": -0.00301
+      }
+    ],
     "quarantined": [
       "HTF-Candle",
       "TH-DualMode",
