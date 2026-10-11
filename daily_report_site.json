@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-11 01:04 UTC",
+  "date": "2026-10-11 01:14 UTC",
   "cash": 9863.67,
-  "equity": 9963.19,
-  "pnl": -36.81,
+  "equity": 9963.28,
+  "pnl": -36.72,
   "pnl_pct": -0.37,
   "open_positions": 1,
   "closed_trades": 234,
@@ -16,13 +16,13 @@
       "symbol": "2Z/USDT",
       "side": "LONG",
       "entry": 0.03724,
-      "current": 0.0371,
-      "pnl_pct": -0.38,
-      "chg_pct": -0.38,
+      "current": 0.03713,
+      "pnl_pct": -0.3,
+      "chg_pct": -0.3,
       "tp": 0.037504515550075904,
       "sl": 0.0370636562999494,
-      "tp_dist_pct": 1.09,
-      "sl_dist_pct": -0.1
+      "tp_dist_pct": 1.01,
+      "sl_dist_pct": -0.18
     }
   ],
   "recent_trades": [
@@ -138,7 +138,7 @@
     }
   ],
   "tuner": {
-    "ts": 1791680639016,
+    "ts": 1791681236630,
     "n": 234,
     "overall": {
       "n": 234,
