@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-11 00:31 UTC",
+  "date": "2026-10-11 00:39 UTC",
   "cash": 9764.3,
-  "equity": 9963.72,
-  "pnl": -36.28,
+  "equity": 9963.56,
+  "pnl": -36.44,
   "pnl_pct": -0.36,
   "open_positions": 2,
   "closed_trades": 233,
@@ -16,13 +16,13 @@
       "symbol": "2Z/USDT",
       "side": "LONG",
       "entry": 0.03724,
-      "current": 0.03727,
-      "pnl_pct": 0.08,
-      "chg_pct": 0.08,
+      "current": 0.03721,
+      "pnl_pct": -0.08,
+      "chg_pct": -0.08,
       "tp": 0.037504515550075904,
       "sl": 0.0370636562999494,
-      "tp_dist_pct": 0.63,
-      "sl_dist_pct": -0.55
+      "tp_dist_pct": 0.79,
+      "sl_dist_pct": -0.39
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -152,7 +152,7 @@
     }
   ],
   "tuner": {
-    "ts": 1791678539769,
+    "ts": 1791679150063,
     "n": 233,
     "overall": {
       "n": 233,
@@ -176,25 +176,8 @@
         "banned": false
       }
     },
-    "problems": [
-      {
-        "kind": "strategy",
-        "strategy": "HTF-Candle",
-        "n": 26,
-        "wr": 42.3,
-        "exp": -0.0002,
-        "msg": "win rate < 45% and negative expectancy"
-      }
-    ],
-    "actions": [
-      {
-        "action": "quarantine",
-        "strategy": "HTF-Candle",
-        "n": 26,
-        "wr": 42.3,
-        "exp": -0.0002
-      }
-    ],
+    "problems": [],
+    "actions": [],
     "quarantined": [
       "HTF-Candle",
       "TH-DualMode",
