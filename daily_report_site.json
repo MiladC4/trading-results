@@ -1,14 +1,14 @@
 {
-  "date": "2026-10-11 00:14 UTC",
-  "cash": 9665.08,
-  "equity": 9964.55,
-  "pnl": -35.45,
-  "pnl_pct": -0.35,
-  "open_positions": 3,
-  "closed_trades": 232,
-  "win_rate": 38.8,
+  "date": "2026-10-11 00:29 UTC",
+  "cash": 9764.3,
+  "equity": 9963.83,
+  "pnl": -36.17,
+  "pnl_pct": -0.36,
+  "open_positions": 2,
+  "closed_trades": 233,
+  "win_rate": 38.6,
   "avg_win": 1.921,
-  "avg_loss": -1.197,
+  "avg_loss": -1.193,
   "positions": [
     {
       "strategy": "VolDiv-Bayes",
@@ -16,13 +16,13 @@
       "symbol": "2Z/USDT",
       "side": "LONG",
       "entry": 0.03724,
-      "current": 0.03722,
-      "pnl_pct": -0.05,
-      "chg_pct": -0.05,
+      "current": 0.03724,
+      "pnl_pct": 0.0,
+      "chg_pct": 0.0,
       "tp": 0.037504515550075904,
       "sl": 0.0370636562999494,
-      "tp_dist_pct": 0.76,
-      "sl_dist_pct": -0.42
+      "tp_dist_pct": 0.71,
+      "sl_dist_pct": -0.47
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -30,41 +30,16 @@
       "symbol": "APE/USDT",
       "side": "LONG",
       "entry": 0.1529,
-      "current": 0.1533,
-      "pnl_pct": 0.26,
-      "chg_pct": 0.26,
+      "current": 0.1525,
+      "pnl_pct": -0.26,
+      "chg_pct": -0.26,
       "tp": 0.15410686032270013,
       "sl": 0.15209542645153326,
-      "tp_dist_pct": 0.53,
-      "sl_dist_pct": -0.79
-    },
-    {
-      "strategy": "VolDiv-Bayes",
-      "strategy_full": "STRAT: Volume Divergence & Bayesian Projection",
-      "symbol": "AR/USDT",
-      "side": "LONG",
-      "entry": 4.144,
-      "current": 4.126,
-      "pnl_pct": -0.43,
-      "chg_pct": -0.43,
-      "tp": 4.186431373171456,
-      "sl": 4.115712417885696,
-      "tp_dist_pct": 1.46,
-      "sl_dist_pct": -0.25
+      "tp_dist_pct": 1.05,
+      "sl_dist_pct": -0.27
     }
   ],
   "recent_trades": [
-    {
-      "strategy": "VolDiv-Bayes",
-      "symbol": "ALGO/USDT",
-      "result": "WIN",
-      "pnl_pct": 1.031,
-      "entry": 0.11502,
-      "exit": 0.116206,
-      "chg_pct": 1.031,
-      "candles": 34,
-      "exit_reason": "tp"
-    },
     {
       "strategy": "RSI-Divergence",
       "symbol": "AR/USDT",
@@ -163,23 +138,34 @@
       "chg_pct": -0.513,
       "candles": 60,
       "exit_reason": "sl"
+    },
+    {
+      "strategy": "VolDiv-Bayes",
+      "symbol": "AR/USDT",
+      "result": "LOSS",
+      "pnl_pct": -0.683,
+      "entry": 4.144,
+      "exit": 4.115696,
+      "chg_pct": -0.683,
+      "candles": 79,
+      "exit_reason": "sl"
     }
   ],
   "tuner": {
-    "ts": 1791677642622,
-    "n": 232,
+    "ts": 1791678539769,
+    "n": 233,
     "overall": {
-      "n": 232,
-      "wr": 38.8,
-      "exp": 0.00013,
-      "tot": 0.03
+      "n": 233,
+      "wr": 38.6,
+      "exp": 0.0001,
+      "tot": 0.023
     },
     "sides": {
       "long": {
-        "n": 42,
-        "wr": 31.0,
-        "exp": -0.0036,
-        "tot": -0.151,
+        "n": 43,
+        "wr": 30.2,
+        "exp": -0.00367,
+        "tot": -0.158,
         "banned": true
       },
       "short": {
@@ -190,8 +176,25 @@
         "banned": false
       }
     },
-    "problems": [],
-    "actions": [],
+    "problems": [
+      {
+        "kind": "strategy",
+        "strategy": "HTF-Candle",
+        "n": 26,
+        "wr": 42.3,
+        "exp": -0.0002,
+        "msg": "win rate < 45% and negative expectancy"
+      }
+    ],
+    "actions": [
+      {
+        "action": "quarantine",
+        "strategy": "HTF-Candle",
+        "n": 26,
+        "wr": 42.3,
+        "exp": -0.0002
+      }
+    ],
     "quarantined": [
       "HTF-Candle",
       "TH-DualMode",
@@ -355,15 +358,15 @@
       {
         "uid": "conv_rPOx1NRY",
         "name": "VolDiv-Bayes",
-        "n": 68,
-        "wr": 41.2,
-        "exp": 0.00114,
-        "tot": 0.078,
+        "n": 69,
+        "wr": 40.6,
+        "exp": 0.00103,
+        "tot": 0.071,
         "tp": 6.0,
         "sl": 4.0,
-        "ap": 0.275,
-        "tp_pct": 1.65,
-        "sl_pct": 1.1,
+        "ap": 0.274,
+        "tp_pct": 1.64,
+        "sl_pct": 1.09,
         "src": "model",
         "quarantined": false
       },
