@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-11 00:29 UTC",
+  "date": "2026-10-11 00:31 UTC",
   "cash": 9764.3,
-  "equity": 9963.83,
-  "pnl": -36.17,
+  "equity": 9963.72,
+  "pnl": -36.28,
   "pnl_pct": -0.36,
   "open_positions": 2,
   "closed_trades": 233,
@@ -16,13 +16,13 @@
       "symbol": "2Z/USDT",
       "side": "LONG",
       "entry": 0.03724,
-      "current": 0.03724,
-      "pnl_pct": 0.0,
-      "chg_pct": 0.0,
+      "current": 0.03727,
+      "pnl_pct": 0.08,
+      "chg_pct": 0.08,
       "tp": 0.037504515550075904,
       "sl": 0.0370636562999494,
-      "tp_dist_pct": 0.71,
-      "sl_dist_pct": -0.47
+      "tp_dist_pct": 0.63,
+      "sl_dist_pct": -0.55
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -30,13 +30,13 @@
       "symbol": "APE/USDT",
       "side": "LONG",
       "entry": 0.1529,
-      "current": 0.1525,
-      "pnl_pct": -0.26,
-      "chg_pct": -0.26,
+      "current": 0.1522,
+      "pnl_pct": -0.46,
+      "chg_pct": -0.46,
       "tp": 0.15410686032270013,
       "sl": 0.15209542645153326,
-      "tp_dist_pct": 1.05,
-      "sl_dist_pct": -0.27
+      "tp_dist_pct": 1.25,
+      "sl_dist_pct": -0.07
     }
   ],
   "recent_trades": [
