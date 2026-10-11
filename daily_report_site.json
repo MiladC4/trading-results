@@ -1,14 +1,14 @@
 {
-  "date": "2026-10-11 14:09 UTC",
-  "cash": 9549.38,
-  "equity": 9948.09,
-  "pnl": -51.91,
+  "date": "2026-10-11 14:14 UTC",
+  "cash": 9648.82,
+  "equity": 9947.71,
+  "pnl": -52.29,
   "pnl_pct": -0.52,
-  "open_positions": 4,
-  "closed_trades": 261,
-  "win_rate": 37.2,
+  "open_positions": 3,
+  "closed_trades": 262,
+  "win_rate": 37.0,
   "avg_win": 1.853,
-  "avg_loss": -1.138,
+  "avg_loss": -1.133,
   "positions": [
     {
       "strategy": "RSI-Divergence",
@@ -16,13 +16,13 @@
       "symbol": "AAVE/USDT",
       "side": "SHORT",
       "entry": 167.83,
-      "current": 167.74,
-      "pnl_pct": 0.05,
-      "chg_pct": -0.05,
+      "current": 167.73,
+      "pnl_pct": 0.06,
+      "chg_pct": -0.06,
       "tp": 166.55336596778946,
       "sl": 168.6278962701316,
-      "tp_dist_pct": 0.71,
-      "sl_dist_pct": -0.53
+      "tp_dist_pct": 0.7,
+      "sl_dist_pct": -0.54
     },
     {
       "strategy": "Harmonic-Pro",
@@ -30,13 +30,13 @@
       "symbol": "A/USDT",
       "side": "SHORT",
       "entry": 0.10197,
-      "current": 0.10178,
-      "pnl_pct": 0.19,
-      "chg_pct": -0.19,
+      "current": 0.10153,
+      "pnl_pct": 0.43,
+      "chg_pct": -0.43,
       "tp": 0.10073445455403084,
       "sl": 0.10289665908447689,
-      "tp_dist_pct": 1.03,
-      "sl_dist_pct": -1.1
+      "tp_dist_pct": 0.78,
+      "sl_dist_pct": -1.35
     },
     {
       "strategy": "Po3-Minimal",
@@ -51,34 +51,9 @@
       "sl": 0.15679454574467094,
       "tp_dist_pct": 1.31,
       "sl_dist_pct": -1.55
-    },
-    {
-      "strategy": "VolDiv-Bayes",
-      "strategy_full": "STRAT: Volume Divergence & Bayesian Projection",
-      "symbol": "ADA/USDT",
-      "side": "LONG",
-      "entry": 0.2483,
-      "current": 0.2475,
-      "pnl_pct": -0.32,
-      "chg_pct": -0.32,
-      "tp": 0.2500033296243819,
-      "sl": 0.24716444691707876,
-      "tp_dist_pct": 1.01,
-      "sl_dist_pct": -0.14
     }
   ],
   "recent_trades": [
-    {
-      "strategy": "TJR-v4",
-      "symbol": "ASTER/USDT",
-      "result": "LOSS",
-      "pnl_pct": -0.29,
-      "entry": 0.70966,
-      "exit": 0.711718,
-      "chg_pct": 0.29,
-      "candles": 10,
-      "exit_reason": "sl"
-    },
     {
       "strategy": "VolDiv-Bayes",
       "symbol": "ARB/USDT",
@@ -177,23 +152,34 @@
       "chg_pct": 0.585,
       "candles": 34,
       "exit_reason": "sl"
+    },
+    {
+      "strategy": "VolDiv-Bayes",
+      "symbol": "ADA/USDT",
+      "result": "LOSS",
+      "pnl_pct": -0.457,
+      "entry": 0.2483,
+      "exit": 0.247165,
+      "chg_pct": -0.457,
+      "candles": 23,
+      "exit_reason": "sl"
     }
   ],
   "tuner": {
-    "ts": 1791727751345,
-    "n": 261,
+    "ts": 1791728050809,
+    "n": 262,
     "overall": {
-      "n": 261,
-      "wr": 37.2,
-      "exp": -0.00026,
-      "tot": -0.068
+      "n": 262,
+      "wr": 37.0,
+      "exp": -0.00028,
+      "tot": -0.073
     },
     "sides": {
       "long": {
-        "n": 53,
-        "wr": 37.7,
-        "exp": -0.00216,
-        "tot": -0.115,
+        "n": 54,
+        "wr": 37.0,
+        "exp": -0.00221,
+        "tot": -0.119,
         "banned": true
       },
       "short": {
@@ -208,8 +194,8 @@
       {
         "kind": "overall",
         "msg": "system is net negative",
-        "n": 261,
-        "exp": -0.00026
+        "n": 262,
+        "exp": -0.00028
       }
     ],
     "actions": [],
@@ -377,14 +363,14 @@
       {
         "uid": "conv_rPOx1NRY",
         "name": "VolDiv-Bayes",
-        "n": 82,
-        "wr": 39.0,
-        "exp": 0.00031,
-        "tot": 0.026,
+        "n": 83,
+        "wr": 38.6,
+        "exp": 0.00025,
+        "tot": 0.021,
         "tp": 6.0,
         "sl": 4.0,
-        "ap": 0.261,
-        "tp_pct": 1.57,
+        "ap": 0.259,
+        "tp_pct": 1.56,
         "sl_pct": 1.04,
         "src": "model",
         "quarantined": false
