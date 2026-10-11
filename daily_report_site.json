@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-11 22:03 UTC",
+  "date": "2026-10-11 22:14 UTC",
   "cash": 9739.88,
-  "equity": 9938.59,
-  "pnl": -61.41,
+  "equity": 9938.54,
+  "pnl": -61.46,
   "pnl_pct": -0.61,
   "open_positions": 2,
   "closed_trades": 273,
@@ -16,13 +16,13 @@
       "symbol": "1INCH/USDT",
       "side": "LONG",
       "entry": 0.0988,
-      "current": 0.0989,
-      "pnl_pct": 0.1,
-      "chg_pct": 0.1,
+      "current": 0.0987,
+      "pnl_pct": -0.1,
+      "chg_pct": -0.1,
       "tp": 0.09986032676009411,
       "sl": 0.0980931154932706,
-      "tp_dist_pct": 0.97,
-      "sl_dist_pct": -0.82
+      "tp_dist_pct": 1.18,
+      "sl_dist_pct": -0.61
     },
     {
       "strategy": "TJR-v4",
@@ -30,13 +30,13 @@
       "symbol": "ATOM/USDT",
       "side": "LONG",
       "entry": 1.935,
-      "current": 1.912,
-      "pnl_pct": -1.19,
-      "chg_pct": -1.19,
+      "current": 1.915,
+      "pnl_pct": -1.03,
+      "chg_pct": -1.03,
       "tp": 1.9733992283501562,
       "sl": 1.906200578737383,
-      "tp_dist_pct": 3.21,
-      "sl_dist_pct": -0.3
+      "tp_dist_pct": 3.05,
+      "sl_dist_pct": -0.46
     }
   ],
   "recent_trades": [
@@ -152,7 +152,7 @@
     }
   ],
   "tuner": {
-    "ts": 1791756232314,
+    "ts": 1791756862740,
     "n": 273,
     "overall": {
       "n": 273,
