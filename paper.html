@@ -45,7 +45,9 @@
         
         <div class="card">
             <h2>📊 Equity Curve (7-Day Hourly)</h2>
-            <canvas id="equity-chart" height="300"></canvas>
+            <div style="height: 300px; position: relative;">
+                <canvas id="equity-chart"></canvas>
+            </div>
             <div class="equity-stats" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 15px; text-align: center;">
                 <div style="background:#21262d;padding:10px;border-radius:6px;border:1px solid #30363d;">
                     <div class="stat-value" id="eq-current" style="font-size:1.3rem;"></div>
@@ -273,7 +275,7 @@
                             },
                             options: {
                                 responsive: true,
-                                maintainAspectRatio: false,
+                                maintainAspectRatio: true,
                                 interaction: {
                                     mode: 'index',
                                     intersect: false,
@@ -299,22 +301,25 @@
                                     }
                                 },
                                 scales: {
-                                                        x: {
-                                                            grid: { color: '#30363d' },
-                                                            ticks: { color: '#8b949e', maxTicksLimit: 12, font: { size: 10 } },
-                                                        },
-                                                        y: {
-                                                            grid: { color: '#30363d' },
-                                                            ticks: { 
-                                                                color: '#8b949e', 
-                                                                font: { size: 11 },
-                                                                callback: function(value) { return '$' + value.toLocaleString(); }
-                                                            },
-                                                            min: 9950,
-                                                            max: 10050
-                                                        }
-                                                    },
-                                animation: { duration: 0 }
+                                    x: {
+                                        grid: { color: '#30363d' },
+                                        ticks: { color: '#8b949e', maxTicksLimit: 12, font: { size: 10 } },
+                                    },
+                                    y: {
+                                        grid: { color: '#30363d' },
+                                        ticks: { 
+                                            color: '#8b949e', 
+                                            font: { size: 11 },
+                                            callback: function(value) { return '$' + value.toLocaleString(); }
+                                        },
+                                        min: 9950,
+                                        max: 10050
+                                    }
+                                },
+                                animation: { duration: 0 },
+                                layout: {
+                                    padding: { top: 10, right: 10, bottom: 10, left: 10 }
+                                }
                             }
                         });
                     }
