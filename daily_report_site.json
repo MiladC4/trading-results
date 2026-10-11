@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-11 23:24 UTC",
+  "date": "2026-10-11 23:28 UTC",
   "cash": 9739.88,
-  "equity": 9938.75,
-  "pnl": -61.25,
+  "equity": 9938.8,
+  "pnl": -61.2,
   "pnl_pct": -0.61,
   "open_positions": 2,
   "closed_trades": 273,
@@ -30,13 +30,13 @@
       "symbol": "ATOM/USDT",
       "side": "LONG",
       "entry": 1.935,
-      "current": 1.917,
-      "pnl_pct": -0.93,
-      "chg_pct": -0.93,
+      "current": 1.918,
+      "pnl_pct": -0.88,
+      "chg_pct": -0.88,
       "tp": 1.9733992283501562,
       "sl": 1.906200578737383,
-      "tp_dist_pct": 2.94,
-      "sl_dist_pct": -0.56
+      "tp_dist_pct": 2.89,
+      "sl_dist_pct": -0.62
     }
   ],
   "recent_trades": [
@@ -152,7 +152,7 @@
     }
   ],
   "tuner": {
-    "ts": 1791761056182,
+    "ts": 1791761304141,
     "n": 273,
     "overall": {
       "n": 273,
