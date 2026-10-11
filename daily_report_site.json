@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-11 08:53 UTC",
+  "date": "2026-10-11 08:59 UTC",
   "cash": 9757.34,
-  "equity": 9957.37,
-  "pnl": -42.63,
+  "equity": 9957.29,
+  "pnl": -42.71,
   "pnl_pct": -0.43,
   "open_positions": 2,
   "closed_trades": 250,
@@ -16,13 +16,13 @@
       "symbol": "AAVE/USDT",
       "side": "SHORT",
       "entry": 167.83,
-      "current": 167.4,
-      "pnl_pct": 0.26,
-      "chg_pct": -0.26,
+      "current": 167.55,
+      "pnl_pct": 0.17,
+      "chg_pct": -0.17,
       "tp": 166.55336596778946,
       "sl": 168.6278962701316,
-      "tp_dist_pct": 0.51,
-      "sl_dist_pct": -0.73
+      "tp_dist_pct": 0.59,
+      "sl_dist_pct": -0.64
     },
     {
       "strategy": "Po3-Minimal",
@@ -30,13 +30,13 @@
       "symbol": "AR/USDT",
       "side": "LONG",
       "entry": 4.095,
-      "current": 4.115,
-      "pnl_pct": 0.49,
-      "chg_pct": 0.49,
+      "current": 4.108,
+      "pnl_pct": 0.32,
+      "chg_pct": 0.32,
       "tp": 4.138456923750414,
       "sl": 4.062407307187189,
-      "tp_dist_pct": 0.57,
-      "sl_dist_pct": -1.28
+      "tp_dist_pct": 0.74,
+      "sl_dist_pct": -1.11
     }
   ],
   "recent_trades": [
@@ -152,7 +152,7 @@
     }
   ],
   "tuner": {
-    "ts": 1791708785218,
+    "ts": 1791709139605,
     "n": 250,
     "overall": {
       "n": 250,
