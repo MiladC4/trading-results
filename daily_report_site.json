@@ -1,14 +1,14 @@
 {
-  "date": "2026-10-11 11:29 UTC",
-  "cash": 8956.11,
-  "equity": 9955.97,
-  "pnl": -44.03,
-  "pnl_pct": -0.44,
-  "open_positions": 10,
-  "closed_trades": 251,
-  "win_rate": 38.2,
+  "date": "2026-10-11 11:34 UTC",
+  "cash": 9055.72,
+  "equity": 9955.21,
+  "pnl": -44.79,
+  "pnl_pct": -0.45,
+  "open_positions": 9,
+  "closed_trades": 252,
+  "win_rate": 38.1,
   "avg_win": 1.861,
-  "avg_loss": -1.162,
+  "avg_loss": -1.157,
   "positions": [
     {
       "strategy": "RSI-Divergence",
@@ -44,13 +44,13 @@
       "symbol": "A/USDT",
       "side": "SHORT",
       "entry": 0.10197,
-      "current": 0.10157,
-      "pnl_pct": 0.39,
-      "chg_pct": -0.39,
+      "current": 0.1015,
+      "pnl_pct": 0.46,
+      "chg_pct": -0.46,
       "tp": 0.10073445455403084,
       "sl": 0.10289665908447689,
-      "tp_dist_pct": 0.82,
-      "sl_dist_pct": -1.31
+      "tp_dist_pct": 0.75,
+      "sl_dist_pct": -1.38
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -58,13 +58,13 @@
       "symbol": "ALGO/USDT",
       "side": "SHORT",
       "entry": 0.11822,
-      "current": 0.11804,
-      "pnl_pct": 0.15,
-      "chg_pct": -0.15,
+      "current": 0.11796,
+      "pnl_pct": 0.22,
+      "chg_pct": -0.22,
       "tp": 0.11718276090566414,
       "sl": 0.11891149272955724,
-      "tp_dist_pct": 0.73,
-      "sl_dist_pct": -0.74
+      "tp_dist_pct": 0.66,
+      "sl_dist_pct": -0.81
     },
     {
       "strategy": "Po3-Minimal",
@@ -72,13 +72,13 @@
       "symbol": "APE/USDT",
       "side": "SHORT",
       "entry": 0.1549,
-      "current": 0.1554,
-      "pnl_pct": -0.32,
-      "chg_pct": 0.32,
+      "current": 0.1553,
+      "pnl_pct": -0.26,
+      "chg_pct": 0.26,
       "tp": 0.15237393900710544,
       "sl": 0.15679454574467094,
-      "tp_dist_pct": 1.95,
-      "sl_dist_pct": -0.9
+      "tp_dist_pct": 1.88,
+      "sl_dist_pct": -0.96
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -97,30 +97,16 @@
     {
       "strategy": "TJR-v4",
       "strategy_full": "TJR v4 Strategy",
-      "symbol": "ASTER/USDT",
-      "side": "SHORT",
-      "entry": 0.70966,
-      "current": 0.71146,
-      "pnl_pct": -0.25,
-      "chg_pct": 0.25,
-      "tp": 0.7069162338727596,
-      "sl": 0.7117178245954303,
-      "tp_dist_pct": 0.64,
-      "sl_dist_pct": -0.04
-    },
-    {
-      "strategy": "TJR-v4",
-      "strategy_full": "TJR v4 Strategy",
       "symbol": "ATH/USDT",
       "side": "SHORT",
       "entry": 0.006431,
-      "current": 0.006447,
-      "pnl_pct": -0.25,
-      "chg_pct": 0.25,
+      "current": 0.006443,
+      "pnl_pct": -0.19,
+      "chg_pct": 0.19,
       "tp": 0.006373128810460899,
       "sl": 0.006474403392154326,
-      "tp_dist_pct": 1.15,
-      "sl_dist_pct": -0.43
+      "tp_dist_pct": 1.08,
+      "sl_dist_pct": -0.49
     },
     {
       "strategy": "TJR-v4",
@@ -128,13 +114,13 @@
       "symbol": "ATOM/USDT",
       "side": "SHORT",
       "entry": 1.917,
-      "current": 1.917,
-      "pnl_pct": -0.0,
-      "chg_pct": 0.0,
+      "current": 1.918,
+      "pnl_pct": -0.05,
+      "chg_pct": 0.05,
       "tp": 1.9016529452814168,
       "sl": 1.9285102910389373,
-      "tp_dist_pct": 0.8,
-      "sl_dist_pct": -0.6
+      "tp_dist_pct": 0.85,
+      "sl_dist_pct": -0.55
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -152,17 +138,6 @@
     }
   ],
   "recent_trades": [
-    {
-      "strategy": "RSI-Divergence",
-      "symbol": "ASTER/USDT",
-      "result": "LOSS",
-      "pnl_pct": -0.405,
-      "entry": 0.70662,
-      "exit": 0.709482,
-      "chg_pct": 0.405,
-      "candles": 13,
-      "exit_reason": "sl"
-    },
     {
       "strategy": "Po3-Minimal",
       "symbol": "APE/USDT",
@@ -261,16 +236,27 @@
       "chg_pct": 0.226,
       "candles": 8,
       "exit_reason": "sl"
+    },
+    {
+      "strategy": "TJR-v4",
+      "symbol": "ASTER/USDT",
+      "result": "LOSS",
+      "pnl_pct": -0.29,
+      "entry": 0.70966,
+      "exit": 0.711718,
+      "chg_pct": 0.29,
+      "candles": 10,
+      "exit_reason": "sl"
     }
   ],
   "tuner": {
-    "ts": 1791718146871,
-    "n": 251,
+    "ts": 1791718454549,
+    "n": 252,
     "overall": {
-      "n": 251,
-      "wr": 38.2,
-      "exp": -6e-05,
-      "tot": -0.015
+      "n": 252,
+      "wr": 38.1,
+      "exp": -7e-05,
+      "tot": -0.018
     },
     "sides": {
       "long": {
@@ -281,10 +267,10 @@
         "banned": true
       },
       "short": {
-        "n": 200,
-        "wr": 38.5,
-        "exp": 0.00049,
-        "tot": 0.097,
+        "n": 201,
+        "wr": 38.3,
+        "exp": 0.00047,
+        "tot": 0.094,
         "banned": false
       }
     },
@@ -292,8 +278,8 @@
       {
         "kind": "overall",
         "msg": "system is net negative",
-        "n": 251,
-        "exp": -6e-05
+        "n": 252,
+        "exp": -7e-05
       }
     ],
     "actions": [],
@@ -476,15 +462,15 @@
       {
         "uid": "xXrbltSH",
         "name": "TJR-v4",
-        "n": 13,
-        "wr": 46.2,
-        "exp": 0.00189,
-        "tot": 0.025,
+        "n": 14,
+        "wr": 42.9,
+        "exp": 0.00155,
+        "tot": 0.022,
         "tp": 6.0,
         "sl": 4.5,
-        "ap": 0.25,
-        "tp_pct": 1.5,
-        "sl_pct": 1.13,
+        "ap": 0.237,
+        "tp_pct": 1.42,
+        "sl_pct": 1.07,
         "src": "model",
         "quarantined": false
       }
