@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trading Results - Live Paper Trading</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
     <style>
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #0d1117; color: #c9d1d9; line-height: 1.6; padding: 20px; }
@@ -42,6 +43,29 @@
             <div class="stats-grid" id="overview"></div>
         </div>
         
+        <div class="card">
+            <h2>📊 Equity Curve (7-Day Hourly)</h2>
+            <canvas id="equity-chart" height="300"></canvas>
+            <div class="equity-stats" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 15px; text-align: center;">
+                <div style="background:#21262d;padding:10px;border-radius:6px;border:1px solid #30363d;">
+                    <div class="stat-value" id="eq-current" style="font-size:1.3rem;"></div>
+                    <div class="stat-label">Current</div>
+                </div>
+                <div style="background:#21262d;padding:10px;border-radius:6px;border:1px solid #30363d;">
+                    <div class="stat-value positive" id="eq-high" style="font-size:1.3rem;"></div>
+                    <div class="stat-label">7-Day High</div>
+                </div>
+                <div style="background:#21262d;padding:10px;border-radius:6px;border:1px solid #30363d;">
+                    <div class="stat-value negative" id="eq-low" style="font-size:1.3rem;"></div>
+                    <div class="stat-label">7-Day Low</div>
+                </div>
+                <div style="background:#21262d;padding:10px;border-radius:6px;border:1px solid #30363d;">
+                    <div class="stat-value" id="eq-return" style="font-size:1.3rem;"></div>
+                    <div class="stat-label">Total Return</div>
+                </div>
+            </div>
+        </div>
+
         <div class="card">
             <h2>🟢 Open Positions</h2>
             <table id="open-table">
@@ -163,33 +187,140 @@
             }
             
             // Closed trades
-            const closedBody = document.getElementById('closed-body');
-            const noClosed = document.getElementById('no-closed');
-            if (data.recent_trades && data.recent_trades.length > 0) {
-                noClosed.style.display = 'none';
-                closedBody.innerHTML = data.recent_trades.map(t => `
-                    <tr>
-                        <td><span class="strategy-badge">${t.strategy}</span></td>
-                        <td>${t.symbol}</td>
-                        <td class="${t.result === 'WIN' ? 'win' : 'loss'}">${t.result}</td>
-                        <td>${t.entry != null ? Number(t.entry).toFixed(4) : '-'}</td>
-                        <td>${t.exit != null ? Number(t.exit).toFixed(4) : '-'}</td>
-                        <td class="${(t.chg_pct || 0) >= 0 ? 'pnl-positive' : 'pnl-negative'}">${t.chg_pct != null ? (t.chg_pct >= 0 ? '+' : '') + Number(t.chg_pct).toFixed(3) + '%' : '-'}</td>
-                        <td class="${t.pnl_pct >= 0 ? 'pnl-positive' : 'pnl-negative'}">${t.pnl_pct >= 0 ? '+' : ''}${t.pnl_pct.toFixed(3)}%</td>
-                        <td>${t.candles != null ? t.candles : '-'}</td>
-                        <td>${t.exit_reason}</td>
-                    </tr>
-                `).join('');
-            } else {
-                noClosed.style.display = 'block';
-                closedBody.innerHTML = '';
-            }
+                        const closedBody = document.getElementById('closed-body');
+                        const noClosed = document.getElementById('no-closed');
+                        if (data.recent_trades && data.recent_trades.length > 0) {
+                            noClosed.style.display = 'none';
+                            closedBody.innerHTML = data.recent_trades.map(t => `
+                                <tr>
+                                    <td><span class="strategy-badge">${t.strategy}</span></td>
+                                    <td>${t.symbol}</td>
+                                    <td class="${t.result === 'WIN' ? 'win' : 'loss'}">${t.result}</td>
+                                    <td>${t.entry != null ? Number(t.entry).toFixed(4) : '-'}</td>
+                                    <td>${t.exit != null ? Number(t.exit).toFixed(4) : '-'}</td>
+                                    <td class="${(t.chg_pct || 0) >= 0 ? 'pnl-positive' : 'pnl-negative'}">${t.chg_pct != null ? (t.chg_pct >= 0 ? '+' : '') + Number(t.chg_pct).toFixed(3) + '%' : '-'}</td>
+                                    <td class="${t.pnl_pct >= 0 ? 'pnl-positive' : 'pnl-negative'}">${t.pnl_pct >= 0 ? '+' : ''}${t.pnl_pct.toFixed(3)}%</td>
+                                    <td>${t.candles != null ? t.candles : '-'}</td>
+                                    <td>${t.exit_reason}</td>
+                                </tr>
+                            `).join('');
+                        } else {
+                            noClosed.style.display = 'block';
+                            closedBody.innerHTML = '';
+                        }
+
+                        document.getElementById('last-update').textContent = `Last updated: ${data.date}`;
+                    }
+
+                    async function loadEquityChart() {
+                        try {
+                            const res = await fetch('equity_chart_data.json?' + Date.now());
+                            const equityData = await res.json();
+                            renderEquityChart(equityData);
+                        } catch (e) {
+                            console.error('Failed to load equity chart:', e);
+                        }
+                    }
+
+                    function renderEquityChart(equityData) {
+                        const ctx = document.getElementById('equity-chart').getContext('2d');
+                        const labels = equityData.map(d => d.dt.slice(5, 16)); // MM-DD HH:MM
+                        const values = equityData.map(d => d.equity);
             
-            document.getElementById('last-update').textContent = `Last updated: ${data.date}`;
-        }
-        
-        loadData();
-        setInterval(loadData, 60000); // Refresh every minute
+                        const minVal = Math.min(...values);
+                        const maxVal = Math.max(...values);
+                        const currentVal = values[values.length - 1];
+                        const returnPct = ((currentVal - 10000) / 10000) * 100;
+            
+                        // Update stats
+                        document.getElementById('eq-current').textContent = '$' + currentVal.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2});
+                        document.getElementById('eq-high').textContent = '$' + maxVal.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2});
+                        document.getElementById('eq-low').textContent = '$' + minVal.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2});
+                        document.getElementById('eq-return').textContent = (returnPct >= 0 ? '+' : '') + returnPct.toFixed(2) + '%';
+                        document.getElementById('eq-return').className = 'stat-value ' + (returnPct >= 0 ? 'positive' : 'negative');
+            
+                        // Gradient for area under curve
+                        const gradient = ctx.createLinearGradient(0, 0, 0, 300);
+                        gradient.addColorStop(0, 'rgba(88, 166, 255, 0.3)');
+                        gradient.addColorStop(1, 'rgba(88, 166, 255, 0.0)');
+            
+                        // Starting line at $10,000
+                        const startLineVal = 10000;
+            
+                        new Chart(ctx, {
+                            type: 'line',
+                            data: {
+                                labels: labels,
+                                datasets: [{
+                                    label: 'Equity ($)',
+                                    data: values,
+                                    borderColor: '#58a6ff',
+                                    backgroundColor: gradient,
+                                    borderWidth: 2,
+                                    fill: true,
+                                    tension: 0.1,
+                                    pointRadius: 0,
+                                    pointHoverRadius: 4,
+                                }, {
+                                    label: 'Start ($10,000)',
+                                    data: new Array(values.length).fill(startLineVal),
+                                    borderColor: '#8b949e',
+                                    borderWidth: 1,
+                                    borderDash: [5, 5],
+                                    fill: false,
+                                    pointRadius: 0,
+                                }]
+                            },
+                            options: {
+                                responsive: true,
+                                maintainAspectRatio: false,
+                                interaction: {
+                                    mode: 'index',
+                                    intersect: false,
+                                },
+                                plugins: {
+                                    legend: {
+                                        display: true,
+                                        labels: { color: '#c9d1d9', font: { size: 12 } }
+                                    },
+                                    tooltip: {
+                                        backgroundColor: '#161b22',
+                                        titleColor: '#c9d1d9',
+                                        bodyColor: '#c9d1d9',
+                                        borderColor: '#30363d',
+                                        borderWidth: 1,
+                                        callbacks: {
+                                            label: function(context) {
+                                                const val = context.parsed.y;
+                                                const pct = ((val - 10000) / 10000) * 100;
+                                                return `${context.dataset.label}: $${val.toLocaleString(undefined, {minimumFractionDigits: 2, maximumFractionDigits: 2})} (${pct >= 0 ? '+' : ''}${pct.toFixed(2)}%)`;
+                                            }
+                                        }
+                                    }
+                                },
+                                scales: {
+                                    x: {
+                                        grid: { color: '#30363d' },
+                                        ticks: { color: '#8b949e', maxTicksLimit: 12, font: { size: 10 } },
+                                    },
+                                    y: {
+                                        grid: { color: '#30363d' },
+                                        ticks: { 
+                                            color: '#8b949e', 
+                                            font: { size: 11 },
+                                            callback: function(value) { return '$' + value.toLocaleString(); }
+                                        }
+                                    }
+                                },
+                                animation: { duration: 0 }
+                            }
+                        });
+                    }
+
+                    loadData();
+                    loadEquityChart();
+                    setInterval(loadData, 60000); // Refresh every minute
+                    setInterval(loadEquityChart, 3600000); // Refresh equity chart hourly
     </script>
 </body>
 </html>
