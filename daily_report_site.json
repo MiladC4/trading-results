@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-11 00:39 UTC",
+  "date": "2026-10-11 00:54 UTC",
   "cash": 9764.3,
-  "equity": 9963.56,
-  "pnl": -36.44,
+  "equity": 9964.15,
+  "pnl": -35.85,
   "pnl_pct": -0.36,
   "open_positions": 2,
   "closed_trades": 233,
@@ -16,13 +16,13 @@
       "symbol": "2Z/USDT",
       "side": "LONG",
       "entry": 0.03724,
-      "current": 0.03721,
-      "pnl_pct": -0.08,
-      "chg_pct": -0.08,
+      "current": 0.03743,
+      "pnl_pct": 0.51,
+      "chg_pct": 0.51,
       "tp": 0.037504515550075904,
       "sl": 0.0370636562999494,
-      "tp_dist_pct": 0.79,
-      "sl_dist_pct": -0.39
+      "tp_dist_pct": 0.2,
+      "sl_dist_pct": -0.98
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -152,7 +152,7 @@
     }
   ],
   "tuner": {
-    "ts": 1791679150063,
+    "ts": 1791680045975,
     "n": 233,
     "overall": {
       "n": 233,
@@ -176,8 +176,25 @@
         "banned": false
       }
     },
-    "problems": [],
-    "actions": [],
+    "problems": [
+      {
+        "kind": "strategy",
+        "strategy": "Swing-OrderBlock",
+        "n": 9,
+        "wr": 44.4,
+        "exp": -0.00301,
+        "msg": "win rate < 45% and negative expectancy"
+      }
+    ],
+    "actions": [
+      {
+        "action": "quarantine",
+        "strategy": "Swing-OrderBlock",
+        "n": 9,
+        "wr": 44.4,
+        "exp": -0.00301
+      }
+    ],
     "quarantined": [
       "HTF-Candle",
       "TH-DualMode",
