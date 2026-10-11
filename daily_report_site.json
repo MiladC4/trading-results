@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-11 23:38 UTC",
+  "date": "2026-10-11 23:44 UTC",
   "cash": 9739.88,
-  "equity": 9939.21,
-  "pnl": -60.79,
+  "equity": 9939.36,
+  "pnl": -60.64,
   "pnl_pct": -0.61,
   "open_positions": 2,
   "closed_trades": 273,
@@ -16,13 +16,13 @@
       "symbol": "1INCH/USDT",
       "side": "LONG",
       "entry": 0.0988,
-      "current": 0.099,
-      "pnl_pct": 0.2,
-      "chg_pct": 0.2,
+      "current": 0.0991,
+      "pnl_pct": 0.3,
+      "chg_pct": 0.3,
       "tp": 0.09986032676009411,
       "sl": 0.0980931154932706,
-      "tp_dist_pct": 0.87,
-      "sl_dist_pct": -0.92
+      "tp_dist_pct": 0.77,
+      "sl_dist_pct": -1.02
     },
     {
       "strategy": "TJR-v4",
@@ -30,13 +30,13 @@
       "symbol": "ATOM/USDT",
       "side": "LONG",
       "entry": 1.935,
-      "current": 1.922,
-      "pnl_pct": -0.67,
-      "chg_pct": -0.67,
+      "current": 1.923,
+      "pnl_pct": -0.62,
+      "chg_pct": -0.62,
       "tp": 1.9733992283501562,
       "sl": 1.906200578737383,
-      "tp_dist_pct": 2.67,
-      "sl_dist_pct": -0.82
+      "tp_dist_pct": 2.62,
+      "sl_dist_pct": -0.87
     }
   ],
   "recent_trades": [
@@ -152,7 +152,7 @@
     }
   ],
   "tuner": {
-    "ts": 1791761916063,
+    "ts": 1791762255824,
     "n": 273,
     "overall": {
       "n": 273,
@@ -182,9 +182,25 @@
         "msg": "system is net negative",
         "n": 273,
         "exp": -0.00052
+      },
+      {
+        "kind": "strategy",
+        "strategy": "RSI-Divergence",
+        "n": 47,
+        "wr": 34.0,
+        "exp": -0.0006,
+        "msg": "win rate < 45% and negative expectancy"
       }
     ],
-    "actions": [],
+    "actions": [
+      {
+        "action": "quarantine",
+        "strategy": "RSI-Divergence",
+        "n": 47,
+        "wr": 34.0,
+        "exp": -0.0006
+      }
+    ],
     "quarantined": [
       "HTF-Candle",
       "TH-DualMode",
