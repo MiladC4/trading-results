@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-10 23:54 UTC",
+  "date": "2026-10-11 00:04 UTC",
   "cash": 9665.08,
-  "equity": 9965.04,
-  "pnl": -34.96,
+  "equity": 9965.07,
+  "pnl": -34.93,
   "pnl_pct": -0.35,
   "open_positions": 3,
   "closed_trades": 232,
@@ -16,13 +16,13 @@
       "symbol": "2Z/USDT",
       "side": "LONG",
       "entry": 0.03724,
-      "current": 0.03728,
-      "pnl_pct": 0.11,
-      "chg_pct": 0.11,
+      "current": 0.03742,
+      "pnl_pct": 0.48,
+      "chg_pct": 0.48,
       "tp": 0.037504515550075904,
       "sl": 0.0370636562999494,
-      "tp_dist_pct": 0.6,
-      "sl_dist_pct": -0.58
+      "tp_dist_pct": 0.23,
+      "sl_dist_pct": -0.95
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -30,13 +30,13 @@
       "symbol": "APE/USDT",
       "side": "LONG",
       "entry": 0.1529,
-      "current": 0.1535,
-      "pnl_pct": 0.39,
-      "chg_pct": 0.39,
+      "current": 0.1532,
+      "pnl_pct": 0.2,
+      "chg_pct": 0.2,
       "tp": 0.15410686032270013,
       "sl": 0.15209542645153326,
-      "tp_dist_pct": 0.4,
-      "sl_dist_pct": -0.92
+      "tp_dist_pct": 0.59,
+      "sl_dist_pct": -0.72
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -44,13 +44,13 @@
       "symbol": "AR/USDT",
       "side": "LONG",
       "entry": 4.144,
-      "current": 4.134,
-      "pnl_pct": -0.24,
-      "chg_pct": -0.24,
+      "current": 4.128,
+      "pnl_pct": -0.39,
+      "chg_pct": -0.39,
       "tp": 4.186431373171456,
       "sl": 4.115712417885696,
-      "tp_dist_pct": 1.27,
-      "sl_dist_pct": -0.44
+      "tp_dist_pct": 1.42,
+      "sl_dist_pct": -0.3
     }
   ],
   "recent_trades": [
@@ -166,7 +166,7 @@
     }
   ],
   "tuner": {
-    "ts": 1791676485373,
+    "ts": 1791677042857,
     "n": 232,
     "overall": {
       "n": 232,
@@ -190,25 +190,8 @@
         "banned": false
       }
     },
-    "problems": [
-      {
-        "kind": "side",
-        "side": "long",
-        "n": 42,
-        "wr": 31.0,
-        "exp": -0.0036,
-        "msg": "long side losing money"
-      }
-    ],
-    "actions": [
-      {
-        "action": "ban_side",
-        "side": "long",
-        "n": 42,
-        "wr": 31.0,
-        "exp": -0.0036
-      }
-    ],
+    "problems": [],
+    "actions": [],
     "quarantined": [
       "HTF-Candle",
       "TH-DualMode",
