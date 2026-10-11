@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-11 03:24 UTC",
+  "date": "2026-10-11 03:34 UTC",
   "cash": 9964.28,
   "equity": 9964.28,
   "pnl": -35.72,
@@ -123,7 +123,7 @@
     }
   ],
   "tuner": {
-    "ts": 1791689039997,
+    "ts": 1791689641877,
     "n": 235,
     "overall": {
       "n": 235,
@@ -147,8 +147,25 @@
         "banned": false
       }
     },
-    "problems": [],
-    "actions": [],
+    "problems": [
+      {
+        "kind": "strategy",
+        "strategy": "HMA-Projection",
+        "n": 22,
+        "wr": 31.8,
+        "exp": -0.00132,
+        "msg": "win rate < 45% and negative expectancy"
+      }
+    ],
+    "actions": [
+      {
+        "action": "quarantine",
+        "strategy": "HMA-Projection",
+        "n": 22,
+        "wr": 31.8,
+        "exp": -0.00132
+      }
+    ],
     "quarantined": [
       "HTF-Candle",
       "TH-DualMode",
