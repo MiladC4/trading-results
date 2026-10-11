@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-11 08:24 UTC",
+  "date": "2026-10-11 08:34 UTC",
   "cash": 9757.34,
   "equity": 9956.74,
   "pnl": -43.26,
@@ -16,13 +16,13 @@
       "symbol": "AAVE/USDT",
       "side": "SHORT",
       "entry": 167.83,
-      "current": 167.28,
-      "pnl_pct": 0.33,
-      "chg_pct": -0.33,
+      "current": 167.12,
+      "pnl_pct": 0.42,
+      "chg_pct": -0.42,
       "tp": 166.55336596778946,
       "sl": 168.6278962701316,
-      "tp_dist_pct": 0.43,
-      "sl_dist_pct": -0.81
+      "tp_dist_pct": 0.34,
+      "sl_dist_pct": -0.9
     },
     {
       "strategy": "Po3-Minimal",
@@ -30,13 +30,13 @@
       "symbol": "AR/USDT",
       "side": "LONG",
       "entry": 4.095,
-      "current": 4.092,
-      "pnl_pct": -0.07,
-      "chg_pct": -0.07,
+      "current": 4.096,
+      "pnl_pct": 0.02,
+      "chg_pct": 0.02,
       "tp": 4.138456923750414,
       "sl": 4.062407307187189,
-      "tp_dist_pct": 1.14,
-      "sl_dist_pct": -0.72
+      "tp_dist_pct": 1.04,
+      "sl_dist_pct": -0.82
     }
   ],
   "recent_trades": [
@@ -152,7 +152,7 @@
     }
   ],
   "tuner": {
-    "ts": 1791707090929,
+    "ts": 1791707648497,
     "n": 250,
     "overall": {
       "n": 250,
@@ -182,9 +182,40 @@
         "msg": "system is net negative",
         "n": 250,
         "exp": -5e-05
+      },
+      {
+        "kind": "strategy",
+        "strategy": "TH-DualMode",
+        "n": 9,
+        "wr": 22.2,
+        "exp": -0.00116,
+        "msg": "win rate < 45% and negative expectancy"
+      },
+      {
+        "kind": "strategy",
+        "strategy": "Divergence-Scanner",
+        "n": 9,
+        "wr": 44.4,
+        "exp": -0.00047,
+        "msg": "win rate < 45% and negative expectancy"
       }
     ],
-    "actions": [],
+    "actions": [
+      {
+        "action": "quarantine",
+        "strategy": "TH-DualMode",
+        "n": 9,
+        "wr": 22.2,
+        "exp": -0.00116
+      },
+      {
+        "action": "quarantine",
+        "strategy": "Divergence-Scanner",
+        "n": 9,
+        "wr": 44.4,
+        "exp": -0.00047
+      }
+    ],
     "quarantined": [
       "HTF-Candle",
       "TH-DualMode",
