@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-11 02:34 UTC",
+  "date": "2026-10-11 02:44 UTC",
   "cash": 9964.28,
   "equity": 9964.28,
   "pnl": -35.72,
@@ -123,7 +123,7 @@
     }
   ],
   "tuner": {
-    "ts": 1791686045318,
+    "ts": 1791686639893,
     "n": 235,
     "overall": {
       "n": 235,
@@ -147,40 +147,8 @@
         "banned": false
       }
     },
-    "problems": [
-      {
-        "kind": "strategy",
-        "strategy": "TH-DualMode",
-        "n": 9,
-        "wr": 22.2,
-        "exp": -0.00116,
-        "msg": "win rate < 45% and negative expectancy"
-      },
-      {
-        "kind": "strategy",
-        "strategy": "Divergence-Scanner",
-        "n": 9,
-        "wr": 44.4,
-        "exp": -0.00047,
-        "msg": "win rate < 45% and negative expectancy"
-      }
-    ],
-    "actions": [
-      {
-        "action": "quarantine",
-        "strategy": "TH-DualMode",
-        "n": 9,
-        "wr": 22.2,
-        "exp": -0.00116
-      },
-      {
-        "action": "quarantine",
-        "strategy": "Divergence-Scanner",
-        "n": 9,
-        "wr": 44.4,
-        "exp": -0.00047
-      }
-    ],
+    "problems": [],
+    "actions": [],
     "quarantined": [
       "HTF-Candle",
       "TH-DualMode",
