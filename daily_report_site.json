@@ -1,42 +1,16 @@
 {
-  "date": "2026-10-11 14:44 UTC",
-  "cash": 9846.92,
-  "equity": 9947.42,
-  "pnl": -52.58,
-  "pnl_pct": -0.53,
-  "open_positions": 1,
-  "closed_trades": 264,
-  "win_rate": 36.7,
+  "date": "2026-10-11 14:49 UTC",
+  "cash": 9945.92,
+  "equity": 9945.92,
+  "pnl": -54.08,
+  "pnl_pct": -0.54,
+  "open_positions": 0,
+  "closed_trades": 265,
+  "win_rate": 36.6,
   "avg_win": 1.853,
-  "avg_loss": -1.13,
-  "positions": [
-    {
-      "strategy": "Harmonic-Pro",
-      "strategy_full": "STRAT: MSX Harmonic Pro",
-      "symbol": "A/USDT",
-      "side": "SHORT",
-      "entry": 0.10197,
-      "current": 0.10258,
-      "pnl_pct": -0.6,
-      "chg_pct": 0.6,
-      "tp": 0.10073445455403084,
-      "sl": 0.10289665908447689,
-      "tp_dist_pct": 1.8,
-      "sl_dist_pct": -0.31
-    }
-  ],
+  "avg_loss": -1.129,
+  "positions": [],
   "recent_trades": [
-    {
-      "strategy": "TJR-v4",
-      "symbol": "ATH/USDT",
-      "result": "LOSS",
-      "pnl_pct": -0.675,
-      "entry": 0.006431,
-      "exit": 0.006474,
-      "chg_pct": 0.675,
-      "candles": 17,
-      "exit_reason": "sl"
-    },
     {
       "strategy": "VolDiv-Bayes",
       "symbol": "ARB/USDT",
@@ -135,16 +109,27 @@
       "chg_pct": 1.223,
       "candles": 47,
       "exit_reason": "sl"
+    },
+    {
+      "strategy": "Harmonic-Pro",
+      "symbol": "A/USDT",
+      "result": "LOSS",
+      "pnl_pct": -0.909,
+      "entry": 0.10197,
+      "exit": 0.102897,
+      "chg_pct": 0.909,
+      "candles": 49,
+      "exit_reason": "sl"
     }
   ],
   "tuner": {
-    "ts": 1791729855897,
-    "n": 264,
+    "ts": 1791730159956,
+    "n": 265,
     "overall": {
-      "n": 264,
-      "wr": 36.7,
-      "exp": -0.00034,
-      "tot": -0.09
+      "n": 265,
+      "wr": 36.6,
+      "exp": -0.00037,
+      "tot": -0.099
     },
     "sides": {
       "long": {
@@ -155,10 +140,10 @@
         "banned": true
       },
       "short": {
-        "n": 210,
-        "wr": 36.7,
-        "exp": 0.00014,
-        "tot": 0.029,
+        "n": 211,
+        "wr": 36.5,
+        "exp": 0.0001,
+        "tot": 0.02,
         "banned": false
       }
     },
@@ -166,8 +151,8 @@
       {
         "kind": "overall",
         "msg": "system is net negative",
-        "n": 264,
-        "exp": -0.00034
+        "n": 265,
+        "exp": -0.00037
       }
     ],
     "actions": [],
@@ -276,15 +261,15 @@
       {
         "uid": "conv_Ww3aoTN9",
         "name": "Harmonic-Pro",
-        "n": 11,
-        "wr": 36.4,
-        "exp": 0.00262,
-        "tot": 0.029,
+        "n": 12,
+        "wr": 33.3,
+        "exp": 0.00164,
+        "tot": 0.02,
         "tp": 6.0,
         "sl": 4.5,
-        "ap": 0.348,
-        "tp_pct": 2.09,
-        "sl_pct": 1.56,
+        "ap": 0.336,
+        "tp_pct": 2.01,
+        "sl_pct": 1.51,
         "src": "model",
         "quarantined": false
       },
