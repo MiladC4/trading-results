@@ -1,42 +1,16 @@
 {
-  "date": "2026-10-11 01:34 UTC",
-  "cash": 9863.67,
-  "equity": 9963.87,
-  "pnl": -36.13,
+  "date": "2026-10-11 01:44 UTC",
+  "cash": 9964.28,
+  "equity": 9964.28,
+  "pnl": -35.72,
   "pnl_pct": -0.36,
-  "open_positions": 1,
-  "closed_trades": 234,
-  "win_rate": 38.5,
-  "avg_win": 1.921,
+  "open_positions": 0,
+  "closed_trades": 235,
+  "win_rate": 38.7,
+  "avg_win": 1.908,
   "avg_loss": -1.188,
-  "positions": [
-    {
-      "strategy": "VolDiv-Bayes",
-      "strategy_full": "STRAT: Volume Divergence & Bayesian Projection",
-      "symbol": "2Z/USDT",
-      "side": "LONG",
-      "entry": 0.03724,
-      "current": 0.03735,
-      "pnl_pct": 0.3,
-      "chg_pct": 0.3,
-      "tp": 0.037504515550075904,
-      "sl": 0.0370636562999494,
-      "tp_dist_pct": 0.41,
-      "sl_dist_pct": -0.77
-    }
-  ],
+  "positions": [],
   "recent_trades": [
-    {
-      "strategy": "RSI-Divergence",
-      "symbol": "1INCH/USDT",
-      "result": "LOSS",
-      "pnl_pct": -0.51,
-      "entry": 0.098,
-      "exit": 0.0985,
-      "chg_pct": 0.51,
-      "candles": 138,
-      "exit_reason": "sl"
-    },
     {
       "strategy": "VolDiv-Bayes",
       "symbol": "ADA/USDT",
@@ -135,23 +109,34 @@
       "chg_pct": -0.526,
       "candles": 86,
       "exit_reason": "sl"
+    },
+    {
+      "strategy": "VolDiv-Bayes",
+      "symbol": "2Z/USDT",
+      "result": "WIN",
+      "pnl_pct": 0.71,
+      "entry": 0.03724,
+      "exit": 0.037504,
+      "chg_pct": 0.71,
+      "candles": 94,
+      "exit_reason": "tp"
     }
   ],
   "tuner": {
-    "ts": 1791682444000,
-    "n": 234,
+    "ts": 1791683044718,
+    "n": 235,
     "overall": {
-      "n": 234,
-      "wr": 38.5,
-      "exp": 8e-05,
-      "tot": 0.018
+      "n": 235,
+      "wr": 38.7,
+      "exp": 0.00011,
+      "tot": 0.025
     },
     "sides": {
       "long": {
-        "n": 44,
-        "wr": 29.5,
-        "exp": -0.00371,
-        "tot": -0.163,
+        "n": 45,
+        "wr": 31.1,
+        "exp": -0.00347,
+        "tot": -0.156,
         "banned": true
       },
       "short": {
@@ -327,15 +312,15 @@
       {
         "uid": "conv_rPOx1NRY",
         "name": "VolDiv-Bayes",
-        "n": 70,
-        "wr": 40.0,
-        "exp": 0.00094,
-        "tot": 0.066,
+        "n": 71,
+        "wr": 40.8,
+        "exp": 0.00103,
+        "tot": 0.073,
         "tp": 6.0,
         "sl": 4.0,
-        "ap": 0.272,
-        "tp_pct": 1.63,
-        "sl_pct": 1.09,
+        "ap": 0.269,
+        "tp_pct": 1.62,
+        "sl_pct": 1.08,
         "src": "model",
         "quarantined": false
       },
