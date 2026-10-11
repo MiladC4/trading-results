@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-11 07:34 UTC",
+  "date": "2026-10-11 07:49 UTC",
   "cash": 9658.11,
-  "equity": 9957.87,
-  "pnl": -42.13,
+  "equity": 9957.9,
+  "pnl": -42.1,
   "pnl_pct": -0.42,
   "open_positions": 3,
   "closed_trades": 249,
@@ -16,13 +16,13 @@
       "symbol": "AAVE/USDT",
       "side": "SHORT",
       "entry": 167.83,
-      "current": 167.22,
-      "pnl_pct": 0.36,
-      "chg_pct": -0.36,
+      "current": 167.53,
+      "pnl_pct": 0.18,
+      "chg_pct": -0.18,
       "tp": 166.55336596778946,
       "sl": 168.6278962701316,
-      "tp_dist_pct": 0.4,
-      "sl_dist_pct": -0.84
+      "tp_dist_pct": 0.58,
+      "sl_dist_pct": -0.66
     },
     {
       "strategy": "Po3-Minimal",
@@ -30,13 +30,13 @@
       "symbol": "1INCH/USDT",
       "side": "LONG",
       "entry": 0.0979,
-      "current": 0.0981,
-      "pnl_pct": 0.2,
-      "chg_pct": 0.2,
+      "current": 0.0978,
+      "pnl_pct": -0.1,
+      "chg_pct": -0.1,
       "tp": 0.0987836912481423,
       "sl": 0.09723723156389327,
-      "tp_dist_pct": 0.7,
-      "sl_dist_pct": -0.88
+      "tp_dist_pct": 1.01,
+      "sl_dist_pct": -0.58
     },
     {
       "strategy": "Po3-Minimal",
@@ -44,13 +44,13 @@
       "symbol": "AR/USDT",
       "side": "LONG",
       "entry": 4.095,
-      "current": 4.104,
-      "pnl_pct": 0.22,
-      "chg_pct": 0.22,
+      "current": 4.11,
+      "pnl_pct": 0.37,
+      "chg_pct": 0.37,
       "tp": 4.138456923750414,
       "sl": 4.062407307187189,
-      "tp_dist_pct": 0.84,
-      "sl_dist_pct": -1.01
+      "tp_dist_pct": 0.69,
+      "sl_dist_pct": -1.16
     }
   ],
   "recent_trades": [
@@ -166,7 +166,7 @@
     }
   ],
   "tuner": {
-    "ts": 1791704046800,
+    "ts": 1791704949335,
     "n": 249,
     "overall": {
       "n": 249,
