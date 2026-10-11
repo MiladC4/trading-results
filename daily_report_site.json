@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-11 20:33 UTC",
+  "date": "2026-10-11 20:39 UTC",
   "cash": 9343.63,
-  "equity": 9942.96,
-  "pnl": -57.04,
+  "equity": 9942.82,
+  "pnl": -57.18,
   "pnl_pct": -0.57,
   "open_positions": 6,
   "closed_trades": 269,
@@ -16,13 +16,13 @@
       "symbol": "1INCH/USDT",
       "side": "LONG",
       "entry": 0.0988,
-      "current": 0.0989,
-      "pnl_pct": 0.1,
-      "chg_pct": 0.1,
+      "current": 0.0988,
+      "pnl_pct": 0.0,
+      "chg_pct": 0.0,
       "tp": 0.09986032676009411,
       "sl": 0.0980931154932706,
-      "tp_dist_pct": 0.97,
-      "sl_dist_pct": -0.82
+      "tp_dist_pct": 1.07,
+      "sl_dist_pct": -0.72
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -30,13 +30,13 @@
       "symbol": "2Z/USDT",
       "side": "LONG",
       "entry": 0.03766,
-      "current": 0.0377,
-      "pnl_pct": 0.11,
-      "chg_pct": 0.11,
+      "current": 0.03769,
+      "pnl_pct": 0.08,
+      "chg_pct": 0.08,
       "tp": 0.03802775769919985,
       "sl": 0.03741482820053343,
-      "tp_dist_pct": 0.87,
-      "sl_dist_pct": -0.76
+      "tp_dist_pct": 0.9,
+      "sl_dist_pct": -0.73
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -44,13 +44,13 @@
       "symbol": "ADA/USDT",
       "side": "LONG",
       "entry": 0.2532,
-      "current": 0.2531,
-      "pnl_pct": -0.04,
-      "chg_pct": -0.04,
+      "current": 0.2534,
+      "pnl_pct": 0.08,
+      "chg_pct": 0.08,
       "tp": 0.25658582294493143,
       "sl": 0.250942784703379,
-      "tp_dist_pct": 1.38,
-      "sl_dist_pct": -0.85
+      "tp_dist_pct": 1.26,
+      "sl_dist_pct": -0.97
     },
     {
       "strategy": "Harmonic-Pro",
@@ -58,13 +58,13 @@
       "symbol": "APE/USDT",
       "side": "LONG",
       "entry": 0.1564,
-      "current": 0.1572,
-      "pnl_pct": 0.51,
-      "chg_pct": 0.51,
+      "current": 0.157,
+      "pnl_pct": 0.38,
+      "chg_pct": 0.38,
       "tp": 0.15811355744102756,
       "sl": 0.15511483191922934,
-      "tp_dist_pct": 0.58,
-      "sl_dist_pct": -1.33
+      "tp_dist_pct": 0.71,
+      "sl_dist_pct": -1.2
     },
     {
       "strategy": "TJR-v4",
@@ -208,7 +208,7 @@
     }
   ],
   "tuner": {
-    "ts": 1791750793269,
+    "ts": 1791751153243,
     "n": 269,
     "overall": {
       "n": 269,
@@ -238,9 +238,55 @@
         "msg": "system is net negative",
         "n": 269,
         "exp": -0.0004
+      },
+      {
+        "kind": "strategy",
+        "strategy": "TH-DualMode",
+        "n": 9,
+        "wr": 22.2,
+        "exp": -0.00116,
+        "msg": "win rate < 45% and negative expectancy"
+      },
+      {
+        "kind": "strategy",
+        "strategy": "Po3-Minimal",
+        "n": 9,
+        "wr": 33.3,
+        "exp": -0.0004,
+        "msg": "win rate < 45% and negative expectancy"
+      },
+      {
+        "kind": "strategy",
+        "strategy": "Divergence-Scanner",
+        "n": 9,
+        "wr": 44.4,
+        "exp": -0.00047,
+        "msg": "win rate < 45% and negative expectancy"
       }
     ],
-    "actions": [],
+    "actions": [
+      {
+        "action": "quarantine",
+        "strategy": "TH-DualMode",
+        "n": 9,
+        "wr": 22.2,
+        "exp": -0.00116
+      },
+      {
+        "action": "quarantine",
+        "strategy": "Po3-Minimal",
+        "n": 9,
+        "wr": 33.3,
+        "exp": -0.0004
+      },
+      {
+        "action": "quarantine",
+        "strategy": "Divergence-Scanner",
+        "n": 9,
+        "wr": 44.4,
+        "exp": -0.00047
+      }
+    ],
     "quarantined": [
       "HTF-Candle",
       "TH-DualMode",
