@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-11 14:38 UTC",
+  "date": "2026-10-11 14:44 UTC",
   "cash": 9846.92,
-  "equity": 9947.33,
-  "pnl": -52.67,
+  "equity": 9947.42,
+  "pnl": -52.58,
   "pnl_pct": -0.53,
   "open_positions": 1,
   "closed_trades": 264,
@@ -16,13 +16,13 @@
       "symbol": "A/USDT",
       "side": "SHORT",
       "entry": 0.10197,
-      "current": 0.10249,
-      "pnl_pct": -0.51,
-      "chg_pct": 0.51,
+      "current": 0.10258,
+      "pnl_pct": -0.6,
+      "chg_pct": 0.6,
       "tp": 0.10073445455403084,
       "sl": 0.10289665908447689,
-      "tp_dist_pct": 1.71,
-      "sl_dist_pct": -0.4
+      "tp_dist_pct": 1.8,
+      "sl_dist_pct": -0.31
     }
   ],
   "recent_trades": [
@@ -138,7 +138,7 @@
     }
   ],
   "tuner": {
-    "ts": 1791729515563,
+    "ts": 1791729855897,
     "n": 264,
     "overall": {
       "n": 264,
@@ -168,25 +168,9 @@
         "msg": "system is net negative",
         "n": 264,
         "exp": -0.00034
-      },
-      {
-        "kind": "strategy",
-        "strategy": "Po3-Minimal",
-        "n": 9,
-        "wr": 33.3,
-        "exp": -0.0004,
-        "msg": "win rate < 45% and negative expectancy"
       }
     ],
-    "actions": [
-      {
-        "action": "quarantine",
-        "strategy": "Po3-Minimal",
-        "n": 9,
-        "wr": 33.3,
-        "exp": -0.0004
-      }
-    ],
+    "actions": [],
     "quarantined": [
       "HTF-Candle",
       "TH-DualMode",
