@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-11 09:39 UTC",
+  "date": "2026-10-11 09:43 UTC",
   "cash": 9757.34,
-  "equity": 9957.31,
-  "pnl": -42.69,
+  "equity": 9957.16,
+  "pnl": -42.84,
   "pnl_pct": -0.43,
   "open_positions": 2,
   "closed_trades": 250,
@@ -16,13 +16,13 @@
       "symbol": "AAVE/USDT",
       "side": "SHORT",
       "entry": 167.83,
-      "current": 167.91,
-      "pnl_pct": -0.05,
-      "chg_pct": 0.05,
+      "current": 167.75,
+      "pnl_pct": 0.05,
+      "chg_pct": -0.05,
       "tp": 166.55336596778946,
       "sl": 168.6278962701316,
-      "tp_dist_pct": 0.81,
-      "sl_dist_pct": -0.43
+      "tp_dist_pct": 0.71,
+      "sl_dist_pct": -0.52
     },
     {
       "strategy": "Po3-Minimal",
@@ -30,13 +30,13 @@
       "symbol": "AR/USDT",
       "side": "LONG",
       "entry": 4.095,
-      "current": 4.1,
-      "pnl_pct": 0.12,
-      "chg_pct": 0.12,
+      "current": 4.098,
+      "pnl_pct": 0.07,
+      "chg_pct": 0.07,
       "tp": 4.138456923750414,
       "sl": 4.062407307187189,
-      "tp_dist_pct": 0.94,
-      "sl_dist_pct": -0.92
+      "tp_dist_pct": 0.99,
+      "sl_dist_pct": -0.87
     }
   ],
   "recent_trades": [
@@ -152,7 +152,7 @@
     }
   ],
   "tuner": {
-    "ts": 1791711542182,
+    "ts": 1791711788261,
     "n": 250,
     "overall": {
       "n": 250,
@@ -182,25 +182,9 @@
         "msg": "system is net negative",
         "n": 250,
         "exp": -5e-05
-      },
-      {
-        "kind": "strategy",
-        "strategy": "HMA-Projection",
-        "n": 22,
-        "wr": 31.8,
-        "exp": -0.00132,
-        "msg": "win rate < 45% and negative expectancy"
       }
     ],
-    "actions": [
-      {
-        "action": "quarantine",
-        "strategy": "HMA-Projection",
-        "n": 22,
-        "wr": 31.8,
-        "exp": -0.00132
-      }
-    ],
+    "actions": [],
     "quarantined": [
       "HTF-Candle",
       "TH-DualMode",
