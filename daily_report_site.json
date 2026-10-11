@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-11 17:44 UTC",
+  "date": "2026-10-11 17:50 UTC",
   "cash": 9945.92,
   "equity": 9945.92,
   "pnl": -54.08,
@@ -123,7 +123,7 @@
     }
   ],
   "tuner": {
-    "ts": 1791740651059,
+    "ts": 1791741012622,
     "n": 265,
     "overall": {
       "n": 265,
@@ -153,25 +153,9 @@
         "msg": "system is net negative",
         "n": 265,
         "exp": -0.00037
-      },
-      {
-        "kind": "strategy",
-        "strategy": "RSI-Divergence",
-        "n": 47,
-        "wr": 34.0,
-        "exp": -0.0006,
-        "msg": "win rate < 45% and negative expectancy"
       }
     ],
-    "actions": [
-      {
-        "action": "quarantine",
-        "strategy": "RSI-Divergence",
-        "n": 47,
-        "wr": 34.0,
-        "exp": -0.0006
-      }
-    ],
+    "actions": [],
     "quarantined": [
       "HTF-Candle",
       "TH-DualMode",
