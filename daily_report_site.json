@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-12 09:33 UTC",
+  "date": "2026-10-12 09:38 UTC",
   "cash": 9624.78,
-  "equity": 9923.83,
-  "pnl": -76.17,
+  "equity": 9924.05,
+  "pnl": -75.95,
   "pnl_pct": -0.76,
   "open_positions": 3,
   "closed_trades": 302,
@@ -30,13 +30,13 @@
       "symbol": "ASTER/USDT",
       "side": "LONG",
       "entry": 0.71244,
-      "current": 0.70955,
-      "pnl_pct": -0.41,
-      "chg_pct": -0.41,
+      "current": 0.70973,
+      "pnl_pct": -0.38,
+      "chg_pct": -0.38,
       "tp": 0.7207964714548988,
       "sl": 0.7068690190300674,
-      "tp_dist_pct": 1.59,
-      "sl_dist_pct": -0.38
+      "tp_dist_pct": 1.56,
+      "sl_dist_pct": -0.4
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -44,13 +44,13 @@
       "symbol": "A/USDT",
       "side": "LONG",
       "entry": 0.10143,
-      "current": 0.10108,
-      "pnl_pct": -0.35,
-      "chg_pct": -0.35,
+      "current": 0.10128,
+      "pnl_pct": -0.15,
+      "chg_pct": -0.15,
       "tp": 0.10229955155408393,
       "sl": 0.10085029896394405,
-      "tp_dist_pct": 1.21,
-      "sl_dist_pct": -0.23
+      "tp_dist_pct": 1.01,
+      "sl_dist_pct": -0.42
     }
   ],
   "recent_trades": [
