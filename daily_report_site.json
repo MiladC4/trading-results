@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-12 03:24 UTC",
+  "date": "2026-10-12 03:29 UTC",
   "cash": 9937.48,
   "equity": 9937.48,
   "pnl": -62.52,
@@ -123,7 +123,7 @@
     }
   ],
   "tuner": {
-    "ts": 1791775450947,
+    "ts": 1791775757415,
     "n": 275,
     "overall": {
       "n": 275,
@@ -153,40 +153,9 @@
         "msg": "system is net negative",
         "n": 275,
         "exp": -0.00059
-      },
-      {
-        "kind": "strategy",
-        "strategy": "VolDiv-Bayes",
-        "n": 90,
-        "wr": 36.7,
-        "exp": -0.00012,
-        "msg": "win rate < 45% and negative expectancy"
-      },
-      {
-        "kind": "strategy",
-        "strategy": "TJR-v4",
-        "n": 18,
-        "wr": 33.3,
-        "exp": -0.00088,
-        "msg": "win rate < 45% and negative expectancy"
       }
     ],
-    "actions": [
-      {
-        "action": "quarantine",
-        "strategy": "VolDiv-Bayes",
-        "n": 90,
-        "wr": 36.7,
-        "exp": -0.00012
-      },
-      {
-        "action": "quarantine",
-        "strategy": "TJR-v4",
-        "n": 18,
-        "wr": 33.3,
-        "exp": -0.00088
-      }
-    ],
+    "actions": [],
     "quarantined": [
       "HTF-Candle",
       "TH-DualMode",
