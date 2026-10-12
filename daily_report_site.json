@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-12 01:29 UTC",
+  "date": "2026-10-12 01:44 UTC",
   "cash": 9838.29,
-  "equity": 9937.89,
-  "pnl": -62.11,
+  "equity": 9937.79,
+  "pnl": -62.21,
   "pnl_pct": -0.62,
   "open_positions": 1,
   "closed_trades": 274,
@@ -16,13 +16,13 @@
       "symbol": "1INCH/USDT",
       "side": "LONG",
       "entry": 0.0988,
-      "current": 0.0985,
-      "pnl_pct": -0.3,
-      "chg_pct": -0.3,
+      "current": 0.0984,
+      "pnl_pct": -0.4,
+      "chg_pct": -0.4,
       "tp": 0.09986032676009411,
       "sl": 0.0980931154932706,
-      "tp_dist_pct": 1.38,
-      "sl_dist_pct": -0.41
+      "tp_dist_pct": 1.48,
+      "sl_dist_pct": -0.31
     }
   ],
   "recent_trades": [
@@ -138,7 +138,7 @@
     }
   ],
   "tuner": {
-    "ts": 1791768554448,
+    "ts": 1791769459906,
     "n": 274,
     "overall": {
       "n": 274,
