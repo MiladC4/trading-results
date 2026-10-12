@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-12 01:19 UTC",
+  "date": "2026-10-12 01:29 UTC",
   "cash": 9838.29,
   "equity": 9937.89,
   "pnl": -62.11,
@@ -138,7 +138,7 @@
     }
   ],
   "tuner": {
-    "ts": 1791767960507,
+    "ts": 1791768554448,
     "n": 274,
     "overall": {
       "n": 274,
@@ -168,25 +168,9 @@
         "msg": "system is net negative",
         "n": 274,
         "exp": -0.00057
-      },
-      {
-        "kind": "strategy",
-        "strategy": "Swing-OrderBlock",
-        "n": 9,
-        "wr": 44.4,
-        "exp": -0.00301,
-        "msg": "win rate < 45% and negative expectancy"
       }
     ],
-    "actions": [
-      {
-        "action": "quarantine",
-        "strategy": "Swing-OrderBlock",
-        "n": 9,
-        "wr": 44.4,
-        "exp": -0.00301
-      }
-    ],
+    "actions": [],
     "quarantined": [
       "HTF-Candle",
       "TH-DualMode",
