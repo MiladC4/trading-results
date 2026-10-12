@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-12 00:31 UTC",
+  "date": "2026-10-12 00:34 UTC",
   "cash": 9739.88,
   "equity": 9938.54,
   "pnl": -61.46,
@@ -152,7 +152,7 @@
     }
   ],
   "tuner": {
-    "ts": 1791764655797,
+    "ts": 1791765261326,
     "n": 273,
     "overall": {
       "n": 273,
@@ -182,9 +182,25 @@
         "msg": "system is net negative",
         "n": 273,
         "exp": -0.00052
+      },
+      {
+        "kind": "side",
+        "side": "long",
+        "n": 62,
+        "wr": 33.9,
+        "exp": -0.00261,
+        "msg": "long side losing money"
       }
     ],
-    "actions": [],
+    "actions": [
+      {
+        "action": "ban_side",
+        "side": "long",
+        "n": 62,
+        "wr": 33.9,
+        "exp": -0.00261
+      }
+    ],
     "quarantined": [
       "HTF-Candle",
       "TH-DualMode",
