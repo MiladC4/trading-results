@@ -1,13 +1,13 @@
 {
-  "date": "2026-10-12 07:49 UTC",
-  "cash": 8931.37,
-  "equity": 9928.17,
-  "pnl": -71.83,
-  "pnl_pct": -0.72,
+  "date": "2026-10-12 07:59 UTC",
+  "cash": 8933.1,
+  "equity": 9930.49,
+  "pnl": -69.51,
+  "pnl_pct": -0.7,
   "open_positions": 10,
-  "closed_trades": 293,
-  "win_rate": 35.8,
-  "avg_win": 1.774,
+  "closed_trades": 294,
+  "win_rate": 36.1,
+  "avg_win": 1.776,
   "avg_loss": -1.086,
   "positions": [
     {
@@ -16,13 +16,13 @@
       "symbol": "AAVE/USDT",
       "side": "LONG",
       "entry": 169.61,
-      "current": 169.09,
-      "pnl_pct": -0.31,
-      "chg_pct": -0.31,
+      "current": 169.26,
+      "pnl_pct": -0.21,
+      "chg_pct": -0.21,
       "tp": 171.21542026277146,
       "sl": 168.40593480292142,
-      "tp_dist_pct": 1.26,
-      "sl_dist_pct": -0.4
+      "tp_dist_pct": 1.16,
+      "sl_dist_pct": -0.5
     },
     {
       "strategy": "HTF-Candle",
@@ -30,13 +30,13 @@
       "symbol": "A/USDT",
       "side": "LONG",
       "entry": 0.10235,
-      "current": 0.102,
-      "pnl_pct": -0.34,
-      "chg_pct": -0.34,
+      "current": 0.10182,
+      "pnl_pct": -0.52,
+      "chg_pct": -0.52,
       "tp": 0.10328925945666424,
       "sl": 0.10164555540750182,
-      "tp_dist_pct": 1.26,
-      "sl_dist_pct": -0.35
+      "tp_dist_pct": 1.44,
+      "sl_dist_pct": -0.17
     },
     {
       "strategy": "HMA-Projection",
@@ -44,13 +44,13 @@
       "symbol": "AR/USDT",
       "side": "LONG",
       "entry": 4.29,
-      "current": 4.257,
-      "pnl_pct": -0.77,
-      "chg_pct": -0.77,
+      "current": 4.26,
+      "pnl_pct": -0.7,
+      "chg_pct": -0.7,
       "tp": 4.352027965556539,
       "sl": 4.240377627554769,
-      "tp_dist_pct": 2.23,
-      "sl_dist_pct": -0.39
+      "tp_dist_pct": 2.16,
+      "sl_dist_pct": -0.46
     },
     {
       "strategy": "TH-DualMode",
@@ -58,13 +58,13 @@
       "symbol": "2Z/USDT",
       "side": "LONG",
       "entry": 0.03773,
-      "current": 0.03759,
-      "pnl_pct": -0.37,
-      "chg_pct": -0.37,
+      "current": 0.03772,
+      "pnl_pct": -0.03,
+      "chg_pct": -0.03,
       "tp": 0.03816349000158262,
       "sl": 0.037459068749010865,
-      "tp_dist_pct": 1.53,
-      "sl_dist_pct": -0.35
+      "tp_dist_pct": 1.18,
+      "sl_dist_pct": -0.69
     },
     {
       "strategy": "TJR-v4",
@@ -72,13 +72,13 @@
       "symbol": "ARB/USDT",
       "side": "LONG",
       "entry": 0.196,
-      "current": 0.1942,
-      "pnl_pct": -0.92,
-      "chg_pct": -0.92,
+      "current": 0.1946,
+      "pnl_pct": -0.71,
+      "chg_pct": -0.71,
       "tp": 0.19872145989030177,
       "sl": 0.19395890508227367,
-      "tp_dist_pct": 2.33,
-      "sl_dist_pct": -0.12
+      "tp_dist_pct": 2.12,
+      "sl_dist_pct": -0.33
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -86,13 +86,13 @@
       "symbol": "1INCH/USDT",
       "side": "LONG",
       "entry": 0.0989,
-      "current": 0.0992,
-      "pnl_pct": 0.3,
-      "chg_pct": 0.3,
+      "current": 0.0994,
+      "pnl_pct": 0.51,
+      "chg_pct": 0.51,
       "tp": 0.10015029651576067,
       "sl": 0.0980664689894929,
-      "tp_dist_pct": 0.96,
-      "sl_dist_pct": -1.14
+      "tp_dist_pct": 0.75,
+      "sl_dist_pct": -1.34
     },
     {
       "strategy": "RSI-Divergence",
@@ -100,27 +100,13 @@
       "symbol": "ADA/USDT",
       "side": "LONG",
       "entry": 0.2531,
-      "current": 0.2537,
-      "pnl_pct": 0.24,
-      "chg_pct": 0.24,
+      "current": 0.2538,
+      "pnl_pct": 0.28,
+      "chg_pct": 0.28,
       "tp": 0.25582505006109846,
       "sl": 0.2513968437118135,
-      "tp_dist_pct": 0.84,
-      "sl_dist_pct": -0.91
-    },
-    {
-      "strategy": "VolDiv-Bayes",
-      "strategy_full": "STRAT: Volume Divergence & Bayesian Projection",
-      "symbol": "ALGO/USDT",
-      "side": "LONG",
-      "entry": 0.13073,
-      "current": 0.13157,
-      "pnl_pct": 0.64,
-      "chg_pct": 0.64,
-      "tp": 0.13326252032509653,
-      "sl": 0.12904165311660235,
-      "tp_dist_pct": 1.29,
-      "sl_dist_pct": -1.92
+      "tp_dist_pct": 0.8,
+      "sl_dist_pct": -0.95
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -128,13 +114,13 @@
       "symbol": "APE/USDT",
       "side": "LONG",
       "entry": 0.1577,
-      "current": 0.1569,
-      "pnl_pct": -0.51,
-      "chg_pct": -0.51,
+      "current": 0.1575,
+      "pnl_pct": -0.13,
+      "chg_pct": -0.13,
       "tp": 0.1597546681757977,
       "sl": 0.15633022121613488,
-      "tp_dist_pct": 1.82,
-      "sl_dist_pct": -0.36
+      "tp_dist_pct": 1.43,
+      "sl_dist_pct": -0.74
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -142,27 +128,30 @@
       "symbol": "ASTER/USDT",
       "side": "LONG",
       "entry": 0.71244,
-      "current": 0.71128,
-      "pnl_pct": -0.16,
-      "chg_pct": -0.16,
+      "current": 0.71172,
+      "pnl_pct": -0.1,
+      "chg_pct": -0.1,
       "tp": 0.7207964714548988,
       "sl": 0.7068690190300674,
-      "tp_dist_pct": 1.25,
-      "sl_dist_pct": -0.7
+      "tp_dist_pct": 1.28,
+      "sl_dist_pct": -0.68
+    },
+    {
+      "strategy": "HTF-Candle",
+      "strategy_full": "HTF Candle Direction Strategy V1",
+      "symbol": "ALGO/USDT",
+      "side": "LONG",
+      "entry": 0.13349,
+      "current": 0.13349,
+      "pnl_pct": 0.0,
+      "chg_pct": 0.0,
+      "tp": 0.13629403417991207,
+      "sl": 0.13138697436506597,
+      "tp_dist_pct": 2.1,
+      "sl_dist_pct": -1.58
     }
   ],
   "recent_trades": [
-    {
-      "strategy": "HTF-Candle",
-      "symbol": "ALGO/USDT",
-      "result": "WIN",
-      "pnl_pct": 1.607,
-      "entry": 0.12961,
-      "exit": 0.131693,
-      "chg_pct": 1.607,
-      "candles": 16,
-      "exit_reason": "tp"
-    },
     {
       "strategy": "RSI-Divergence",
       "symbol": "2Z/USDT",
@@ -261,6 +250,17 @@
       "chg_pct": -0.582,
       "candles": 3,
       "exit_reason": "sl"
+    },
+    {
+      "strategy": "VolDiv-Bayes",
+      "symbol": "ALGO/USDT",
+      "result": "WIN",
+      "pnl_pct": 1.937,
+      "entry": 0.13073,
+      "exit": 0.133262,
+      "chg_pct": 1.937,
+      "candles": 16,
+      "exit_reason": "tp"
     }
   ],
   "tuner": {
