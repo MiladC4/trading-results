@@ -1,42 +1,16 @@
 {
-  "date": "2026-10-12 01:44 UTC",
-  "cash": 9838.29,
-  "equity": 9937.79,
-  "pnl": -62.21,
-  "pnl_pct": -0.62,
-  "open_positions": 1,
-  "closed_trades": 274,
-  "win_rate": 35.8,
+  "date": "2026-10-12 01:54 UTC",
+  "cash": 9937.48,
+  "equity": 9937.48,
+  "pnl": -62.52,
+  "pnl_pct": -0.63,
+  "open_positions": 0,
+  "closed_trades": 275,
+  "win_rate": 35.6,
   "avg_win": 1.841,
-  "avg_loss": -1.114,
-  "positions": [
-    {
-      "strategy": "VolDiv-Bayes",
-      "strategy_full": "STRAT: Volume Divergence & Bayesian Projection",
-      "symbol": "1INCH/USDT",
-      "side": "LONG",
-      "entry": 0.0988,
-      "current": 0.0984,
-      "pnl_pct": -0.4,
-      "chg_pct": -0.4,
-      "tp": 0.09986032676009411,
-      "sl": 0.0980931154932706,
-      "tp_dist_pct": 1.48,
-      "sl_dist_pct": -0.31
-    }
-  ],
+  "avg_loss": -1.111,
+  "positions": [],
   "recent_trades": [
-    {
-      "strategy": "Harmonic-Pro",
-      "symbol": "A/USDT",
-      "result": "LOSS",
-      "pnl_pct": -0.909,
-      "entry": 0.10197,
-      "exit": 0.102897,
-      "chg_pct": 0.909,
-      "candles": 49,
-      "exit_reason": "sl"
-    },
     {
       "strategy": "VolDiv-Bayes",
       "symbol": "AAVE/USDT",
@@ -135,23 +109,34 @@
       "chg_pct": -1.488,
       "candles": 83,
       "exit_reason": "sl"
+    },
+    {
+      "strategy": "VolDiv-Bayes",
+      "symbol": "1INCH/USDT",
+      "result": "LOSS",
+      "pnl_pct": -0.715,
+      "entry": 0.0988,
+      "exit": 0.098094,
+      "chg_pct": -0.715,
+      "candles": 90,
+      "exit_reason": "sl"
     }
   ],
   "tuner": {
-    "ts": 1791769459906,
-    "n": 274,
+    "ts": 1791770053230,
+    "n": 275,
     "overall": {
-      "n": 274,
-      "wr": 35.8,
-      "exp": -0.00057,
-      "tot": -0.156
+      "n": 275,
+      "wr": 35.6,
+      "exp": -0.00059,
+      "tot": -0.163
     },
     "sides": {
       "long": {
-        "n": 63,
-        "wr": 33.3,
-        "exp": -0.0028,
-        "tot": -0.176,
+        "n": 64,
+        "wr": 32.8,
+        "exp": -0.00287,
+        "tot": -0.184,
         "banned": true
       },
       "short": {
@@ -166,8 +151,8 @@
       {
         "kind": "overall",
         "msg": "system is net negative",
-        "n": 274,
-        "exp": -0.00057
+        "n": 275,
+        "exp": -0.00059
       }
     ],
     "actions": [],
@@ -338,15 +323,15 @@
       {
         "uid": "conv_rPOx1NRY",
         "name": "VolDiv-Bayes",
-        "n": 89,
-        "wr": 37.1,
-        "exp": -4e-05,
-        "tot": -0.003,
+        "n": 90,
+        "wr": 36.7,
+        "exp": -0.00012,
+        "tot": -0.01,
         "tp": 6.0,
         "sl": 4.0,
-        "ap": 0.252,
+        "ap": 0.251,
         "tp_pct": 1.51,
-        "sl_pct": 1.01,
+        "sl_pct": 1.0,
         "src": "model",
         "quarantined": true
       },
