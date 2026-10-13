@@ -1,9 +1,9 @@
 {
-  "date": "2026-10-13 12:03 UTC",
+  "date": "2026-10-13 12:08 UTC",
   "cash": 8928.42,
-  "equity": 9923.29,
-  "pnl": -76.71,
-  "pnl_pct": -0.77,
+  "equity": 9923.83,
+  "pnl": -76.17,
+  "pnl_pct": -0.76,
   "open_positions": 10,
   "closed_trades": 422,
   "win_rate": 40.3,
@@ -16,13 +16,13 @@
       "symbol": "ASTER/USDT",
       "side": "SHORT",
       "entry": 0.693,
-      "current": 0.68887,
-      "pnl_pct": 0.6,
-      "chg_pct": -0.6,
+      "current": 0.68961,
+      "pnl_pct": 0.49,
+      "chg_pct": -0.49,
       "tp": 0.6848912560022878,
       "sl": 0.698405829331808,
-      "tp_dist_pct": 0.58,
-      "sl_dist_pct": -1.38
+      "tp_dist_pct": 0.68,
+      "sl_dist_pct": -1.28
     },
     {
       "strategy": "MoM-Levels",
@@ -30,13 +30,13 @@
       "symbol": "A/USDT",
       "side": "SHORT",
       "entry": 0.09997,
-      "current": 0.10011,
-      "pnl_pct": -0.14,
-      "chg_pct": 0.14,
+      "current": 0.10004,
+      "pnl_pct": -0.07,
+      "chg_pct": 0.07,
       "tp": 0.09866253384721727,
       "sl": 0.1010159729222262,
-      "tp_dist_pct": 1.45,
-      "sl_dist_pct": -0.9
+      "tp_dist_pct": 1.38,
+      "sl_dist_pct": -0.98
     },
     {
       "strategy": "MoM-Levels",
@@ -44,13 +44,13 @@
       "symbol": "APE/USDT",
       "side": "SHORT",
       "entry": 0.1484,
-      "current": 0.1482,
-      "pnl_pct": 0.13,
-      "chg_pct": -0.13,
+      "current": 0.1485,
+      "pnl_pct": -0.07,
+      "chg_pct": 0.07,
       "tp": 0.14645177644159132,
       "sl": 0.14995857884672695,
-      "tp_dist_pct": 1.18,
-      "sl_dist_pct": -1.19
+      "tp_dist_pct": 1.38,
+      "sl_dist_pct": -0.98
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -72,13 +72,13 @@
       "symbol": "AR/USDT",
       "side": "SHORT",
       "entry": 3.883,
-      "current": 3.86,
-      "pnl_pct": 0.59,
-      "chg_pct": -0.59,
+      "current": 3.862,
+      "pnl_pct": 0.54,
+      "chg_pct": -0.54,
       "tp": 3.798818530432985,
       "sl": 3.950345175653612,
-      "tp_dist_pct": 1.59,
-      "sl_dist_pct": -2.34
+      "tp_dist_pct": 1.64,
+      "sl_dist_pct": -2.29
     },
     {
       "strategy": "MoM-Levels",
@@ -86,13 +86,13 @@
       "symbol": "ARB/USDT",
       "side": "SHORT",
       "entry": 0.1837,
-      "current": 0.1831,
-      "pnl_pct": 0.33,
-      "chg_pct": -0.33,
+      "current": 0.1832,
+      "pnl_pct": 0.27,
+      "chg_pct": -0.27,
       "tp": 0.18026007092052893,
       "sl": 0.18645194326357686,
-      "tp_dist_pct": 1.55,
-      "sl_dist_pct": -1.83
+      "tp_dist_pct": 1.6,
+      "sl_dist_pct": -1.78
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -100,13 +100,13 @@
       "symbol": "2Z/USDT",
       "side": "SHORT",
       "entry": 0.03464,
-      "current": 0.03442,
-      "pnl_pct": 0.64,
-      "chg_pct": -0.64,
+      "current": 0.03444,
+      "pnl_pct": 0.58,
+      "chg_pct": -0.58,
       "tp": 0.034025358001139976,
       "sl": 0.03504976133257334,
-      "tp_dist_pct": 1.15,
-      "sl_dist_pct": -1.83
+      "tp_dist_pct": 1.2,
+      "sl_dist_pct": -1.77
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -114,13 +114,13 @@
       "symbol": "AAVE/USDT",
       "side": "SHORT",
       "entry": 158.29,
-      "current": 157.73,
-      "pnl_pct": 0.35,
-      "chg_pct": -0.35,
+      "current": 157.85,
+      "pnl_pct": 0.28,
+      "chg_pct": -0.28,
       "tp": 156.00299657999165,
       "sl": 159.8146689466722,
-      "tp_dist_pct": 1.09,
-      "sl_dist_pct": -1.32
+      "tp_dist_pct": 1.17,
+      "sl_dist_pct": -1.24
     },
     {
       "strategy": "Divergence-Scanner",
@@ -128,13 +128,13 @@
       "symbol": "ADA/USDT",
       "side": "SHORT",
       "entry": 0.2347,
-      "current": 0.2327,
-      "pnl_pct": 0.85,
-      "chg_pct": -0.85,
+      "current": 0.2329,
+      "pnl_pct": 0.77,
+      "chg_pct": -0.77,
       "tp": 0.22836361138823894,
       "sl": 0.23945229145882077,
-      "tp_dist_pct": 1.86,
-      "sl_dist_pct": -2.9
+      "tp_dist_pct": 1.95,
+      "sl_dist_pct": -2.81
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -142,13 +142,13 @@
       "symbol": "ALGO/USDT",
       "side": "SHORT",
       "entry": 0.1176,
-      "current": 0.1168,
-      "pnl_pct": 0.68,
-      "chg_pct": -0.68,
+      "current": 0.11677,
+      "pnl_pct": 0.71,
+      "chg_pct": -0.71,
       "tp": 0.11528276226955812,
       "sl": 0.11914482515362791,
-      "tp_dist_pct": 1.3,
-      "sl_dist_pct": -2.01
+      "tp_dist_pct": 1.27,
+      "sl_dist_pct": -2.03
     }
   ],
   "recent_trades": [
