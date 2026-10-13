@@ -1,9 +1,9 @@
 {
-  "date": "2026-10-13 03:48 UTC",
+  "date": "2026-10-13 03:53 UTC",
   "cash": 9536.24,
-  "equity": 9937.07,
-  "pnl": -62.93,
-  "pnl_pct": -0.63,
+  "equity": 9939.12,
+  "pnl": -60.88,
+  "pnl_pct": -0.61,
   "open_positions": 4,
   "closed_trades": 383,
   "win_rate": 39.7,
@@ -16,13 +16,13 @@
       "symbol": "2Z/USDT",
       "side": "SHORT",
       "entry": 0.03464,
-      "current": 0.03468,
-      "pnl_pct": -0.12,
-      "chg_pct": 0.12,
+      "current": 0.03488,
+      "pnl_pct": -0.69,
+      "chg_pct": 0.69,
       "tp": 0.033665380459897434,
       "sl": 0.03537096465507692,
-      "tp_dist_pct": 2.93,
-      "sl_dist_pct": -1.99
+      "tp_dist_pct": 3.48,
+      "sl_dist_pct": -1.41
     },
     {
       "strategy": "Po3-Minimal",
@@ -30,13 +30,13 @@
       "symbol": "A/USDT",
       "side": "SHORT",
       "entry": 0.09921,
-      "current": 0.10007,
-      "pnl_pct": -0.87,
-      "chg_pct": 0.87,
+      "current": 0.10041,
+      "pnl_pct": -1.21,
+      "chg_pct": 1.21,
       "tp": 0.09758467860033977,
       "sl": 0.10042899104974518,
-      "tp_dist_pct": 2.48,
-      "sl_dist_pct": -0.36
+      "tp_dist_pct": 2.81,
+      "sl_dist_pct": -0.02
     },
     {
       "strategy": "Swing-OrderBlock",
@@ -44,13 +44,13 @@
       "symbol": "ARB/USDT",
       "side": "SHORT",
       "entry": 0.1852,
-      "current": 0.186,
-      "pnl_pct": -0.43,
-      "chg_pct": 0.43,
+      "current": 0.187,
+      "pnl_pct": -0.97,
+      "chg_pct": 0.97,
       "tp": 0.18209082408052832,
       "sl": 0.18753188193960377,
-      "tp_dist_pct": 2.1,
-      "sl_dist_pct": -0.82
+      "tp_dist_pct": 2.63,
+      "sl_dist_pct": -0.28
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -58,13 +58,13 @@
       "symbol": "ALGO/USDT",
       "side": "SHORT",
       "entry": 0.11985,
-      "current": 0.11964,
-      "pnl_pct": 0.18,
-      "chg_pct": -0.18,
+      "current": 0.12034,
+      "pnl_pct": -0.41,
+      "chg_pct": 0.41,
       "tp": 0.11778289815414934,
       "sl": 0.12122806789723377,
-      "tp_dist_pct": 1.55,
-      "sl_dist_pct": -1.33
+      "tp_dist_pct": 2.12,
+      "sl_dist_pct": -0.74
     }
   ],
   "recent_trades": [
