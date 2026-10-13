@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-13 04:38 UTC",
+  "date": "2026-10-13 04:48 UTC",
   "cash": 9732.7,
-  "equity": 9934.26,
-  "pnl": -65.74,
+  "equity": 9934.27,
+  "pnl": -65.73,
   "pnl_pct": -0.66,
   "open_positions": 2,
   "closed_trades": 385,
@@ -16,13 +16,13 @@
       "symbol": "ARB/USDT",
       "side": "SHORT",
       "entry": 0.1852,
-      "current": 0.1872,
-      "pnl_pct": -1.08,
-      "chg_pct": 1.08,
+      "current": 0.1871,
+      "pnl_pct": -1.03,
+      "chg_pct": 1.03,
       "tp": 0.18209082408052832,
       "sl": 0.18753188193960377,
-      "tp_dist_pct": 2.73,
-      "sl_dist_pct": -0.18
+      "tp_dist_pct": 2.68,
+      "sl_dist_pct": -0.23
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -30,13 +30,13 @@
       "symbol": "ALGO/USDT",
       "side": "SHORT",
       "entry": 0.11985,
-      "current": 0.12067,
-      "pnl_pct": -0.68,
-      "chg_pct": 0.68,
+      "current": 0.12074,
+      "pnl_pct": -0.74,
+      "chg_pct": 0.74,
       "tp": 0.11778289815414934,
       "sl": 0.12122806789723377,
-      "tp_dist_pct": 2.39,
-      "sl_dist_pct": -0.46
+      "tp_dist_pct": 2.45,
+      "sl_dist_pct": -0.4
     }
   ],
   "recent_trades": [
