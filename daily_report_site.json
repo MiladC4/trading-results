@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-13 04:58 UTC",
+  "date": "2026-10-13 05:08 UTC",
   "cash": 9831.34,
-  "equity": 9932.21,
-  "pnl": -67.79,
+  "equity": 9932.12,
+  "pnl": -67.88,
   "pnl_pct": -0.68,
   "open_positions": 1,
   "closed_trades": 386,
@@ -16,13 +16,13 @@
       "symbol": "ALGO/USDT",
       "side": "SHORT",
       "entry": 0.11985,
-      "current": 0.12101,
-      "pnl_pct": -0.97,
-      "chg_pct": 0.97,
+      "current": 0.1209,
+      "pnl_pct": -0.88,
+      "chg_pct": 0.88,
       "tp": 0.11778289815414934,
       "sl": 0.12122806789723377,
-      "tp_dist_pct": 2.67,
-      "sl_dist_pct": -0.18
+      "tp_dist_pct": 2.58,
+      "sl_dist_pct": -0.27
     }
   ],
   "recent_trades": [
