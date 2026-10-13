@@ -1,14 +1,14 @@
 {
-  "date": "2026-10-13 03:53 UTC",
-  "cash": 9536.24,
-  "equity": 9939.12,
-  "pnl": -60.88,
-  "pnl_pct": -0.61,
-  "open_positions": 4,
-  "closed_trades": 383,
-  "win_rate": 39.7,
+  "date": "2026-10-13 03:58 UTC",
+  "cash": 9634.91,
+  "equity": 9936.33,
+  "pnl": -63.67,
+  "pnl_pct": -0.64,
+  "open_positions": 3,
+  "closed_trades": 384,
+  "win_rate": 39.6,
   "avg_win": 1.68,
-  "avg_loss": -1.086,
+  "avg_loss": -1.087,
   "positions": [
     {
       "strategy": "Harmonic-Pro",
@@ -25,32 +25,18 @@
       "sl_dist_pct": -1.41
     },
     {
-      "strategy": "Po3-Minimal",
-      "strategy_full": "STRAT: Minimalistic Po3 (M1D)",
-      "symbol": "A/USDT",
-      "side": "SHORT",
-      "entry": 0.09921,
-      "current": 0.10041,
-      "pnl_pct": -1.21,
-      "chg_pct": 1.21,
-      "tp": 0.09758467860033977,
-      "sl": 0.10042899104974518,
-      "tp_dist_pct": 2.81,
-      "sl_dist_pct": -0.02
-    },
-    {
       "strategy": "Swing-OrderBlock",
       "strategy_full": "STRAT: Swing H/L + Multi TF Order Blocks",
       "symbol": "ARB/USDT",
       "side": "SHORT",
       "entry": 0.1852,
-      "current": 0.187,
-      "pnl_pct": -0.97,
-      "chg_pct": 0.97,
+      "current": 0.1865,
+      "pnl_pct": -0.7,
+      "chg_pct": 0.7,
       "tp": 0.18209082408052832,
       "sl": 0.18753188193960377,
-      "tp_dist_pct": 2.63,
-      "sl_dist_pct": -0.28
+      "tp_dist_pct": 2.36,
+      "sl_dist_pct": -0.55
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -58,27 +44,16 @@
       "symbol": "ALGO/USDT",
       "side": "SHORT",
       "entry": 0.11985,
-      "current": 0.12034,
-      "pnl_pct": -0.41,
-      "chg_pct": 0.41,
+      "current": 0.12024,
+      "pnl_pct": -0.33,
+      "chg_pct": 0.33,
       "tp": 0.11778289815414934,
       "sl": 0.12122806789723377,
-      "tp_dist_pct": 2.12,
-      "sl_dist_pct": -0.74
+      "tp_dist_pct": 2.04,
+      "sl_dist_pct": -0.82
     }
   ],
   "recent_trades": [
-    {
-      "strategy": "VolDiv-Bayes",
-      "symbol": "ADA/USDT",
-      "result": "LOSS",
-      "pnl_pct": -1.463,
-      "entry": 0.2315,
-      "exit": 0.234887,
-      "chg_pct": 1.463,
-      "candles": 13,
-      "exit_reason": "sl"
-    },
     {
       "strategy": "Swing-OrderBlock",
       "symbol": "AAVE/USDT",
@@ -176,6 +151,17 @@
       "exit": 159.582969,
       "chg_pct": 0.785,
       "candles": 7,
+      "exit_reason": "sl"
+    },
+    {
+      "strategy": "Po3-Minimal",
+      "symbol": "A/USDT",
+      "result": "LOSS",
+      "pnl_pct": -1.229,
+      "entry": 0.09921,
+      "exit": 0.100429,
+      "chg_pct": 1.229,
+      "candles": 19,
       "exit_reason": "sl"
     }
   ],
