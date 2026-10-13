@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-13 11:40 UTC",
+  "date": "2026-10-13 11:44 UTC",
   "cash": 8928.42,
   "equity": 9928.87,
   "pnl": -71.13,
@@ -100,13 +100,13 @@
       "symbol": "2Z/USDT",
       "side": "SHORT",
       "entry": 0.03464,
-      "current": 0.03464,
-      "pnl_pct": -0.0,
-      "chg_pct": 0.0,
+      "current": 0.03455,
+      "pnl_pct": 0.26,
+      "chg_pct": -0.26,
       "tp": 0.034025358001139976,
       "sl": 0.03504976133257334,
-      "tp_dist_pct": 1.77,
-      "sl_dist_pct": -1.18
+      "tp_dist_pct": 1.52,
+      "sl_dist_pct": -1.45
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -114,13 +114,13 @@
       "symbol": "AAVE/USDT",
       "side": "SHORT",
       "entry": 158.29,
-      "current": 158.29,
-      "pnl_pct": -0.0,
-      "chg_pct": 0.0,
+      "current": 157.99,
+      "pnl_pct": 0.19,
+      "chg_pct": -0.19,
       "tp": 156.00299657999165,
       "sl": 159.8146689466722,
-      "tp_dist_pct": 1.44,
-      "sl_dist_pct": -0.96
+      "tp_dist_pct": 1.26,
+      "sl_dist_pct": -1.15
     },
     {
       "strategy": "Divergence-Scanner",
@@ -128,13 +128,13 @@
       "symbol": "ADA/USDT",
       "side": "SHORT",
       "entry": 0.2347,
-      "current": 0.2347,
-      "pnl_pct": -0.0,
-      "chg_pct": 0.0,
+      "current": 0.2341,
+      "pnl_pct": 0.26,
+      "chg_pct": -0.26,
       "tp": 0.22836361138823894,
       "sl": 0.23945229145882077,
-      "tp_dist_pct": 2.7,
-      "sl_dist_pct": -2.02
+      "tp_dist_pct": 2.45,
+      "sl_dist_pct": -2.29
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -142,13 +142,13 @@
       "symbol": "ALGO/USDT",
       "side": "SHORT",
       "entry": 0.1176,
-      "current": 0.1176,
-      "pnl_pct": -0.0,
-      "chg_pct": 0.0,
+      "current": 0.11723,
+      "pnl_pct": 0.31,
+      "chg_pct": -0.31,
       "tp": 0.11528276226955812,
       "sl": 0.11914482515362791,
-      "tp_dist_pct": 1.97,
-      "sl_dist_pct": -1.31
+      "tp_dist_pct": 1.66,
+      "sl_dist_pct": -1.63
     }
   ],
   "recent_trades": [
