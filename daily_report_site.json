@@ -1,13 +1,13 @@
 {
-  "date": "2026-10-13 10:40 UTC",
-  "cash": 8926.65,
-  "equity": 9919.07,
-  "pnl": -80.93,
-  "pnl_pct": -0.81,
+  "date": "2026-10-13 10:43 UTC",
+  "cash": 8927.67,
+  "equity": 9920.51,
+  "pnl": -79.49,
+  "pnl_pct": -0.79,
   "open_positions": 10,
-  "closed_trades": 404,
-  "win_rate": 39.6,
-  "avg_win": 1.648,
+  "closed_trades": 405,
+  "win_rate": 39.8,
+  "avg_win": 1.646,
   "avg_loss": -1.082,
   "positions": [
     {
@@ -51,20 +51,6 @@
       "sl": 0.03593028367217793,
       "tp_dist_pct": 0.05,
       "sl_dist_pct": -3.72
-    },
-    {
-      "strategy": "HTF-Candle",
-      "strategy_full": "HTF Candle Direction Strategy V1",
-      "symbol": "A/USDT",
-      "side": "SHORT",
-      "entry": 0.1025,
-      "current": 0.10119,
-      "pnl_pct": 1.28,
-      "chg_pct": -1.28,
-      "tp": 0.10123964240539549,
-      "sl": 0.10344526819595337,
-      "tp_dist_pct": -0.05,
-      "sl_dist_pct": -2.23
     },
     {
       "strategy": "VolDiv-Bayes",
@@ -149,20 +135,23 @@
       "sl": 0.23554118658950973,
       "tp_dist_pct": 0.48,
       "sl_dist_pct": -1.0
+    },
+    {
+      "strategy": "MoM-Levels",
+      "strategy_full": "STRAT: MoM LEVELS",
+      "symbol": "A/USDT",
+      "side": "SHORT",
+      "entry": 0.10119,
+      "current": 0.10119,
+      "pnl_pct": -0.0,
+      "chg_pct": 0.0,
+      "tp": 0.10020705537332926,
+      "sl": 0.1019763557013366,
+      "tp_dist_pct": 0.97,
+      "sl_dist_pct": -0.78
     }
   ],
   "recent_trades": [
-    {
-      "strategy": "HTF-Candle",
-      "symbol": "2Z/USDT",
-      "result": "LOSS",
-      "pnl_pct": -0.924,
-      "entry": 0.03567,
-      "exit": 0.03534,
-      "chg_pct": -0.924,
-      "candles": 47,
-      "exit_reason": "sl"
-    },
     {
       "strategy": "MoM-Levels",
       "symbol": "APE/USDT",
@@ -260,6 +249,17 @@
       "exit": 0.234367,
       "chg_pct": -1.111,
       "candles": 17,
+      "exit_reason": "tp"
+    },
+    {
+      "strategy": "HTF-Candle",
+      "symbol": "A/USDT",
+      "result": "WIN",
+      "pnl_pct": 1.23,
+      "entry": 0.1025,
+      "exit": 0.101239,
+      "chg_pct": -1.23,
+      "candles": 18,
       "exit_reason": "tp"
     }
   ],
