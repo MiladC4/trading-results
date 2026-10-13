@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-13 17:25 UTC",
+  "date": "2026-10-13 17:29 UTC",
   "cash": 8914.87,
   "equity": 9913.03,
   "pnl": -86.97,
@@ -128,13 +128,13 @@
       "symbol": "1INCH/USDT",
       "side": "SHORT",
       "entry": 0.0966,
-      "current": 0.0966,
-      "pnl_pct": -0.0,
-      "chg_pct": 0.0,
+      "current": 0.0965,
+      "pnl_pct": 0.1,
+      "chg_pct": -0.1,
       "tp": 0.09541349329975249,
       "sl": 0.09754920536019801,
-      "tp_dist_pct": 1.23,
-      "sl_dist_pct": -0.98
+      "tp_dist_pct": 1.13,
+      "sl_dist_pct": -1.09
     },
     {
       "strategy": "HTF-Candle",
@@ -142,13 +142,13 @@
       "symbol": "2Z/USDT",
       "side": "SHORT",
       "entry": 0.03494,
-      "current": 0.03485,
-      "pnl_pct": 0.26,
-      "chg_pct": -0.26,
+      "current": 0.03482,
+      "pnl_pct": 0.34,
+      "chg_pct": -0.34,
       "tp": 0.034387401797959724,
       "sl": 0.03535444865153021,
-      "tp_dist_pct": 1.33,
-      "sl_dist_pct": -1.45
+      "tp_dist_pct": 1.24,
+      "sl_dist_pct": -1.53
     }
   ],
   "recent_trades": [
