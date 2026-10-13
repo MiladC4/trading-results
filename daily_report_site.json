@@ -1,56 +1,31 @@
 {
-  "date": "2026-10-13 04:53 UTC",
-  "cash": 9732.7,
-  "equity": 9934.59,
-  "pnl": -65.41,
-  "pnl_pct": -0.65,
-  "open_positions": 2,
-  "closed_trades": 385,
-  "win_rate": 39.5,
+  "date": "2026-10-13 04:58 UTC",
+  "cash": 9831.34,
+  "equity": 9932.21,
+  "pnl": -67.79,
+  "pnl_pct": -0.68,
+  "open_positions": 1,
+  "closed_trades": 386,
+  "win_rate": 39.4,
   "avg_win": 1.68,
-  "avg_loss": -1.091,
+  "avg_loss": -1.092,
   "positions": [
-    {
-      "strategy": "Swing-OrderBlock",
-      "strategy_full": "STRAT: Swing H/L + Multi TF Order Blocks",
-      "symbol": "ARB/USDT",
-      "side": "SHORT",
-      "entry": 0.1852,
-      "current": 0.1874,
-      "pnl_pct": -1.19,
-      "chg_pct": 1.19,
-      "tp": 0.18209082408052832,
-      "sl": 0.18753188193960377,
-      "tp_dist_pct": 2.83,
-      "sl_dist_pct": -0.07
-    },
     {
       "strategy": "VolDiv-Bayes",
       "strategy_full": "STRAT: Volume Divergence & Bayesian Projection",
       "symbol": "ALGO/USDT",
       "side": "SHORT",
       "entry": 0.11985,
-      "current": 0.12093,
-      "pnl_pct": -0.9,
-      "chg_pct": 0.9,
+      "current": 0.12101,
+      "pnl_pct": -0.97,
+      "chg_pct": 0.97,
       "tp": 0.11778289815414934,
       "sl": 0.12122806789723377,
-      "tp_dist_pct": 2.6,
-      "sl_dist_pct": -0.25
+      "tp_dist_pct": 2.67,
+      "sl_dist_pct": -0.18
     }
   ],
   "recent_trades": [
-    {
-      "strategy": "Swing-OrderBlock",
-      "symbol": "ARB/USDT",
-      "result": "LOSS",
-      "pnl_pct": -1.772,
-      "entry": 0.1818,
-      "exit": 0.185021,
-      "chg_pct": 1.772,
-      "candles": 16,
-      "exit_reason": "sl"
-    },
     {
       "strategy": "RSI-Divergence",
       "symbol": "ALGO/USDT",
@@ -148,6 +123,17 @@
       "exit": 0.035371,
       "chg_pct": 2.11,
       "candles": 39,
+      "exit_reason": "sl"
+    },
+    {
+      "strategy": "Swing-OrderBlock",
+      "symbol": "ARB/USDT",
+      "result": "LOSS",
+      "pnl_pct": -1.259,
+      "entry": 0.1852,
+      "exit": 0.187532,
+      "chg_pct": 1.259,
+      "candles": 21,
       "exit_reason": "sl"
     }
   ],
