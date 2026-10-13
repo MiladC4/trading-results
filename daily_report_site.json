@@ -1,9 +1,9 @@
 {
-  "date": "2026-10-13 18:04 UTC",
+  "date": "2026-10-13 18:09 UTC",
   "cash": 8914.87,
-  "equity": 9910.84,
-  "pnl": -89.16,
-  "pnl_pct": -0.89,
+  "equity": 9912.57,
+  "pnl": -87.43,
+  "pnl_pct": -0.87,
   "open_positions": 10,
   "closed_trades": 433,
   "win_rate": 39.5,
@@ -16,13 +16,13 @@
       "symbol": "ASTER/USDT",
       "side": "SHORT",
       "entry": 0.693,
-      "current": 0.69511,
-      "pnl_pct": -0.3,
-      "chg_pct": 0.3,
+      "current": 0.69501,
+      "pnl_pct": -0.29,
+      "chg_pct": 0.29,
       "tp": 0.6848912560022878,
       "sl": 0.698405829331808,
-      "tp_dist_pct": 1.47,
-      "sl_dist_pct": -0.47
+      "tp_dist_pct": 1.46,
+      "sl_dist_pct": -0.49
     },
     {
       "strategy": "Divergence-Scanner",
@@ -30,13 +30,13 @@
       "symbol": "ADA/USDT",
       "side": "SHORT",
       "entry": 0.2347,
-      "current": 0.2349,
-      "pnl_pct": -0.09,
-      "chg_pct": 0.09,
+      "current": 0.2355,
+      "pnl_pct": -0.34,
+      "chg_pct": 0.34,
       "tp": 0.22836361138823894,
       "sl": 0.23945229145882077,
-      "tp_dist_pct": 2.78,
-      "sl_dist_pct": -1.94
+      "tp_dist_pct": 3.03,
+      "sl_dist_pct": -1.68
     },
     {
       "strategy": "Divergence-Scanner",
@@ -44,13 +44,13 @@
       "symbol": "APE/USDT",
       "side": "SHORT",
       "entry": 0.1497,
-      "current": 0.1481,
-      "pnl_pct": 1.07,
-      "chg_pct": -1.07,
+      "current": 0.1482,
+      "pnl_pct": 1.0,
+      "chg_pct": -1.0,
       "tp": 0.14573592615106862,
       "sl": 0.15267305538669854,
-      "tp_dist_pct": 1.6,
-      "sl_dist_pct": -3.09
+      "tp_dist_pct": 1.66,
+      "sl_dist_pct": -3.02
     },
     {
       "strategy": "Divergence-Scanner",
@@ -58,13 +58,13 @@
       "symbol": "AVAX/USDT",
       "side": "SHORT",
       "entry": 10.306,
-      "current": 10.2,
-      "pnl_pct": 1.03,
-      "chg_pct": -1.03,
+      "current": 10.221,
+      "pnl_pct": 0.82,
+      "chg_pct": -0.82,
       "tp": 10.033909758225425,
       "sl": 10.51006768133093,
-      "tp_dist_pct": 1.63,
-      "sl_dist_pct": -3.04
+      "tp_dist_pct": 1.83,
+      "sl_dist_pct": -2.83
     },
     {
       "strategy": "HTF-Candle",
