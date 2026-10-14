@@ -1,14 +1,14 @@
 {
-  "date": "2026-10-14 03:33 UTC",
-  "cash": 8903.1,
-  "equity": 9905.5,
-  "pnl": -94.5,
-  "pnl_pct": -0.94,
+  "date": "2026-10-14 03:38 UTC",
+  "cash": 8902.28,
+  "equity": 9907.61,
+  "pnl": -92.39,
+  "pnl_pct": -0.92,
   "open_positions": 10,
-  "closed_trades": 452,
+  "closed_trades": 453,
   "win_rate": 38.9,
   "avg_win": 1.604,
-  "avg_loss": -1.074,
+  "avg_loss": -1.073,
   "positions": [
     {
       "strategy": "Divergence-Scanner",
@@ -16,13 +16,13 @@
       "symbol": "ADA/USDT",
       "side": "SHORT",
       "entry": 0.2347,
-      "current": 0.2375,
-      "pnl_pct": -1.19,
-      "chg_pct": 1.19,
+      "current": 0.2386,
+      "pnl_pct": -1.66,
+      "chg_pct": 1.66,
       "tp": 0.22836361138823894,
       "sl": 0.23945229145882077,
-      "tp_dist_pct": 3.85,
-      "sl_dist_pct": -0.82
+      "tp_dist_pct": 4.29,
+      "sl_dist_pct": -0.36
     },
     {
       "strategy": "Divergence-Scanner",
@@ -30,13 +30,13 @@
       "symbol": "AVAX/USDT",
       "side": "SHORT",
       "entry": 10.306,
-      "current": 10.322,
-      "pnl_pct": -0.16,
-      "chg_pct": 0.16,
+      "current": 10.361,
+      "pnl_pct": -0.53,
+      "chg_pct": 0.53,
       "tp": 10.033909758225425,
       "sl": 10.51006768133093,
-      "tp_dist_pct": 2.79,
-      "sl_dist_pct": -1.82
+      "tp_dist_pct": 3.16,
+      "sl_dist_pct": -1.44
     },
     {
       "strategy": "HTF-Candle",
@@ -44,13 +44,13 @@
       "symbol": "AXS/USDT",
       "side": "SHORT",
       "entry": 1.1414,
-      "current": 1.1507,
-      "pnl_pct": -0.81,
-      "chg_pct": 0.81,
+      "current": 1.1534,
+      "pnl_pct": -1.05,
+      "chg_pct": 1.05,
       "tp": 1.123061927989111,
       "sl": 1.1551535540081668,
-      "tp_dist_pct": 2.4,
-      "sl_dist_pct": -0.39
+      "tp_dist_pct": 2.63,
+      "sl_dist_pct": -0.15
     },
     {
       "strategy": "MoM-Levels",
@@ -58,13 +58,13 @@
       "symbol": "1INCH/USDT",
       "side": "SHORT",
       "entry": 0.0966,
-      "current": 0.0969,
-      "pnl_pct": -0.31,
-      "chg_pct": 0.31,
+      "current": 0.0971,
+      "pnl_pct": -0.52,
+      "chg_pct": 0.52,
       "tp": 0.09541349329975249,
       "sl": 0.09754920536019801,
-      "tp_dist_pct": 1.53,
-      "sl_dist_pct": -0.67
+      "tp_dist_pct": 1.74,
+      "sl_dist_pct": -0.46
     },
     {
       "strategy": "HTF-Candle",
@@ -72,13 +72,13 @@
       "symbol": "CAP/USDT",
       "side": "SHORT",
       "entry": 0.0746,
-      "current": 0.0747,
-      "pnl_pct": -0.13,
-      "chg_pct": 0.13,
+      "current": 0.0749,
+      "pnl_pct": -0.4,
+      "chg_pct": 0.4,
       "tp": 0.07340344695069874,
       "sl": 0.07549741478697594,
-      "tp_dist_pct": 1.74,
-      "sl_dist_pct": -1.07
+      "tp_dist_pct": 2.0,
+      "sl_dist_pct": -0.8
     },
     {
       "strategy": "Divergence-Scanner",
@@ -86,13 +86,13 @@
       "symbol": "A/USDT",
       "side": "SHORT",
       "entry": 0.09962,
-      "current": 0.10062,
-      "pnl_pct": -1.0,
-      "chg_pct": 1.0,
+      "current": 0.10081,
+      "pnl_pct": -1.19,
+      "chg_pct": 1.19,
       "tp": 0.09788559773521877,
       "sl": 0.10092080169858593,
-      "tp_dist_pct": 2.72,
-      "sl_dist_pct": -0.3
+      "tp_dist_pct": 2.9,
+      "sl_dist_pct": -0.11
     },
     {
       "strategy": "MoM-Levels",
@@ -100,13 +100,13 @@
       "symbol": "ARB/USDT",
       "side": "SHORT",
       "entry": 0.1923,
-      "current": 0.1916,
-      "pnl_pct": 0.36,
-      "chg_pct": -0.36,
+      "current": 0.1928,
+      "pnl_pct": -0.26,
+      "chg_pct": 0.26,
       "tp": 0.18999232282387726,
       "sl": 0.19414614174089817,
-      "tp_dist_pct": 0.84,
-      "sl_dist_pct": -1.33
+      "tp_dist_pct": 1.46,
+      "sl_dist_pct": -0.7
     },
     {
       "strategy": "MoM-Levels",
@@ -114,27 +114,13 @@
       "symbol": "ASTER/USDT",
       "side": "SHORT",
       "entry": 0.70249,
-      "current": 0.70319,
-      "pnl_pct": -0.1,
-      "chg_pct": 0.1,
+      "current": 0.70472,
+      "pnl_pct": -0.32,
+      "chg_pct": 0.32,
       "tp": 0.6981149110300368,
       "sl": 0.7059900711759705,
-      "tp_dist_pct": 0.72,
-      "sl_dist_pct": -0.4
-    },
-    {
-      "strategy": "HTF-Candle",
-      "strategy_full": "HTF Candle Direction Strategy V1",
-      "symbol": "AAVE/USDT",
-      "side": "SHORT",
-      "entry": 161.31,
-      "current": 161.41,
-      "pnl_pct": -0.06,
-      "chg_pct": 0.06,
-      "tp": 159.98363523763135,
-      "sl": 162.3047735717765,
-      "tp_dist_pct": 0.88,
-      "sl_dist_pct": -0.55
+      "tp_dist_pct": 0.94,
+      "sl_dist_pct": -0.18
     },
     {
       "strategy": "Divergence-Scanner",
@@ -142,27 +128,30 @@
       "symbol": "AR/USDT",
       "side": "SHORT",
       "entry": 3.994,
-      "current": 3.994,
-      "pnl_pct": -0.0,
-      "chg_pct": 0.0,
+      "current": 4.01,
+      "pnl_pct": -0.4,
+      "chg_pct": 0.4,
       "tp": 3.8968920121453556,
       "sl": 4.066830990890984,
-      "tp_dist_pct": 2.43,
-      "sl_dist_pct": -1.82
+      "tp_dist_pct": 2.82,
+      "sl_dist_pct": -1.42
+    },
+    {
+      "strategy": "MoM-Levels",
+      "strategy_full": "STRAT: MoM LEVELS",
+      "symbol": "B/USDT",
+      "side": "SHORT",
+      "entry": 0.14176,
+      "current": 0.14176,
+      "pnl_pct": -0.0,
+      "chg_pct": 0.0,
+      "tp": 0.1405125770864491,
+      "sl": 0.14275793833084072,
+      "tp_dist_pct": 0.88,
+      "sl_dist_pct": -0.7
     }
   ],
   "recent_trades": [
-    {
-      "strategy": "HTF-Candle",
-      "symbol": "AAVE/USDT",
-      "result": "LOSS",
-      "pnl_pct": -0.58,
-      "entry": 160.65,
-      "exit": 161.58177,
-      "chg_pct": 0.58,
-      "candles": 31,
-      "exit_reason": "sl"
-    },
     {
       "strategy": "MoM-Levels",
       "symbol": "ALGO/USDT",
@@ -261,6 +250,17 @@
       "chg_pct": -0.81,
       "candles": 5,
       "exit_reason": "tp"
+    },
+    {
+      "strategy": "HTF-Candle",
+      "symbol": "AAVE/USDT",
+      "result": "LOSS",
+      "pnl_pct": -0.617,
+      "entry": 161.31,
+      "exit": 162.305283,
+      "chg_pct": 0.617,
+      "candles": 9,
+      "exit_reason": "sl"
     }
   ],
   "tuner": {
