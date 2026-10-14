@@ -1,9 +1,9 @@
 {
-  "date": "2026-10-14 08:33 UTC",
+  "date": "2026-10-14 08:38 UTC",
   "cash": 9303.5,
-  "equity": 9903.47,
-  "pnl": -96.53,
-  "pnl_pct": -0.97,
+  "equity": 9902.16,
+  "pnl": -97.84,
+  "pnl_pct": -0.98,
   "open_positions": 6,
   "closed_trades": 458,
   "win_rate": 39.1,
@@ -16,13 +16,13 @@
       "symbol": "ADA/USDT",
       "side": "SHORT",
       "entry": 0.2347,
-      "current": 0.2362,
-      "pnl_pct": -0.64,
-      "chg_pct": 0.64,
+      "current": 0.2363,
+      "pnl_pct": -0.68,
+      "chg_pct": 0.68,
       "tp": 0.22836361138823894,
       "sl": 0.23945229145882077,
-      "tp_dist_pct": 3.32,
-      "sl_dist_pct": -1.38
+      "tp_dist_pct": 3.36,
+      "sl_dist_pct": -1.33
     },
     {
       "strategy": "Divergence-Scanner",
@@ -30,13 +30,13 @@
       "symbol": "AVAX/USDT",
       "side": "SHORT",
       "entry": 10.306,
-      "current": 10.236,
-      "pnl_pct": 0.68,
-      "chg_pct": -0.68,
+      "current": 10.239,
+      "pnl_pct": 0.65,
+      "chg_pct": -0.65,
       "tp": 10.033909758225425,
       "sl": 10.51006768133093,
-      "tp_dist_pct": 1.97,
-      "sl_dist_pct": -2.68
+      "tp_dist_pct": 2.0,
+      "sl_dist_pct": -2.65
     },
     {
       "strategy": "HTF-Candle",
@@ -58,13 +58,13 @@
       "symbol": "1INCH/USDT",
       "side": "SHORT",
       "entry": 0.0966,
-      "current": 0.0967,
-      "pnl_pct": -0.1,
-      "chg_pct": 0.1,
+      "current": 0.0965,
+      "pnl_pct": 0.1,
+      "chg_pct": -0.1,
       "tp": 0.09541349329975249,
       "sl": 0.09754920536019801,
-      "tp_dist_pct": 1.33,
-      "sl_dist_pct": -0.88
+      "tp_dist_pct": 1.13,
+      "sl_dist_pct": -1.09
     },
     {
       "strategy": "HTF-Candle",
@@ -86,13 +86,13 @@
       "symbol": "AR/USDT",
       "side": "SHORT",
       "entry": 3.994,
-      "current": 4.015,
-      "pnl_pct": -0.53,
-      "chg_pct": 0.53,
+      "current": 3.968,
+      "pnl_pct": 0.65,
+      "chg_pct": -0.65,
       "tp": 3.8968920121453556,
       "sl": 4.066830990890984,
-      "tp_dist_pct": 2.94,
-      "sl_dist_pct": -1.29
+      "tp_dist_pct": 1.79,
+      "sl_dist_pct": -2.49
     }
   ],
   "recent_trades": [
