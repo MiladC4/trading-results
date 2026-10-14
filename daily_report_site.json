@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-14 23:13 UTC",
+  "date": "2026-10-14 23:18 UTC",
   "cash": 8918.26,
-  "equity": 9914.7,
-  "pnl": -85.3,
+  "equity": 9914.53,
+  "pnl": -85.47,
   "pnl_pct": -0.85,
   "open_positions": 10,
   "closed_trades": 502,
@@ -58,13 +58,13 @@
       "symbol": "EDGE/USDT",
       "side": "SHORT",
       "entry": 0.10138,
-      "current": 0.10279,
-      "pnl_pct": -1.39,
-      "chg_pct": 1.39,
+      "current": 0.10218,
+      "pnl_pct": -0.79,
+      "chg_pct": 0.79,
       "tp": 0.09886958626469938,
       "sl": 0.10326281030147545,
-      "tp_dist_pct": 3.81,
-      "sl_dist_pct": -0.46
+      "tp_dist_pct": 3.24,
+      "sl_dist_pct": -1.06
     },
     {
       "strategy": "Po3-Minimal",
@@ -72,13 +72,13 @@
       "symbol": "INJ/USDT",
       "side": "SHORT",
       "entry": 7.698,
-      "current": 7.682,
-      "pnl_pct": 0.21,
-      "chg_pct": -0.21,
+      "current": 7.701,
+      "pnl_pct": -0.04,
+      "chg_pct": 0.04,
       "tp": 7.523151851305347,
       "sl": 7.829136111520991,
-      "tp_dist_pct": 2.07,
-      "sl_dist_pct": -1.92
+      "tp_dist_pct": 2.31,
+      "sl_dist_pct": -1.66
     },
     {
       "strategy": "Divergence-Scanner",
@@ -86,13 +86,13 @@
       "symbol": "LINK/USDT",
       "side": "SHORT",
       "entry": 12.613,
-      "current": 12.428,
-      "pnl_pct": 1.47,
-      "chg_pct": -1.47,
+      "current": 12.452,
+      "pnl_pct": 1.28,
+      "chg_pct": -1.28,
       "tp": 12.308871833039985,
       "sl": 12.84109612522001,
-      "tp_dist_pct": 0.96,
-      "sl_dist_pct": -3.32
+      "tp_dist_pct": 1.15,
+      "sl_dist_pct": -3.12
     },
     {
       "strategy": "HTF-Candle",
