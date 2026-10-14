@@ -1,9 +1,9 @@
 {
-  "date": "2026-10-14 04:28 UTC",
+  "date": "2026-10-14 04:33 UTC",
   "cash": 8900.78,
-  "equity": 9899.45,
-  "pnl": -100.55,
-  "pnl_pct": -1.01,
+  "equity": 9899.96,
+  "pnl": -100.04,
+  "pnl_pct": -1.0,
   "open_positions": 10,
   "closed_trades": 454,
   "win_rate": 38.8,
@@ -16,13 +16,13 @@
       "symbol": "ADA/USDT",
       "side": "SHORT",
       "entry": 0.2347,
-      "current": 0.2365,
-      "pnl_pct": -0.77,
-      "chg_pct": 0.77,
+      "current": 0.2367,
+      "pnl_pct": -0.85,
+      "chg_pct": 0.85,
       "tp": 0.22836361138823894,
       "sl": 0.23945229145882077,
-      "tp_dist_pct": 3.44,
-      "sl_dist_pct": -1.25
+      "tp_dist_pct": 3.52,
+      "sl_dist_pct": -1.16
     },
     {
       "strategy": "Divergence-Scanner",
@@ -30,13 +30,13 @@
       "symbol": "AVAX/USDT",
       "side": "SHORT",
       "entry": 10.306,
-      "current": 10.273,
-      "pnl_pct": 0.32,
-      "chg_pct": -0.32,
+      "current": 10.292,
+      "pnl_pct": 0.14,
+      "chg_pct": -0.14,
       "tp": 10.033909758225425,
       "sl": 10.51006768133093,
-      "tp_dist_pct": 2.33,
-      "sl_dist_pct": -2.31
+      "tp_dist_pct": 2.51,
+      "sl_dist_pct": -2.12
     },
     {
       "strategy": "HTF-Candle",
@@ -72,13 +72,13 @@
       "symbol": "CAP/USDT",
       "side": "SHORT",
       "entry": 0.0746,
-      "current": 0.0745,
-      "pnl_pct": 0.13,
-      "chg_pct": -0.13,
+      "current": 0.0744,
+      "pnl_pct": 0.27,
+      "chg_pct": -0.27,
       "tp": 0.07340344695069874,
       "sl": 0.07549741478697594,
-      "tp_dist_pct": 1.47,
-      "sl_dist_pct": -1.34
+      "tp_dist_pct": 1.34,
+      "sl_dist_pct": -1.48
     },
     {
       "strategy": "MoM-Levels",
@@ -86,13 +86,13 @@
       "symbol": "ARB/USDT",
       "side": "SHORT",
       "entry": 0.1923,
-      "current": 0.1916,
-      "pnl_pct": 0.36,
-      "chg_pct": -0.36,
+      "current": 0.1919,
+      "pnl_pct": 0.21,
+      "chg_pct": -0.21,
       "tp": 0.18999232282387726,
       "sl": 0.19414614174089817,
-      "tp_dist_pct": 0.84,
-      "sl_dist_pct": -1.33
+      "tp_dist_pct": 0.99,
+      "sl_dist_pct": -1.17
     },
     {
       "strategy": "MoM-Levels",
@@ -100,13 +100,13 @@
       "symbol": "ASTER/USDT",
       "side": "SHORT",
       "entry": 0.70249,
-      "current": 0.70318,
-      "pnl_pct": -0.1,
-      "chg_pct": 0.1,
+      "current": 0.70273,
+      "pnl_pct": -0.03,
+      "chg_pct": 0.03,
       "tp": 0.6981149110300368,
       "sl": 0.7059900711759705,
-      "tp_dist_pct": 0.72,
-      "sl_dist_pct": -0.4
+      "tp_dist_pct": 0.66,
+      "sl_dist_pct": -0.46
     },
     {
       "strategy": "Divergence-Scanner",
@@ -114,13 +114,13 @@
       "symbol": "AR/USDT",
       "side": "SHORT",
       "entry": 3.994,
-      "current": 3.989,
-      "pnl_pct": 0.13,
-      "chg_pct": -0.13,
+      "current": 3.996,
+      "pnl_pct": -0.05,
+      "chg_pct": 0.05,
       "tp": 3.8968920121453556,
       "sl": 4.066830990890984,
-      "tp_dist_pct": 2.31,
-      "sl_dist_pct": -1.95
+      "tp_dist_pct": 2.48,
+      "sl_dist_pct": -1.77
     },
     {
       "strategy": "MoM-Levels",
@@ -128,13 +128,13 @@
       "symbol": "B/USDT",
       "side": "SHORT",
       "entry": 0.14176,
-      "current": 0.14103,
-      "pnl_pct": 0.51,
-      "chg_pct": -0.51,
+      "current": 0.14095,
+      "pnl_pct": 0.57,
+      "chg_pct": -0.57,
       "tp": 0.1405125770864491,
       "sl": 0.14275793833084072,
-      "tp_dist_pct": 0.37,
-      "sl_dist_pct": -1.23
+      "tp_dist_pct": 0.31,
+      "sl_dist_pct": -1.28
     },
     {
       "strategy": "Po3-Minimal",
@@ -142,13 +142,13 @@
       "symbol": "ATOM/USDT",
       "side": "SHORT",
       "entry": 1.831,
-      "current": 1.83,
-      "pnl_pct": 0.05,
-      "chg_pct": -0.05,
+      "current": 1.833,
+      "pnl_pct": -0.11,
+      "chg_pct": 0.11,
       "tp": 1.802744610272541,
       "sl": 1.8521915422955941,
-      "tp_dist_pct": 1.49,
-      "sl_dist_pct": -1.21
+      "tp_dist_pct": 1.65,
+      "sl_dist_pct": -1.05
     }
   ],
   "recent_trades": [
