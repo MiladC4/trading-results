@@ -1,9 +1,9 @@
 {
-  "date": "2026-10-15 16:23 UTC",
+  "date": "2026-10-15 16:30 UTC",
   "cash": 9216.64,
-  "equity": 9920.54,
-  "pnl": -79.46,
-  "pnl_pct": -0.79,
+  "equity": 9918.59,
+  "pnl": -81.41,
+  "pnl_pct": -0.81,
   "open_positions": 7,
   "closed_trades": 558,
   "win_rate": 42.3,
@@ -16,13 +16,13 @@
       "symbol": "CAP/USDT",
       "side": "SHORT",
       "entry": 0.0738,
-      "current": 0.0741,
-      "pnl_pct": -0.41,
-      "chg_pct": 0.41,
+      "current": 0.0736,
+      "pnl_pct": 0.27,
+      "chg_pct": -0.27,
       "tp": 0.07162582385677789,
       "sl": 0.07543063210741659,
-      "tp_dist_pct": 3.34,
-      "sl_dist_pct": -1.8
+      "tp_dist_pct": 2.68,
+      "sl_dist_pct": -2.49
     },
     {
       "strategy": "HTF-Candle",
@@ -30,13 +30,13 @@
       "symbol": "GOMINING/USDT",
       "side": "SHORT",
       "entry": 0.3806,
-      "current": 0.3807,
-      "pnl_pct": -0.03,
-      "chg_pct": 0.03,
+      "current": 0.3812,
+      "pnl_pct": -0.16,
+      "chg_pct": 0.16,
       "tp": 0.3782474198263163,
       "sl": 0.38236443513026275,
-      "tp_dist_pct": 0.64,
-      "sl_dist_pct": -0.44
+      "tp_dist_pct": 0.77,
+      "sl_dist_pct": -0.36
     },
     {
       "strategy": "HTF-Candle",
@@ -58,9 +58,9 @@
       "symbol": "PAXG/USDT",
       "side": "SHORT",
       "entry": 4156.21,
-      "current": 4151.81,
-      "pnl_pct": 0.11,
-      "chg_pct": -0.11,
+      "current": 4151.92,
+      "pnl_pct": 0.1,
+      "chg_pct": -0.1,
       "tp": 4131.065286556276,
       "sl": 4171.925445902328,
       "tp_dist_pct": 0.5,
@@ -72,13 +72,13 @@
       "symbol": "XAUT/USDT",
       "side": "SHORT",
       "entry": 4150.4,
-      "current": 4144.9,
+      "current": 4145.0,
       "pnl_pct": 0.13,
       "chg_pct": -0.13,
       "tp": 4128.075668343379,
       "sl": 4167.1432487424645,
       "tp_dist_pct": 0.41,
-      "sl_dist_pct": -0.54
+      "sl_dist_pct": -0.53
     },
     {
       "strategy": "HTF-Candle",
@@ -86,13 +86,13 @@
       "symbol": "XPL/USDT",
       "side": "SHORT",
       "entry": 0.08455,
-      "current": 0.08547,
-      "pnl_pct": -1.09,
-      "chg_pct": 1.09,
+      "current": 0.08484,
+      "pnl_pct": -0.34,
+      "chg_pct": 0.34,
       "tp": 0.08008873122223328,
       "sl": 0.08789595158332504,
-      "tp_dist_pct": 6.3,
-      "sl_dist_pct": -2.84
+      "tp_dist_pct": 5.6,
+      "sl_dist_pct": -3.6
     },
     {
       "strategy": "HTF-Candle",
@@ -100,13 +100,13 @@
       "symbol": "GENIUS/USDT",
       "side": "SHORT",
       "entry": 0.2884,
-      "current": 0.2979,
-      "pnl_pct": -3.29,
-      "chg_pct": 3.29,
+      "current": 0.2961,
+      "pnl_pct": -2.67,
+      "chg_pct": 2.67,
       "tp": 0.26600930287894503,
       "sl": 0.30519302284079125,
-      "tp_dist_pct": 10.71,
-      "sl_dist_pct": -2.45
+      "tp_dist_pct": 10.16,
+      "sl_dist_pct": -3.07
     }
   ],
   "recent_trades": [
