@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-15 17:21 UTC",
+  "date": "2026-10-15 17:23 UTC",
   "cash": 9411.24,
-  "equity": 9910.28,
-  "pnl": -89.72,
+  "equity": 9910.47,
+  "pnl": -89.53,
   "pnl_pct": -0.9,
   "open_positions": 5,
   "closed_trades": 560,
@@ -58,13 +58,13 @@
       "symbol": "XAUT/USDT",
       "side": "SHORT",
       "entry": 4150.4,
-      "current": 4146.5,
-      "pnl_pct": 0.09,
-      "chg_pct": -0.09,
+      "current": 4148.8,
+      "pnl_pct": 0.04,
+      "chg_pct": -0.04,
       "tp": 4128.075668343379,
       "sl": 4167.1432487424645,
-      "tp_dist_pct": 0.44,
-      "sl_dist_pct": -0.5
+      "tp_dist_pct": 0.5,
+      "sl_dist_pct": -0.44
     },
     {
       "strategy": "HTF-Candle",
@@ -72,12 +72,12 @@
       "symbol": "XPL/USDT",
       "side": "SHORT",
       "entry": 0.08455,
-      "current": 0.08413,
-      "pnl_pct": 0.5,
-      "chg_pct": -0.5,
+      "current": 0.08424,
+      "pnl_pct": 0.37,
+      "chg_pct": -0.37,
       "tp": 0.08008873122223328,
       "sl": 0.08789595158332504,
-      "tp_dist_pct": 4.8,
+      "tp_dist_pct": 4.93,
       "sl_dist_pct": -4.34
     }
   ],
