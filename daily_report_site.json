@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-15 18:40 UTC",
+  "date": "2026-10-15 18:48 UTC",
   "cash": 9411.24,
-  "equity": 9912.87,
-  "pnl": -87.13,
+  "equity": 9912.83,
+  "pnl": -87.17,
   "pnl_pct": -0.87,
   "open_positions": 5,
   "closed_trades": 560,
@@ -44,9 +44,9 @@
       "symbol": "PAXG/USDT",
       "side": "SHORT",
       "entry": 4156.21,
-      "current": 4161.09,
-      "pnl_pct": -0.12,
-      "chg_pct": 0.12,
+      "current": 4160.95,
+      "pnl_pct": -0.11,
+      "chg_pct": 0.11,
       "tp": 4131.065286556276,
       "sl": 4171.925445902328,
       "tp_dist_pct": 0.72,
@@ -72,13 +72,13 @@
       "symbol": "XPL/USDT",
       "side": "SHORT",
       "entry": 0.08455,
-      "current": 0.0866,
-      "pnl_pct": -2.42,
-      "chg_pct": 2.42,
+      "current": 0.08657,
+      "pnl_pct": -2.39,
+      "chg_pct": 2.39,
       "tp": 0.08008873122223328,
       "sl": 0.08789595158332504,
-      "tp_dist_pct": 7.52,
-      "sl_dist_pct": -1.5
+      "tp_dist_pct": 7.49,
+      "sl_dist_pct": -1.53
     }
   ],
   "recent_trades": [
