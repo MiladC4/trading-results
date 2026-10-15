@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-15 18:35 UTC",
+  "date": "2026-10-15 18:40 UTC",
   "cash": 9411.24,
-  "equity": 9912.95,
-  "pnl": -87.05,
+  "equity": 9912.87,
+  "pnl": -87.13,
   "pnl_pct": -0.87,
   "open_positions": 5,
   "closed_trades": 560,
@@ -16,13 +16,13 @@
       "symbol": "CAP/USDT",
       "side": "SHORT",
       "entry": 0.0738,
-      "current": 0.0738,
-      "pnl_pct": -0.0,
-      "chg_pct": 0.0,
+      "current": 0.0734,
+      "pnl_pct": 0.54,
+      "chg_pct": -0.54,
       "tp": 0.07162582385677789,
       "sl": 0.07543063210741659,
-      "tp_dist_pct": 2.95,
-      "sl_dist_pct": -2.21
+      "tp_dist_pct": 2.42,
+      "sl_dist_pct": -2.77
     },
     {
       "strategy": "HTF-Candle",
@@ -44,7 +44,7 @@
       "symbol": "PAXG/USDT",
       "side": "SHORT",
       "entry": 4156.21,
-      "current": 4161.18,
+      "current": 4161.09,
       "pnl_pct": -0.12,
       "chg_pct": 0.12,
       "tp": 4131.065286556276,
@@ -58,13 +58,13 @@
       "symbol": "XAUT/USDT",
       "side": "SHORT",
       "entry": 4150.4,
-      "current": 4154.2,
-      "pnl_pct": -0.09,
-      "chg_pct": 0.09,
+      "current": 4154.7,
+      "pnl_pct": -0.1,
+      "chg_pct": 0.1,
       "tp": 4128.075668343379,
       "sl": 4167.1432487424645,
-      "tp_dist_pct": 0.63,
-      "sl_dist_pct": -0.31
+      "tp_dist_pct": 0.64,
+      "sl_dist_pct": -0.3
     },
     {
       "strategy": "HTF-Candle",
@@ -72,13 +72,13 @@
       "symbol": "XPL/USDT",
       "side": "SHORT",
       "entry": 0.08455,
-      "current": 0.08622,
-      "pnl_pct": -1.98,
-      "chg_pct": 1.98,
+      "current": 0.0866,
+      "pnl_pct": -2.42,
+      "chg_pct": 2.42,
       "tp": 0.08008873122223328,
       "sl": 0.08789595158332504,
-      "tp_dist_pct": 7.11,
-      "sl_dist_pct": -1.94
+      "tp_dist_pct": 7.52,
+      "sl_dist_pct": -1.5
     }
   ],
   "recent_trades": [
