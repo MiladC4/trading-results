@@ -1,14 +1,14 @@
 {
-  "date": "2026-10-15 16:52 UTC",
-  "cash": 9216.64,
-  "equity": 9919.0,
-  "pnl": -81.0,
-  "pnl_pct": -0.81,
-  "open_positions": 7,
-  "closed_trades": 558,
+  "date": "2026-10-15 16:58 UTC",
+  "cash": 9411.24,
+  "equity": 9909.7,
+  "pnl": -90.3,
+  "pnl_pct": -0.9,
+  "open_positions": 5,
+  "closed_trades": 560,
   "win_rate": 42.3,
-  "avg_win": 1.655,
-  "avg_loss": -1.15,
+  "avg_win": 1.651,
+  "avg_loss": -1.165,
   "positions": [
     {
       "strategy": "Divergence-Scanner",
@@ -16,27 +16,13 @@
       "symbol": "CAP/USDT",
       "side": "SHORT",
       "entry": 0.0738,
-      "current": 0.0735,
-      "pnl_pct": 0.41,
-      "chg_pct": -0.41,
+      "current": 0.0738,
+      "pnl_pct": -0.0,
+      "chg_pct": 0.0,
       "tp": 0.07162582385677789,
       "sl": 0.07543063210741659,
-      "tp_dist_pct": 2.55,
-      "sl_dist_pct": -2.63
-    },
-    {
-      "strategy": "HTF-Candle",
-      "strategy_full": "HTF Candle Direction Strategy V1",
-      "symbol": "GOMINING/USDT",
-      "side": "SHORT",
-      "entry": 0.3806,
-      "current": 0.3803,
-      "pnl_pct": 0.08,
-      "chg_pct": -0.08,
-      "tp": 0.3782474198263163,
-      "sl": 0.38236443513026275,
-      "tp_dist_pct": 0.54,
-      "sl_dist_pct": -0.54
+      "tp_dist_pct": 2.95,
+      "sl_dist_pct": -2.21
     },
     {
       "strategy": "HTF-Candle",
@@ -58,13 +44,13 @@
       "symbol": "PAXG/USDT",
       "side": "SHORT",
       "entry": 4156.21,
-      "current": 4153.95,
-      "pnl_pct": 0.05,
-      "chg_pct": -0.05,
+      "current": 4153.21,
+      "pnl_pct": 0.07,
+      "chg_pct": -0.07,
       "tp": 4131.065286556276,
       "sl": 4171.925445902328,
-      "tp_dist_pct": 0.55,
-      "sl_dist_pct": -0.43
+      "tp_dist_pct": 0.53,
+      "sl_dist_pct": -0.45
     },
     {
       "strategy": "HTF-Candle",
@@ -72,13 +58,13 @@
       "symbol": "XAUT/USDT",
       "side": "SHORT",
       "entry": 4150.4,
-      "current": 4147.8,
-      "pnl_pct": 0.06,
-      "chg_pct": -0.06,
+      "current": 4146.4,
+      "pnl_pct": 0.1,
+      "chg_pct": -0.1,
       "tp": 4128.075668343379,
       "sl": 4167.1432487424645,
-      "tp_dist_pct": 0.48,
-      "sl_dist_pct": -0.47
+      "tp_dist_pct": 0.44,
+      "sl_dist_pct": -0.5
     },
     {
       "strategy": "HTF-Candle",
@@ -86,52 +72,16 @@
       "symbol": "XPL/USDT",
       "side": "SHORT",
       "entry": 0.08455,
-      "current": 0.08394,
-      "pnl_pct": 0.72,
-      "chg_pct": -0.72,
+      "current": 0.0838,
+      "pnl_pct": 0.89,
+      "chg_pct": -0.89,
       "tp": 0.08008873122223328,
       "sl": 0.08789595158332504,
-      "tp_dist_pct": 4.59,
-      "sl_dist_pct": -4.71
-    },
-    {
-      "strategy": "HTF-Candle",
-      "strategy_full": "HTF Candle Direction Strategy V1",
-      "symbol": "GENIUS/USDT",
-      "side": "SHORT",
-      "entry": 0.2884,
-      "current": 0.301,
-      "pnl_pct": -4.37,
-      "chg_pct": 4.37,
-      "tp": 0.26600930287894503,
-      "sl": 0.30519302284079125,
-      "tp_dist_pct": 11.62,
-      "sl_dist_pct": -1.39
+      "tp_dist_pct": 4.43,
+      "sl_dist_pct": -4.89
     }
   ],
   "recent_trades": [
-    {
-      "strategy": "MoM-Levels",
-      "symbol": "APE/USDT",
-      "result": "LOSS",
-      "pnl_pct": -2.357,
-      "entry": 0.1351,
-      "exit": 0.138284,
-      "chg_pct": 2.357,
-      "candles": 146,
-      "exit_reason": "sl"
-    },
-    {
-      "strategy": "HTF-Candle",
-      "symbol": "BGB/USDT",
-      "result": "LOSS",
-      "pnl_pct": -0.41,
-      "entry": 1.912,
-      "exit": 1.919839,
-      "chg_pct": 0.41,
-      "candles": 7,
-      "exit_reason": "sl"
-    },
     {
       "strategy": "HTF-Candle",
       "symbol": "ADA/USDT",
@@ -219,6 +169,28 @@
       "chg_pct": -0.019,
       "candles": 12,
       "exit_reason": "tp"
+    },
+    {
+      "strategy": "HTF-Candle",
+      "symbol": "GOMINING/USDT",
+      "result": "WIN",
+      "pnl_pct": 0.618,
+      "entry": 0.3806,
+      "exit": 0.378248,
+      "chg_pct": -0.618,
+      "candles": 33,
+      "exit_reason": "tp"
+    },
+    {
+      "strategy": "HTF-Candle",
+      "symbol": "GENIUS/USDT",
+      "result": "LOSS",
+      "pnl_pct": -5.823,
+      "entry": 0.2884,
+      "exit": 0.305194,
+      "chg_pct": 5.823,
+      "candles": 13,
+      "exit_reason": "sl"
     }
   ],
   "tuner": {
