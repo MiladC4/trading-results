@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-16 02:23 UTC",
+  "date": "2026-10-16 02:26 UTC",
   "cash": 9706.21,
-  "equity": 9905.49,
-  "pnl": -94.51,
+  "equity": 9905.08,
+  "pnl": -94.92,
   "pnl_pct": -0.95,
   "open_positions": 2,
   "closed_trades": 563,
@@ -16,13 +16,13 @@
       "symbol": "CAP/USDT",
       "side": "SHORT",
       "entry": 0.0738,
-      "current": 0.0734,
-      "pnl_pct": 0.54,
-      "chg_pct": -0.54,
+      "current": 0.0731,
+      "pnl_pct": 0.95,
+      "chg_pct": -0.95,
       "tp": 0.07162582385677789,
       "sl": 0.07543063210741659,
-      "tp_dist_pct": 2.42,
-      "sl_dist_pct": -2.77
+      "tp_dist_pct": 2.02,
+      "sl_dist_pct": -3.19
     },
     {
       "strategy": "HTF-Candle",
@@ -152,7 +152,7 @@
     }
   ],
   "tuner": {
-    "ts": 1792115790649,
+    "ts": 1792117534401,
     "n": 563,
     "overall": {
       "n": 563,
@@ -176,115 +176,8 @@
         "banned": false
       }
     },
-    "problems": [
-      {
-        "kind": "strategy",
-        "strategy": "Swing-OrderBlock",
-        "n": 14,
-        "wr": 28.6,
-        "exp": -0.00713,
-        "msg": "win rate < 45% and negative expectancy"
-      },
-      {
-        "kind": "strategy",
-        "strategy": "RSI-Divergence",
-        "n": 56,
-        "wr": 32.1,
-        "exp": -0.00109,
-        "msg": "win rate < 45% and negative expectancy"
-      },
-      {
-        "kind": "strategy",
-        "strategy": "Harmonic-Pro",
-        "n": 14,
-        "wr": 28.6,
-        "exp": -0.00068,
-        "msg": "win rate < 45% and negative expectancy"
-      },
-      {
-        "kind": "strategy",
-        "strategy": "HMA-Projection",
-        "n": 43,
-        "wr": 37.2,
-        "exp": -0.00076,
-        "msg": "win rate < 45% and negative expectancy"
-      },
-      {
-        "kind": "strategy",
-        "strategy": "VolDiv-Bayes",
-        "n": 134,
-        "wr": 35.8,
-        "exp": -0.00043,
-        "msg": "win rate < 45% and negative expectancy"
-      },
-      {
-        "kind": "strategy",
-        "strategy": "TJR-v4",
-        "n": 19,
-        "wr": 31.6,
-        "exp": -0.00138,
-        "msg": "win rate < 45% and negative expectancy"
-      },
-      {
-        "kind": "side",
-        "side": "long",
-        "n": 105,
-        "wr": 29.5,
-        "exp": -0.00317,
-        "msg": "long side losing money"
-      }
-    ],
-    "actions": [
-      {
-        "action": "quarantine",
-        "strategy": "Swing-OrderBlock",
-        "n": 14,
-        "wr": 28.6,
-        "exp": -0.00713
-      },
-      {
-        "action": "quarantine",
-        "strategy": "RSI-Divergence",
-        "n": 56,
-        "wr": 32.1,
-        "exp": -0.00109
-      },
-      {
-        "action": "quarantine",
-        "strategy": "Harmonic-Pro",
-        "n": 14,
-        "wr": 28.6,
-        "exp": -0.00068
-      },
-      {
-        "action": "quarantine",
-        "strategy": "HMA-Projection",
-        "n": 43,
-        "wr": 37.2,
-        "exp": -0.00076
-      },
-      {
-        "action": "quarantine",
-        "strategy": "VolDiv-Bayes",
-        "n": 134,
-        "wr": 35.8,
-        "exp": -0.00043
-      },
-      {
-        "action": "quarantine",
-        "strategy": "TJR-v4",
-        "n": 19,
-        "wr": 31.6,
-        "exp": -0.00138
-      },
-      {
-        "action": "ban_side",
-        "side": "long",
-        "n": 105,
-        "wr": 29.5,
-        "exp": -0.00317
-      }
-    ],
+    "problems": [],
+    "actions": [],
     "quarantined": [
       "Swing-OrderBlock",
       "RSI-Divergence",
