@@ -1,14 +1,14 @@
 {
-  "date": "2026-10-16 17:40 UTC",
-  "cash": 8908.15,
-  "equity": 9914.14,
-  "pnl": -85.86,
-  "pnl_pct": -0.86,
-  "open_positions": 10,
-  "closed_trades": 564,
-  "win_rate": 42.2,
+  "date": "2026-10-16 17:48 UTC",
+  "cash": 9006.25,
+  "equity": 9910.54,
+  "pnl": -89.46,
+  "pnl_pct": -0.89,
+  "open_positions": 9,
+  "closed_trades": 565,
+  "win_rate": 42.1,
   "avg_win": 1.656,
-  "avg_loss": -1.169,
+  "avg_loss": -1.171,
   "positions": [
     {
       "strategy": "HTF-Candle",
@@ -135,34 +135,9 @@
       "sl": 3.9060456509293786,
       "tp_dist_pct": 3.15,
       "sl_dist_pct": -0.39
-    },
-    {
-      "strategy": "HTF-Candle",
-      "strategy_full": "HTF Candle Direction Strategy V1",
-      "symbol": "ARB/USDT",
-      "side": "SHORT",
-      "entry": 0.1901,
-      "current": 0.1935,
-      "pnl_pct": -1.79,
-      "chg_pct": 1.79,
-      "tp": 0.1855157183748943,
-      "sl": 0.19353821121882925,
-      "tp_dist_pct": 4.13,
-      "sl_dist_pct": -0.02
     }
   ],
   "recent_trades": [
-    {
-      "strategy": "Divergence-Scanner",
-      "symbol": "JASMY/USDT",
-      "result": "LOSS",
-      "pnl_pct": -2.591,
-      "entry": 0.004487,
-      "exit": 0.004603,
-      "chg_pct": 2.591,
-      "candles": 12,
-      "exit_reason": "sl"
-    },
     {
       "strategy": "Divergence-Scanner",
       "symbol": "GENIUS/USDT",
@@ -261,6 +236,17 @@
       "chg_pct": -2.946,
       "candles": 238,
       "exit_reason": "tp"
+    },
+    {
+      "strategy": "HTF-Candle",
+      "symbol": "ARB/USDT",
+      "result": "LOSS",
+      "pnl_pct": -1.809,
+      "entry": 0.1901,
+      "exit": 0.193539,
+      "chg_pct": 1.809,
+      "candles": 3,
+      "exit_reason": "sl"
     }
   ],
   "tuner": {
