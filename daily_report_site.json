@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-16 03:50 UTC",
+  "date": "2026-10-16 03:53 UTC",
   "cash": 9706.21,
-  "equity": 9904.8,
-  "pnl": -95.2,
+  "equity": 9905.07,
+  "pnl": -94.93,
   "pnl_pct": -0.95,
   "open_positions": 2,
   "closed_trades": 563,
@@ -16,12 +16,12 @@
       "symbol": "CAP/USDT",
       "side": "SHORT",
       "entry": 0.0738,
-      "current": 0.0729,
-      "pnl_pct": 1.22,
-      "chg_pct": -1.22,
+      "current": 0.0731,
+      "pnl_pct": 0.95,
+      "chg_pct": -0.95,
       "tp": 0.07162582385677789,
       "sl": 0.07543063210741659,
-      "tp_dist_pct": 1.74,
+      "tp_dist_pct": 2.02,
       "sl_dist_pct": -3.19
     },
     {
