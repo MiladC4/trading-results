@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-16 01:53 UTC",
+  "date": "2026-10-16 01:56 UTC",
   "cash": 9706.21,
-  "equity": 9905.22,
-  "pnl": -94.78,
+  "equity": 9905.08,
+  "pnl": -94.92,
   "pnl_pct": -0.95,
   "open_positions": 2,
   "closed_trades": 563,
@@ -16,13 +16,13 @@
       "symbol": "CAP/USDT",
       "side": "SHORT",
       "entry": 0.0738,
-      "current": 0.0732,
-      "pnl_pct": 0.81,
-      "chg_pct": -0.81,
+      "current": 0.0731,
+      "pnl_pct": 0.95,
+      "chg_pct": -0.95,
       "tp": 0.07162582385677789,
       "sl": 0.07543063210741659,
-      "tp_dist_pct": 2.15,
-      "sl_dist_pct": -3.05
+      "tp_dist_pct": 2.02,
+      "sl_dist_pct": -3.19
     },
     {
       "strategy": "HTF-Candle",
@@ -152,13 +152,13 @@
     }
   ],
   "tuner": {
-    "ts": 1791892844100,
-    "n": 422,
+    "ts": 1792115790649,
+    "n": 563,
     "overall": {
-      "n": 422,
-      "wr": 40.3,
-      "exp": 0.00012,
-      "tot": 0.05
+      "n": 563,
+      "wr": 42.1,
+      "exp": 0.00018,
+      "tot": 0.102
     },
     "sides": {
       "long": {
@@ -169,30 +169,120 @@
         "banned": true
       },
       "short": {
-        "n": 317,
-        "wr": 43.8,
-        "exp": 0.00121,
-        "tot": 0.383,
+        "n": 458,
+        "wr": 45.0,
+        "exp": 0.00095,
+        "tot": 0.435,
         "banned": false
       }
     },
     "problems": [
       {
         "kind": "strategy",
-        "strategy": "VolDiv-Bayes",
-        "n": 129,
-        "wr": 37.2,
-        "exp": -3e-05,
+        "strategy": "Swing-OrderBlock",
+        "n": 14,
+        "wr": 28.6,
+        "exp": -0.00713,
         "msg": "win rate < 45% and negative expectancy"
+      },
+      {
+        "kind": "strategy",
+        "strategy": "RSI-Divergence",
+        "n": 56,
+        "wr": 32.1,
+        "exp": -0.00109,
+        "msg": "win rate < 45% and negative expectancy"
+      },
+      {
+        "kind": "strategy",
+        "strategy": "Harmonic-Pro",
+        "n": 14,
+        "wr": 28.6,
+        "exp": -0.00068,
+        "msg": "win rate < 45% and negative expectancy"
+      },
+      {
+        "kind": "strategy",
+        "strategy": "HMA-Projection",
+        "n": 43,
+        "wr": 37.2,
+        "exp": -0.00076,
+        "msg": "win rate < 45% and negative expectancy"
+      },
+      {
+        "kind": "strategy",
+        "strategy": "VolDiv-Bayes",
+        "n": 134,
+        "wr": 35.8,
+        "exp": -0.00043,
+        "msg": "win rate < 45% and negative expectancy"
+      },
+      {
+        "kind": "strategy",
+        "strategy": "TJR-v4",
+        "n": 19,
+        "wr": 31.6,
+        "exp": -0.00138,
+        "msg": "win rate < 45% and negative expectancy"
+      },
+      {
+        "kind": "side",
+        "side": "long",
+        "n": 105,
+        "wr": 29.5,
+        "exp": -0.00317,
+        "msg": "long side losing money"
       }
     ],
     "actions": [
       {
         "action": "quarantine",
-        "strategy": "VolDiv-Bayes",
-        "n": 129,
+        "strategy": "Swing-OrderBlock",
+        "n": 14,
+        "wr": 28.6,
+        "exp": -0.00713
+      },
+      {
+        "action": "quarantine",
+        "strategy": "RSI-Divergence",
+        "n": 56,
+        "wr": 32.1,
+        "exp": -0.00109
+      },
+      {
+        "action": "quarantine",
+        "strategy": "Harmonic-Pro",
+        "n": 14,
+        "wr": 28.6,
+        "exp": -0.00068
+      },
+      {
+        "action": "quarantine",
+        "strategy": "HMA-Projection",
+        "n": 43,
         "wr": 37.2,
-        "exp": -3e-05
+        "exp": -0.00076
+      },
+      {
+        "action": "quarantine",
+        "strategy": "VolDiv-Bayes",
+        "n": 134,
+        "wr": 35.8,
+        "exp": -0.00043
+      },
+      {
+        "action": "quarantine",
+        "strategy": "TJR-v4",
+        "n": 19,
+        "wr": 31.6,
+        "exp": -0.00138
+      },
+      {
+        "action": "ban_side",
+        "side": "long",
+        "n": 105,
+        "wr": 29.5,
+        "exp": -0.00317
       }
     ],
     "quarantined": [
@@ -208,15 +298,15 @@
       {
         "uid": "3kv64PEa",
         "name": "HTF-Candle",
-        "n": 65,
-        "wr": 53.8,
-        "exp": 0.0026,
-        "tot": 0.169,
+        "n": 139,
+        "wr": 46.8,
+        "exp": -0.00021,
+        "tot": -0.029,
         "tp": 6.0,
         "sl": 4.5,
-        "ap": 0.26,
-        "tp_pct": 1.56,
-        "sl_pct": 1.17,
+        "ap": 0.288,
+        "tp_pct": 1.73,
+        "sl_pct": 1.3,
         "src": "model",
         "quarantined": false
       },
@@ -238,30 +328,30 @@
       {
         "uid": "ODMWP96S",
         "name": "TH-DualMode",
-        "n": 14,
-        "wr": 42.9,
-        "exp": 0.00222,
-        "tot": 0.031,
+        "n": 27,
+        "wr": 44.4,
+        "exp": 0.0041,
+        "tot": 0.111,
         "tp": 6.0,
         "sl": 3.75,
-        "ap": 0.236,
-        "tp_pct": 1.41,
-        "sl_pct": 0.88,
+        "ap": 0.275,
+        "tp_pct": 1.65,
+        "sl_pct": 1.03,
         "src": "model",
         "quarantined": false
       },
       {
         "uid": "conv_5euQMqvk",
         "name": "Po3-Minimal",
-        "n": 11,
-        "wr": 36.4,
-        "exp": 0.00047,
-        "tot": 0.005,
+        "n": 17,
+        "wr": 52.9,
+        "exp": 0.00422,
+        "tot": 0.072,
         "tp": 6.0,
         "sl": 4.5,
-        "ap": 0.248,
-        "tp_pct": 1.49,
-        "sl_pct": 1.12,
+        "ap": 0.25,
+        "tp_pct": 1.5,
+        "sl_pct": 1.13,
         "src": "model",
         "quarantined": false
       },
@@ -328,45 +418,45 @@
       {
         "uid": "conv_ktvQHlq8",
         "name": "Divergence-Scanner",
-        "n": 11,
-        "wr": 54.5,
-        "exp": 0.00274,
-        "tot": 0.03,
+        "n": 28,
+        "wr": 60.7,
+        "exp": 0.00429,
+        "tot": 0.12,
         "tp": 9.0,
         "sl": 6.75,
-        "ap": 0.296,
-        "tp_pct": 2.67,
-        "sl_pct": 2.0,
+        "ap": 0.291,
+        "tp_pct": 2.62,
+        "sl_pct": 1.97,
         "src": "model",
         "quarantined": false
       },
       {
         "uid": "conv_lwMEIL8n",
         "name": "MoM-Levels",
-        "n": 39,
-        "wr": 51.3,
-        "exp": 0.00163,
-        "tot": 0.064,
+        "n": 65,
+        "wr": 53.8,
+        "exp": 0.00203,
+        "tot": 0.132,
         "tp": 5.0,
         "sl": 4.0,
-        "ap": 0.234,
-        "tp_pct": 1.17,
-        "sl_pct": 0.93,
+        "ap": 0.261,
+        "tp_pct": 1.3,
+        "sl_pct": 1.04,
         "src": "model",
         "quarantined": false
       },
       {
         "uid": "conv_rPOx1NRY",
         "name": "VolDiv-Bayes",
-        "n": 129,
-        "wr": 37.2,
-        "exp": -3e-05,
-        "tot": -0.003,
+        "n": 134,
+        "wr": 35.8,
+        "exp": -0.00043,
+        "tot": -0.058,
         "tp": 6.0,
         "sl": 4.0,
-        "ap": 0.249,
-        "tp_pct": 1.49,
-        "sl_pct": 0.99,
+        "ap": 0.25,
+        "tp_pct": 1.5,
+        "sl_pct": 1.0,
         "src": "model",
         "quarantined": true
       },
