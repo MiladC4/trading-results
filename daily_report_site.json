@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-16 23:08 UTC",
+  "date": "2026-10-16 23:14 UTC",
   "cash": 8895.19,
-  "equity": 9899.65,
-  "pnl": -100.35,
+  "equity": 9899.72,
+  "pnl": -100.28,
   "pnl_pct": -1.0,
   "open_positions": 10,
   "closed_trades": 572,
@@ -128,13 +128,13 @@
       "symbol": "CHZ/USDT",
       "side": "SHORT",
       "entry": 0.01447,
-      "current": 0.01452,
-      "pnl_pct": -0.35,
-      "chg_pct": 0.35,
+      "current": 0.01453,
+      "pnl_pct": -0.41,
+      "chg_pct": 0.41,
       "tp": 0.01421492951684396,
       "sl": 0.01466130286236703,
-      "tp_dist_pct": 2.1,
-      "sl_dist_pct": -0.97
+      "tp_dist_pct": 2.17,
+      "sl_dist_pct": -0.9
     },
     {
       "strategy": "HTF-Candle",
