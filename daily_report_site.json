@@ -1,9 +1,9 @@
 {
-  "date": "2026-10-16 18:45 UTC",
+  "date": "2026-10-16 18:53 UTC",
   "cash": 8899.46,
-  "equity": 9901.61,
-  "pnl": -98.39,
-  "pnl_pct": -0.98,
+  "equity": 9896.74,
+  "pnl": -103.26,
+  "pnl_pct": -1.03,
   "open_positions": 10,
   "closed_trades": 569,
   "win_rate": 41.8,
