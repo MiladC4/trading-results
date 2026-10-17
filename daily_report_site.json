@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-17 05:38 UTC",
+  "date": "2026-10-17 05:43 UTC",
   "cash": 8885.89,
-  "equity": 9879.99,
-  "pnl": -120.01,
+  "equity": 9880.0,
+  "pnl": -120.0,
   "pnl_pct": -1.2,
   "open_positions": 10,
   "closed_trades": 581,
@@ -16,13 +16,13 @@
       "symbol": "U/USDT",
       "side": "SHORT",
       "entry": 1.0003,
-      "current": 1.0006,
-      "pnl_pct": -0.03,
-      "chg_pct": 0.03,
+      "current": 1.0007,
+      "pnl_pct": -0.04,
+      "chg_pct": 0.04,
       "tp": 0.9996997188492369,
       "sl": 1.0007502108630724,
-      "tp_dist_pct": 0.09,
-      "sl_dist_pct": -0.02
+      "tp_dist_pct": 0.1,
+      "sl_dist_pct": -0.01
     },
     {
       "strategy": "HTF-Candle",
