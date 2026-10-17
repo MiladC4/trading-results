@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-17 16:56 UTC",
+  "date": "2026-10-17 16:59 UTC",
   "cash": 8900.45,
   "equity": 9898.45,
   "pnl": -101.55,
@@ -142,13 +142,13 @@
       "symbol": "AXS/USDT",
       "side": "SHORT",
       "entry": 1.0489,
-      "current": 1.0402,
-      "pnl_pct": 0.83,
-      "chg_pct": -0.83,
+      "current": 1.0376,
+      "pnl_pct": 1.08,
+      "chg_pct": -1.08,
       "tp": 1.0275549925310392,
       "sl": 1.0649087556017205,
-      "tp_dist_pct": 1.22,
-      "sl_dist_pct": -2.38
+      "tp_dist_pct": 0.97,
+      "sl_dist_pct": -2.63
     }
   ],
   "recent_trades": [
