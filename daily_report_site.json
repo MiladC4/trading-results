@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-17 17:26 UTC",
+  "date": "2026-10-17 17:31 UTC",
   "cash": 8902.34,
-  "equity": 9899.69,
-  "pnl": -100.31,
+  "equity": 9899.59,
+  "pnl": -100.41,
   "pnl_pct": -1.0,
   "open_positions": 10,
   "closed_trades": 614,
@@ -100,13 +100,13 @@
       "symbol": "COMP/USDT",
       "side": "SHORT",
       "entry": 21.52,
-      "current": 21.4,
-      "pnl_pct": 0.56,
-      "chg_pct": -0.56,
+      "current": 21.38,
+      "pnl_pct": 0.65,
+      "chg_pct": -0.65,
       "tp": 21.34232911615859,
       "sl": 21.653253162881057,
-      "tp_dist_pct": 0.27,
-      "sl_dist_pct": -1.18
+      "tp_dist_pct": 0.18,
+      "sl_dist_pct": -1.28
     },
     {
       "strategy": "HTF-Candle",
