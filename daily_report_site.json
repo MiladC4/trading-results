@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-18 00:30 UTC",
+  "date": "2026-10-18 00:33 UTC",
   "cash": 8888.92,
-  "equity": 9888.82,
-  "pnl": -111.18,
+  "equity": 9888.68,
+  "pnl": -111.32,
   "pnl_pct": -1.11,
   "open_positions": 10,
   "closed_trades": 644,
@@ -30,13 +30,13 @@
       "symbol": "JST/USDT",
       "side": "SHORT",
       "entry": 0.13585,
-      "current": 0.13557,
-      "pnl_pct": 0.21,
-      "chg_pct": -0.21,
+      "current": 0.13554,
+      "pnl_pct": 0.23,
+      "chg_pct": -0.23,
       "tp": 0.13500243317648652,
       "sl": 0.1364856751176351,
-      "tp_dist_pct": 0.42,
-      "sl_dist_pct": -0.68
+      "tp_dist_pct": 0.4,
+      "sl_dist_pct": -0.7
     },
     {
       "strategy": "HTF-Candle",
