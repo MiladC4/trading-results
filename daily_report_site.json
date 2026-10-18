@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-18 05:46 UTC",
+  "date": "2026-10-18 05:51 UTC",
   "cash": 9696.04,
-  "equity": 9894.52,
-  "pnl": -105.48,
+  "equity": 9894.62,
+  "pnl": -105.38,
   "pnl_pct": -1.05,
   "open_positions": 2,
   "closed_trades": 660,
@@ -16,13 +16,13 @@
       "symbol": "U/USDT",
       "side": "SHORT",
       "entry": 1.0003,
-      "current": 1.0007,
-      "pnl_pct": -0.04,
-      "chg_pct": 0.04,
+      "current": 1.0006,
+      "pnl_pct": -0.03,
+      "chg_pct": 0.03,
       "tp": 0.9996997188492369,
       "sl": 1.0007502108630724,
-      "tp_dist_pct": 0.1,
-      "sl_dist_pct": -0.01
+      "tp_dist_pct": 0.09,
+      "sl_dist_pct": -0.02
     },
     {
       "strategy": "HTF-Candle",
@@ -30,13 +30,13 @@
       "symbol": "ATH/USDT",
       "side": "SHORT",
       "entry": 0.005488,
-      "current": 0.005413,
-      "pnl_pct": 1.37,
-      "chg_pct": -1.37,
+      "current": 0.005419,
+      "pnl_pct": 1.26,
+      "chg_pct": -1.26,
       "tp": 0.005387513637711055,
       "sl": 0.005563364771716708,
-      "tp_dist_pct": 0.47,
-      "sl_dist_pct": -2.78
+      "tp_dist_pct": 0.58,
+      "sl_dist_pct": -2.66
     }
   ],
   "recent_trades": [
