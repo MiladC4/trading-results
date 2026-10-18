@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-18 12:03 UTC",
+  "date": "2026-10-18 12:06 UTC",
   "cash": 9795.9,
-  "equity": 9894.71,
-  "pnl": -105.29,
+  "equity": 9894.87,
+  "pnl": -105.13,
   "pnl_pct": -1.05,
   "open_positions": 1,
   "closed_trades": 661,
@@ -16,13 +16,13 @@
       "symbol": "ATH/USDT",
       "side": "SHORT",
       "entry": 0.005488,
-      "current": 0.005428,
-      "pnl_pct": 1.09,
-      "chg_pct": -1.09,
+      "current": 0.005437,
+      "pnl_pct": 0.93,
+      "chg_pct": -0.93,
       "tp": 0.005387513637711055,
       "sl": 0.005563364771716708,
-      "tp_dist_pct": 0.75,
-      "sl_dist_pct": -2.49
+      "tp_dist_pct": 0.91,
+      "sl_dist_pct": -2.32
     }
   ],
   "recent_trades": [
