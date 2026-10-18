@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-18 23:11 UTC",
+  "date": "2026-10-18 23:16 UTC",
   "cash": 9289.36,
-  "equity": 9890.75,
-  "pnl": -109.25,
+  "equity": 9891.34,
+  "pnl": -108.66,
   "pnl_pct": -1.09,
   "open_positions": 6,
   "closed_trades": 692,
@@ -16,13 +16,13 @@
       "symbol": "KAS/USDT",
       "side": "SHORT",
       "entry": 0.03489,
-      "current": 0.03523,
-      "pnl_pct": -0.97,
-      "chg_pct": 0.97,
+      "current": 0.03525,
+      "pnl_pct": -1.03,
+      "chg_pct": 1.03,
       "tp": 0.03419132639512714,
       "sl": 0.03541400520365464,
-      "tp_dist_pct": 2.95,
-      "sl_dist_pct": -0.52
+      "tp_dist_pct": 3.0,
+      "sl_dist_pct": -0.47
     },
     {
       "strategy": "HTF-Candle",
@@ -30,13 +30,13 @@
       "symbol": "USD1/USDT",
       "side": "SHORT",
       "entry": 1.00019,
-      "current": 1.00018,
-      "pnl_pct": 0.0,
-      "chg_pct": -0.0,
+      "current": 1.00023,
+      "pnl_pct": -0.0,
+      "chg_pct": 0.0,
       "tp": 0.9999849034702016,
       "sl": 1.0003438223973486,
       "tp_dist_pct": 0.02,
-      "sl_dist_pct": -0.02
+      "sl_dist_pct": -0.01
     },
     {
       "strategy": "HTF-Candle",
@@ -44,13 +44,13 @@
       "symbol": "ZBCN/USDT",
       "side": "SHORT",
       "entry": 0.002026,
-      "current": 0.0020468,
-      "pnl_pct": -1.03,
-      "chg_pct": 1.03,
+      "current": 0.0020474,
+      "pnl_pct": -1.06,
+      "chg_pct": 1.06,
       "tp": 0.001992318164028772,
       "sl": 0.002051261376978421,
-      "tp_dist_pct": 2.66,
-      "sl_dist_pct": -0.22
+      "tp_dist_pct": 2.69,
+      "sl_dist_pct": -0.19
     },
     {
       "strategy": "TH-DualMode",
@@ -58,13 +58,13 @@
       "symbol": "MNT/USDT",
       "side": "SHORT",
       "entry": 0.5258,
-      "current": 0.5266,
-      "pnl_pct": -0.15,
-      "chg_pct": 0.15,
+      "current": 0.527,
+      "pnl_pct": -0.23,
+      "chg_pct": 0.23,
       "tp": 0.5217248925266806,
       "sl": 0.5283469421708247,
-      "tp_dist_pct": 0.93,
-      "sl_dist_pct": -0.33
+      "tp_dist_pct": 1.0,
+      "sl_dist_pct": -0.26
     },
     {
       "strategy": "HTF-Candle",
@@ -86,13 +86,13 @@
       "symbol": "JST/USDT",
       "side": "SHORT",
       "entry": 0.13571,
-      "current": 0.1358,
-      "pnl_pct": -0.07,
-      "chg_pct": 0.07,
+      "current": 0.13587,
+      "pnl_pct": -0.12,
+      "chg_pct": 0.12,
       "tp": 0.13502227704840203,
       "sl": 0.13622579221369846,
-      "tp_dist_pct": 0.57,
-      "sl_dist_pct": -0.31
+      "tp_dist_pct": 0.62,
+      "sl_dist_pct": -0.26
     }
   ],
   "recent_trades": [
