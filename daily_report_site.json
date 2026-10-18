@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-18 23:34 UTC",
+  "date": "2026-10-18 23:36 UTC",
   "cash": 9585.83,
-  "equity": 9885.96,
-  "pnl": -114.04,
+  "equity": 9886.03,
+  "pnl": -113.97,
   "pnl_pct": -1.14,
   "open_positions": 3,
   "closed_trades": 695,
@@ -16,12 +16,12 @@
       "symbol": "USD1/USDT",
       "side": "SHORT",
       "entry": 1.00019,
-      "current": 1.00023,
+      "current": 1.00024,
       "pnl_pct": -0.0,
       "chg_pct": 0.0,
       "tp": 0.9999849034702016,
       "sl": 1.0003438223973486,
-      "tp_dist_pct": 0.02,
+      "tp_dist_pct": 0.03,
       "sl_dist_pct": -0.01
     },
     {
@@ -44,13 +44,13 @@
       "symbol": "JST/USDT",
       "side": "SHORT",
       "entry": 0.13571,
-      "current": 0.13581,
-      "pnl_pct": -0.07,
-      "chg_pct": 0.07,
+      "current": 0.13591,
+      "pnl_pct": -0.15,
+      "chg_pct": 0.15,
       "tp": 0.13502227704840203,
       "sl": 0.13622579221369846,
-      "tp_dist_pct": 0.58,
-      "sl_dist_pct": -0.31
+      "tp_dist_pct": 0.65,
+      "sl_dist_pct": -0.23
     }
   ],
   "recent_trades": [
