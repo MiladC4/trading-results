@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-18 05:31 UTC",
+  "date": "2026-10-18 05:38 UTC",
   "cash": 9594.12,
-  "equity": 9890.92,
-  "pnl": -109.08,
+  "equity": 9890.76,
+  "pnl": -109.24,
   "pnl_pct": -1.09,
   "open_positions": 3,
   "closed_trades": 659,
@@ -30,13 +30,13 @@
       "symbol": "ATH/USDT",
       "side": "SHORT",
       "entry": 0.005488,
-      "current": 0.005424,
-      "pnl_pct": 1.17,
-      "chg_pct": -1.17,
+      "current": 0.00542,
+      "pnl_pct": 1.24,
+      "chg_pct": -1.24,
       "tp": 0.005387513637711055,
       "sl": 0.005563364771716708,
-      "tp_dist_pct": 0.67,
-      "sl_dist_pct": -2.57
+      "tp_dist_pct": 0.6,
+      "sl_dist_pct": -2.65
     },
     {
       "strategy": "Divergence-Scanner",
@@ -44,13 +44,13 @@
       "symbol": "KAS/USDT",
       "side": "SHORT",
       "entry": 0.03511,
-      "current": 0.03449,
-      "pnl_pct": 1.77,
-      "chg_pct": -1.77,
+      "current": 0.03446,
+      "pnl_pct": 1.85,
+      "chg_pct": -1.85,
       "tp": 0.03439809108591133,
       "sl": 0.0356439316855665,
-      "tp_dist_pct": 0.27,
-      "sl_dist_pct": -3.35
+      "tp_dist_pct": 0.18,
+      "sl_dist_pct": -3.44
     }
   ],
   "recent_trades": [
