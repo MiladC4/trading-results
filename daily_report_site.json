@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-18 19:01 UTC",
+  "date": "2026-10-18 19:06 UTC",
   "cash": 8892.59,
-  "equity": 9889.69,
-  "pnl": -110.31,
+  "equity": 9889.51,
+  "pnl": -110.49,
   "pnl_pct": -1.1,
   "open_positions": 10,
   "closed_trades": 668,
@@ -100,13 +100,13 @@
       "symbol": "KAITO/USDT",
       "side": "SHORT",
       "entry": 0.2716,
-      "current": 0.2712,
-      "pnl_pct": 0.15,
-      "chg_pct": -0.15,
+      "current": 0.2707,
+      "pnl_pct": 0.33,
+      "chg_pct": -0.33,
       "tp": 0.268084997293394,
       "sl": 0.2742362520299545,
-      "tp_dist_pct": 1.15,
-      "sl_dist_pct": -1.12
+      "tp_dist_pct": 0.97,
+      "sl_dist_pct": -1.31
     },
     {
       "strategy": "HTF-Candle",
