@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-18 07:31 UTC",
+  "date": "2026-10-18 07:38 UTC",
   "cash": 9696.04,
   "equity": 9895.27,
   "pnl": -104.73,
@@ -16,13 +16,13 @@
       "symbol": "U/USDT",
       "side": "SHORT",
       "entry": 1.0003,
-      "current": 1.0006,
-      "pnl_pct": -0.03,
-      "chg_pct": 0.03,
+      "current": 1.0007,
+      "pnl_pct": -0.04,
+      "chg_pct": 0.04,
       "tp": 0.9996997188492369,
       "sl": 1.0007502108630724,
-      "tp_dist_pct": 0.09,
-      "sl_dist_pct": -0.02
+      "tp_dist_pct": 0.1,
+      "sl_dist_pct": -0.01
     },
     {
       "strategy": "HTF-Candle",
@@ -30,13 +30,13 @@
       "symbol": "ATH/USDT",
       "side": "SHORT",
       "entry": 0.005488,
-      "current": 0.005455,
-      "pnl_pct": 0.6,
-      "chg_pct": -0.6,
+      "current": 0.005454,
+      "pnl_pct": 0.62,
+      "chg_pct": -0.62,
       "tp": 0.005387513637711055,
       "sl": 0.005563364771716708,
-      "tp_dist_pct": 1.24,
-      "sl_dist_pct": -1.99
+      "tp_dist_pct": 1.22,
+      "sl_dist_pct": -2.01
     }
   ],
   "recent_trades": [
