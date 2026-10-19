@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-19 05:37 UTC",
+  "date": "2026-10-19 05:42 UTC",
   "cash": 9682.96,
-  "equity": 9882.93,
-  "pnl": -117.07,
+  "equity": 9882.87,
+  "pnl": -117.13,
   "pnl_pct": -1.17,
   "open_positions": 2,
   "closed_trades": 699,
@@ -16,7 +16,7 @@
       "symbol": "USD1/USDT",
       "side": "SHORT",
       "entry": 1.00019,
-      "current": 1.00015,
+      "current": 1.00014,
       "pnl_pct": 0.0,
       "chg_pct": -0.0,
       "tp": 0.9999849034702016,
@@ -30,13 +30,13 @@
       "symbol": "MNT/USDT",
       "side": "SHORT",
       "entry": 0.5297,
-      "current": 0.5306,
-      "pnl_pct": -0.17,
-      "chg_pct": 0.17,
+      "current": 0.5303,
+      "pnl_pct": -0.11,
+      "chg_pct": 0.11,
       "tp": 0.5260056171504647,
       "sl": 0.5320089892809595,
-      "tp_dist_pct": 0.87,
-      "sl_dist_pct": -0.27
+      "tp_dist_pct": 0.81,
+      "sl_dist_pct": -0.32
     }
   ],
   "recent_trades": [
