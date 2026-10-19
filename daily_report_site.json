@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-19 00:22 UTC",
+  "date": "2026-10-19 00:27 UTC",
   "cash": 9384.62,
-  "equity": 9884.28,
-  "pnl": -115.72,
+  "equity": 9884.45,
+  "pnl": -115.55,
   "pnl_pct": -1.16,
   "open_positions": 5,
   "closed_trades": 696,
@@ -30,13 +30,13 @@
       "symbol": "WLFI/USDT",
       "side": "SHORT",
       "entry": 0.0569,
-      "current": 0.057,
-      "pnl_pct": -0.18,
-      "chg_pct": 0.18,
+      "current": 0.0571,
+      "pnl_pct": -0.35,
+      "chg_pct": 0.35,
       "tp": 0.05596009522149202,
       "sl": 0.057604928583880985,
-      "tp_dist_pct": 1.82,
-      "sl_dist_pct": -1.06
+      "tp_dist_pct": 2.0,
+      "sl_dist_pct": -0.88
     },
     {
       "strategy": "HTF-Candle",
@@ -44,12 +44,12 @@
       "symbol": "JST/USDT",
       "side": "SHORT",
       "entry": 0.13571,
-      "current": 0.13581,
+      "current": 0.1358,
       "pnl_pct": -0.07,
       "chg_pct": 0.07,
       "tp": 0.13502227704840203,
       "sl": 0.13622579221369846,
-      "tp_dist_pct": 0.58,
+      "tp_dist_pct": 0.57,
       "sl_dist_pct": -0.31
     },
     {
