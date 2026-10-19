@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-19 01:16 UTC",
+  "date": "2026-10-19 01:21 UTC",
   "cash": 9484.14,
-  "equity": 9883.88,
-  "pnl": -116.12,
+  "equity": 9884.18,
+  "pnl": -115.82,
   "pnl_pct": -1.16,
   "open_positions": 4,
   "closed_trades": 697,
@@ -16,7 +16,7 @@
       "symbol": "USD1/USDT",
       "side": "SHORT",
       "entry": 1.00019,
-      "current": 1.00026,
+      "current": 1.00025,
       "pnl_pct": -0.01,
       "chg_pct": 0.01,
       "tp": 0.9999849034702016,
@@ -30,13 +30,13 @@
       "symbol": "WLFI/USDT",
       "side": "SHORT",
       "entry": 0.0569,
-      "current": 0.057,
-      "pnl_pct": -0.18,
-      "chg_pct": 0.18,
+      "current": 0.0571,
+      "pnl_pct": -0.35,
+      "chg_pct": 0.35,
       "tp": 0.05596009522149202,
       "sl": 0.057604928583880985,
-      "tp_dist_pct": 1.82,
-      "sl_dist_pct": -1.06
+      "tp_dist_pct": 2.0,
+      "sl_dist_pct": -0.88
     },
     {
       "strategy": "TH-DualMode",
@@ -44,13 +44,13 @@
       "symbol": "MNT/USDT",
       "side": "SHORT",
       "entry": 0.5297,
-      "current": 0.5296,
-      "pnl_pct": 0.02,
-      "chg_pct": -0.02,
+      "current": 0.5303,
+      "pnl_pct": -0.11,
+      "chg_pct": 0.11,
       "tp": 0.5260056171504647,
       "sl": 0.5320089892809595,
-      "tp_dist_pct": 0.68,
-      "sl_dist_pct": -0.45
+      "tp_dist_pct": 0.81,
+      "sl_dist_pct": -0.32
     },
     {
       "strategy": "HTF-Candle",
