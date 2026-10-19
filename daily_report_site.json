@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-19 03:43 UTC",
+  "date": "2026-10-19 03:46 UTC",
   "cash": 9682.96,
   "equity": 9882.4,
   "pnl": -117.6,
@@ -16,7 +16,7 @@
       "symbol": "USD1/USDT",
       "side": "SHORT",
       "entry": 1.00019,
-      "current": 1.00018,
+      "current": 1.00017,
       "pnl_pct": 0.0,
       "chg_pct": -0.0,
       "tp": 0.9999849034702016,
