@@ -1,14 +1,14 @@
 {
-  "date": "2026-10-18 23:56 UTC",
-  "cash": 9285.53,
-  "equity": 9885.64,
-  "pnl": -114.36,
-  "pnl_pct": -1.14,
-  "open_positions": 6,
-  "closed_trades": 695,
-  "win_rate": 43.2,
+  "date": "2026-10-19 00:02 UTC",
+  "cash": 9384.62,
+  "equity": 9884.45,
+  "pnl": -115.55,
+  "pnl_pct": -1.16,
+  "open_positions": 5,
+  "closed_trades": 696,
+  "win_rate": 43.1,
   "avg_win": 1.565,
-  "avg_loss": -1.147,
+  "avg_loss": -1.146,
   "positions": [
     {
       "strategy": "HTF-Candle",
@@ -44,13 +44,13 @@
       "symbol": "JST/USDT",
       "side": "SHORT",
       "entry": 0.13571,
-      "current": 0.13591,
-      "pnl_pct": -0.15,
-      "chg_pct": 0.15,
+      "current": 0.13582,
+      "pnl_pct": -0.08,
+      "chg_pct": 0.08,
       "tp": 0.13502227704840203,
       "sl": 0.13622579221369846,
-      "tp_dist_pct": 0.65,
-      "sl_dist_pct": -0.23
+      "tp_dist_pct": 0.59,
+      "sl_dist_pct": -0.3
     },
     {
       "strategy": "TH-DualMode",
@@ -58,27 +58,13 @@
       "symbol": "MNT/USDT",
       "side": "SHORT",
       "entry": 0.5297,
-      "current": 0.5301,
-      "pnl_pct": -0.08,
-      "chg_pct": 0.08,
+      "current": 0.5302,
+      "pnl_pct": -0.09,
+      "chg_pct": 0.09,
       "tp": 0.5260056171504647,
       "sl": 0.5320089892809595,
-      "tp_dist_pct": 0.77,
-      "sl_dist_pct": -0.36
-    },
-    {
-      "strategy": "HTF-Candle",
-      "strategy_full": "HTF Candle Direction Strategy V1",
-      "symbol": "SPCXB/USDT",
-      "side": "SHORT",
-      "entry": 145.69,
-      "current": 146.1,
-      "pnl_pct": -0.28,
-      "chg_pct": 0.28,
-      "tp": 144.1230669690483,
-      "sl": 146.86519977321376,
-      "tp_dist_pct": 1.35,
-      "sl_dist_pct": -0.52
+      "tp_dist_pct": 0.79,
+      "sl_dist_pct": -0.34
     },
     {
       "strategy": "HTF-Candle",
@@ -86,27 +72,16 @@
       "symbol": "TRX/USDT",
       "side": "SHORT",
       "entry": 0.3327,
-      "current": 0.3328,
-      "pnl_pct": -0.03,
-      "chg_pct": 0.03,
+      "current": 0.3326,
+      "pnl_pct": 0.03,
+      "chg_pct": -0.03,
       "tp": 0.33184839223020446,
       "sl": 0.33333870582734665,
-      "tp_dist_pct": 0.29,
-      "sl_dist_pct": -0.16
+      "tp_dist_pct": 0.23,
+      "sl_dist_pct": -0.22
     }
   ],
   "recent_trades": [
-    {
-      "strategy": "HTF-Candle",
-      "symbol": "CC/USDT",
-      "result": "LOSS",
-      "pnl_pct": -0.975,
-      "entry": 0.09691,
-      "exit": 0.097855,
-      "chg_pct": 0.975,
-      "candles": 23,
-      "exit_reason": "sl"
-    },
     {
       "strategy": "HTF-Candle",
       "symbol": "SAND/USDT",
@@ -204,6 +179,17 @@
       "exit": 0.002051,
       "chg_pct": 1.247,
       "candles": 16,
+      "exit_reason": "sl"
+    },
+    {
+      "strategy": "HTF-Candle",
+      "symbol": "SPCXB/USDT",
+      "result": "LOSS",
+      "pnl_pct": -0.807,
+      "entry": 145.69,
+      "exit": 146.865718,
+      "chg_pct": 0.807,
+      "candles": 3,
       "exit_reason": "sl"
     }
   ],
