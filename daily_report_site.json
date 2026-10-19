@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-19 00:27 UTC",
+  "date": "2026-10-19 00:30 UTC",
   "cash": 9384.62,
-  "equity": 9884.45,
-  "pnl": -115.55,
+  "equity": 9884.44,
+  "pnl": -115.56,
   "pnl_pct": -1.16,
   "open_positions": 5,
   "closed_trades": 696,
@@ -58,13 +58,13 @@
       "symbol": "MNT/USDT",
       "side": "SHORT",
       "entry": 0.5297,
-      "current": 0.53,
-      "pnl_pct": -0.06,
-      "chg_pct": 0.06,
+      "current": 0.5296,
+      "pnl_pct": 0.02,
+      "chg_pct": -0.02,
       "tp": 0.5260056171504647,
       "sl": 0.5320089892809595,
-      "tp_dist_pct": 0.75,
-      "sl_dist_pct": -0.38
+      "tp_dist_pct": 0.68,
+      "sl_dist_pct": -0.45
     },
     {
       "strategy": "HTF-Candle",
@@ -72,13 +72,13 @@
       "symbol": "TRX/USDT",
       "side": "SHORT",
       "entry": 0.3327,
-      "current": 0.3322,
-      "pnl_pct": 0.15,
-      "chg_pct": -0.15,
+      "current": 0.3324,
+      "pnl_pct": 0.09,
+      "chg_pct": -0.09,
       "tp": 0.33184839223020446,
       "sl": 0.33333870582734665,
-      "tp_dist_pct": 0.11,
-      "sl_dist_pct": -0.34
+      "tp_dist_pct": 0.17,
+      "sl_dist_pct": -0.28
     }
   ],
   "recent_trades": [
