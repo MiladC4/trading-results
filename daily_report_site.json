@@ -1,16 +1,16 @@
 {
-  "date": "2026-10-20 09:20 UTC",
+  "date": "2026-10-20 09:22 UTC",
   "cash": 8380.77,
-  "equity": 9998.54,
-  "pnl": -1.46,
-  "pnl_pct": -0.01,
+  "equity": 10000.23,
+  "pnl": 0.23,
+  "pnl_pct": 0.0,
   "open_positions": 12,
   "closed_trades": 12,
   "win_rate": 100.0,
   "avg_win": 0.3,
   "avg_loss": 0,
   "reset_at": 1792484079114,
-  "reset_note": "paper book reset on the new trailing-stop geometry (TP 12 ATR / SL 6 ATR / trail 3.5 ATR) + regime filters (gate D + fee-dead zone + chop 135-155) + $200 size, max 12 open. Numbers before this timestamp are archived in backups/ and must not be mixed into this window.",
+  "reset_note": "paper book reset on the trailing-stop geometry (TP 12 ATR / initial SL 9 ATR / trail 5 ATR) + regime filters (gate D + fee-dead zone + chop 135-155) + $135 size at a constant $3.13 risk per trade, max 12 open. Numbers before this timestamp are archived in backups/ and must not be mixed into this window.",
   "window": "post-reset",
   "positions": [
     {

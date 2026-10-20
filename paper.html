@@ -141,11 +141,13 @@
                 const when = dt.toISOString().slice(0, 16).replace('T', ' ') + ' UTC';
                 const banner = document.getElementById('reset-banner');
                 banner.style.display = 'block';
+                // the geometry comes from the state file, so the banner can
+                // never describe a configuration the book is not running
+                const geo = (data.reset_note || '').replace(/\s+/g, ' ').trim();
                 document.getElementById('reset-detail').innerHTML =
-                    `این کتاب در <strong>${when}</strong> روی هندسهٔ جدید خروج ریست شد `
-                    + `(حد ضرر متحرک ۱۲ ATR هدف / ۶ ATR حد اولیه / دنبال‌کنندهٔ ۳.۵ ATR `
-                    + `+ فیلترهای رژیم + اندازهٔ $۲۰۰). `
-                    + `همهٔ اعداد این صفحه فقط از همین لحظه هستند؛ `
+                    `این کتاب در <strong>${when}</strong> روی هندسهٔ جدید خروج ریست شد`
+                    + (geo ? ` (${geo.split('Numbers before')[0].trim()})` : '')
+                    + `. همهٔ اعداد این صفحه فقط از همین لحظه هستند؛ `
                     + `نتایج قبل از ریست در بکاپ آرشیو شده‌اند و با این پنجره ترکیب نمی‌شوند.`;
             } else {
                 document.getElementById('reset-banner').style.display = 'none';
