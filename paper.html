@@ -37,7 +37,16 @@
     <div class="container">
         <h1>📊 Trading Results</h1>
         <p class="subtitle">Live Paper Trading Dashboard — 12 Strategies × 228 Symbols</p>
-        
+
+        <!-- Reset-window banner: shown only when the book was reset, so a
+             fresh $10,000 start is never mistaken for a flat/lossy book. -->
+        <div id="reset-banner" style="display:none; background:rgba(56,189,248,.10);
+             border:1px solid rgba(56,189,248,.35); border-radius:10px; padding:12px 16px;
+             margin-bottom:16px; font-size:14px; line-height:1.7;">
+            <strong>🔄 پنجرهٔ جدید (پس از ریست)</strong>
+            <div id="reset-detail" style="opacity:.9; margin-top:4px;"></div>
+        </div>
+
         <div class="card">
             <h2>📈 Portfolio Overview</h2>
             <div class="stats-grid" id="overview"></div>
@@ -125,6 +134,22 @@
         }
         
         function render(data) {
+            // Reset-window banner: only when the book was reset, so a fresh
+            // $10,000 start is not misread as a flat or losing book.
+            if (data.reset_at) {
+                const dt = new Date(data.reset_at);
+                const when = dt.toISOString().slice(0, 16).replace('T', ' ') + ' UTC';
+                const banner = document.getElementById('reset-banner');
+                banner.style.display = 'block';
+                document.getElementById('reset-detail').innerHTML =
+                    `این کتاب در <strong>${when}</strong> روی هندسهٔ جدید خروج ریست شد `
+                    + `(حد ضرر متحرک ۱۲ ATR هدف / ۶ ATR حد اولیه / دنبال‌کنندهٔ ۳.۵ ATR `
+                    + `+ فیلترهای رژیم + اندازهٔ $۲۰۰). `
+                    + `همهٔ اعداد این صفحه فقط از همین لحظه هستند؛ `
+                    + `نتایج قبل از ریست در بکاپ آرشیو شده‌اند و با این پنجره ترکیب نمی‌شوند.`;
+            } else {
+                document.getElementById('reset-banner').style.display = 'none';
+            }
             // Overview
             document.getElementById('overview').innerHTML = `
                 <div class="stat">
