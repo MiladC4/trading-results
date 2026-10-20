@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-20 18:39 UTC",
+  "date": "2026-10-20 18:42 UTC",
   "cash": 9955.31,
   "equity": 9955.31,
   "pnl": -44.69,
@@ -127,7 +127,7 @@
     }
   ],
   "tuner": {
-    "ts": 1792521546784,
+    "ts": 1792521746131,
     "n": 24,
     "overall": {
       "n": 24,
@@ -182,20 +182,6 @@
     "actions": [
       {
         "action": "widen",
-        "strategy": "HTF-Candle",
-        "from": [
-          2.0,
-          2.0
-        ],
-        "to": [
-          6.0,
-          5.0
-        ],
-        "tp_pct": 1.09,
-        "sl_pct": 0.91
-      },
-      {
-        "action": "widen",
         "strategy": "ETH-Gate-15m",
         "from": [
           4.0,
@@ -238,20 +224,6 @@
       },
       {
         "action": "widen",
-        "strategy": "Swing-OrderBlock",
-        "from": [
-          4.0,
-          1.0
-        ],
-        "to": [
-          6.0,
-          3.0
-        ],
-        "tp_pct": 1.09,
-        "sl_pct": 0.55
-      },
-      {
-        "action": "widen",
         "strategy": "RSI-Divergence",
         "from": [
           4.0,
@@ -267,20 +239,6 @@
       {
         "action": "widen",
         "strategy": "Harmonic-Pro",
-        "from": [
-          2.0,
-          2.0
-        ],
-        "to": [
-          6.0,
-          5.0
-        ],
-        "tp_pct": 1.09,
-        "sl_pct": 0.91
-      },
-      {
-        "action": "widen",
-        "strategy": "HMA-Projection",
         "from": [
           2.0,
           2.0
@@ -333,20 +291,6 @@
       },
       {
         "action": "widen",
-        "strategy": "VolDiv-Bayes",
-        "from": [
-          4.0,
-          1.0
-        ],
-        "to": [
-          6.0,
-          3.0
-        ],
-        "tp_pct": 1.09,
-        "sl_pct": 0.55
-      },
-      {
-        "action": "widen",
         "strategy": "TJR-v4",
         "from": [
           4.0,
@@ -380,14 +324,11 @@
         "n": 0,
         "wr": 0.0,
         "exp": 0.0,
-        "tot": 0.0,
-        "tp": 6.0,
-        "sl": 5.0,
-        "ap": 0.182,
-        "tp_pct": 1.09,
-        "sl_pct": 0.91,
-        "src": "widen",
-        "quarantined": false
+        "sum": 0.0,
+        "quarantined": false,
+        "skipped": "LEAKING",
+        "tp": 2.0,
+        "sl": 2.0
       },
       {
         "uid": "G7A2SXca",
@@ -440,14 +381,11 @@
         "n": 0,
         "wr": 0.0,
         "exp": 0.0,
-        "tot": 0.0,
-        "tp": 6.0,
-        "sl": 3.0,
-        "ap": 0.182,
-        "tp_pct": 1.09,
-        "sl_pct": 0.55,
-        "src": "widen",
-        "quarantined": false
+        "sum": 0.0,
+        "quarantined": false,
+        "skipped": "LEAKING",
+        "tp": 4.0,
+        "sl": 1.0
       },
       {
         "uid": "conv_O43CmL2z",
@@ -485,14 +423,11 @@
         "n": 0,
         "wr": 0.0,
         "exp": 0.0,
-        "tot": 0.0,
-        "tp": 6.0,
-        "sl": 5.0,
-        "ap": 0.182,
-        "tp_pct": 1.09,
-        "sl_pct": 0.91,
-        "src": "widen",
-        "quarantined": false
+        "sum": 0.0,
+        "quarantined": false,
+        "skipped": "LEAKING",
+        "tp": 2.0,
+        "sl": 2.0
       },
       {
         "uid": "conv_ktvQHlq8",
@@ -530,14 +465,11 @@
         "n": 0,
         "wr": 0.0,
         "exp": 0.0,
-        "tot": 0.0,
-        "tp": 6.0,
-        "sl": 3.0,
-        "ap": 0.182,
-        "tp_pct": 1.09,
-        "sl_pct": 0.55,
-        "src": "widen",
-        "quarantined": false
+        "sum": 0.0,
+        "quarantined": false,
+        "skipped": "LEAKING",
+        "tp": 4.0,
+        "sl": 1.0
       },
       {
         "uid": "xXrbltSH",
