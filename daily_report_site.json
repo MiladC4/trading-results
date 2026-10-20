@@ -1,9 +1,9 @@
 {
-  "date": "2026-10-20 05:42 UTC",
+  "date": "2026-10-20 05:49 UTC",
   "cash": 8882.31,
-  "equity": 9874.63,
-  "pnl": -125.37,
-  "pnl_pct": -1.25,
+  "equity": 9876.31,
+  "pnl": -123.69,
+  "pnl_pct": -1.24,
   "open_positions": 10,
   "closed_trades": 702,
   "win_rate": 43.2,
@@ -16,13 +16,13 @@
       "symbol": "A/USDT",
       "side": "SHORT",
       "entry": 0.09451,
-      "current": 0.0943,
-      "pnl_pct": 0.22,
-      "chg_pct": -0.22,
+      "current": 0.0948,
+      "pnl_pct": -0.31,
+      "chg_pct": 0.31,
       "tp": 0.09086911879283974,
       "sl": 0.09724066090537019,
-      "tp_dist_pct": 3.64,
-      "sl_dist_pct": -3.12
+      "tp_dist_pct": 4.15,
+      "sl_dist_pct": -2.57
     },
     {
       "strategy": "MoM-Levels",
@@ -30,13 +30,13 @@
       "symbol": "APE/USDT",
       "side": "SHORT",
       "entry": 0.1462,
-      "current": 0.1447,
-      "pnl_pct": 1.03,
-      "chg_pct": -1.03,
+      "current": 0.1446,
+      "pnl_pct": 1.09,
+      "chg_pct": -1.09,
       "tp": 0.1444868550813003,
       "sl": 0.14757051593495976,
-      "tp_dist_pct": 0.15,
-      "sl_dist_pct": -1.98
+      "tp_dist_pct": 0.08,
+      "sl_dist_pct": -2.05
     },
     {
       "strategy": "Divergence-Scanner",
@@ -44,13 +44,13 @@
       "symbol": "AR/USDT",
       "side": "SHORT",
       "entry": 3.824,
-      "current": 3.783,
-      "pnl_pct": 1.07,
-      "chg_pct": -1.07,
+      "current": 3.791,
+      "pnl_pct": 0.86,
+      "chg_pct": -0.86,
       "tp": 3.7549674132775523,
       "sl": 3.8757744400418352,
-      "tp_dist_pct": 0.74,
-      "sl_dist_pct": -2.45
+      "tp_dist_pct": 0.95,
+      "sl_dist_pct": -2.24
     },
     {
       "strategy": "TH-DualMode",
@@ -58,13 +58,13 @@
       "symbol": "ASTER/USDT",
       "side": "SHORT",
       "entry": 0.71149,
-      "current": 0.7107,
-      "pnl_pct": 0.11,
-      "chg_pct": -0.11,
+      "current": 0.71048,
+      "pnl_pct": 0.14,
+      "chg_pct": -0.14,
       "tp": 0.7068439992087315,
       "sl": 0.7143937504945427,
-      "tp_dist_pct": 0.54,
-      "sl_dist_pct": -0.52
+      "tp_dist_pct": 0.51,
+      "sl_dist_pct": -0.55
     },
     {
       "strategy": "Divergence-Scanner",
@@ -72,13 +72,13 @@
       "symbol": "ATH/USDT",
       "side": "SHORT",
       "entry": 0.005505,
-      "current": 0.005426,
-      "pnl_pct": 1.44,
-      "chg_pct": -1.44,
+      "current": 0.005443,
+      "pnl_pct": 1.13,
+      "chg_pct": -1.13,
       "tp": 0.0054156268259581974,
       "sl": 0.005572029880531353,
-      "tp_dist_pct": 0.19,
-      "sl_dist_pct": -2.69
+      "tp_dist_pct": 0.5,
+      "sl_dist_pct": -2.37
     },
     {
       "strategy": "TH-DualMode",
@@ -86,13 +86,13 @@
       "symbol": "ATOM/USDT",
       "side": "SHORT",
       "entry": 1.772,
-      "current": 1.757,
-      "pnl_pct": 0.85,
-      "chg_pct": -0.85,
+      "current": 1.761,
+      "pnl_pct": 0.62,
+      "chg_pct": -0.62,
       "tp": 1.75350415985381,
       "sl": 1.7835599000913689,
-      "tp_dist_pct": 0.2,
-      "sl_dist_pct": -1.51
+      "tp_dist_pct": 0.43,
+      "sl_dist_pct": -1.28
     },
     {
       "strategy": "Divergence-Scanner",
@@ -100,13 +100,13 @@
       "symbol": "AXS/USDT",
       "side": "SHORT",
       "entry": 1.0066,
-      "current": 0.9993,
-      "pnl_pct": 0.73,
-      "chg_pct": -0.73,
+      "current": 1.0008,
+      "pnl_pct": 0.58,
+      "chg_pct": -0.58,
       "tp": 0.9925422177585782,
       "sl": 1.0171433366810663,
-      "tp_dist_pct": 0.68,
-      "sl_dist_pct": -1.79
+      "tp_dist_pct": 0.83,
+      "sl_dist_pct": -1.63
     },
     {
       "strategy": "Divergence-Scanner",
@@ -114,13 +114,13 @@
       "symbol": "BCH/USDT",
       "side": "SHORT",
       "entry": 279.2,
-      "current": 277.9,
-      "pnl_pct": 0.47,
-      "chg_pct": -0.47,
+      "current": 278.5,
+      "pnl_pct": 0.25,
+      "chg_pct": -0.25,
       "tp": 275.1000666051521,
       "sl": 282.2749500461359,
-      "tp_dist_pct": 1.01,
-      "sl_dist_pct": -1.57
+      "tp_dist_pct": 1.22,
+      "sl_dist_pct": -1.36
     },
     {
       "strategy": "Divergence-Scanner",
@@ -128,13 +128,13 @@
       "symbol": "BTC/USDT",
       "side": "SHORT",
       "entry": 82073.25,
-      "current": 81874.12,
-      "pnl_pct": 0.24,
-      "chg_pct": -0.24,
+      "current": 81951.32,
+      "pnl_pct": 0.15,
+      "chg_pct": -0.15,
       "tp": 81624.32441382119,
       "sl": 82409.94418963412,
-      "tp_dist_pct": 0.31,
-      "sl_dist_pct": -0.65
+      "tp_dist_pct": 0.4,
+      "sl_dist_pct": -0.56
     },
     {
       "strategy": "MoM-Levels",
@@ -142,13 +142,13 @@
       "symbol": "CC/USDT",
       "side": "SHORT",
       "entry": 0.10515,
-      "current": 0.10458,
-      "pnl_pct": 0.54,
-      "chg_pct": -0.54,
+      "current": 0.10453,
+      "pnl_pct": 0.59,
+      "chg_pct": -0.59,
       "tp": 0.10384732446158858,
       "sl": 0.10619214043072912,
-      "tp_dist_pct": 0.7,
-      "sl_dist_pct": -1.54
+      "tp_dist_pct": 0.65,
+      "sl_dist_pct": -1.59
     }
   ],
   "recent_trades": [
