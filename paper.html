@@ -27,6 +27,15 @@
         .side-short { color: #f85149; font-weight: bold; }
         .pnl-positive { color: #3fb950; }
         .pnl-negative { color: #f85149; }
+        .trail-on { color: #3fb950; font-weight: bold; }
+        .trail-off { color: #8b949e; }
+        .live-strip {
+            display: flex; flex-wrap: wrap; gap: 18px; align-items: center;
+            background: #161b22; border: 1px solid #30363d; border-radius: 8px;
+            padding: 10px 14px; margin: 12px 0; font-size: 13px; color: #8b949e;
+        }
+        .live-strip b { color: #e6edf3; font-weight: 600; }
+        .pulse { color: #3fb950; }
         .win { color: #3fb950; }
         .loss { color: #f85149; }
         .timestamp { color: #8b949e; font-size: 0.85rem; text-align: center; margin-top: 30px; }
@@ -91,6 +100,8 @@
                         <th>PnL %</th>
                         <th>TP dist %</th>
                         <th>SL dist %</th>
+                        <th>Age</th>
+                        <th>Trail stop</th>
                     </tr>
                 </thead>
                 <tbody id="open-body"></tbody>
@@ -119,6 +130,8 @@
             <p id="no-closed" style="display:none; color:#8b949e;">No closed trades yet</p>
         </div>
         
+        <div class="live-strip" id="live-strip"></div>
+
         <div class="timestamp" id="last-update"></div>
     </div>
     
@@ -208,6 +221,8 @@
                         <td class="${p.pnl_pct >= 0 ? 'pnl-positive' : 'pnl-negative'}">${p.pnl_pct >= 0 ? '+' : ''}${p.pnl_pct.toFixed(2)}%</td>
                         <td>${p.tp_dist_pct != null ? p.tp_dist_pct.toFixed(2) + '%' : '-'}</td>
                         <td>${p.sl_dist_pct != null ? p.sl_dist_pct.toFixed(2) + '%' : '-'}</td>
+                        <td>${p.age_min != null ? p.age_min.toFixed(0) + 'm' : '-'}</td>
+                        <td>${p.trail_armed === true ? '<span class="trail-on">✔ فعال</span>' : (p.trail_armed === false ? '<span class="trail-off">هنوز نه</span>' : '-')}</td>
                     </tr>
                 `).join('');
             } else {
@@ -239,6 +254,37 @@
                         }
 
                         document.getElementById('last-update').textContent = `Last updated: ${data.date}`;
+                        renderLiveStrip(data);
+                    }
+
+                    // A single line that answers "is anything actually running?"
+                    // without the reader having to infer it from the tables.
+                    function renderLiveStrip(data) {
+                        const el = document.getElementById('live-strip');
+                        const pos = data.positions || [];
+                        const armed = pos.filter(p => p.trail_armed === true).length;
+                        const ages = pos.map(p => p.age_min).filter(a => a != null);
+                        const oldest = ages.length ? Math.max(...ages) : null;
+                        const youngest = ages.length ? Math.min(...ages) : null;
+                        // how stale is the report itself
+                        let stale = null;
+                        if (data.date) {
+                            const t = Date.parse(data.date.replace(' UTC', 'Z'));
+                            if (!isNaN(t)) stale = Math.round((Date.now() - t) / 60000);
+                        }
+                        const staleTxt = stale == null ? '' :
+                            (stale <= 8 ? `چرخه ${stale} دقیقه پیش` :
+                             stale <= 20 ? `⚠️ چرخه ${stale} دقیقه پیش (کند)` :
+                                          `🔴 چرخه ${stale} دقیقه پیش — متوقف؟`);
+                        el.innerHTML = `
+                            <span class="pulse">●</span>
+                            <span>${data.open_positions || 0} معامله در جریان</span>
+                            <span>${data.closed_trades || 0} معاملهٔ بسته‌شده</span>
+                            ${oldest != null ? `<span>قدمتی‌ترین: <b>${Math.round(oldest)} دقیقه</b></span>` : ''}
+                            ${youngest != null ? `<span>تازه‌ترین: <b>${Math.round(youngest)} دقیقه</b></span>` : ''}
+                            <span>حد ضرر متحرک: <b>${armed}/${pos.length}</b> فعال</span>
+                            ${staleTxt ? `<span>${staleTxt}</span>` : ''}
+                        `;
                     }
 
                     async function loadEquityChart() {
