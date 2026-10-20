@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-20 15:17 UTC",
+  "date": "2026-10-20 15:24 UTC",
   "cash": 9952.71,
   "equity": 9952.71,
   "pnl": -47.29,
@@ -127,7 +127,7 @@
     }
   ],
   "tuner": {
-    "ts": 1792509399281,
+    "ts": 1792509830927,
     "n": 24,
     "overall": {
       "n": 24,
@@ -181,6 +181,132 @@
     ],
     "actions": [
       {
+        "action": "widen",
+        "strategy": "HTF-Candle",
+        "from": [
+          2.0,
+          2.0
+        ],
+        "to": [
+          6.0,
+          5.0
+        ],
+        "tp_pct": 1.09,
+        "sl_pct": 0.91
+      },
+      {
+        "action": "widen",
+        "strategy": "ETH-Gate-15m",
+        "from": [
+          4.0,
+          1.0
+        ],
+        "to": [
+          6.0,
+          3.0
+        ],
+        "tp_pct": 1.09,
+        "sl_pct": 0.55
+      },
+      {
+        "action": "widen",
+        "strategy": "TH-DualMode",
+        "from": [
+          4.0,
+          1.0
+        ],
+        "to": [
+          6.0,
+          3.0
+        ],
+        "tp_pct": 1.09,
+        "sl_pct": 0.55
+      },
+      {
+        "action": "widen",
+        "strategy": "Po3-Minimal",
+        "from": [
+          4.0,
+          1.0
+        ],
+        "to": [
+          12.0,
+          3.0
+        ],
+        "tp_pct": 0.73,
+        "sl_pct": 0.18
+      },
+      {
+        "action": "widen",
+        "strategy": "Swing-OrderBlock",
+        "from": [
+          4.0,
+          1.0
+        ],
+        "to": [
+          6.0,
+          3.0
+        ],
+        "tp_pct": 1.09,
+        "sl_pct": 0.55
+      },
+      {
+        "action": "widen",
+        "strategy": "RSI-Divergence",
+        "from": [
+          4.0,
+          1.0
+        ],
+        "to": [
+          6.0,
+          3.0
+        ],
+        "tp_pct": 1.09,
+        "sl_pct": 0.55
+      },
+      {
+        "action": "widen",
+        "strategy": "Harmonic-Pro",
+        "from": [
+          2.0,
+          2.0
+        ],
+        "to": [
+          6.0,
+          5.0
+        ],
+        "tp_pct": 1.09,
+        "sl_pct": 0.91
+      },
+      {
+        "action": "widen",
+        "strategy": "HMA-Projection",
+        "from": [
+          2.0,
+          2.0
+        ],
+        "to": [
+          6.0,
+          5.0
+        ],
+        "tp_pct": 1.09,
+        "sl_pct": 0.91
+      },
+      {
+        "action": "widen",
+        "strategy": "Divergence-Scanner",
+        "from": [
+          4.0,
+          1.0
+        ],
+        "to": [
+          6.0,
+          3.0
+        ],
+        "tp_pct": 1.21,
+        "sl_pct": 0.6
+      },
+      {
         "action": "skip_quarantine",
         "strategy": "Divergence-Scanner",
         "n": 16,
@@ -190,6 +316,48 @@
         "long_wr": 62.16216216216216,
         "long_sum": 0.2162,
         "msg": "too small a sample to overrule the long window"
+      },
+      {
+        "action": "widen",
+        "strategy": "MoM-Levels",
+        "from": [
+          2.0,
+          2.0
+        ],
+        "to": [
+          6.0,
+          6.0
+        ],
+        "tp_pct": 0.94,
+        "sl_pct": 0.94
+      },
+      {
+        "action": "widen",
+        "strategy": "VolDiv-Bayes",
+        "from": [
+          4.0,
+          1.0
+        ],
+        "to": [
+          6.0,
+          3.0
+        ],
+        "tp_pct": 1.09,
+        "sl_pct": 0.55
+      },
+      {
+        "action": "widen",
+        "strategy": "TJR-v4",
+        "from": [
+          4.0,
+          1.0
+        ],
+        "to": [
+          6.0,
+          3.0
+        ],
+        "tp_pct": 1.09,
+        "sl_pct": 0.55
       },
       {
         "action": "skip_ban_side",
@@ -218,7 +386,7 @@
         "ap": 0.182,
         "tp_pct": 1.09,
         "sl_pct": 0.91,
-        "src": "model",
+        "src": "widen",
         "quarantined": false
       },
       {
@@ -229,11 +397,11 @@
         "exp": 0.0,
         "tot": 0.0,
         "tp": 6.0,
-        "sl": 4.5,
+        "sl": 3.0,
         "ap": 0.182,
         "tp_pct": 1.09,
-        "sl_pct": 0.82,
-        "src": "model",
+        "sl_pct": 0.55,
+        "src": "widen",
         "quarantined": false
       },
       {
@@ -244,11 +412,11 @@
         "exp": 0.0,
         "tot": 0.0,
         "tp": 6.0,
-        "sl": 4.5,
+        "sl": 3.0,
         "ap": 0.182,
         "tp_pct": 1.09,
-        "sl_pct": 0.82,
-        "src": "model",
+        "sl_pct": 0.55,
+        "src": "widen",
         "quarantined": false
       },
       {
@@ -258,12 +426,12 @@
         "wr": 100.0,
         "exp": 0.0073,
         "tot": 0.007,
-        "tp": 18.0,
-        "sl": 13.5,
+        "tp": 12.0,
+        "sl": 3.0,
         "ap": 0.061,
-        "tp_pct": 1.09,
-        "sl_pct": 0.82,
-        "src": "model",
+        "tp_pct": 0.73,
+        "sl_pct": 0.18,
+        "src": "widen",
         "quarantined": false
       },
       {
@@ -274,11 +442,11 @@
         "exp": 0.0,
         "tot": 0.0,
         "tp": 6.0,
-        "sl": 4.5,
+        "sl": 3.0,
         "ap": 0.182,
         "tp_pct": 1.09,
-        "sl_pct": 0.82,
-        "src": "model",
+        "sl_pct": 0.55,
+        "src": "widen",
         "quarantined": false
       },
       {
@@ -289,11 +457,11 @@
         "exp": 0.0,
         "tot": 0.0,
         "tp": 6.0,
-        "sl": 4.5,
+        "sl": 3.0,
         "ap": 0.182,
         "tp_pct": 1.09,
-        "sl_pct": 0.82,
-        "src": "model",
+        "sl_pct": 0.55,
+        "src": "widen",
         "quarantined": false
       },
       {
@@ -308,7 +476,7 @@
         "ap": 0.182,
         "tp_pct": 1.09,
         "sl_pct": 0.91,
-        "src": "model",
+        "src": "widen",
         "quarantined": false
       },
       {
@@ -323,7 +491,7 @@
         "ap": 0.182,
         "tp_pct": 1.09,
         "sl_pct": 0.91,
-        "src": "model",
+        "src": "widen",
         "quarantined": false
       },
       {
@@ -334,11 +502,11 @@
         "exp": -0.01349,
         "tot": -0.216,
         "tp": 6.0,
-        "sl": 4.5,
+        "sl": 3.0,
         "ap": 0.201,
         "tp_pct": 1.21,
-        "sl_pct": 0.9,
-        "src": "model",
+        "sl_pct": 0.6,
+        "src": "widen",
         "quarantined": false
       },
       {
@@ -348,12 +516,12 @@
         "wr": 0.0,
         "exp": -0.01412,
         "tot": -0.099,
-        "tp": 9.0,
+        "tp": 6.0,
         "sl": 6.0,
         "ap": 0.157,
-        "tp_pct": 1.41,
+        "tp_pct": 0.94,
         "sl_pct": 0.94,
-        "src": "model",
+        "src": "widen",
         "quarantined": false
       },
       {
@@ -364,11 +532,11 @@
         "exp": 0.0,
         "tot": 0.0,
         "tp": 6.0,
-        "sl": 4.5,
+        "sl": 3.0,
         "ap": 0.182,
         "tp_pct": 1.09,
-        "sl_pct": 0.82,
-        "src": "model",
+        "sl_pct": 0.55,
+        "src": "widen",
         "quarantined": false
       },
       {
@@ -379,11 +547,11 @@
         "exp": 0.0,
         "tot": 0.0,
         "tp": 6.0,
-        "sl": 4.5,
+        "sl": 3.0,
         "ap": 0.182,
         "tp_pct": 1.09,
-        "sl_pct": 0.82,
-        "src": "model",
+        "sl_pct": 0.55,
+        "src": "widen",
         "quarantined": false
       }
     ]
