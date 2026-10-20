@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-20 07:12 UTC",
+  "date": "2026-10-20 07:17 UTC",
   "cash": 9481.39,
-  "equity": 9879.14,
-  "pnl": -120.86,
+  "equity": 9879.08,
+  "pnl": -120.92,
   "pnl_pct": -1.21,
   "open_positions": 4,
   "closed_trades": 715,
@@ -16,13 +16,13 @@
       "symbol": "A/USDT",
       "side": "SHORT",
       "entry": 0.09451,
-      "current": 0.09425,
-      "pnl_pct": 0.28,
-      "chg_pct": -0.28,
+      "current": 0.09431,
+      "pnl_pct": 0.21,
+      "chg_pct": -0.21,
       "tp": 0.09086911879283974,
       "sl": 0.09724066090537019,
-      "tp_dist_pct": 3.59,
-      "sl_dist_pct": -3.17
+      "tp_dist_pct": 3.65,
+      "sl_dist_pct": -3.11
     },
     {
       "strategy": "Divergence-Scanner",
@@ -30,13 +30,13 @@
       "symbol": "AXS/USDT",
       "side": "SHORT",
       "entry": 1.0066,
-      "current": 1.0006,
-      "pnl_pct": 0.6,
-      "chg_pct": -0.6,
+      "current": 1.0003,
+      "pnl_pct": 0.63,
+      "chg_pct": -0.63,
       "tp": 0.9925422177585782,
       "sl": 1.0171433366810663,
-      "tp_dist_pct": 0.81,
-      "sl_dist_pct": -1.65
+      "tp_dist_pct": 0.78,
+      "sl_dist_pct": -1.68
     },
     {
       "strategy": "Divergence-Scanner",
@@ -44,13 +44,13 @@
       "symbol": "BCH/USDT",
       "side": "SHORT",
       "entry": 279.2,
-      "current": 277.5,
-      "pnl_pct": 0.61,
-      "chg_pct": -0.61,
+      "current": 277.3,
+      "pnl_pct": 0.68,
+      "chg_pct": -0.68,
       "tp": 275.1000666051521,
       "sl": 282.2749500461359,
-      "tp_dist_pct": 0.86,
-      "sl_dist_pct": -1.72
+      "tp_dist_pct": 0.79,
+      "sl_dist_pct": -1.79
     },
     {
       "strategy": "Divergence-Scanner",
@@ -58,13 +58,13 @@
       "symbol": "BTC/USDT",
       "side": "SHORT",
       "entry": 82073.25,
-      "current": 81773.78,
-      "pnl_pct": 0.36,
-      "chg_pct": -0.36,
+      "current": 81753.69,
+      "pnl_pct": 0.39,
+      "chg_pct": -0.39,
       "tp": 81624.32441382119,
       "sl": 82409.94418963412,
-      "tp_dist_pct": 0.18,
-      "sl_dist_pct": -0.78
+      "tp_dist_pct": 0.16,
+      "sl_dist_pct": -0.8
     }
   ],
   "recent_trades": [
