@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-21 07:16 UTC",
+  "date": "2026-10-21 07:24 UTC",
   "cash": 9955.31,
   "equity": 9955.31,
   "pnl": -44.69,
@@ -131,7 +131,7 @@
     }
   ],
   "tuner": {
-    "ts": 1792566994226,
+    "ts": 1792567435420,
     "n": 24,
     "overall": {
       "n": 24,
@@ -184,6 +184,48 @@
       }
     ],
     "actions": [
+      {
+        "action": "widen",
+        "strategy": "Volume-Profile",
+        "from": [
+          4.0,
+          1.0
+        ],
+        "to": [
+          6.0,
+          3.0
+        ],
+        "tp_pct": 1.09,
+        "sl_pct": 0.55
+      },
+      {
+        "action": "widen",
+        "strategy": "Momentum-Break",
+        "from": [
+          4.0,
+          1.0
+        ],
+        "to": [
+          6.0,
+          3.0
+        ],
+        "tp_pct": 1.09,
+        "sl_pct": 0.55
+      },
+      {
+        "action": "widen",
+        "strategy": "Whale-Reversal",
+        "from": [
+          4.0,
+          1.0
+        ],
+        "to": [
+          6.0,
+          3.0
+        ],
+        "tp_pct": 1.09,
+        "sl_pct": 0.55
+      },
       {
         "action": "widen",
         "strategy": "TH-DualMode",
@@ -266,6 +308,51 @@
     "quarantined": [],
     "overrides": 0,
     "rows": [
+      {
+        "uid": "0vL9Hcs2",
+        "name": "Volume-Profile",
+        "n": 0,
+        "wr": 0.0,
+        "exp": 0.0,
+        "tot": 0.0,
+        "tp": 6.0,
+        "sl": 3.0,
+        "ap": 0.182,
+        "tp_pct": 1.09,
+        "sl_pct": 0.55,
+        "src": "widen",
+        "quarantined": false
+      },
+      {
+        "uid": "1UtA1u3v",
+        "name": "Momentum-Break",
+        "n": 0,
+        "wr": 0.0,
+        "exp": 0.0,
+        "tot": 0.0,
+        "tp": 6.0,
+        "sl": 3.0,
+        "ap": 0.182,
+        "tp_pct": 1.09,
+        "sl_pct": 0.55,
+        "src": "widen",
+        "quarantined": false
+      },
+      {
+        "uid": "2Z1TSSvw",
+        "name": "Whale-Reversal",
+        "n": 0,
+        "wr": 0.0,
+        "exp": 0.0,
+        "tot": 0.0,
+        "tp": 6.0,
+        "sl": 3.0,
+        "ap": 0.182,
+        "tp_pct": 1.09,
+        "sl_pct": 0.55,
+        "src": "widen",
+        "quarantined": false
+      },
       {
         "uid": "3kv64PEa",
         "name": "HTF-Candle",
