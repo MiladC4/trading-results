@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-21 03:52 UTC",
+  "date": "2026-10-21 03:58 UTC",
   "cash": 9955.31,
   "equity": 9955.31,
   "pnl": -44.69,
@@ -127,7 +127,7 @@
     }
   ],
   "tuner": {
-    "ts": 1792554722575,
+    "ts": 1792555105224,
     "n": 24,
     "overall": {
       "n": 24,
@@ -182,20 +182,6 @@
     "actions": [
       {
         "action": "widen",
-        "strategy": "ETH-Gate-15m",
-        "from": [
-          4.0,
-          1.0
-        ],
-        "to": [
-          6.0,
-          3.0
-        ],
-        "tp_pct": 1.09,
-        "sl_pct": 0.55
-      },
-      {
-        "action": "widen",
         "strategy": "TH-DualMode",
         "from": [
           4.0,
@@ -221,34 +207,6 @@
         ],
         "tp_pct": 0.73,
         "sl_pct": 0.18
-      },
-      {
-        "action": "widen",
-        "strategy": "RSI-Divergence",
-        "from": [
-          4.0,
-          1.0
-        ],
-        "to": [
-          6.0,
-          3.0
-        ],
-        "tp_pct": 1.09,
-        "sl_pct": 0.55
-      },
-      {
-        "action": "widen",
-        "strategy": "Harmonic-Pro",
-        "from": [
-          2.0,
-          2.0
-        ],
-        "to": [
-          6.0,
-          5.0
-        ],
-        "tp_pct": 1.09,
-        "sl_pct": 0.91
       },
       {
         "action": "widen",
@@ -290,20 +248,6 @@
         "sl_pct": 0.94
       },
       {
-        "action": "widen",
-        "strategy": "TJR-v4",
-        "from": [
-          4.0,
-          1.0
-        ],
-        "to": [
-          6.0,
-          3.0
-        ],
-        "tp_pct": 1.09,
-        "sl_pct": 0.55
-      },
-      {
         "action": "skip_ban_side",
         "side": "short",
         "n": 24,
@@ -336,14 +280,11 @@
         "n": 0,
         "wr": 0.0,
         "exp": 0.0,
-        "tot": 0.0,
-        "tp": 6.0,
-        "sl": 3.0,
-        "ap": 0.182,
-        "tp_pct": 1.09,
-        "sl_pct": 0.55,
-        "src": "widen",
-        "quarantined": false
+        "sum": 0.0,
+        "quarantined": false,
+        "skipped": "LEAKING",
+        "tp": 4.0,
+        "sl": 1.0
       },
       {
         "uid": "ODMWP96S",
@@ -393,14 +334,11 @@
         "n": 0,
         "wr": 0.0,
         "exp": 0.0,
-        "tot": 0.0,
-        "tp": 6.0,
-        "sl": 3.0,
-        "ap": 0.182,
-        "tp_pct": 1.09,
-        "sl_pct": 0.55,
-        "src": "widen",
-        "quarantined": false
+        "sum": 0.0,
+        "quarantined": false,
+        "skipped": "LEAKING",
+        "tp": 4.0,
+        "sl": 1.0
       },
       {
         "uid": "conv_Ww3aoTN9",
@@ -408,14 +346,11 @@
         "n": 0,
         "wr": 0.0,
         "exp": 0.0,
-        "tot": 0.0,
-        "tp": 6.0,
-        "sl": 5.0,
-        "ap": 0.182,
-        "tp_pct": 1.09,
-        "sl_pct": 0.91,
-        "src": "widen",
-        "quarantined": false
+        "sum": 0.0,
+        "quarantined": false,
+        "skipped": "LEAKING",
+        "tp": 2.0,
+        "sl": 2.0
       },
       {
         "uid": "conv_arIkKLKk",
@@ -477,14 +412,11 @@
         "n": 0,
         "wr": 0.0,
         "exp": 0.0,
-        "tot": 0.0,
-        "tp": 6.0,
-        "sl": 3.0,
-        "ap": 0.182,
-        "tp_pct": 1.09,
-        "sl_pct": 0.55,
-        "src": "widen",
-        "quarantined": false
+        "sum": 0.0,
+        "quarantined": false,
+        "skipped": "LEAKING",
+        "tp": 4.0,
+        "sl": 1.0
       }
     ]
   }
