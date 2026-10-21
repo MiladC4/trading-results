@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-21 09:10 UTC",
+  "date": "2026-10-21 09:19 UTC",
   "cash": 9955.31,
   "equity": 9955.31,
   "pnl": -44.69,
@@ -167,7 +167,7 @@
     }
   ],
   "tuner": {
-    "ts": 1792573813280,
+    "ts": 1792574334600,
     "n": 24,
     "overall": {
       "n": 24,
@@ -390,30 +390,6 @@
         "quarantined": false
       },
       {
-        "uid": "3kv64PEa",
-        "name": "HTF-Candle",
-        "n": 0,
-        "wr": 0.0,
-        "exp": 0.0,
-        "sum": 0.0,
-        "quarantined": false,
-        "skipped": "LEAKING",
-        "tp": 2.0,
-        "sl": 2.0
-      },
-      {
-        "uid": "G7A2SXca",
-        "name": "ETH-Gate-15m",
-        "n": 0,
-        "wr": 0.0,
-        "exp": 0.0,
-        "sum": 0.0,
-        "quarantined": false,
-        "skipped": "LEAKING",
-        "tp": 4.0,
-        "sl": 1.0
-      },
-      {
         "uid": "ODMWP96S",
         "name": "TH-DualMode",
         "n": 0,
@@ -444,54 +420,6 @@
         "quarantined": false
       },
       {
-        "uid": "conv_MIo9AUAs",
-        "name": "Swing-OrderBlock",
-        "n": 0,
-        "wr": 0.0,
-        "exp": 0.0,
-        "sum": 0.0,
-        "quarantined": false,
-        "skipped": "LEAKING",
-        "tp": 4.0,
-        "sl": 1.0
-      },
-      {
-        "uid": "conv_O43CmL2z",
-        "name": "RSI-Divergence",
-        "n": 0,
-        "wr": 0.0,
-        "exp": 0.0,
-        "sum": 0.0,
-        "quarantined": false,
-        "skipped": "LEAKING",
-        "tp": 4.0,
-        "sl": 1.0
-      },
-      {
-        "uid": "conv_Ww3aoTN9",
-        "name": "Harmonic-Pro",
-        "n": 0,
-        "wr": 0.0,
-        "exp": 0.0,
-        "sum": 0.0,
-        "quarantined": false,
-        "skipped": "LEAKING",
-        "tp": 2.0,
-        "sl": 2.0
-      },
-      {
-        "uid": "conv_arIkKLKk",
-        "name": "HMA-Projection",
-        "n": 0,
-        "wr": 0.0,
-        "exp": 0.0,
-        "sum": 0.0,
-        "quarantined": false,
-        "skipped": "LEAKING",
-        "tp": 2.0,
-        "sl": 2.0
-      },
-      {
         "uid": "conv_ktvQHlq8",
         "name": "Divergence-Scanner",
         "n": 16,
@@ -520,30 +448,6 @@
         "sl_pct": 0.94,
         "src": "widen",
         "quarantined": false
-      },
-      {
-        "uid": "conv_rPOx1NRY",
-        "name": "VolDiv-Bayes",
-        "n": 0,
-        "wr": 0.0,
-        "exp": 0.0,
-        "sum": 0.0,
-        "quarantined": false,
-        "skipped": "LEAKING",
-        "tp": 4.0,
-        "sl": 1.0
-      },
-      {
-        "uid": "xXrbltSH",
-        "name": "TJR-v4",
-        "n": 0,
-        "wr": 0.0,
-        "exp": 0.0,
-        "sum": 0.0,
-        "quarantined": false,
-        "skipped": "LEAKING",
-        "tp": 4.0,
-        "sl": 1.0
       }
     ]
   }
