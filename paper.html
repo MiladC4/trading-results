@@ -81,8 +81,11 @@
                         <th style="padding:6px; border-bottom:1px solid rgba(255,255,255,.12);">سمت</th>
                         <th style="padding:6px; border-bottom:1px solid rgba(255,255,255,.12);">سود/معامله</th>
                         <th style="padding:6px; border-bottom:1px solid rgba(255,255,255,.12);">کنترل تصادفی</th>
+                        <th style="padding:6px; border-bottom:1px solid rgba(255,255,255,.12);">بازار صعودی</th>
+                        <th style="padding:6px; border-bottom:1px solid rgba(255,255,255,.12);">بازار نزولی</th>
                         <th style="padding:6px; border-bottom:1px solid rgba(255,255,255,.12);">تعداد</th>
-                        <th style="padding:6px; border-bottom:1px solid rgba(255,255,255,.12);">برنده</th>
+                        <th style="padding:6px; border-bottom:1px solid rgba(255,255,255,.12);">بهتر از کنترل</th>
+                        <th style="padding:6px; border-bottom:1px solid rgba(255,255,255,.12);">مستقل از رژیم</th>
                     </tr>
                 </thead>
                 <tbody id="validated-list"></tbody>
@@ -206,13 +209,17 @@
             if (vs && data.validated_list && data.validated_list.length) {
                 vs.innerHTML = data.validated_list.map(v => {
                     const win = v.ev > v.control;
+                    const reg = v.up > 0 && v.down > 0;
                     return `<tr>
                         <td><strong>${v.name}</strong></td>
                         <td>${v.side === 'short' ? 'SHORT' : 'LONG'}</td>
                         <td class="${v.ev >= 0 ? 'positive' : 'negative'}">${v.ev >= 0 ? '+' : ''}${v.ev.toFixed(3)}%</td>
                         <td>${v.control >= 0 ? '+' : ''}${v.control.toFixed(3)}%</td>
+                        <td class="${v.up >= 0 ? 'positive' : 'negative'}">${v.up >= 0 ? '+' : ''}${(v.up || 0).toFixed(2)}%</td>
+                        <td class="${v.down >= 0 ? 'positive' : 'negative'}">${v.down >= 0 ? '+' : ''}${(v.down || 0).toFixed(2)}%</td>
                         <td>${v.n}</td>
                         <td class="${win ? 'positive' : 'negative'}">${win ? '✓' : '✗'}</td>
+                        <td class="${reg ? 'positive' : 'negative'}">${reg ? '✓' : '✗'}</td>
                     </tr>`;
                 }).join('');
                 document.getElementById('validated-card').style.display = 'block';
