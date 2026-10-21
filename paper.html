@@ -45,7 +45,18 @@
 <body>
     <div class="container">
         <h1>📊 Trading Results</h1>
-        <p class="subtitle">Live Paper Trading Dashboard — 12 Strategies × 228 Symbols</p>
+        <p class="subtitle">Live Paper Trading Dashboard — <span id="strat-count">4</span> Strategies (causal only) × 228 Symbols</p>
+
+        <!-- PAUSED banner: shown when the book is not trading.  Without it a
+             reader sees 24 closed trades and assumes the system is live.
+             The reason comes from the JSON, so it can never describe a
+             state the book is not actually in. -->
+        <div id="pause-banner" style="display:none; background:rgba(248,113,113,.10);
+             border:1px solid rgba(248,113,113,.40); border-radius:10px; padding:12px 16px;
+             margin-bottom:16px; font-size:14px; line-height:1.7;">
+            <strong>⛔ معاملات متوقف است</strong>
+            <div id="pause-detail" style="opacity:.9; margin-top:4px;"></div>
+        </div>
 
         <!-- Reset-window banner: shown only when the book was reset, so a
              fresh $10,000 start is never mistaken for a flat/lossy book. -->
@@ -147,6 +158,24 @@
         }
         
         function render(data) {
+            // PAUSED banner: the book is not trading, and the reader must
+            // see that before reading any performance number.
+            if (data.trading_paused) {
+                const banner = document.getElementById('pause-banner');
+                banner.style.display = 'block';
+                const reason = (data.pause_reason || '').trim();
+                document.getElementById('pause-detail').innerHTML =
+                    (reason ? reason + ' ' : '')
+                    + `<br>استراتژی‌های سالم: <strong>${data.causal_strategies || 0}</strong>`
+                    + ` — استراتژی‌های حذف‌شده به‌خاطر خواندن آینده: `
+                    + `<strong>${data.leaking_strategies_banned || 0}</strong>.`
+                    + ` اعداد این صفحه از معاملات قبل از توقف هستند و `
+                    + `مدرکِ سوددهی نیستند.`;
+            } else {
+                document.getElementById('pause-banner').style.display = 'none';
+            }
+            const sc = document.getElementById('strat-count');
+            if (sc && data.causal_strategies) sc.textContent = data.causal_strategies;
             // Reset-window banner: only when the book was reset, so a fresh
             // $10,000 start is not misread as a flat or losing book.
             if (data.reset_at) {

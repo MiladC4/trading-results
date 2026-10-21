@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-21 04:11 UTC",
+  "date": "2026-10-21 04:18 UTC",
   "cash": 9955.31,
   "equity": 9955.31,
   "pnl": -44.69,
@@ -13,6 +13,10 @@
   "reset_at": 1792484079114,
   "reset_note": "paper book reset on the trailing-stop geometry (TP 12 ATR / initial SL 9 ATR / trail 5 ATR) + regime filters (gate D + fee-dead zone + chop 135-155) + $135 size at a constant $3.13 risk per trade, max 12 open. Numbers before this timestamp are archived in backups/ and must not be mixed into this window.",
   "window": "post-reset",
+  "trading_paused": true,
+  "pause_reason": "\u0645\u0639\u0627\u06cc\u0633\u0647\u0654 look-ahead: \u06f8 \u0627\u0632 \u06f1\u06f2 \u067e\u0648\u0631\u062a \u0632\u0646\u062f\u0647 \u0622\u06cc\u0646\u062f\u0647 \u0631\u0627 \u0645\u06cc\u200c\u062e\u0648\u0627\u0646\u062f\u0646\u062f\u061b \u06f4 \u067e\u0648\u0631\u062a \u0627\u0635\u0644\u0627\u062d\u200c\u0634\u062f\u0647 \u0647\u0645 \u0646\u0633\u0628\u062a \u0628\u0647 \u0648\u0631\u0648\u062f\u06cc \u062a\u0635\u0627\u062f\u0641\u06cc \u0632\u06cc\u0627\u0646\u200c\u062f\u0647\u200c\u0627\u0646\u062f. \u062a\u0627 \u0648\u0642\u062a\u06cc \u0627\u0633\u062a\u0631\u0627\u062a\u0698\u06cc\u0650 \u00ab\u0628\u062f\u0648\u0646 \u062a\u0642\u0644\u0628 \u0648 \u0628\u0647\u062a\u0631 \u0627\u0632 \u062a\u0635\u0627\u062f\u0641\u06cc\u00bb \u0646\u062f\u0627\u0634\u062a\u0647 \u0628\u0627\u0634\u06cc\u0645\u060c \u0645\u0639\u0627\u0645\u0644\u0647\u200c\u0627\u06cc \u0628\u0627\u0632 \u0646\u0645\u06cc\u200c\u0634\u0648\u062f.",
+  "leaking_strategies_banned": 8,
+  "causal_strategies": 4,
   "positions": [],
   "recent_trades": [
     {
@@ -127,7 +131,7 @@
     }
   ],
   "tuner": {
-    "ts": 1792555890188,
+    "ts": 1792556315762,
     "n": 24,
     "overall": {
       "n": 24,
