@@ -67,6 +67,28 @@
             <div id="reset-detail" style="opacity:.9; margin-top:4px;"></div>
         </div>
 
+        <div class="card" id="validated-card" style="display:none;">
+            <h2>✅ استراتژی‌های تأییدشده (همهٔ ۸ گیت را پاس کردند)</h2>
+            <p style="opacity:.75; font-size:13px; margin-top:0;">
+                سنجش‌شده زیر قوانین واقعی کتاب زنده (حداقل ۳ کندل نگهداری، SL قبل از
+                TP، تریل ۵ ATR، کارمز ۰.۱۲٪) روی ۶۰ نماد. ستون «کنترل» یعنی
+                ورودی تصادفی با همان هندسه و همان تعداد معامله.
+            </p>
+            <table style="width:100%; border-collapse:collapse; font-size:13px;">
+                <thead>
+                    <tr style="text-align:right; opacity:.7;">
+                        <th style="padding:6px; border-bottom:1px solid rgba(255,255,255,.12);">استراتژی</th>
+                        <th style="padding:6px; border-bottom:1px solid rgba(255,255,255,.12);">سمت</th>
+                        <th style="padding:6px; border-bottom:1px solid rgba(255,255,255,.12);">سود/معامله</th>
+                        <th style="padding:6px; border-bottom:1px solid rgba(255,255,255,.12);">کنترل تصادفی</th>
+                        <th style="padding:6px; border-bottom:1px solid rgba(255,255,255,.12);">تعداد</th>
+                        <th style="padding:6px; border-bottom:1px solid rgba(255,255,255,.12);">برنده</th>
+                    </tr>
+                </thead>
+                <tbody id="validated-list"></tbody>
+            </table>
+        </div>
+
         <div class="card">
             <h2>📈 Portfolio Overview</h2>
             <div class="stats-grid" id="overview"></div>
@@ -176,6 +198,25 @@
             }
             const sc = document.getElementById('strat-count');
             if (sc && data.causal_strategies) sc.textContent = data.causal_strategies;
+            // The validated strategies: the ones that passed every gate.
+            // Showing their measured EV next to the random control is the
+            // only way the reader can see they are real, not the numbers
+            // the old (leaky) archive produced.
+            const vs = document.getElementById('validated-list');
+            if (vs && data.validated_list && data.validated_list.length) {
+                vs.innerHTML = data.validated_list.map(v => {
+                    const win = v.ev > v.control;
+                    return `<tr>
+                        <td><strong>${v.name}</strong></td>
+                        <td>${v.side === 'short' ? 'SHORT' : 'LONG'}</td>
+                        <td class="${v.ev >= 0 ? 'positive' : 'negative'}">${v.ev >= 0 ? '+' : ''}${v.ev.toFixed(3)}%</td>
+                        <td>${v.control >= 0 ? '+' : ''}${v.control.toFixed(3)}%</td>
+                        <td>${v.n}</td>
+                        <td class="${win ? 'positive' : 'negative'}">${win ? '✓' : '✗'}</td>
+                    </tr>`;
+                }).join('');
+                document.getElementById('validated-card').style.display = 'block';
+            }
             // Reset-window banner: only when the book was reset, so a fresh
             // $10,000 start is not misread as a flat or losing book.
             if (data.reset_at) {
