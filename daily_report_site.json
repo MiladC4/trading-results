@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-21 10:28 UTC",
+  "date": "2026-10-21 10:32 UTC",
   "cash": 9955.31,
   "equity": 9955.31,
   "pnl": -44.69,
@@ -15,7 +15,7 @@
   "window": "post-reset",
   "trading_paused": true,
   "pause_reason": "\u0645\u0645\u06cc\u0632\u06cc look-ahead: \u06f8 \u0627\u0632 \u06f1\u06f2 \u067e\u0648\u0631\u062a \u0632\u0646\u062f\u0647 \u0622\u06cc\u0646\u062f\u0647 \u0631\u0627 \u0645\u06cc\u200c\u062e\u0648\u0627\u0646\u062f\u0646\u062f. \u062d\u0627\u0644\u0627 \u06f3 \u0627\u0633\u062a\u0631\u0627\u062a\u0698\u06cc \u0647\u0645\u0647\u0654 \u06f8 \u06af\u06cc\u062a \u0631\u0627 \u067e\u0627\u0633 \u06a9\u0631\u062f\u0647\u200c\u0627\u0646\u062f (Whale-Reversal\u060c Momentum-Break\u060c Volume-Profile \u2014 \u0647\u0645\u0647 \u0641\u0642\u0637 short) \u0648\u0644\u06cc \u0647\u0646\u0648\u0632 \u0631\u0648 \u0628\u0647 \u062c\u0644\u0648 \u0645\u0639\u0627\u0645\u0644\u0647 \u0646\u06a9\u0631\u062f\u0647\u200c\u0627\u0646\u062f\u060c \u067e\u0633 \u06a9\u062a\u0627\u0628 \u0645\u062a\u0648\u0642\u0641 \u0627\u0633\u062a.",
-  "leaking_strategies_banned": 30,
+  "leaking_strategies_banned": 34,
   "causal_strategies": 4,
   "validated_strategies": 3,
   "validated_list": [
@@ -167,7 +167,7 @@
     }
   ],
   "tuner": {
-    "ts": 1792578512747,
+    "ts": 1792578714582,
     "n": 24,
     "overall": {
       "n": 24,
