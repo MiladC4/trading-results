@@ -1,14 +1,14 @@
 {
-  "date": "2026-10-22 14:47 UTC",
-  "cash": 8809.99,
-  "equity": 9917.6,
-  "pnl": -82.4,
-  "pnl_pct": -0.82,
-  "open_positions": 7,
-  "closed_trades": 29,
+  "date": "2026-10-22 14:52 UTC",
+  "cash": 9039.59,
+  "equity": 9913.86,
+  "pnl": -86.14,
+  "pnl_pct": -0.86,
+  "open_positions": 6,
+  "closed_trades": 30,
   "reset_closes_excluded": 0,
-  "win_rate": 27.6,
-  "avg_win": 1.622,
+  "win_rate": 30.0,
+  "avg_win": 1.64,
   "avg_loss": -1.686,
   "reset_at": 1792484079114,
   "reset_note": "paper book reset on the trailing-stop geometry (TP 12 ATR / initial SL 9 ATR / trail 5 ATR) + regime filters (gate D + fee-dead zone + chop 135-155) + $135 size at a constant $3.13 risk per trade, max 12 open. Numbers before this timestamp are archived in backups/ and must not be mixed into this window.",
@@ -109,14 +109,14 @@
       "symbol": "A/USDT",
       "side": "SHORT",
       "entry": 0.09509,
-      "current": 0.093,
-      "pnl_pct": 2.2,
-      "chg_pct": -2.2,
+      "current": 0.0926,
+      "pnl_pct": 2.62,
+      "chg_pct": -2.62,
       "tp": 0.09073471634339485,
       "sl": 0.09835646274245385,
-      "tp_dist_pct": 2.44,
-      "sl_dist_pct": -5.76,
-      "age_min": 665.4,
+      "tp_dist_pct": 2.01,
+      "sl_dist_pct": -6.22,
+      "age_min": 670.5,
       "trail_armed": true
     },
     {
@@ -125,14 +125,14 @@
       "symbol": "ASTER/USDT",
       "side": "SHORT",
       "entry": 0.70742,
-      "current": 0.70089,
-      "pnl_pct": 0.92,
-      "chg_pct": -0.92,
+      "current": 0.69942,
+      "pnl_pct": 1.13,
+      "chg_pct": -1.13,
       "tp": 0.6940289045614519,
       "sl": 0.7174633215789111,
-      "tp_dist_pct": 0.98,
-      "sl_dist_pct": -2.36,
-      "age_min": 665.5,
+      "tp_dist_pct": 0.77,
+      "sl_dist_pct": -2.58,
+      "age_min": 670.5,
       "trail_armed": true
     },
     {
@@ -141,14 +141,14 @@
       "symbol": "ATH/USDT",
       "side": "SHORT",
       "entry": 0.006014,
-      "current": 0.005874,
-      "pnl_pct": 2.33,
-      "chg_pct": -2.33,
+      "current": 0.005844,
+      "pnl_pct": 2.83,
+      "chg_pct": -2.83,
       "tp": 0.005791743516097486,
       "sl": 0.006180692362926886,
-      "tp_dist_pct": 1.4,
-      "sl_dist_pct": -5.22,
-      "age_min": 665.5,
+      "tp_dist_pct": 0.89,
+      "sl_dist_pct": -5.76,
+      "age_min": 670.6,
       "trail_armed": true
     },
     {
@@ -157,14 +157,14 @@
       "symbol": "AXS/USDT",
       "side": "SHORT",
       "entry": 1.0262,
-      "current": 1.0124,
-      "pnl_pct": 1.34,
-      "chg_pct": -1.34,
+      "current": 1.0077,
+      "pnl_pct": 1.8,
+      "chg_pct": -1.8,
       "tp": 0.9993042681542841,
       "sl": 1.0463717988842869,
-      "tp_dist_pct": 1.29,
-      "sl_dist_pct": -3.36,
-      "age_min": 665.6,
+      "tp_dist_pct": 0.83,
+      "sl_dist_pct": -3.84,
+      "age_min": 670.7,
       "trail_armed": true
     },
     {
@@ -173,30 +173,14 @@
       "symbol": "BCH/USDT",
       "side": "SHORT",
       "entry": 279.8,
-      "current": 275.6,
-      "pnl_pct": 1.5,
-      "chg_pct": -1.5,
+      "current": 274.5,
+      "pnl_pct": 1.89,
+      "chg_pct": -1.89,
       "tp": 272.6850647865218,
       "sl": 285.13620141010864,
-      "tp_dist_pct": 1.06,
-      "sl_dist_pct": -3.46,
-      "age_min": 665.7,
-      "trail_armed": true
-    },
-    {
-      "strategy": "Momentum-Break",
-      "strategy_full": "1UtA1u3v",
-      "symbol": "CFX/USDT",
-      "side": "SHORT",
-      "entry": 0.05389,
-      "current": 0.05305,
-      "pnl_pct": 1.56,
-      "chg_pct": -1.56,
-      "tp": 0.05292851796005021,
-      "sl": 0.05461111152996234,
-      "tp_dist_pct": 0.23,
-      "sl_dist_pct": -2.94,
-      "age_min": 665.8,
+      "tp_dist_pct": 0.66,
+      "sl_dist_pct": -3.87,
+      "age_min": 670.8,
       "trail_armed": true
     },
     {
@@ -205,29 +189,18 @@
       "symbol": "CHZ/USDT",
       "side": "SHORT",
       "entry": 0.01378,
-      "current": 0.0135,
-      "pnl_pct": 2.03,
-      "chg_pct": -2.03,
+      "current": 0.01345,
+      "pnl_pct": 2.39,
+      "chg_pct": -2.39,
       "tp": 0.013382854326648633,
       "sl": 0.014077859255013526,
-      "tp_dist_pct": 0.87,
-      "sl_dist_pct": -4.28,
-      "age_min": 665.9,
+      "tp_dist_pct": 0.5,
+      "sl_dist_pct": -4.67,
+      "age_min": 670.8,
       "trail_armed": true
     }
   ],
   "recent_trades": [
-    {
-      "strategy": "Divergence-Scanner",
-      "symbol": "KAIA/USDT",
-      "result": "LOSS",
-      "pnl_pct": -2.268,
-      "entry": 0.04102,
-      "exit": 0.04195,
-      "chg_pct": 2.268,
-      "candles": 35,
-      "exit_reason": "sl"
-    },
     {
       "strategy": "MoM-Levels",
       "symbol": "GT/USDT",
@@ -326,16 +299,27 @@
       "chg_pct": 0.0,
       "candles": 106,
       "exit_reason": "sl"
+    },
+    {
+      "strategy": "Momentum-Break",
+      "symbol": "CFX/USDT",
+      "result": "WIN",
+      "pnl_pct": 1.784,
+      "entry": 0.05389,
+      "exit": 0.052929,
+      "chg_pct": -1.784,
+      "candles": 134,
+      "exit_reason": "tp"
     }
   ],
   "tuner": {
-    "ts": 1792680416635,
-    "n": 29,
+    "ts": 1792680721224,
+    "n": 30,
     "overall": {
-      "n": 29,
-      "wr": 27.6,
-      "exp": -0.00774,
-      "tot": -0.224
+      "n": 30,
+      "wr": 30.0,
+      "exp": -0.00688,
+      "tot": -0.207
     },
     "sides": {
       "long": {
@@ -349,10 +333,10 @@
         "long_sum": -0.3329
       },
       "short": {
-        "n": 29,
-        "wr": 27.6,
-        "exp": -0.00774,
-        "tot": -0.224,
+        "n": 30,
+        "wr": 30.0,
+        "exp": -0.00688,
+        "tot": -0.207,
         "banned": false,
         "long_n": 612,
         "long_wr": 45.588235294117645,
@@ -363,8 +347,8 @@
       {
         "kind": "overall",
         "msg": "system is net negative",
-        "n": 29,
-        "exp": -0.00774
+        "n": 30,
+        "exp": -0.00688
       },
       {
         "kind": "insufficient_sample",
@@ -376,7 +360,7 @@
       {
         "kind": "insufficient_sample",
         "side": "short",
-        "n": 29,
+        "n": 30,
         "long_n": 612,
         "msg": "short-side ban blocked: not negative in the long window"
       }
@@ -393,7 +377,7 @@
           6.0,
           3.0
         ],
-        "tp_pct": 1.09,
+        "tp_pct": 1.08,
         "sl_pct": 0.54
       },
       {
@@ -407,8 +391,8 @@
           6.0,
           3.0
         ],
-        "tp_pct": 1.05,
-        "sl_pct": 0.52
+        "tp_pct": 1.02,
+        "sl_pct": 0.51
       },
       {
         "action": "widen",
@@ -421,7 +405,7 @@
           6.0,
           3.0
         ],
-        "tp_pct": 1.09,
+        "tp_pct": 1.08,
         "sl_pct": 0.54
       },
       {
@@ -435,7 +419,7 @@
           6.0,
           3.0
         ],
-        "tp_pct": 1.09,
+        "tp_pct": 1.08,
         "sl_pct": 0.54
       },
       {
@@ -449,7 +433,7 @@
           6.0,
           3.0
         ],
-        "tp_pct": 1.09,
+        "tp_pct": 1.08,
         "sl_pct": 0.54
       },
       {
@@ -508,9 +492,9 @@
       {
         "action": "skip_ban_side",
         "side": "short",
-        "n": 29,
-        "wr": 27.6,
-        "exp": -0.00774,
+        "n": 30,
+        "wr": 30.0,
+        "exp": -0.00688,
         "long_n": 612,
         "long_wr": 45.588235294117645,
         "long_sum": 0.5471,
@@ -529,8 +513,8 @@
         "tot": 0.0,
         "tp": 6.0,
         "sl": 3.0,
-        "ap": 0.181,
-        "tp_pct": 1.09,
+        "ap": 0.18,
+        "tp_pct": 1.08,
         "sl_pct": 0.54,
         "src": "widen",
         "quarantined": false
@@ -538,15 +522,15 @@
       {
         "uid": "1UtA1u3v",
         "name": "Momentum-Break",
-        "n": 5,
-        "wr": 80.0,
-        "exp": 0.0166,
-        "tot": 0.083,
+        "n": 6,
+        "wr": 83.3,
+        "exp": 0.01681,
+        "tot": 0.101,
         "tp": 6.0,
         "sl": 3.0,
-        "ap": 0.175,
-        "tp_pct": 1.05,
-        "sl_pct": 0.52,
+        "ap": 0.17,
+        "tp_pct": 1.02,
+        "sl_pct": 0.51,
         "src": "widen",
         "quarantined": false
       },
@@ -559,8 +543,8 @@
         "tot": 0.0,
         "tp": 6.0,
         "sl": 3.0,
-        "ap": 0.181,
-        "tp_pct": 1.09,
+        "ap": 0.18,
+        "tp_pct": 1.08,
         "sl_pct": 0.54,
         "src": "widen",
         "quarantined": false
@@ -574,8 +558,8 @@
         "tot": 0.0,
         "tp": 6.0,
         "sl": 3.0,
-        "ap": 0.181,
-        "tp_pct": 1.09,
+        "ap": 0.18,
+        "tp_pct": 1.08,
         "sl_pct": 0.54,
         "src": "widen",
         "quarantined": false
@@ -589,8 +573,8 @@
         "tot": 0.0,
         "tp": 6.0,
         "sl": 3.0,
-        "ap": 0.181,
-        "tp_pct": 1.09,
+        "ap": 0.18,
+        "tp_pct": 1.08,
         "sl_pct": 0.54,
         "src": "widen",
         "quarantined": false
