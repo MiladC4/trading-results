@@ -1,14 +1,14 @@
 {
-  "date": "2026-10-22 15:13 UTC",
-  "cash": 9180.14,
-  "equity": 9910.23,
-  "pnl": -89.77,
-  "pnl_pct": -0.9,
-  "open_positions": 5,
-  "closed_trades": 31,
+  "date": "2026-10-22 15:18 UTC",
+  "cash": 9288.83,
+  "equity": 9908.42,
+  "pnl": -91.58,
+  "pnl_pct": -0.92,
+  "open_positions": 4,
+  "closed_trades": 32,
   "reset_closes_excluded": 0,
-  "win_rate": 32.3,
-  "avg_win": 1.764,
+  "win_rate": 34.4,
+  "avg_win": 1.94,
   "avg_loss": -1.686,
   "reset_at": 1792484079114,
   "reset_note": "paper book reset on the trailing-stop geometry (TP 12 ATR / initial SL 9 ATR / trail 5 ATR) + regime filters (gate D + fee-dead zone + chop 135-155) + $135 size at a constant $3.13 risk per trade, max 12 open. Numbers before this timestamp are archived in backups/ and must not be mixed into this window.",
@@ -109,14 +109,14 @@
       "symbol": "A/USDT",
       "side": "SHORT",
       "entry": 0.09509,
-      "current": 0.0918,
-      "pnl_pct": 3.46,
-      "chg_pct": -3.46,
+      "current": 0.09161,
+      "pnl_pct": 3.66,
+      "chg_pct": -3.66,
       "tp": 0.09073471634339485,
       "sl": 0.09835646274245385,
-      "tp_dist_pct": 1.16,
-      "sl_dist_pct": -7.14,
-      "age_min": 692.2,
+      "tp_dist_pct": 0.96,
+      "sl_dist_pct": -7.36,
+      "age_min": 696.4,
       "trail_armed": true
     },
     {
@@ -125,30 +125,14 @@
       "symbol": "ASTER/USDT",
       "side": "SHORT",
       "entry": 0.70742,
-      "current": 0.69857,
-      "pnl_pct": 1.25,
-      "chg_pct": -1.25,
+      "current": 0.69593,
+      "pnl_pct": 1.62,
+      "chg_pct": -1.62,
       "tp": 0.6940289045614519,
       "sl": 0.7174633215789111,
-      "tp_dist_pct": 0.65,
-      "sl_dist_pct": -2.7,
-      "age_min": 692.3,
-      "trail_armed": true
-    },
-    {
-      "strategy": "Momentum-Break",
-      "strategy_full": "1UtA1u3v",
-      "symbol": "ATH/USDT",
-      "side": "SHORT",
-      "entry": 0.006014,
-      "current": 0.005799,
-      "pnl_pct": 3.57,
-      "chg_pct": -3.57,
-      "tp": 0.005791743516097486,
-      "sl": 0.006180692362926886,
-      "tp_dist_pct": 0.13,
-      "sl_dist_pct": -6.58,
-      "age_min": 692.4,
+      "tp_dist_pct": 0.27,
+      "sl_dist_pct": -3.09,
+      "age_min": 696.6,
       "trail_armed": true
     },
     {
@@ -157,14 +141,14 @@
       "symbol": "AXS/USDT",
       "side": "SHORT",
       "entry": 1.0262,
-      "current": 1.0028,
-      "pnl_pct": 2.28,
-      "chg_pct": -2.28,
+      "current": 1.0012,
+      "pnl_pct": 2.44,
+      "chg_pct": -2.44,
       "tp": 0.9993042681542841,
       "sl": 1.0463717988842869,
-      "tp_dist_pct": 0.35,
-      "sl_dist_pct": -4.35,
-      "age_min": 692.5,
+      "tp_dist_pct": 0.19,
+      "sl_dist_pct": -4.51,
+      "age_min": 696.7,
       "trail_armed": true
     },
     {
@@ -173,29 +157,18 @@
       "symbol": "BCH/USDT",
       "side": "SHORT",
       "entry": 279.8,
-      "current": 273.9,
-      "pnl_pct": 2.11,
-      "chg_pct": -2.11,
+      "current": 273.1,
+      "pnl_pct": 2.39,
+      "chg_pct": -2.39,
       "tp": 272.6850647865218,
       "sl": 285.13620141010864,
-      "tp_dist_pct": 0.44,
-      "sl_dist_pct": -4.1,
-      "age_min": 692.5,
+      "tp_dist_pct": 0.15,
+      "sl_dist_pct": -4.41,
+      "age_min": 696.9,
       "trail_armed": true
     }
   ],
   "recent_trades": [
-    {
-      "strategy": "Divergence-Scanner",
-      "symbol": "ASTER/USDT",
-      "result": "LOSS",
-      "pnl_pct": -1.155,
-      "entry": 0.70603,
-      "exit": 0.714185,
-      "chg_pct": 1.155,
-      "candles": 6,
-      "exit_reason": "sl"
-    },
     {
       "strategy": "Divergence-Scanner",
       "symbol": "KITE/USDT",
@@ -294,16 +267,27 @@
       "chg_pct": -2.882,
       "candles": 138,
       "exit_reason": "tp"
+    },
+    {
+      "strategy": "Momentum-Break",
+      "symbol": "ATH/USDT",
+      "result": "WIN",
+      "pnl_pct": 3.696,
+      "entry": 0.006014,
+      "exit": 0.005792,
+      "chg_pct": -3.696,
+      "candles": 139,
+      "exit_reason": "tp"
     }
   ],
   "tuner": {
-    "ts": 1792682029788,
-    "n": 31,
+    "ts": 1792682266313,
+    "n": 32,
     "overall": {
-      "n": 31,
-      "wr": 32.3,
-      "exp": -0.00573,
-      "tot": -0.178
+      "n": 32,
+      "wr": 34.4,
+      "exp": -0.0044,
+      "tot": -0.141
     },
     "sides": {
       "long": {
@@ -317,10 +301,10 @@
         "long_sum": -0.3329
       },
       "short": {
-        "n": 31,
-        "wr": 32.3,
-        "exp": -0.00573,
-        "tot": -0.178,
+        "n": 32,
+        "wr": 34.4,
+        "exp": -0.0044,
+        "tot": -0.141,
         "banned": false,
         "long_n": 612,
         "long_wr": 45.588235294117645,
@@ -331,8 +315,8 @@
       {
         "kind": "overall",
         "msg": "system is net negative",
-        "n": 31,
-        "exp": -0.00573
+        "n": 32,
+        "exp": -0.0044
       },
       {
         "kind": "insufficient_sample",
@@ -344,7 +328,7 @@
       {
         "kind": "insufficient_sample",
         "side": "short",
-        "n": 31,
+        "n": 32,
         "long_n": 612,
         "msg": "short-side ban blocked: not negative in the long window"
       }
@@ -361,8 +345,8 @@
           6.0,
           3.0
         ],
-        "tp_pct": 1.09,
-        "sl_pct": 0.55
+        "tp_pct": 1.11,
+        "sl_pct": 0.56
       },
       {
         "action": "widen",
@@ -375,8 +359,8 @@
           6.0,
           3.0
         ],
-        "tp_pct": 1.08,
-        "sl_pct": 0.54
+        "tp_pct": 1.18,
+        "sl_pct": 0.59
       },
       {
         "action": "widen",
@@ -389,8 +373,8 @@
           6.0,
           3.0
         ],
-        "tp_pct": 1.09,
-        "sl_pct": 0.55
+        "tp_pct": 1.11,
+        "sl_pct": 0.56
       },
       {
         "action": "widen",
@@ -403,8 +387,8 @@
           6.0,
           3.0
         ],
-        "tp_pct": 1.09,
-        "sl_pct": 0.55
+        "tp_pct": 1.11,
+        "sl_pct": 0.56
       },
       {
         "action": "widen",
@@ -417,8 +401,8 @@
           6.0,
           3.0
         ],
-        "tp_pct": 1.09,
-        "sl_pct": 0.55
+        "tp_pct": 1.11,
+        "sl_pct": 0.56
       },
       {
         "action": "widen",
@@ -476,9 +460,9 @@
       {
         "action": "skip_ban_side",
         "side": "short",
-        "n": 31,
-        "wr": 32.3,
-        "exp": -0.00573,
+        "n": 32,
+        "wr": 34.4,
+        "exp": -0.0044,
         "long_n": 612,
         "long_wr": 45.588235294117645,
         "long_sum": 0.5471,
@@ -497,24 +481,24 @@
         "tot": 0.0,
         "tp": 6.0,
         "sl": 3.0,
-        "ap": 0.182,
-        "tp_pct": 1.09,
-        "sl_pct": 0.55,
+        "ap": 0.186,
+        "tp_pct": 1.11,
+        "sl_pct": 0.56,
         "src": "widen",
         "quarantined": false
       },
       {
         "uid": "1UtA1u3v",
         "name": "Momentum-Break",
-        "n": 7,
-        "wr": 85.7,
-        "exp": 0.01852,
-        "tot": 0.13,
+        "n": 8,
+        "wr": 87.5,
+        "exp": 0.02083,
+        "tot": 0.167,
         "tp": 6.0,
         "sl": 3.0,
-        "ap": 0.18,
-        "tp_pct": 1.08,
-        "sl_pct": 0.54,
+        "ap": 0.196,
+        "tp_pct": 1.18,
+        "sl_pct": 0.59,
         "src": "widen",
         "quarantined": false
       },
@@ -527,9 +511,9 @@
         "tot": 0.0,
         "tp": 6.0,
         "sl": 3.0,
-        "ap": 0.182,
-        "tp_pct": 1.09,
-        "sl_pct": 0.55,
+        "ap": 0.186,
+        "tp_pct": 1.11,
+        "sl_pct": 0.56,
         "src": "widen",
         "quarantined": false
       },
@@ -542,9 +526,9 @@
         "tot": 0.0,
         "tp": 6.0,
         "sl": 3.0,
-        "ap": 0.182,
-        "tp_pct": 1.09,
-        "sl_pct": 0.55,
+        "ap": 0.186,
+        "tp_pct": 1.11,
+        "sl_pct": 0.56,
         "src": "widen",
         "quarantined": false
       },
@@ -557,9 +541,9 @@
         "tot": 0.0,
         "tp": 6.0,
         "sl": 3.0,
-        "ap": 0.182,
-        "tp_pct": 1.09,
-        "sl_pct": 0.55,
+        "ap": 0.186,
+        "tp_pct": 1.11,
+        "sl_pct": 0.56,
         "src": "widen",
         "quarantined": false
       },
