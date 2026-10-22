@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-22 15:33 UTC",
+  "date": "2026-10-22 15:38 UTC",
   "cash": 9288.83,
-  "equity": 9911.71,
-  "pnl": -88.29,
+  "equity": 9912.48,
+  "pnl": -87.52,
   "pnl_pct": -0.88,
   "open_positions": 4,
   "closed_trades": 32,
@@ -116,7 +116,7 @@
       "sl": 0.09835646274245385,
       "tp_dist_pct": 3.35,
       "sl_dist_pct": -4.77,
-      "age_min": 712.2,
+      "age_min": 717.1,
       "trail_armed": true
     },
     {
@@ -125,14 +125,14 @@
       "symbol": "ASTER/USDT",
       "side": "SHORT",
       "entry": 0.70742,
-      "current": 0.69665,
-      "pnl_pct": 1.52,
-      "chg_pct": -1.52,
+      "current": 0.69744,
+      "pnl_pct": 1.41,
+      "chg_pct": -1.41,
       "tp": 0.6940289045614519,
       "sl": 0.7174633215789111,
-      "tp_dist_pct": 0.38,
-      "sl_dist_pct": -2.99,
-      "age_min": 712.2,
+      "tp_dist_pct": 0.49,
+      "sl_dist_pct": -2.87,
+      "age_min": 717.2,
       "trail_armed": true
     },
     {
@@ -141,14 +141,14 @@
       "symbol": "AXS/USDT",
       "side": "SHORT",
       "entry": 1.0262,
-      "current": 1.0062,
-      "pnl_pct": 1.95,
-      "chg_pct": -1.95,
+      "current": 1.0081,
+      "pnl_pct": 1.76,
+      "chg_pct": -1.76,
       "tp": 0.9993042681542841,
       "sl": 1.0463717988842869,
-      "tp_dist_pct": 0.69,
-      "sl_dist_pct": -3.99,
-      "age_min": 712.3,
+      "tp_dist_pct": 0.87,
+      "sl_dist_pct": -3.8,
+      "age_min": 717.2,
       "trail_armed": true
     },
     {
@@ -157,14 +157,14 @@
       "symbol": "BCH/USDT",
       "side": "SHORT",
       "entry": 279.8,
-      "current": 273.3,
-      "pnl_pct": 2.32,
-      "chg_pct": -2.32,
+      "current": 273.7,
+      "pnl_pct": 2.18,
+      "chg_pct": -2.18,
       "tp": 272.6850647865218,
       "sl": 285.13620141010864,
-      "tp_dist_pct": 0.23,
-      "sl_dist_pct": -4.33,
-      "age_min": 712.4,
+      "tp_dist_pct": 0.37,
+      "sl_dist_pct": -4.18,
+      "age_min": 717.3,
       "trail_armed": true
     }
   ],
@@ -281,7 +281,7 @@
     }
   ],
   "tuner": {
-    "ts": 1792683225223,
+    "ts": 1792683520228,
     "n": 32,
     "overall": {
       "n": 32,
