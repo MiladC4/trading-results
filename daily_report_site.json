@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-22 11:07 UTC",
+  "date": "2026-10-22 11:12 UTC",
   "cash": 8617.82,
   "equity": 9921.54,
   "pnl": -78.46,
@@ -116,7 +116,7 @@
       "sl": 0.09835646274245385,
       "tp_dist_pct": 3.77,
       "sl_dist_pct": -4.31,
-      "age_min": 445.5,
+      "age_min": 450.5,
       "trail_armed": true
     },
     {
@@ -132,7 +132,7 @@
       "sl": 0.7174633215789111,
       "tp_dist_pct": 1.29,
       "sl_dist_pct": -2.04,
-      "age_min": 445.6,
+      "age_min": 450.5,
       "trail_armed": true
     },
     {
@@ -148,7 +148,7 @@
       "sl": 0.006180692362926886,
       "tp_dist_pct": 1.35,
       "sl_dist_pct": -5.27,
-      "age_min": 445.7,
+      "age_min": 450.6,
       "trail_armed": true
     },
     {
@@ -164,7 +164,7 @@
       "sl": 1.7479969836099163,
       "tp_dist_pct": 1.25,
       "sl_dist_pct": -2.58,
-      "age_min": 445.7,
+      "age_min": 450.7,
       "trail_armed": true
     },
     {
@@ -180,7 +180,7 @@
       "sl": 1.0463717988842869,
       "tp_dist_pct": 1.79,
       "sl_dist_pct": -2.84,
-      "age_min": 445.8,
+      "age_min": 450.8,
       "trail_armed": true
     },
     {
@@ -196,7 +196,7 @@
       "sl": 285.13620141010864,
       "tp_dist_pct": 1.38,
       "sl_dist_pct": -3.12,
-      "age_min": 445.9,
+      "age_min": 450.9,
       "trail_armed": true
     },
     {
@@ -212,7 +212,7 @@
       "sl": 0.05461111152996234,
       "tp_dist_pct": 1.09,
       "sl_dist_pct": -2.06,
-      "age_min": 446.0,
+      "age_min": 450.9,
       "trail_armed": true
     },
     {
@@ -228,7 +228,7 @@
       "sl": 0.014077859255013526,
       "tp_dist_pct": 1.31,
       "sl_dist_pct": -3.82,
-      "age_min": 446.1,
+      "age_min": 451.0,
       "trail_armed": true
     }
   ],
@@ -345,7 +345,7 @@
     }
   ],
   "tuner": {
-    "ts": 1792667222803,
+    "ts": 1792667520028,
     "n": 28,
     "overall": {
       "n": 28,
