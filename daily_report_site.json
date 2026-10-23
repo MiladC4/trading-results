@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-23 03:53 UTC",
+  "date": "2026-10-23 03:58 UTC",
   "cash": 9040.27,
-  "equity": 9912.1,
-  "pnl": -87.9,
+  "equity": 9912.48,
+  "pnl": -87.52,
   "pnl_pct": -0.88,
   "open_positions": 6,
   "closed_trades": 43,
@@ -109,14 +109,14 @@
       "symbol": "ENA/USDT",
       "side": "SHORT",
       "entry": 0.1985,
-      "current": 0.2005,
-      "pnl_pct": -1.01,
-      "chg_pct": 1.01,
+      "current": 0.2006,
+      "pnl_pct": -1.06,
+      "chg_pct": 1.06,
       "tp": 0.18817161567582857,
       "sl": 0.20624628824312857,
-      "tp_dist_pct": 6.15,
-      "sl_dist_pct": -2.87,
-      "age_min": 707.0,
+      "tp_dist_pct": 6.2,
+      "sl_dist_pct": -2.81,
+      "age_min": 712.0,
       "trail_armed": false
     },
     {
@@ -132,7 +132,7 @@
       "sl": 0.12288079980189301,
       "tp_dist_pct": 3.28,
       "sl_dist_pct": -2.32,
-      "age_min": 707.1,
+      "age_min": 712.1,
       "trail_armed": false
     },
     {
@@ -148,7 +148,7 @@
       "sl": 1.8674801969700319,
       "tp_dist_pct": 3.86,
       "sl_dist_pct": -3.58,
-      "age_min": 707.2,
+      "age_min": 712.2,
       "trail_armed": true
     },
     {
@@ -157,14 +157,14 @@
       "symbol": "ETHFI/USDT",
       "side": "SHORT",
       "entry": 0.6585,
-      "current": 0.6555,
-      "pnl_pct": 0.46,
-      "chg_pct": -0.46,
+      "current": 0.6563,
+      "pnl_pct": 0.33,
+      "chg_pct": -0.33,
       "tp": 0.6371778188834032,
       "sl": 0.6744916358374475,
-      "tp_dist_pct": 2.8,
-      "sl_dist_pct": -2.9,
-      "age_min": 527.4,
+      "tp_dist_pct": 2.91,
+      "sl_dist_pct": -2.77,
+      "age_min": 532.4,
       "trail_armed": true
     },
     {
@@ -173,14 +173,14 @@
       "symbol": "RIF/USDT",
       "side": "SHORT",
       "entry": 0.072438,
-      "current": 0.072865,
-      "pnl_pct": -0.59,
-      "chg_pct": 0.59,
+      "current": 0.072983,
+      "pnl_pct": -0.75,
+      "chg_pct": 0.75,
       "tp": 0.07148839497495027,
       "sl": 0.07315020376878731,
-      "tp_dist_pct": 1.89,
-      "sl_dist_pct": -0.39,
-      "age_min": 527.4,
+      "tp_dist_pct": 2.05,
+      "sl_dist_pct": -0.23,
+      "age_min": 532.4,
       "trail_armed": false
     },
     {
@@ -189,14 +189,14 @@
       "symbol": "SOON/USDT",
       "side": "SHORT",
       "entry": 0.3048,
-      "current": 0.3016,
-      "pnl_pct": 1.05,
-      "chg_pct": -1.05,
+      "current": 0.3007,
+      "pnl_pct": 1.35,
+      "chg_pct": -1.35,
       "tp": 0.29380702662143726,
       "sl": 0.3130447300339221,
-      "tp_dist_pct": 2.58,
-      "sl_dist_pct": -3.79,
-      "age_min": 507.5,
+      "tp_dist_pct": 2.29,
+      "sl_dist_pct": -4.11,
+      "age_min": 512.5,
       "trail_armed": true
     }
   ],
@@ -313,7 +313,7 @@
     }
   ],
   "tuner": {
-    "ts": 1792727620585,
+    "ts": 1792727920781,
     "n": 43,
     "overall": {
       "n": 43,
