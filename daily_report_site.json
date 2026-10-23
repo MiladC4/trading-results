@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-23 11:16 UTC",
+  "date": "2026-10-23 11:21 UTC",
   "cash": 9606.01,
-  "equity": 9912.92,
-  "pnl": -87.08,
+  "equity": 9913.05,
+  "pnl": -86.95,
   "pnl_pct": -0.87,
   "open_positions": 3,
   "closed_trades": 46,
@@ -109,14 +109,14 @@
       "symbol": "ENA/USDT",
       "side": "SHORT",
       "entry": 0.1985,
-      "current": 0.1983,
-      "pnl_pct": 0.1,
-      "chg_pct": -0.1,
+      "current": 0.1985,
+      "pnl_pct": -0.0,
+      "chg_pct": 0.0,
       "tp": 0.18817161567582857,
       "sl": 0.20624628824312857,
-      "tp_dist_pct": 5.11,
-      "sl_dist_pct": -4.01,
-      "age_min": 1150.1,
+      "tp_dist_pct": 5.2,
+      "sl_dist_pct": -3.9,
+      "age_min": 1155.1,
       "trail_armed": false
     },
     {
@@ -132,7 +132,7 @@
       "sl": 0.12288079980189301,
       "tp_dist_pct": 3.76,
       "sl_dist_pct": -1.81,
-      "age_min": 1150.2,
+      "age_min": 1155.2,
       "trail_armed": false
     },
     {
@@ -141,14 +141,14 @@
       "symbol": "RENDER/USDT",
       "side": "SHORT",
       "entry": 1.81,
-      "current": 1.762,
-      "pnl_pct": 2.65,
-      "chg_pct": -2.65,
+      "current": 1.763,
+      "pnl_pct": 2.6,
+      "chg_pct": -2.6,
       "tp": 1.733359737373291,
       "sl": 1.8674801969700319,
-      "tp_dist_pct": 1.63,
-      "sl_dist_pct": -5.99,
-      "age_min": 1150.2,
+      "tp_dist_pct": 1.68,
+      "sl_dist_pct": -5.93,
+      "age_min": 1155.2,
       "trail_armed": true
     }
   ],
@@ -265,7 +265,7 @@
     }
   ],
   "tuner": {
-    "ts": 1792754203602,
+    "ts": 1792754504600,
     "n": 46,
     "overall": {
       "n": 46,
