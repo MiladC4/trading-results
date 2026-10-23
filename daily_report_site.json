@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-23 17:29 UTC",
+  "date": "2026-10-23 17:32 UTC",
   "cash": 9689.29,
   "equity": 9914.37,
   "pnl": -85.63,
@@ -109,14 +109,14 @@
       "symbol": "KITE/USDT",
       "side": "SHORT",
       "entry": 0.12,
-      "current": 0.119,
-      "pnl_pct": 0.83,
-      "chg_pct": -0.83,
+      "current": 0.1189,
+      "pnl_pct": 0.92,
+      "chg_pct": -0.92,
       "tp": 0.11615893359747596,
       "sl": 0.12288079980189301,
-      "tp_dist_pct": 2.39,
-      "sl_dist_pct": -3.26,
-      "age_min": 1522.2,
+      "tp_dist_pct": 2.31,
+      "sl_dist_pct": -3.35,
+      "age_min": 1525.3,
       "trail_armed": false
     },
     {
@@ -125,14 +125,14 @@
       "symbol": "RENDER/USDT",
       "side": "SHORT",
       "entry": 1.81,
-      "current": 1.763,
-      "pnl_pct": 2.6,
-      "chg_pct": -2.6,
+      "current": 1.765,
+      "pnl_pct": 2.49,
+      "chg_pct": -2.49,
       "tp": 1.733359737373291,
       "sl": 1.8674801969700319,
-      "tp_dist_pct": 1.68,
-      "sl_dist_pct": -5.93,
-      "age_min": 1522.3,
+      "tp_dist_pct": 1.79,
+      "sl_dist_pct": -5.81,
+      "age_min": 1525.4,
       "trail_armed": true
     }
   ],
@@ -249,7 +249,7 @@
     }
   ],
   "tuner": {
-    "ts": 1792776529374,
+    "ts": 1792776717557,
     "n": 47,
     "overall": {
       "n": 47,
