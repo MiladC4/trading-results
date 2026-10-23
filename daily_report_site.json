@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-23 20:02 UTC",
+  "date": "2026-10-23 20:06 UTC",
   "cash": 9819.6,
-  "equity": 9914.31,
-  "pnl": -85.69,
+  "equity": 9914.2,
+  "pnl": -85.8,
   "pnl_pct": -0.86,
   "open_positions": 1,
   "closed_trades": 48,
@@ -109,14 +109,14 @@
       "symbol": "RENDER/USDT",
       "side": "SHORT",
       "entry": 1.81,
-      "current": 1.741,
-      "pnl_pct": 3.81,
-      "chg_pct": -3.81,
+      "current": 1.739,
+      "pnl_pct": 3.92,
+      "chg_pct": -3.92,
       "tp": 1.733359737373291,
       "sl": 1.8674801969700319,
-      "tp_dist_pct": 0.44,
-      "sl_dist_pct": -7.26,
-      "age_min": 1675.2,
+      "tp_dist_pct": 0.32,
+      "sl_dist_pct": -7.39,
+      "age_min": 1680.1,
       "trail_armed": true
     }
   ],
@@ -233,7 +233,7 @@
     }
   ],
   "tuner": {
-    "ts": 1792785710834,
+    "ts": 1792786004208,
     "n": 48,
     "overall": {
       "n": 48,
