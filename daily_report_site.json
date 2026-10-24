@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-24 19:23 UTC",
+  "date": "2026-10-24 19:26 UTC",
   "cash": 9476.46,
   "equity": 9884.29,
   "pnl": -115.71,
@@ -116,7 +116,7 @@
       "sl": 0.2071473837089538,
       "tp_dist_pct": 3.8,
       "sl_dist_pct": -10.01,
-      "age_min": 1230.2,
+      "age_min": 1233.3,
       "trail_armed": true
     },
     {
@@ -132,7 +132,7 @@
       "sl": 0.11783456541998755,
       "tp_dist_pct": 2.64,
       "sl_dist_pct": -5.59,
-      "age_min": 1230.3,
+      "age_min": 1233.4,
       "trail_armed": true
     },
     {
@@ -148,7 +148,7 @@
       "sl": 2.099572980589702,
       "tp_dist_pct": 4.85,
       "sl_dist_pct": -5.67,
-      "age_min": 1230.4,
+      "age_min": 1233.4,
       "trail_armed": true
     },
     {
@@ -164,7 +164,7 @@
       "sl": 185.85722350463152,
       "tp_dist_pct": 3.59,
       "sl_dist_pct": -4.36,
-      "age_min": 1230.4,
+      "age_min": 1233.5,
       "trail_armed": true
     },
     {
@@ -180,7 +180,7 @@
       "sl": 1.7614211435757494,
       "tp_dist_pct": 3.08,
       "sl_dist_pct": -3.86,
-      "age_min": 1230.5,
+      "age_min": 1233.6,
       "trail_armed": true
     }
   ],
@@ -297,7 +297,7 @@
     }
   ],
   "tuner": {
-    "ts": 1792869812518,
+    "ts": 1792869999085,
     "n": 67,
     "overall": {
       "n": 67,
