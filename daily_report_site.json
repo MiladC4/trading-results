@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-24 18:36 UTC",
+  "date": "2026-10-24 18:41 UTC",
   "cash": 9476.46,
   "equity": 9882.95,
   "pnl": -117.05,
@@ -109,14 +109,14 @@
       "symbol": "ENA/USDT",
       "side": "SHORT",
       "entry": 0.196,
-      "current": 0.1878,
-      "pnl_pct": 4.18,
-      "chg_pct": -4.18,
+      "current": 0.1876,
+      "pnl_pct": 4.29,
+      "chg_pct": -4.29,
       "tp": 0.18113682172139495,
       "sl": 0.2071473837089538,
-      "tp_dist_pct": 3.55,
-      "sl_dist_pct": -10.3,
-      "age_min": 1183.3,
+      "tp_dist_pct": 3.45,
+      "sl_dist_pct": -10.42,
+      "age_min": 1188.4,
       "trail_armed": true
     },
     {
@@ -132,7 +132,7 @@
       "sl": 0.11783456541998755,
       "tp_dist_pct": 2.38,
       "sl_dist_pct": -5.87,
-      "age_min": 1183.4,
+      "age_min": 1188.5,
       "trail_armed": true
     },
     {
@@ -141,14 +141,14 @@
       "symbol": "PENDLE/USDT",
       "side": "SHORT",
       "entry": 2.01,
-      "current": 1.975,
-      "pnl_pct": 1.74,
-      "chg_pct": -1.74,
+      "current": 1.976,
+      "pnl_pct": 1.69,
+      "chg_pct": -1.69,
       "tp": 1.8905693592137298,
       "sl": 2.099572980589702,
-      "tp_dist_pct": 4.27,
-      "sl_dist_pct": -6.31,
-      "age_min": 1183.5,
+      "tp_dist_pct": 4.32,
+      "sl_dist_pct": -6.25,
+      "age_min": 1188.6,
       "trail_armed": true
     },
     {
@@ -157,14 +157,14 @@
       "symbol": "QNT/USDT",
       "side": "SHORT",
       "entry": 179.79,
-      "current": 177.27,
-      "pnl_pct": 1.4,
-      "chg_pct": -1.4,
+      "current": 177.57,
+      "pnl_pct": 1.23,
+      "chg_pct": -1.23,
       "tp": 171.70036866049128,
       "sl": 185.85722350463152,
-      "tp_dist_pct": 3.14,
-      "sl_dist_pct": -4.84,
-      "age_min": 1183.5,
+      "tp_dist_pct": 3.31,
+      "sl_dist_pct": -4.67,
+      "age_min": 1188.6,
       "trail_armed": true
     },
     {
@@ -173,14 +173,14 @@
       "symbol": "RENDER/USDT",
       "side": "SHORT",
       "entry": 1.711,
-      "current": 1.694,
-      "pnl_pct": 0.99,
-      "chg_pct": -0.99,
+      "current": 1.692,
+      "pnl_pct": 1.11,
+      "chg_pct": -1.11,
       "tp": 1.6437718085656674,
       "sl": 1.7614211435757494,
-      "tp_dist_pct": 2.97,
-      "sl_dist_pct": -3.98,
-      "age_min": 1183.6,
+      "tp_dist_pct": 2.85,
+      "sl_dist_pct": -4.1,
+      "age_min": 1188.7,
       "trail_armed": true
     }
   ],
@@ -297,7 +297,7 @@
     }
   ],
   "tuner": {
-    "ts": 1792867000025,
+    "ts": 1792867303209,
     "n": 67,
     "overall": {
       "n": 67,
