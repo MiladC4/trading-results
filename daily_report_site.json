@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-24 22:06 UTC",
+  "date": "2026-10-24 22:12 UTC",
   "cash": 9546.65,
   "equity": 9885.13,
   "pnl": -114.87,
@@ -116,7 +116,7 @@
       "sl": 0.2071473837089538,
       "tp_dist_pct": 4.56,
       "sl_dist_pct": -9.14,
-      "age_min": 1393.3,
+      "age_min": 1398.5,
       "trail_armed": true
     },
     {
@@ -132,7 +132,7 @@
       "sl": 0.11783456541998755,
       "tp_dist_pct": 2.99,
       "sl_dist_pct": -5.21,
-      "age_min": 1393.4,
+      "age_min": 1398.6,
       "trail_armed": true
     },
     {
@@ -141,14 +141,14 @@
       "symbol": "QNT/USDT",
       "side": "SHORT",
       "entry": 179.79,
-      "current": 177.04,
-      "pnl_pct": 1.53,
-      "chg_pct": -1.53,
+      "current": 176.96,
+      "pnl_pct": 1.57,
+      "chg_pct": -1.57,
       "tp": 171.70036866049128,
       "sl": 185.85722350463152,
-      "tp_dist_pct": 3.02,
-      "sl_dist_pct": -4.98,
-      "age_min": 1393.5,
+      "tp_dist_pct": 2.97,
+      "sl_dist_pct": -5.03,
+      "age_min": 1398.7,
       "trail_armed": true
     },
     {
@@ -157,14 +157,14 @@
       "symbol": "RENDER/USDT",
       "side": "SHORT",
       "entry": 1.711,
-      "current": 1.693,
-      "pnl_pct": 1.05,
-      "chg_pct": -1.05,
+      "current": 1.689,
+      "pnl_pct": 1.29,
+      "chg_pct": -1.29,
       "tp": 1.6437718085656674,
       "sl": 1.7614211435757494,
-      "tp_dist_pct": 2.91,
-      "sl_dist_pct": -4.04,
-      "age_min": 1393.5,
+      "tp_dist_pct": 2.68,
+      "sl_dist_pct": -4.29,
+      "age_min": 1398.7,
       "trail_armed": true
     }
   ],
@@ -281,7 +281,7 @@
     }
   ],
   "tuner": {
-    "ts": 1792879600349,
+    "ts": 1792879910929,
     "n": 68,
     "overall": {
       "n": 68,
