@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-24 19:38 UTC",
+  "date": "2026-10-24 19:41 UTC",
   "cash": 9476.46,
-  "equity": 9884.58,
-  "pnl": -115.42,
+  "equity": 9884.59,
+  "pnl": -115.41,
   "pnl_pct": -1.15,
   "open_positions": 5,
   "closed_trades": 67,
@@ -109,14 +109,14 @@
       "symbol": "ENA/USDT",
       "side": "SHORT",
       "entry": 0.196,
-      "current": 0.1878,
-      "pnl_pct": 4.18,
-      "chg_pct": -4.18,
+      "current": 0.1879,
+      "pnl_pct": 4.13,
+      "chg_pct": -4.13,
       "tp": 0.18113682172139495,
       "sl": 0.2071473837089538,
-      "tp_dist_pct": 3.55,
-      "sl_dist_pct": -10.3,
-      "age_min": 1245.2,
+      "tp_dist_pct": 3.6,
+      "sl_dist_pct": -10.24,
+      "age_min": 1248.4,
       "trail_armed": true
     },
     {
@@ -125,14 +125,14 @@
       "symbol": "OP/USDT",
       "side": "SHORT",
       "entry": 0.1139,
-      "current": 0.1117,
-      "pnl_pct": 1.93,
-      "chg_pct": -1.93,
+      "current": 0.1116,
+      "pnl_pct": 2.02,
+      "chg_pct": -2.02,
       "tp": 0.10865391277334994,
       "sl": 0.11783456541998755,
-      "tp_dist_pct": 2.73,
-      "sl_dist_pct": -5.49,
-      "age_min": 1245.2,
+      "tp_dist_pct": 2.64,
+      "sl_dist_pct": -5.59,
+      "age_min": 1248.4,
       "trail_armed": true
     },
     {
@@ -148,7 +148,7 @@
       "sl": 2.099572980589702,
       "tp_dist_pct": 4.95,
       "sl_dist_pct": -5.56,
-      "age_min": 1245.3,
+      "age_min": 1248.5,
       "trail_armed": true
     },
     {
@@ -164,7 +164,7 @@
       "sl": 185.85722350463152,
       "tp_dist_pct": 3.75,
       "sl_dist_pct": -4.19,
-      "age_min": 1245.4,
+      "age_min": 1248.6,
       "trail_armed": true
     },
     {
@@ -173,14 +173,14 @@
       "symbol": "RENDER/USDT",
       "side": "SHORT",
       "entry": 1.711,
-      "current": 1.698,
-      "pnl_pct": 0.76,
-      "chg_pct": -0.76,
+      "current": 1.699,
+      "pnl_pct": 0.7,
+      "chg_pct": -0.7,
       "tp": 1.6437718085656674,
       "sl": 1.7614211435757494,
-      "tp_dist_pct": 3.19,
-      "sl_dist_pct": -3.74,
-      "age_min": 1245.5,
+      "tp_dist_pct": 3.25,
+      "sl_dist_pct": -3.67,
+      "age_min": 1248.7,
       "trail_armed": true
     }
   ],
@@ -297,7 +297,7 @@
     }
   ],
   "tuner": {
-    "ts": 1792870709265,
+    "ts": 1792870901687,
     "n": 67,
     "overall": {
       "n": 67,
