@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-24 20:31 UTC",
+  "date": "2026-10-24 20:36 UTC",
   "cash": 9546.65,
-  "equity": 9886.45,
-  "pnl": -113.55,
+  "equity": 9886.44,
+  "pnl": -113.56,
   "pnl_pct": -1.14,
   "open_positions": 4,
   "closed_trades": 68,
@@ -109,14 +109,14 @@
       "symbol": "ENA/USDT",
       "side": "SHORT",
       "entry": 0.196,
-      "current": 0.1898,
-      "pnl_pct": 3.16,
-      "chg_pct": -3.16,
+      "current": 0.19,
+      "pnl_pct": 3.06,
+      "chg_pct": -3.06,
       "tp": 0.18113682172139495,
       "sl": 0.2071473837089538,
-      "tp_dist_pct": 4.56,
-      "sl_dist_pct": -9.14,
-      "age_min": 1298.4,
+      "tp_dist_pct": 4.66,
+      "sl_dist_pct": -9.02,
+      "age_min": 1303.4,
       "trail_armed": true
     },
     {
@@ -132,7 +132,7 @@
       "sl": 0.11783456541998755,
       "tp_dist_pct": 3.16,
       "sl_dist_pct": -5.02,
-      "age_min": 1298.5,
+      "age_min": 1303.4,
       "trail_armed": true
     },
     {
@@ -141,14 +141,14 @@
       "symbol": "QNT/USDT",
       "side": "SHORT",
       "entry": 179.79,
-      "current": 178.44,
-      "pnl_pct": 0.75,
-      "chg_pct": -0.75,
+      "current": 177.96,
+      "pnl_pct": 1.02,
+      "chg_pct": -1.02,
       "tp": 171.70036866049128,
       "sl": 185.85722350463152,
-      "tp_dist_pct": 3.78,
-      "sl_dist_pct": -4.16,
-      "age_min": 1298.5,
+      "tp_dist_pct": 3.52,
+      "sl_dist_pct": -4.44,
+      "age_min": 1303.5,
       "trail_armed": true
     },
     {
@@ -157,14 +157,14 @@
       "symbol": "RENDER/USDT",
       "side": "SHORT",
       "entry": 1.711,
-      "current": 1.7,
-      "pnl_pct": 0.64,
-      "chg_pct": -0.64,
+      "current": 1.703,
+      "pnl_pct": 0.47,
+      "chg_pct": -0.47,
       "tp": 1.6437718085656674,
       "sl": 1.7614211435757494,
-      "tp_dist_pct": 3.31,
-      "sl_dist_pct": -3.61,
-      "age_min": 1298.6,
+      "tp_dist_pct": 3.48,
+      "sl_dist_pct": -3.43,
+      "age_min": 1303.6,
       "trail_armed": true
     }
   ],
@@ -281,7 +281,7 @@
     }
   ],
   "tuner": {
-    "ts": 1792873903486,
+    "ts": 1792874203046,
     "n": 68,
     "overall": {
       "n": 68,
