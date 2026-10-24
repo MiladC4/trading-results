@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-24 06:28 UTC",
+  "date": "2026-10-24 06:31 UTC",
   "cash": 8491.42,
-  "equity": 9918.55,
-  "pnl": -81.45,
+  "equity": 9919.25,
+  "pnl": -80.75,
   "pnl_pct": -0.81,
   "open_positions": 12,
   "closed_trades": 52,
@@ -116,7 +116,7 @@
       "sl": 0.2071473837089538,
       "tp_dist_pct": 7.3,
       "sl_dist_pct": -6.01,
-      "age_min": 455.3,
+      "age_min": 458.5,
       "trail_armed": false
     },
     {
@@ -125,14 +125,14 @@
       "symbol": "ETHFI/USDT",
       "side": "SHORT",
       "entry": 0.6443,
-      "current": 0.6451,
-      "pnl_pct": -0.12,
-      "chg_pct": 0.12,
+      "current": 0.6446,
+      "pnl_pct": -0.05,
+      "chg_pct": 0.05,
       "tp": 0.609037828861852,
       "sl": 0.670746628353611,
-      "tp_dist_pct": 5.59,
-      "sl_dist_pct": -3.98,
-      "age_min": 455.4,
+      "tp_dist_pct": 5.52,
+      "sl_dist_pct": -4.06,
+      "age_min": 458.5,
       "trail_armed": true
     },
     {
@@ -141,14 +141,14 @@
       "symbol": "GRASS/USDT",
       "side": "SHORT",
       "entry": 0.6341,
-      "current": 0.6402,
-      "pnl_pct": -0.96,
-      "chg_pct": 0.96,
+      "current": 0.6398,
+      "pnl_pct": -0.9,
+      "chg_pct": 0.9,
       "tp": 0.6031122013459148,
       "sl": 0.6573408489905639,
-      "tp_dist_pct": 5.79,
-      "sl_dist_pct": -2.68,
-      "age_min": 455.4,
+      "tp_dist_pct": 5.73,
+      "sl_dist_pct": -2.74,
+      "age_min": 458.6,
       "trail_armed": false
     },
     {
@@ -157,14 +157,14 @@
       "symbol": "GRT/USDT",
       "side": "SHORT",
       "entry": 0.02314,
-      "current": 0.02326,
-      "pnl_pct": -0.52,
-      "chg_pct": 0.52,
+      "current": 0.02329,
+      "pnl_pct": -0.65,
+      "chg_pct": 0.65,
       "tp": 0.022259092091703753,
       "sl": 0.023800680931222187,
-      "tp_dist_pct": 4.3,
-      "sl_dist_pct": -2.32,
-      "age_min": 455.5,
+      "tp_dist_pct": 4.43,
+      "sl_dist_pct": -2.19,
+      "age_min": 458.7,
       "trail_armed": false
     },
     {
@@ -173,14 +173,14 @@
       "symbol": "GT/USDT",
       "side": "SHORT",
       "entry": 10.024,
-      "current": 9.959,
-      "pnl_pct": 0.65,
-      "chg_pct": -0.65,
+      "current": 9.962,
+      "pnl_pct": 0.62,
+      "chg_pct": -0.62,
       "tp": 9.90586164457507,
       "sl": 10.112603766568695,
-      "tp_dist_pct": 0.53,
-      "sl_dist_pct": -1.54,
-      "age_min": 455.6,
+      "tp_dist_pct": 0.56,
+      "sl_dist_pct": -1.51,
+      "age_min": 458.8,
       "trail_armed": true
     },
     {
@@ -189,14 +189,14 @@
       "symbol": "OP/USDT",
       "side": "SHORT",
       "entry": 0.1139,
-      "current": 0.1145,
-      "pnl_pct": -0.53,
-      "chg_pct": 0.53,
+      "current": 0.1144,
+      "pnl_pct": -0.44,
+      "chg_pct": 0.44,
       "tp": 0.10865391277334994,
       "sl": 0.11783456541998755,
-      "tp_dist_pct": 5.11,
-      "sl_dist_pct": -2.91,
-      "age_min": 455.7,
+      "tp_dist_pct": 5.02,
+      "sl_dist_pct": -3.0,
+      "age_min": 458.8,
       "trail_armed": false
     },
     {
@@ -212,7 +212,7 @@
       "sl": 2.099572980589702,
       "tp_dist_pct": 6.08,
       "sl_dist_pct": -4.3,
-      "age_min": 455.8,
+      "age_min": 458.9,
       "trail_armed": false
     },
     {
@@ -228,7 +228,7 @@
       "sl": 185.85722350463152,
       "tp_dist_pct": 6.23,
       "sl_dist_pct": -1.5,
-      "age_min": 455.8,
+      "age_min": 459.0,
       "trail_armed": false
     },
     {
@@ -237,14 +237,14 @@
       "symbol": "RENDER/USDT",
       "side": "SHORT",
       "entry": 1.711,
-      "current": 1.729,
-      "pnl_pct": -1.05,
-      "chg_pct": 1.05,
+      "current": 1.732,
+      "pnl_pct": -1.23,
+      "chg_pct": 1.23,
       "tp": 1.6437718085656674,
       "sl": 1.7614211435757494,
-      "tp_dist_pct": 4.93,
-      "sl_dist_pct": -1.88,
-      "age_min": 455.9,
+      "tp_dist_pct": 5.09,
+      "sl_dist_pct": -1.7,
+      "age_min": 459.1,
       "trail_armed": false
     },
     {
@@ -260,7 +260,7 @@
       "sl": 0.12145383268884918,
       "tp_dist_pct": 3.24,
       "sl_dist_pct": -2.58,
-      "age_min": 338.0,
+      "age_min": 341.2,
       "trail_armed": false
     },
     {
@@ -276,7 +276,7 @@
       "sl": 0.006084972768900745,
       "tp_dist_pct": 3.67,
       "sl_dist_pct": -1.5,
-      "age_min": 246.1,
+      "age_min": 249.3,
       "trail_armed": false
     },
     {
@@ -285,14 +285,14 @@
       "symbol": "A/USDT",
       "side": "SHORT",
       "entry": 0.09208,
-      "current": 0.09068,
-      "pnl_pct": 1.52,
-      "chg_pct": -1.52,
+      "current": 0.09103,
+      "pnl_pct": 1.14,
+      "chg_pct": -1.14,
       "tp": 0.08890854723231512,
       "sl": 0.09445858957576365,
-      "tp_dist_pct": 1.95,
-      "sl_dist_pct": -4.17,
-      "age_min": 130.9,
+      "tp_dist_pct": 2.33,
+      "sl_dist_pct": -3.77,
+      "age_min": 134.1,
       "trail_armed": true
     }
   ],
@@ -409,7 +409,7 @@
     }
   ],
   "tuner": {
-    "ts": 1792823312756,
+    "ts": 1792823502345,
     "n": 52,
     "overall": {
       "n": 52,
