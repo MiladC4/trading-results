@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-24 09:11 UTC",
+  "date": "2026-10-24 09:16 UTC",
   "cash": 8632.02,
-  "equity": 9899.55,
-  "pnl": -100.45,
+  "equity": 9899.69,
+  "pnl": -100.31,
   "pnl_pct": -1.0,
   "open_positions": 12,
   "closed_trades": 54,
@@ -116,7 +116,7 @@
       "sl": 0.2071473837089538,
       "tp_dist_pct": 4.46,
       "sl_dist_pct": -9.25,
-      "age_min": 618.5,
+      "age_min": 623.4,
       "trail_armed": true
     },
     {
@@ -132,7 +132,7 @@
       "sl": 0.670746628353611,
       "tp_dist_pct": 3.51,
       "sl_dist_pct": -6.27,
-      "age_min": 618.5,
+      "age_min": 623.5,
       "trail_armed": true
     },
     {
@@ -148,7 +148,7 @@
       "sl": 0.6573408489905639,
       "tp_dist_pct": 4.4,
       "sl_dist_pct": -4.19,
-      "age_min": 618.6,
+      "age_min": 623.6,
       "trail_armed": false
     },
     {
@@ -164,7 +164,7 @@
       "sl": 0.023800680931222187,
       "tp_dist_pct": 3.18,
       "sl_dist_pct": -3.53,
-      "age_min": 618.7,
+      "age_min": 623.7,
       "trail_armed": false
     },
     {
@@ -173,14 +173,14 @@
       "symbol": "OP/USDT",
       "side": "SHORT",
       "entry": 0.1139,
-      "current": 0.1125,
-      "pnl_pct": 1.23,
-      "chg_pct": -1.23,
+      "current": 0.1126,
+      "pnl_pct": 1.14,
+      "chg_pct": -1.14,
       "tp": 0.10865391277334994,
       "sl": 0.11783456541998755,
-      "tp_dist_pct": 3.42,
-      "sl_dist_pct": -4.74,
-      "age_min": 618.8,
+      "tp_dist_pct": 3.5,
+      "sl_dist_pct": -4.65,
+      "age_min": 623.7,
       "trail_armed": false
     },
     {
@@ -189,14 +189,14 @@
       "symbol": "PENDLE/USDT",
       "side": "SHORT",
       "entry": 2.01,
-      "current": 1.993,
-      "pnl_pct": 0.85,
-      "chg_pct": -0.85,
+      "current": 1.995,
+      "pnl_pct": 0.75,
+      "chg_pct": -0.75,
       "tp": 1.8905693592137298,
       "sl": 2.099572980589702,
-      "tp_dist_pct": 5.14,
-      "sl_dist_pct": -5.35,
-      "age_min": 618.8,
+      "tp_dist_pct": 5.23,
+      "sl_dist_pct": -5.24,
+      "age_min": 623.8,
       "trail_armed": false
     },
     {
@@ -205,14 +205,14 @@
       "symbol": "QNT/USDT",
       "side": "SHORT",
       "entry": 179.79,
-      "current": 178.75,
+      "current": 178.74,
       "pnl_pct": 0.58,
       "chg_pct": -0.58,
       "tp": 171.70036866049128,
       "sl": 185.85722350463152,
       "tp_dist_pct": 3.94,
       "sl_dist_pct": -3.98,
-      "age_min": 618.9,
+      "age_min": 623.9,
       "trail_armed": false
     },
     {
@@ -228,7 +228,7 @@
       "sl": 1.7614211435757494,
       "tp_dist_pct": 3.31,
       "sl_dist_pct": -3.61,
-      "age_min": 619.0,
+      "age_min": 624.0,
       "trail_armed": false
     },
     {
@@ -244,7 +244,7 @@
       "sl": 0.12145383268884918,
       "tp_dist_pct": 2.25,
       "sl_dist_pct": -3.63,
-      "age_min": 501.1,
+      "age_min": 506.1,
       "trail_armed": false
     },
     {
@@ -260,7 +260,7 @@
       "sl": 0.006084972768900745,
       "tp_dist_pct": 2.95,
       "sl_dist_pct": -2.27,
-      "age_min": 409.2,
+      "age_min": 414.2,
       "trail_armed": false
     },
     {
@@ -276,7 +276,7 @@
       "sl": 0.09378291822390789,
       "tp_dist_pct": 1.09,
       "sl_dist_pct": -3.9,
-      "age_min": 104.3,
+      "age_min": 109.3,
       "trail_armed": true
     },
     {
@@ -292,7 +292,7 @@
       "sl": 3.5828084072577346,
       "tp_dist_pct": 1.43,
       "sl_dist_pct": -2.63,
-      "age_min": 71.2,
+      "age_min": 76.3,
       "trail_armed": false
     }
   ],
@@ -409,7 +409,7 @@
     }
   ],
   "tuner": {
-    "ts": 1792833103699,
+    "ts": 1792833400115,
     "n": 54,
     "overall": {
       "n": 54,
