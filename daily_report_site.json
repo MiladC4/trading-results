@@ -1,15 +1,15 @@
 {
-  "date": "2026-10-25 00:31 UTC",
-  "cash": 9707.8,
-  "equity": 9890.79,
-  "pnl": -109.21,
+  "date": "2026-10-25 00:38 UTC",
+  "cash": 9800.5,
+  "equity": 9890.94,
+  "pnl": -109.06,
   "pnl_pct": -1.09,
-  "open_positions": 2,
-  "closed_trades": 70,
+  "open_positions": 1,
+  "closed_trades": 71,
   "reset_closes_excluded": 0,
-  "win_rate": 30.0,
+  "win_rate": 29.6,
   "avg_win": 2.492,
-  "avg_loss": -0.994,
+  "avg_loss": -0.974,
   "reset_at": 1792484079114,
   "reset_note": "paper book reset on the trailing-stop geometry (TP 12 ATR / initial SL 9 ATR / trail 5 ATR) + regime filters (gate D + fee-dead zone + chop 135-155) + $135 size at a constant $3.13 risk per trade, max 12 open. Numbers before this timestamp are archived in backups/ and must not be mixed into this window.",
   "window": "post-reset",
@@ -109,45 +109,18 @@
       "symbol": "OP/USDT",
       "side": "SHORT",
       "entry": 0.1139,
-      "current": 0.1137,
-      "pnl_pct": 0.18,
-      "chg_pct": -0.18,
+      "current": 0.1138,
+      "pnl_pct": 0.09,
+      "chg_pct": -0.09,
       "tp": 0.10865391277334994,
       "sl": 0.11783456541998755,
-      "tp_dist_pct": 4.44,
-      "sl_dist_pct": -3.64,
-      "age_min": 1538.3,
-      "trail_armed": true
-    },
-    {
-      "strategy": "Volume-Profile",
-      "strategy_full": "0vL9Hcs2",
-      "symbol": "QNT/USDT",
-      "side": "SHORT",
-      "entry": 179.79,
-      "current": 179.73,
-      "pnl_pct": 0.03,
-      "chg_pct": -0.03,
-      "tp": 171.70036866049128,
-      "sl": 185.85722350463152,
-      "tp_dist_pct": 4.47,
-      "sl_dist_pct": -3.41,
-      "age_min": 1538.4,
+      "tp_dist_pct": 4.52,
+      "sl_dist_pct": -3.55,
+      "age_min": 1545.1,
       "trail_armed": true
     }
   ],
   "recent_trades": [
-    {
-      "strategy": "Volume-Profile",
-      "symbol": "ETHFI/USDT",
-      "result": "WIN",
-      "pnl_pct": 5.473,
-      "entry": 0.6443,
-      "exit": 0.609037,
-      "chg_pct": -5.473,
-      "candles": 196,
-      "exit_reason": "tp"
-    },
     {
       "strategy": "Volume-Profile",
       "symbol": "GRT/USDT",
@@ -246,15 +219,26 @@
       "chg_pct": 0.0,
       "candles": 297,
       "exit_reason": "sl"
+    },
+    {
+      "strategy": "Volume-Profile",
+      "symbol": "QNT/USDT",
+      "result": "LOSS",
+      "pnl_pct": -0.0,
+      "entry": 179.79,
+      "exit": 179.79,
+      "chg_pct": 0.0,
+      "candles": 309,
+      "exit_reason": "sl"
     }
   ],
   "tuner": {
-    "ts": 1792888300335,
-    "n": 70,
+    "ts": 1792888709030,
+    "n": 71,
     "overall": {
-      "n": 70,
-      "wr": 30.0,
-      "exp": 0.00052,
+      "n": 71,
+      "wr": 29.6,
+      "exp": 0.00051,
       "tot": 0.036
     },
     "sides": {
@@ -269,9 +253,9 @@
         "long_sum": -0.3329
       },
       "short": {
-        "n": 70,
-        "wr": 30.0,
-        "exp": 0.00052,
+        "n": 71,
+        "wr": 29.6,
+        "exp": 0.00051,
         "tot": 0.036,
         "banned": false,
         "long_n": 612,
@@ -300,8 +284,8 @@
           4.0,
           3.0
         ],
-        "tp_pct": 1.19,
-        "sl_pct": 0.89
+        "tp_pct": 1.2,
+        "sl_pct": 0.9
       },
       {
         "action": "widen",
@@ -328,8 +312,8 @@
           6.0,
           3.0
         ],
-        "tp_pct": 1.46,
-        "sl_pct": 0.73
+        "tp_pct": 1.47,
+        "sl_pct": 0.74
       },
       {
         "action": "widen",
@@ -342,8 +326,8 @@
           6.0,
           3.0
         ],
-        "tp_pct": 1.46,
-        "sl_pct": 0.73
+        "tp_pct": 1.47,
+        "sl_pct": 0.74
       },
       {
         "action": "widen",
@@ -356,8 +340,8 @@
           6.0,
           3.0
         ],
-        "tp_pct": 1.46,
-        "sl_pct": 0.73
+        "tp_pct": 1.47,
+        "sl_pct": 0.74
       },
       {
         "action": "widen",
@@ -419,15 +403,15 @@
       {
         "uid": "0vL9Hcs2",
         "name": "Volume-Profile",
-        "n": 34,
-        "wr": 20.6,
-        "exp": 0.00313,
+        "n": 35,
+        "wr": 20.0,
+        "exp": 0.00304,
         "tot": 0.106,
         "tp": 4.0,
         "sl": 3.0,
-        "ap": 0.298,
-        "tp_pct": 1.19,
-        "sl_pct": 0.89,
+        "ap": 0.3,
+        "tp_pct": 1.2,
+        "sl_pct": 0.9,
         "src": "widen",
         "quarantined": false
       },
@@ -455,9 +439,9 @@
         "tot": 0.0,
         "tp": 6.0,
         "sl": 3.0,
-        "ap": 0.243,
-        "tp_pct": 1.46,
-        "sl_pct": 0.73,
+        "ap": 0.245,
+        "tp_pct": 1.47,
+        "sl_pct": 0.74,
         "src": "widen",
         "quarantined": false
       },
@@ -470,9 +454,9 @@
         "tot": 0.0,
         "tp": 6.0,
         "sl": 3.0,
-        "ap": 0.243,
-        "tp_pct": 1.46,
-        "sl_pct": 0.73,
+        "ap": 0.245,
+        "tp_pct": 1.47,
+        "sl_pct": 0.74,
         "src": "widen",
         "quarantined": false
       },
@@ -485,9 +469,9 @@
         "tot": 0.0,
         "tp": 6.0,
         "sl": 3.0,
-        "ap": 0.243,
-        "tp_pct": 1.46,
-        "sl_pct": 0.73,
+        "ap": 0.245,
+        "tp_pct": 1.47,
+        "sl_pct": 0.74,
         "src": "widen",
         "quarantined": false
       },
