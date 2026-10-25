@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-25 03:56 UTC",
+  "date": "2026-10-25 04:01 UTC",
   "cash": 9800.5,
-  "equity": 9889.98,
-  "pnl": -110.02,
+  "equity": 9890.02,
+  "pnl": -109.98,
   "pnl_pct": -1.1,
   "open_positions": 1,
   "closed_trades": 71,
@@ -116,7 +116,7 @@
       "sl": 0.11783456541998755,
       "tp_dist_pct": 3.5,
       "sl_dist_pct": -4.65,
-      "age_min": 1743.3,
+      "age_min": 1748.3,
       "trail_armed": true
     }
   ],
@@ -233,7 +233,7 @@
     }
   ],
   "tuner": {
-    "ts": 1792900600972,
+    "ts": 1792900901319,
     "n": 71,
     "overall": {
       "n": 71,
