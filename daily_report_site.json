@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-25 00:16 UTC",
+  "date": "2026-10-25 00:23 UTC",
   "cash": 9707.8,
-  "equity": 9890.15,
-  "pnl": -109.85,
+  "equity": 9890.39,
+  "pnl": -109.61,
   "pnl_pct": -1.1,
   "open_positions": 2,
   "closed_trades": 70,
@@ -109,14 +109,14 @@
       "symbol": "OP/USDT",
       "side": "SHORT",
       "entry": 0.1139,
-      "current": 0.1133,
-      "pnl_pct": 0.53,
-      "chg_pct": -0.53,
+      "current": 0.1136,
+      "pnl_pct": 0.26,
+      "chg_pct": -0.26,
       "tp": 0.10865391277334994,
       "sl": 0.11783456541998755,
-      "tp_dist_pct": 4.1,
-      "sl_dist_pct": -4.0,
-      "age_min": 1523.3,
+      "tp_dist_pct": 4.35,
+      "sl_dist_pct": -3.73,
+      "age_min": 1530.1,
       "trail_armed": true
     },
     {
@@ -132,7 +132,7 @@
       "sl": 185.85722350463152,
       "tp_dist_pct": 4.13,
       "sl_dist_pct": -3.77,
-      "age_min": 1523.4,
+      "age_min": 1530.2,
       "trail_armed": true
     }
   ],
@@ -249,7 +249,7 @@
     }
   ],
   "tuner": {
-    "ts": 1792887399780,
+    "ts": 1792887808422,
     "n": 70,
     "overall": {
       "n": 70,
