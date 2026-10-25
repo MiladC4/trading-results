@@ -280,7 +280,15 @@
                     <div class="stat-value">${data.avg_loss.toFixed(3)}%</div>
                     <div class="stat-label">Avg Loss</div>
                 </div>
+                <div class="stat">
+                    <div class="stat-value ${(data.realized_usd||0) >= 0 ? 'positive' : 'negative'}">${(data.realized_usd||0) >= 0 ? '+' : ''}${(data.realized_usd||0).toFixed(2)}</div>
+                    <div class="stat-label">Realized $ (از ۱۰-۲۲)</div>
+                </div>
             `;
+            if (data.dollar_window_note) {
+                document.getElementById('overview').innerHTML +=
+                    '<div class="note" style="grid-column:1/-1;font-size:0.75rem;color:#8b949e;background:#161b22;border:1px solid #30363d;border-radius:6px;padding:8px 10px;">ℹ️ ' + data.dollar_window_note + '</div>';
+            }
             
             // Open positions
             const openBody = document.getElementById('open-body');
