@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-26 19:57 UTC",
+  "date": "2026-10-26 20:02 UTC",
   "cash": 8687.5,
   "equity": 9874.57,
   "pnl": -125.43,
@@ -124,7 +124,7 @@
       "sl": 0.11783456541998755,
       "tp_dist_pct": 1.49,
       "sl_dist_pct": -6.83,
-      "age_min": 4143.7,
+      "age_min": 4148.9,
       "trail_armed": true
     },
     {
@@ -140,7 +140,7 @@
       "sl": 0.014556473781013898,
       "tp_dist_pct": 3.64,
       "sl_dist_pct": -4.93,
-      "age_min": 1093.7,
+      "age_min": 1098.9,
       "trail_armed": false
     },
     {
@@ -156,7 +156,7 @@
       "sl": 110.34801085801054,
       "tp_dist_pct": 4.28,
       "sl_dist_pct": -0.81,
-      "age_min": 1065.7,
+      "age_min": 1070.9,
       "trail_armed": false
     },
     {
@@ -172,7 +172,7 @@
       "sl": 0.09170182598247119,
       "tp_dist_pct": 5.08,
       "sl_dist_pct": -1.18,
-      "age_min": 230.8,
+      "age_min": 236.0,
       "trail_armed": false
     },
     {
@@ -188,7 +188,7 @@
       "sl": 0.005757900444624643,
       "tp_dist_pct": 1.8,
       "sl_dist_pct": -3.3,
-      "age_min": 230.9,
+      "age_min": 236.0,
       "trail_armed": false
     },
     {
@@ -204,7 +204,7 @@
       "sl": 1.674410296716087,
       "tp_dist_pct": 1.82,
       "sl_dist_pct": -2.22,
-      "age_min": 230.9,
+      "age_min": 236.1,
       "trail_armed": false
     },
     {
@@ -220,7 +220,7 @@
       "sl": 0.048891512149549884,
       "tp_dist_pct": 3.14,
       "sl_dist_pct": -1.62,
-      "age_min": 231.0,
+      "age_min": 236.2,
       "trail_armed": false
     },
     {
@@ -236,7 +236,7 @@
       "sl": 0.12928198733748172,
       "tp_dist_pct": 1.31,
       "sl_dist_pct": -2.93,
-      "age_min": 231.1,
+      "age_min": 236.3,
       "trail_armed": true
     },
     {
@@ -252,7 +252,7 @@
       "sl": 0.6581193426120224,
       "tp_dist_pct": 5.26,
       "sl_dist_pct": -1.67,
-      "age_min": 231.2,
+      "age_min": 236.4,
       "trail_armed": false
     }
   ],
@@ -369,7 +369,7 @@
     }
   ],
   "tuner": {
-    "ts": 1793044612035,
+    "ts": 1793044916325,
     "n": 99,
     "overall": {
       "n": 99,
