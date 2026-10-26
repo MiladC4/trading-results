@@ -99,26 +99,27 @@
         </div>
         
         <div class="card">
-            <h2>📊 Equity Curve (7-Day Hourly)</h2>
+            <h2>📊 ارزش حساب در طول زمان — ساعتانه، از فیکس سایزینگ (1404/08/01)</h2>
+            <div style="font-size:0.75rem;color:#8b949e;margin-bottom:8px;">منحنی = ۱۰٬۰۰۰$ + اثر دورهٔ قدیمی + سود تحقق‌یافتهٔ تجمعی + سود/زیان بازِ موقعیت‌های باز (با قیمت لحظه‌ای هر ساعت). نقطهٔ آخر دقیقاً همان «ارزش حساب» بالای صفحه است — بدون پرش.</div>
             <div style="height: 300px; position: relative;">
                 <canvas id="equity-chart"></canvas>
             </div>
             <div class="equity-stats" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 15px; text-align: center;">
                 <div style="background:#21262d;padding:10px;border-radius:6px;border:1px solid #30363d;">
                     <div class="stat-value" id="eq-current" style="font-size:1.3rem;"></div>
-                    <div class="stat-label">Current</div>
+                    <div class="stat-label">الان</div>
                 </div>
                 <div style="background:#21262d;padding:10px;border-radius:6px;border:1px solid #30363d;">
                     <div class="stat-value positive" id="eq-high" style="font-size:1.3rem;"></div>
-                    <div class="stat-label">7-Day High</div>
+                    <div class="stat-label">بیشترین در بازهٔ نمودار</div>
                 </div>
                 <div style="background:#21262d;padding:10px;border-radius:6px;border:1px solid #30363d;">
                     <div class="stat-value negative" id="eq-low" style="font-size:1.3rem;"></div>
-                    <div class="stat-label">7-Day Low</div>
+                    <div class="stat-label">کمترین در بازهٔ نمودار</div>
                 </div>
                 <div style="background:#21262d;padding:10px;border-radius:6px;border:1px solid #30363d;">
                     <div class="stat-value" id="eq-return" style="font-size:1.3rem;"></div>
-                    <div class="stat-label">Total Return</div>
+                    <div class="stat-label">بازده کل نسبت به ۱۰٬۰۰۰$</div>
                 </div>
             </div>
         </div>
@@ -243,47 +244,53 @@
             } else {
                 document.getElementById('reset-banner').style.display = 'none';
             }
-            // Overview
+            // Overview — بازطراحی 2026-10-26: هر عدد با برچسب روشن + زیرنویس،
+            // و یک هویت حسابداری به‌جای دو PnL بی‌توضیح:
+            //   سود کل = تحقق‌یافتهٔ دوره + باز + دورهٔ قبل از فیکس سایزینگ
+            const sgn$ = v => (v >= 0 ? '+' : '') + Number(v).toLocaleString('en-US', {maximumFractionDigits: 2});
+            const cls = v => v >= 0 ? 'positive' : 'negative';
+            const un = data.unrealized_usd || 0, lg = data.legacy_usd || 0;
+            const mtm = data.open_value_usd;
             document.getElementById('overview').innerHTML = `
                 <div class="stat">
                     <div class="stat-value">${data.equity.toLocaleString()}</div>
-                    <div class="stat-label">Equity ($)</div>
+                    <div class="stat-label">ارزش حساب (Equity) $</div>
+                    <div class="stat-sub">نقد: ${Number(data.cash).toLocaleString()}$ • در بازار: ${mtm != null ? Number(mtm).toLocaleString() : '—'}$</div>
                 </div>
                 <div class="stat">
-                    <div class="stat-value ${data.pnl >= 0 ? 'positive' : 'negative'}">${data.pnl >= 0 ? '+' : ''}${data.pnl.toFixed(2)}</div>
-                    <div class="stat-label">PnL ($)</div>
+                    <div class="stat-value ${cls(data.pnl)}">${sgn$(data.pnl)}$ (${data.pnl_pct >= 0 ? '+' : ''}${data.pnl_pct.toFixed(2)}%)</div>
+                    <div class="stat-label">سود/زیان کل — نسبت به سرمایهٔ اولیهٔ ۱۰٬۰۰۰$</div>
+                    <div class="stat-sub">جمع سه کارت بعدی دقیقاً همین عدد می‌شود</div>
                 </div>
                 <div class="stat">
-                    <div class="stat-value ${data.pnl_pct >= 0 ? 'positive' : 'negative'}">${data.pnl_pct >= 0 ? '+' : ''}${data.pnl_pct.toFixed(2)}%</div>
-                    <div class="stat-label">Return</div>
+                    <div class="stat-value ${cls(data.realized_usd||0)}">${sgn$(data.realized_usd||0)}$</div>
+                    <div class="stat-label">تحقق‌یافتهٔ دوره (معاملات بسته)</div>
+                    <div class="stat-sub">از 1404/08/01 — پس از فیکس سایزینگ، خالص از کارمزد</div>
                 </div>
                 <div class="stat">
-                    <div class="stat-value">${data.cash.toLocaleString()}</div>
-                    <div class="stat-label">Cash ($)</div>
+                    <div class="stat-value ${cls(un)}">${sgn$(un)}$</div>
+                    <div class="stat-label">باز — ${data.open_positions} موقعیت باز</div>
+                    <div class="stat-sub">تخمینی: تغییر قیمت تا الان، بدون کارمزد خروج</div>
                 </div>
                 <div class="stat">
-                    <div class="stat-value">${data.open_positions}</div>
-                    <div class="stat-label">Open Positions</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-value">${data.closed_trades}</div>
-                    <div class="stat-label">Closed Trades</div>
+                    <div class="stat-value ${cls(lg)}">${sgn$(lg)}$</div>
+                    <div class="stat-label">دورهٔ قبل از فیکس سایزینگ</div>
+                    <div class="stat-sub">اثر قدیمی داخل cash — خارج از پنجرهٔ دلاری</div>
                 </div>
                 <div class="stat">
                     <div class="stat-value ${data.win_rate >= 50 ? 'positive' : ''}">${data.win_rate.toFixed(1)}%</div>
-                    <div class="stat-label">Win Rate</div>
+                    <div class="stat-label">وین‌ریت (کل معاملات بسته)</div>
+                    <div class="stat-sub">${data.sane_closed != null ? data.sane_closed : data.closed_trades} بستهٔ سالم از ${data.closed_trades} کل</div>
                 </div>
                 <div class="stat">
-                    <div class="stat-value">${data.avg_win.toFixed(3)}%</div>
-                    <div class="stat-label">Avg Win</div>
+                    <div class="stat-value positive">${sgn$(data.best_trade_usd||0)}$</div>
+                    <div class="stat-label">بهترین معاملهٔ دوره ($)</div>
+                    <div class="stat-sub">خالص از کارمزد، دورهٔ فعلی</div>
                 </div>
                 <div class="stat">
-                    <div class="stat-value">${data.avg_loss.toFixed(3)}%</div>
-                    <div class="stat-label">Avg Loss</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-value ${(data.realized_usd||0) >= 0 ? 'positive' : 'negative'}">${(data.realized_usd||0) >= 0 ? '+' : ''}${(data.realized_usd||0).toFixed(2)}</div>
-                    <div class="stat-label">Realized $ (از ۱۰-۲۲)</div>
+                    <div class="stat-value negative">${sgn$(data.worst_trade_usd||0)}$</div>
+                    <div class="stat-label">بدترین معاملهٔ دوره ($)</div>
+                    <div class="stat-sub">خالص از کارمزد، دورهٔ فعلی</div>
                 </div>
             `;
             if (data.dollar_window_note) {
