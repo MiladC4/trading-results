@@ -124,7 +124,7 @@
       "sl": 0.11783456541998755,
       "tp_dist_pct": 0.77,
       "sl_dist_pct": -7.61,
-      "age_min": 4088.8,
+      "age_min": 4089.3,
       "trail_armed": true
     },
     {
@@ -140,7 +140,7 @@
       "sl": 22.428054952247127,
       "tp_dist_pct": 4.26,
       "sl_dist_pct": -4.41,
-      "age_min": 1325.9,
+      "age_min": 1326.5,
       "trail_armed": true
     },
     {
@@ -156,7 +156,7 @@
       "sl": 0.014556473781013898,
       "tp_dist_pct": 3.63,
       "sl_dist_pct": -4.94,
-      "age_min": 1038.9,
+      "age_min": 1039.4,
       "trail_armed": false
     },
     {
@@ -172,7 +172,7 @@
       "sl": 110.34801085801054,
       "tp_dist_pct": 3.88,
       "sl_dist_pct": -1.23,
-      "age_min": 1010.9,
+      "age_min": 1011.4,
       "trail_armed": false
     },
     {
@@ -188,7 +188,7 @@
       "sl": 0.09170182598247119,
       "tp_dist_pct": 4.76,
       "sl_dist_pct": -1.52,
-      "age_min": 176.0,
+      "age_min": 176.5,
       "trail_armed": false
     },
     {
@@ -204,7 +204,7 @@
       "sl": 0.005757900444624643,
       "tp_dist_pct": 2.1,
       "sl_dist_pct": -2.99,
-      "age_min": 176.1,
+      "age_min": 176.6,
       "trail_armed": false
     },
     {
@@ -220,7 +220,7 @@
       "sl": 1.674410296716087,
       "tp_dist_pct": 1.58,
       "sl_dist_pct": -2.47,
-      "age_min": 176.2,
+      "age_min": 176.7,
       "trail_armed": false
     },
     {
@@ -236,7 +236,7 @@
       "sl": 0.048891512149549884,
       "tp_dist_pct": 2.65,
       "sl_dist_pct": -2.13,
-      "age_min": 176.3,
+      "age_min": 176.7,
       "trail_armed": false
     },
     {
@@ -252,7 +252,7 @@
       "sl": 0.12928198733748172,
       "tp_dist_pct": 1.46,
       "sl_dist_pct": -2.77,
-      "age_min": 176.4,
+      "age_min": 176.8,
       "trail_armed": true
     },
     {
@@ -268,7 +268,7 @@
       "sl": 0.6581193426120224,
       "tp_dist_pct": 4.13,
       "sl_dist_pct": -2.88,
-      "age_min": 176.5,
+      "age_min": 176.9,
       "trail_armed": false
     }
   ],
