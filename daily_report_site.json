@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-26 07:59 UTC",
+  "date": "2026-10-26 08:07 UTC",
   "cash": 7649.01,
-  "equity": 9848.95,
-  "pnl": -151.05,
+  "equity": 9849.32,
+  "pnl": -150.68,
   "pnl_pct": -1.51,
   "open_positions": 12,
   "closed_trades": 88,
@@ -111,14 +111,14 @@
       "symbol": "OP/USDT",
       "side": "SHORT",
       "entry": 0.1139,
-      "current": 0.1095,
-      "pnl_pct": 3.86,
-      "chg_pct": -3.86,
+      "current": 0.1096,
+      "pnl_pct": 3.78,
+      "chg_pct": -3.78,
       "tp": 0.10865391277334994,
       "sl": 0.11783456541998755,
-      "tp_dist_pct": 0.77,
-      "sl_dist_pct": -7.61,
-      "age_min": 3426.5,
+      "tp_dist_pct": 0.86,
+      "sl_dist_pct": -7.51,
+      "age_min": 3434.3,
       "trail_armed": true
     },
     {
@@ -127,14 +127,14 @@
       "symbol": "COMP/USDT",
       "side": "SHORT",
       "entry": 21.63,
-      "current": 20.66,
-      "pnl_pct": 4.48,
-      "chg_pct": -4.48,
+      "current": 20.65,
+      "pnl_pct": 4.53,
+      "chg_pct": -4.53,
       "tp": 20.56592673033716,
       "sl": 22.428054952247127,
-      "tp_dist_pct": 0.46,
-      "sl_dist_pct": -8.56,
-      "age_min": 663.7,
+      "tp_dist_pct": 0.41,
+      "sl_dist_pct": -8.61,
+      "age_min": 671.5,
       "trail_armed": true
     },
     {
@@ -143,14 +143,14 @@
       "symbol": "ETHFI/USDT",
       "side": "SHORT",
       "entry": 0.6304,
-      "current": 0.6145,
-      "pnl_pct": 2.52,
-      "chg_pct": -2.52,
+      "current": 0.6146,
+      "pnl_pct": 2.51,
+      "chg_pct": -2.51,
       "tp": 0.6085150588272178,
       "sl": 0.6468137058795866,
-      "tp_dist_pct": 0.97,
-      "sl_dist_pct": -5.26,
-      "age_min": 593.7,
+      "tp_dist_pct": 0.99,
+      "sl_dist_pct": -5.24,
+      "age_min": 601.5,
       "trail_armed": true
     },
     {
@@ -166,7 +166,7 @@
       "sl": 0.08984501354820924,
       "tp_dist_pct": 3.19,
       "sl_dist_pct": -3.75,
-      "age_min": 503.8,
+      "age_min": 511.6,
       "trail_armed": false
     },
     {
@@ -175,14 +175,14 @@
       "symbol": "SKR/USDT",
       "side": "SHORT",
       "entry": 0.014047,
-      "current": 0.013965,
-      "pnl_pct": 0.58,
-      "chg_pct": -0.58,
+      "current": 0.013935,
+      "pnl_pct": 0.8,
+      "chg_pct": -0.8,
       "tp": 0.013367701625314804,
       "sl": 0.014556473781013898,
-      "tp_dist_pct": 4.28,
-      "sl_dist_pct": -4.24,
-      "age_min": 376.8,
+      "tp_dist_pct": 4.07,
+      "sl_dist_pct": -4.46,
+      "age_min": 384.6,
       "trail_armed": false
     },
     {
@@ -198,7 +198,7 @@
       "sl": 0.33163913807615725,
       "tp_dist_pct": 0.82,
       "sl_dist_pct": -0.41,
-      "age_min": 368.9,
+      "age_min": 376.7,
       "trail_armed": false
     },
     {
@@ -207,14 +207,14 @@
       "symbol": "OKB/USDT",
       "side": "SHORT",
       "entry": 107.96,
-      "current": 108.44,
-      "pnl_pct": -0.44,
-      "chg_pct": 0.44,
+      "current": 108.37,
+      "pnl_pct": -0.38,
+      "chg_pct": 0.38,
       "tp": 104.7759855226526,
       "sl": 110.34801085801054,
-      "tp_dist_pct": 3.38,
-      "sl_dist_pct": -1.76,
-      "age_min": 348.9,
+      "tp_dist_pct": 3.32,
+      "sl_dist_pct": -1.83,
+      "age_min": 356.8,
       "trail_armed": false
     },
     {
@@ -223,14 +223,14 @@
       "symbol": "GRASS/USDT",
       "side": "SHORT",
       "entry": 0.7005,
-      "current": 0.6918,
-      "pnl_pct": 1.24,
-      "chg_pct": -1.24,
+      "current": 0.6913,
+      "pnl_pct": 1.31,
+      "chg_pct": -1.31,
       "tp": 0.6694947973918586,
       "sl": 0.7237539019561061,
-      "tp_dist_pct": 3.22,
-      "sl_dist_pct": -4.62,
-      "age_min": 314.2,
+      "tp_dist_pct": 3.15,
+      "sl_dist_pct": -4.69,
+      "age_min": 322.2,
       "trail_armed": false
     },
     {
@@ -246,7 +246,7 @@
       "sl": 1.6569222654974487,
       "tp_dist_pct": 3.75,
       "sl_dist_pct": -1.53,
-      "age_min": 267.3,
+      "age_min": 275.3,
       "trail_armed": false
     },
     {
@@ -262,7 +262,7 @@
       "sl": 0.04735213323271727,
       "tp_dist_pct": 2.55,
       "sl_dist_pct": -1.72,
-      "age_min": 251.6,
+      "age_min": 259.6,
       "trail_armed": false
     },
     {
@@ -271,14 +271,14 @@
       "symbol": "IOTA/USDT",
       "side": "SHORT",
       "entry": 0.04252,
-      "current": 0.04204,
-      "pnl_pct": 1.13,
-      "chg_pct": -1.13,
+      "current": 0.04211,
+      "pnl_pct": 0.96,
+      "chg_pct": -0.96,
       "tp": 0.041267117556076136,
       "sl": 0.043459661832942906,
-      "tp_dist_pct": 1.84,
-      "sl_dist_pct": -3.38,
-      "age_min": 169.3,
+      "tp_dist_pct": 2.0,
+      "sl_dist_pct": -3.21,
+      "age_min": 177.3,
       "trail_armed": true
     },
     {
@@ -294,7 +294,7 @@
       "sl": 0.14323082041388463,
       "tp_dist_pct": 1.25,
       "sl_dist_pct": -0.39,
-      "age_min": 104.4,
+      "age_min": 112.3,
       "trail_armed": false
     }
   ],
@@ -411,7 +411,7 @@
     }
   ],
   "tuner": {
-    "ts": 1793001578326,
+    "ts": 1793002052335,
     "n": 88,
     "overall": {
       "n": 88,
