@@ -1,15 +1,15 @@
 {
-  "date": "2026-10-27 20:12 UTC",
+  "date": "2026-10-27 20:17 UTC",
   "cash": 9517.33,
-  "equity": 9864.99,
-  "pnl": -135.01,
+  "equity": 9865.05,
+  "pnl": -134.95,
   "pnl_pct": -1.35,
   "open_positions": 3,
   "closed_trades": 111,
   "realized_usd": 48.97,
-  "unrealized_usd": -0.86,
-  "open_value_usd": 347.66,
-  "legacy_usd": -183.12,
+  "unrealized_usd": -0.92,
+  "open_value_usd": 347.73,
+  "legacy_usd": -182.99,
   "best_trade_usd": 4.08,
   "worst_trade_usd": -4.12,
   "sane_closed": 87,
@@ -124,7 +124,7 @@
       "sl": 0.11783456541998755,
       "tp_dist_pct": 2.29,
       "sl_dist_pct": -5.97,
-      "age_min": 5599.1,
+      "age_min": 5604.0,
       "trail_armed": true
     },
     {
@@ -133,14 +133,14 @@
       "symbol": "OKB/USDT",
       "side": "SHORT",
       "entry": 107.96,
-      "current": 109.25,
-      "pnl_pct": -1.19,
-      "chg_pct": 1.19,
+      "current": 109.3,
+      "pnl_pct": -1.24,
+      "chg_pct": 1.24,
       "tp": 104.7759855226526,
       "sl": 110.34801085801054,
-      "tp_dist_pct": 4.1,
-      "sl_dist_pct": -1.01,
-      "age_min": 2521.1,
+      "tp_dist_pct": 4.14,
+      "sl_dist_pct": -0.96,
+      "age_min": 2526.0,
       "trail_armed": false
     },
     {
@@ -156,7 +156,7 @@
       "sl": 0.09170182598247119,
       "tp_dist_pct": 4.72,
       "sl_dist_pct": -1.56,
-      "age_min": 1686.1,
+      "age_min": 1691.1,
       "trail_armed": false
     }
   ],
@@ -273,7 +273,7 @@
     }
   ],
   "tuner": {
-    "ts": 1793131941653,
+    "ts": 1793132238836,
     "n": 111,
     "overall": {
       "n": 111,
