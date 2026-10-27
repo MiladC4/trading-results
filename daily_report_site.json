@@ -1,15 +1,15 @@
 {
-  "date": "2026-10-27 00:17 UTC",
+  "date": "2026-10-27 00:22 UTC",
   "cash": 8794.61,
-  "equity": 9882.27,
-  "pnl": -117.73,
-  "pnl_pct": -1.18,
+  "equity": 9882.81,
+  "pnl": -117.19,
+  "pnl_pct": -1.17,
   "open_positions": 8,
   "closed_trades": 100,
   "realized_usd": 36.83,
-  "unrealized_usd": -2.08,
-  "open_value_usd": 1087.77,
-  "legacy_usd": -152.49,
+  "unrealized_usd": -2.51,
+  "open_value_usd": 1088.2,
+  "legacy_usd": -151.51,
   "best_trade_usd": 4.08,
   "worst_trade_usd": -4.12,
   "sane_closed": 76,
@@ -124,7 +124,7 @@
       "sl": 0.11783456541998755,
       "tp_dist_pct": 3.25,
       "sl_dist_pct": -4.93,
-      "age_min": 4403.5,
+      "age_min": 4408.6,
       "trail_armed": true
     },
     {
@@ -133,14 +133,14 @@
       "symbol": "SKR/USDT",
       "side": "SHORT",
       "entry": 0.014047,
-      "current": 0.014015,
-      "pnl_pct": 0.23,
-      "chg_pct": -0.23,
+      "current": 0.01402,
+      "pnl_pct": 0.19,
+      "chg_pct": -0.19,
       "tp": 0.013367701625314804,
       "sl": 0.014556473781013898,
-      "tp_dist_pct": 4.62,
-      "sl_dist_pct": -3.86,
-      "age_min": 1353.6,
+      "tp_dist_pct": 4.65,
+      "sl_dist_pct": -3.83,
+      "age_min": 1358.6,
       "trail_armed": false
     },
     {
@@ -156,7 +156,7 @@
       "sl": 110.34801085801054,
       "tp_dist_pct": 4.51,
       "sl_dist_pct": -0.57,
-      "age_min": 1325.5,
+      "age_min": 1330.6,
       "trail_armed": false
     },
     {
@@ -172,7 +172,7 @@
       "sl": 0.09170182598247119,
       "tp_dist_pct": 5.82,
       "sl_dist_pct": -0.4,
-      "age_min": 490.6,
+      "age_min": 495.6,
       "trail_armed": false
     },
     {
@@ -188,7 +188,7 @@
       "sl": 0.005757900444624643,
       "tp_dist_pct": 2.15,
       "sl_dist_pct": -2.93,
-      "age_min": 490.7,
+      "age_min": 495.7,
       "trail_armed": true
     },
     {
@@ -204,7 +204,7 @@
       "sl": 1.674410296716087,
       "tp_dist_pct": 1.94,
       "sl_dist_pct": -2.1,
-      "age_min": 490.8,
+      "age_min": 495.8,
       "trail_armed": true
     },
     {
@@ -220,7 +220,7 @@
       "sl": 0.048891512149549884,
       "tp_dist_pct": 3.36,
       "sl_dist_pct": -1.39,
-      "age_min": 490.8,
+      "age_min": 495.9,
       "trail_armed": false
     },
     {
@@ -236,7 +236,7 @@
       "sl": 0.12928198733748172,
       "tp_dist_pct": 2.24,
       "sl_dist_pct": -1.96,
-      "age_min": 490.9,
+      "age_min": 495.9,
       "trail_armed": true
     }
   ],
@@ -353,7 +353,7 @@
     }
   ],
   "tuner": {
-    "ts": 1793060205408,
+    "ts": 1793060506618,
     "n": 100,
     "overall": {
       "n": 100,
