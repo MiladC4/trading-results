@@ -1,15 +1,15 @@
 {
-  "date": "2026-10-27 13:12 UTC",
+  "date": "2026-10-27 13:17 UTC",
   "cash": 9431.08,
-  "equity": 9863.59,
-  "pnl": -136.41,
+  "equity": 9863.61,
+  "pnl": -136.39,
   "pnl_pct": -1.36,
   "open_positions": 4,
   "closed_trades": 110,
   "realized_usd": 49.07,
-  "unrealized_usd": 0.54,
-  "open_value_usd": 432.51,
-  "legacy_usd": -186.02,
+  "unrealized_usd": 0.53,
+  "open_value_usd": 432.53,
+  "legacy_usd": -185.99,
   "best_trade_usd": 4.08,
   "worst_trade_usd": -4.12,
   "sane_closed": 86,
@@ -124,7 +124,7 @@
       "sl": 0.11783456541998755,
       "tp_dist_pct": 1.85,
       "sl_dist_pct": -6.44,
-      "age_min": 5178.6,
+      "age_min": 5183.8,
       "trail_armed": true
     },
     {
@@ -140,7 +140,7 @@
       "sl": 0.014556473781013898,
       "tp_dist_pct": 3.5,
       "sl_dist_pct": -5.08,
-      "age_min": 2128.6,
+      "age_min": 2133.8,
       "trail_armed": true
     },
     {
@@ -156,7 +156,7 @@
       "sl": 110.34801085801054,
       "tp_dist_pct": 3.7,
       "sl_dist_pct": -1.42,
-      "age_min": 2100.6,
+      "age_min": 2105.8,
       "trail_armed": false
     },
     {
@@ -165,14 +165,14 @@
       "symbol": "A/USDT",
       "side": "SHORT",
       "entry": 0.08927,
-      "current": 0.0909,
-      "pnl_pct": -1.83,
-      "chg_pct": 1.83,
+      "current": 0.09091,
+      "pnl_pct": -1.84,
+      "chg_pct": 1.84,
       "tp": 0.08602756535670508,
       "sl": 0.09170182598247119,
-      "tp_dist_pct": 5.36,
-      "sl_dist_pct": -0.88,
-      "age_min": 1265.7,
+      "tp_dist_pct": 5.37,
+      "sl_dist_pct": -0.87,
+      "age_min": 1270.9,
       "trail_armed": false
     }
   ],
@@ -289,7 +289,7 @@
     }
   ],
   "tuner": {
-    "ts": 1793106712524,
+    "ts": 1793107018142,
     "n": 110,
     "overall": {
       "n": 110,
