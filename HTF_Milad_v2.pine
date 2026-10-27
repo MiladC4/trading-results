@@ -1,0 +1,112 @@
+//@version=5
+// ============================================================================
+// HTF Milad v2 — 2026-10-27 (اصلاح نسخهٔ 1405.07.28)
+// تغییرات نسبت به v1:
+//   ۱) گزینهٔ «تأیید کندل بسته‌شدهٔ HTF»: با close[1]+lookahead_on — الگوی
+//      استاندارد بدون رپینت. سیگنال فقط از کندل ۱۲ساعتهٔ «بسته‌شده» می‌آید و
+//      نوسان intrabar حذف می‌شود. اگر خاموش باشد مثل v1 عمل می‌کند (رپینت دارد).
+//   ۲) TP/SL واقعی ATR-محور: ورودی tp_atr/sl_atr (پیش‌فرض 4/1 مثل بهترین مدل
+//      گرید). در v1 هر چهار مقدار ۱۰۰٪ بود و عملاً هیچ TP/SLی کار نمی‌کرد.
+//   ۳) پیام آلرت با {{ticker}}/{{close}} + JSON آماده — برای وصل‌شدن به هر
+//      وبهوک/باتی در آینده بدون ویرایش پیام.
+//   ۴) lookahead_onِ خطرناک v1 حذف شد (بک‌تست فانتزی می‌ساخت).
+// نکتهٔ لابراتوار: گرید کامل TP/SL روی دادهٔ ۵دقیقهٔ ۱۵۴ نماد همه منفی بود
+// (بهترین مدل F: net OOS −۰.۰۹۸٪/ترید، CI زیر صفر) — این نسخه برای تست/زنده
+// است، نه تضمین سود.
+// ============================================================================
+strategy(title="HTF Milad v2 (1405.08.05)", overlay=true, max_bars_back=1000,
+     max_lines_count=400, max_labels_count=400, max_boxes_count=500,
+     initial_capital=100, currency=currency.USD, commission_value=0.06,
+     default_qty_type=strategy.commission.cash_per_order, default_qty_value=100)
+
+//----------------------------- INPUTS ---------------------------------------
+period      = input.timeframe("720", title="Higher Timeframe")
+useHTFConfirm = input.bool(true, title="تأیید کندل بسته‌شدهٔ HTF (بدون رپینت)")
+enableBuy   = input.bool(true,  title="Enable BUY Signals")
+enableSell  = input.bool(true,  title="Enable SELL Signals")
+
+useEMAFilter = input.bool(true, title="Enable EMA Filter")
+emaLength    = input.int(50,   title="EMA Length")
+useVolFilter = input.bool(false, title="Enable Volume Filter")
+volMultiplier = input.float(1.0, title="Volume Multiplier")
+
+tp_atr = input.float(4.0, "Take Profit (×ATR)", step=0.5)
+sl_atr = input.float(1.0, "Stop Loss (×ATR)",   step=0.5)
+
+//----------------------------- HTF DATA -------------------------------------
+// حالت تأیید: مقدارِ کندلِ «بسته‌شدهٔ قبلی» HTF ([1] با lookahead_on) —
+// کلاسیک‌ترین الگوی بدون رپینت تریدینگ‌ویو. حالت خاموش: مثل v1 (نوسان دارد).
+htfClose = useHTFConfirm ?
+     request.security(syminfo.tickerid, period, close[1], lookahead=barmerge.lookahead_on) :
+     request.security(syminfo.tickerid, period, close,    lookahead=barmerge.lookahead_off)
+htfOpen  = useHTFConfirm ?
+     request.security(syminfo.tickerid, period, open[1],  lookahead=barmerge.lookahead_on) :
+     request.security(syminfo.tickerid, period, open,     lookahead=barmerge.lookahead_off)
+
+longCondition  = htfClose > htfOpen
+shortCondition = htfClose < htfOpen
+
+//----------------------------- FILTERS --------------------------------------
+emaValue = ta.ema(close, emaLength)
+volAvg   = ta.sma(volume, 20)
+emaLong  = close > emaValue
+emaShort = close < emaValue
+volOk    = volume > volAvg * volMultiplier
+filterLong  = (not useEMAFilter or emaLong)  and (not useVolFilter or volOk)
+filterShort = (not useEMAFilter or emaShort) and (not useVolFilter or volOk)
+
+//----------------------------- DAILY CONTROL --------------------------------
+isNewDay = ta.change(time("D"))
+var bool signalActive = false
+if (isNewDay)
+    signalActive := false
+
+//----------------------------- ENTRIES --------------------------------------
+enterLong  = enableSignalsInput and enableBuy  and longCondition  and filterLong  and not signalActive and barstate.isconfirmed
+enterShort = enableSignalsInput and enableSell and shortCondition and filterShort and not signalActive and barstate.isconfirmed
+
+atrVal = ta.atr(14)
+
+if (enterLong)
+    strategy.entry("BUY", strategy.long)
+    signalActive := true
+if (enterShort)
+    strategy.entry("SELL", strategy.short)
+    signalActive := true
+
+//----------------------------- TP / SL (ATR) --------------------------------
+if (strategy.position_size > 0)
+    strategy.exit("exitlong", "BUY",
+         limit = strategy.position_avg_price + tp_atr * atrVal,
+         stop  = strategy.position_avg_price - sl_atr * atrVal)
+if (strategy.position_size < 0)
+    strategy.exit("exitshort", "SELL",
+         limit = strategy.position_avg_price - tp_atr * atrVal,
+         stop  = strategy.position_avg_price + sl_atr * atrVal)
+
+//----------------------------- ALERTS ---------------------------------------
+alertcondition(enterLong,  title="HTF BUY",  message='{"sym":"{{ticker}}","side":"buy","price":{{close}}} — HTF BUY Signal')
+alertcondition(enterShort, title="HTF SELL", message='{"sym":"{{ticker}}","side":"sell","price":{{close}}} — HTF SELL Signal')
+
+//----------------------------- DASHBOARD ------------------------------------
+var table dashboard = table.new(position.top_right, 2, 6, border_width=1)
+htfBias   = longCondition ? "BULLISH" : shortCondition ? "BEARISH" : "NEUTRAL"
+biasColor = longCondition ? color.green : shortCondition ? color.red : color.gray
+emaText   = useEMAFilter ? "ON" : "OFF"
+volText   = useVolFilter ? "ON" : "OFF"
+confText  = useHTFConfirm ? "CONFIRMED (no repaint)" : "FORMING (repaints)"
+confColor = useHTFConfirm ? color.green : color.orange
+
+if (barstate.islastconfirmedhistory or barstate.islast)
+    table.cell(dashboard, 0, 0, "HTF STRATEGY v2", text_color=color.white, bgcolor=color.black)
+    table.cell(dashboard, 1, 0, "STATUS",          text_color=color.white, bgcolor=color.black)
+    table.cell(dashboard, 0, 1, "HTF Bias", text_color=color.white)
+    table.cell(dashboard, 1, 1, htfBias, text_color=color.white, bgcolor=biasColor)
+    table.cell(dashboard, 0, 2, "HTF Mode", text_color=color.white)
+    table.cell(dashboard, 1, 2, confText, text_color=color.white, bgcolor=confColor)
+    table.cell(dashboard, 0, 3, "EMA Filter", text_color=color.white)
+    table.cell(dashboard, 1, 3, emaText, text_color=color.white, bgcolor=color.blue)
+    table.cell(dashboard, 0, 4, "Volume Filter", text_color=color.white)
+    table.cell(dashboard, 1, 4, volText, text_color=color.white, bgcolor=color.purple)
+    table.cell(dashboard, 0, 5, "TP/SL (ATR)", text_color=color.white)
+    table.cell(dashboard, 1, 5, str.tostring(tp_atr) + " / " + str.tostring(sl_atr), text_color=color.white, bgcolor=color.teal)

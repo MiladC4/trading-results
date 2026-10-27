@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>استراتژی HTF میلاد — آزمایشگاه جدا</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0;font-family:Vazirmatn,Tahoma,sans-serif}
+body{background:#0d1117;color:#c9d1d9;padding:16px}
+a{color:#58a6ff;text-decoration:none}
+.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
+.top h1{font-size:1.15rem;color:#fff}
+.card{background:#161b22;border:1px solid #30363d;border-radius:8px;padding:16px;margin-bottom:16px}
+.card h2{font-size:1rem;color:#fff;margin-bottom:10px}
+table{width:100%;border-collapse:collapse;font-size:.82rem;white-space:nowrap}
+th,td{border:1px solid #30363d;padding:8px;text-align:center}
+th{background:#21262d;color:#8b949e}
+tr.bestrow td{background:#12261e}
+.pos{color:#3fb950}.neg{color:#f85149}
+.badge{padding:2px 8px;border-radius:4px;font-size:.68rem}
+.best{background:rgba(88,166,255,.15);color:#58a6ff}
+.dim{color:#8b949e;font-size:.75rem}
+.note{font-size:.78rem;color:#8b949e;line-height:1.9;margin-top:10px}
+.big{font-size:1.6rem;font-weight:bold}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.kv{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid #21262d;font-size:.85rem}
+.kv b{color:#fff}
+</style>
+</head>
+<body>
+<div class="top">
+  <h1>🧪 استراتژی HTF میلاد (1405/07/28) — آزمایشگاه جدا</h1>
+  <a href="paper.html">← داشبورد اصلی</a>
+</div>
+
+<div class="card">
+  <h2>حکم نهایی گیت‌ها: <span class="neg big">REJECT — به کتاب اضافه نمی‌شود</span></h2>
+  <div class="note">بهترین مدل روی <b>۷۰٪ اول</b> انتخاب شد (F) و همهٔ گیت‌ها روی <b>۳۰٪ آخر (OOS)</b> اعمال شدند — همان روش استاندارد لابراتوار. هیچ عددی از این استراتژی با کتاب ۴-استراتژی‌ای اصلی قاطی نشده است.</div>
+</div>
+
+<div class="card">
+  <h2>۱) این استراتژی واقعاً چه می‌کند</h2>
+  <div class="note">
+    سیگنال = موقعیت قیمت نسبت به <b>اُپن کندل ۱۲ساعتهٔ جاری</b> (نه کندلِ بسته‌شده — چون lookahead=OFF است) + فیلتر EMA50 روی چارت ۵دقیقه + حداکثر <b>یک ورود در روز</b>.
+    یعنی عملاً: اولین کندل ۵دقیقهٔ تأییدشدهٔ روز که قیمت سمت درستِ اُپن ۱۲ساعته و EMA بود، ورود. خروج در نسخهٔ اصلی فقط با سیگنال معکوس (TP/SL روی ۱۰۰٪ عملاً خاموش).
+    در گرید پایین، ۶ مدل ATR استاندارد لابراتوار + همان حالت اصلی (REV) تست شده‌اند.
+  </div>
+</div>
+
+<div class="card">
+  <h2>۲) گرید کامل TP/SL — همهٔ تنظیمات محتمل</h2>
+  <table>
+    <thead><tr><th>مدل</th><th>n (کل)</th><th>net کل (%/ترید)</th><th>n آموزش (۷۰٪)</th><th>net آموزش</th><th>WR آموزش</th><th>net OOS (۳۰٪)</th><th>سمت شورت</th></tr></thead>
+    <tbody>
+        <tr>
+          <td><b>A</b><div class="dim">TP 1.5× / SL 1.5× ATR</div></td>
+          <td>20,656</td>
+          <td><span class="neg">-0.168</span></td>
+          <td>14,483</td>
+          <td><span class="neg">-0.185</span></td>
+          <td>43.3%</td>
+          <td><span class="neg">-0.130</span></td>
+          <td class="dim"><span class="neg">-0.161</span> <span class="dim">(9,808 شورت)</span></td>
+        </tr>
+
+        <tr>
+          <td><b>B</b><div class="dim">TP 2× / SL 1× ATR</div></td>
+          <td>20,657</td>
+          <td><span class="neg">-0.138</span></td>
+          <td>14,486</td>
+          <td><span class="neg">-0.154</span></td>
+          <td>30.3%</td>
+          <td><span class="neg">-0.103</span></td>
+          <td class="dim"><span class="neg">-0.137</span> <span class="dim">(9,801 شورت)</span></td>
+        </tr>
+
+        <tr>
+          <td><b>C</b><div class="dim">TP 3× / SL 1× ATR</div></td>
+          <td>20,645</td>
+          <td><span class="neg">-0.133</span></td>
+          <td>14,468</td>
+          <td><span class="neg">-0.150</span></td>
+          <td>23.3%</td>
+          <td><span class="neg">-0.094</span></td>
+          <td class="dim"><span class="neg">-0.136</span> <span class="dim">(9,793 شورت)</span></td>
+        </tr>
+
+        <tr>
+          <td><b>D</b><div class="dim">TP 1× / SL 1× ATR</div></td>
+          <td>20,689</td>
+          <td><span class="neg">-0.154</span></td>
+          <td>14,518</td>
+          <td><span class="neg">-0.166</span></td>
+          <td>40.2%</td>
+          <td><span class="neg">-0.126</span></td>
+          <td class="dim"><span class="neg">-0.155</span> <span class="dim">(9,829 شورت)</span></td>
+        </tr>
+
+        <tr>
+          <td><b>E</b><div class="dim">TP 2× / SL 2× ATR</div></td>
+          <td>20,615</td>
+          <td><span class="neg">-0.179</span></td>
+          <td>14,440</td>
+          <td><span class="neg">-0.199</span></td>
+          <td>44.3%</td>
+          <td><span class="neg">-0.133</span></td>
+          <td class="dim"><span class="neg">-0.173</span> <span class="dim">(9,783 شورت)</span></td>
+        </tr>
+
+        <tr class="bestrow">
+          <td><b>F</b> <span class="badge best">انتخاب‌شده</span><div class="dim">TP 4× / SL 1× ATR</div></td>
+          <td>20,630</td>
+          <td><span class="neg">-0.129</span></td>
+          <td>14,452</td>
+          <td><span class="neg">-0.142</span></td>
+          <td>18.9%</td>
+          <td><span class="neg">-0.098</span></td>
+          <td class="dim"><span class="neg">-0.131</span> <span class="dim">(9,783 شورت)</span></td>
+        </tr>
+
+        <tr>
+          <td><b>REV</b><div class="dim">TP 1000× / SL 1000× ATR</div></td>
+          <td>10,565</td>
+          <td><span class="neg">-0.855</span></td>
+          <td>7,313</td>
+          <td><span class="neg">-1.241</span></td>
+          <td>44.0%</td>
+          <td><span class="pos">+0.012</span></td>
+          <td class="dim"><span class="neg">-1.863</span> <span class="dim">(5,249 شورت)</span></td>
+        </tr></tbody>
+  </table>
+  <div class="note">runner.simulate: کارمزد ۰.۱۲٪ رفت‌وبرگشت داخل هر معامله (۰.۰۶٪ هر سمت = کارمزد واقعی کتاب). اعداد «net» خالص همین کارمزدند.<br>lab trading.db, 5m candles, ~2020 → 2026-09-27 (static db — بدون ریسک لغزش) — 154 نماد. «آموزش» = تا 1789608600000 (۷۰٪ اول)، «OOS» = بعد از آن (۳۰٪ آخر) که مدل رویش انتخاب نشده.</div>
+</div>
+
+<div class="card">
+  <h2>۳) گیت‌های استاندارد لابراتوار — بهترین مدل (F) روی OOS</h2>
+  <table>
+    <thead><tr><th>گیت</th><th>مقدار</th><th>حکم</th></tr></thead>
+    <tbody><tr><td style="text-align:right;">تعداد معامله (OOS) ≥ ۱۰۰۰</td><td>6,178</td><td class="pos">✓ پاس</td></tr>
+<tr><td style="text-align:right;">EV خالص &gt; +۰.۰۵٪ در هر معامله</td><td><span class="neg">-0.098</span></td><td class="neg">✗ مردود</td></tr>
+<tr><td style="text-align:right;">CI۹۵٪ بوت‌استرپ بلوک-نماد بالای صفر</td><td>[<span class="neg">-0.114</span> , <span class="neg">-0.082</span>]</td><td class="neg">✗ مردود</td></tr>
+<tr><td style="text-align:right;">دو نیمهٔ زمانی مثبت</td><td><span class="neg">-0.130</span> / <span class="neg">-0.066</span></td><td class="neg">✗ مردود</td></tr>
+<tr><td style="text-align:right;">بدون بزرگ‌ترین ترید مثبت</td><td><span class="neg">-0.099</span></td><td class="neg">✗ مردود</td></tr>
+<tr><td style="text-align:right;">≥ ۲۵ نماد فعال</td><td>154 نماد</td><td class="pos">✓ پاس</td></tr></tbody>
+  </table>
+</div>
+
+<div class="card">
+  <h2>۴) کتاب تست ۱۰۰ دلاری (کاملاً جدا از کتاب اصلی)</h2>
+  <div class="grid2">
+    <div>
+      <div class="kv"><span>اعتبار اولیه</span><b>$100.00</b></div>
+      <div class="kv"><span>ارزش فعلی</span><b>$100.00</b></div>
+      <div class="kv"><span>وضعیت</span><b>آماده — منتظر فرمان شروع تو</b></div>
+    </div>
+    <div>
+      <div class="kv"><span>موقعیت‌های باز</span><b>0</b></div>
+      <div class="kv"><span>معاملات بسته</span><b>0</b></div>
+      <div class="kv"><span>کارمزد</span><b class="dim">کارمزد همان کتاب اصلی: ۰.۱۲٪ رفت‌وبرگشت (۰.۰۶٪ هر سمت)</b></div>
+    </div>
+  </div>
+  <div class="note">فقط بعد از فرمان تو شروع به معامله می‌کند و از همان لحظه، معاملات/ایکویتی خودش را همین‌جا جدا نشان می‌دهد — قاطی با ۴ استراتژی جاری نمی‌شود.</div>
+</div>
+
+<div class="card">
+  <h2>۵) نسخهٔ اصلاح‌شدهٔ Pine (v2)</h2>
+  <div class="note">
+    فایل <b>HTF_Milad_v2.pine</b> کنار همین صفحه در ریپو هست: TP/SL واقعی ATR-محور (ورودی tpm/slm)،
+    گزینهٔ <b>تأیید بسته‌شدن کندل HTF</b> (با close[1]+lookahead_on — الگوی استاندارد بدون رپینت) که نوسان intrabar را حذف می‌کند،
+    و پیام آلرت با <b>{{ticker}}/{{close}}</b> (JSON آماده برای هر وبهوک آینده).
+    ⚠️ ولی حکم گیت‌ها همان است: تا وقتی تلافی‌شدهٔ منفی است، در کتاب معامله نمی‌شود.
+  </div>
+</div>
+
+<div class="card"><div class="note">تولید: 2026-10-27 17:46 UTC • مولد: make_htf_page.py • داده: lab trading.db, 5m candles, ~2020 → 2026-09-27 (static db — بدون ریسک لغزش)</div></div>
+</body>
+</html>
