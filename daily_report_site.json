@@ -1,15 +1,15 @@
 {
-  "date": "2026-10-27 13:17 UTC",
+  "date": "2026-10-27 13:24 UTC",
   "cash": 9431.08,
-  "equity": 9863.61,
-  "pnl": -136.39,
+  "equity": 9863.78,
+  "pnl": -136.22,
   "pnl_pct": -1.36,
   "open_positions": 4,
   "closed_trades": 110,
   "realized_usd": 49.07,
-  "unrealized_usd": 0.53,
-  "open_value_usd": 432.53,
-  "legacy_usd": -185.99,
+  "unrealized_usd": 0.35,
+  "open_value_usd": 432.7,
+  "legacy_usd": -185.63,
   "best_trade_usd": 4.08,
   "worst_trade_usd": -4.12,
   "sane_closed": 86,
@@ -117,14 +117,14 @@
       "symbol": "OP/USDT",
       "side": "SHORT",
       "entry": 0.1139,
-      "current": 0.1107,
-      "pnl_pct": 2.81,
-      "chg_pct": -2.81,
+      "current": 0.1108,
+      "pnl_pct": 2.72,
+      "chg_pct": -2.72,
       "tp": 0.10865391277334994,
       "sl": 0.11783456541998755,
-      "tp_dist_pct": 1.85,
-      "sl_dist_pct": -6.44,
-      "age_min": 5183.8,
+      "tp_dist_pct": 1.94,
+      "sl_dist_pct": -6.35,
+      "age_min": 5190.6,
       "trail_armed": true
     },
     {
@@ -133,14 +133,14 @@
       "symbol": "SKR/USDT",
       "side": "SHORT",
       "entry": 0.014047,
-      "current": 0.013853,
-      "pnl_pct": 1.38,
-      "chg_pct": -1.38,
+      "current": 0.013869,
+      "pnl_pct": 1.27,
+      "chg_pct": -1.27,
       "tp": 0.013367701625314804,
       "sl": 0.014556473781013898,
-      "tp_dist_pct": 3.5,
-      "sl_dist_pct": -5.08,
-      "age_min": 2133.8,
+      "tp_dist_pct": 3.61,
+      "sl_dist_pct": -4.96,
+      "age_min": 2140.7,
       "trail_armed": true
     },
     {
@@ -156,7 +156,7 @@
       "sl": 110.34801085801054,
       "tp_dist_pct": 3.7,
       "sl_dist_pct": -1.42,
-      "age_min": 2105.8,
+      "age_min": 2112.7,
       "trail_armed": false
     },
     {
@@ -172,7 +172,7 @@
       "sl": 0.09170182598247119,
       "tp_dist_pct": 5.37,
       "sl_dist_pct": -0.87,
-      "age_min": 1270.9,
+      "age_min": 1277.8,
       "trail_armed": false
     }
   ],
@@ -289,7 +289,7 @@
     }
   ],
   "tuner": {
-    "ts": 1793107018142,
+    "ts": 1793107436547,
     "n": 110,
     "overall": {
       "n": 110,
