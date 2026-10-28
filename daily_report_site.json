@@ -1,15 +1,15 @@
 {
-  "date": "2026-10-28 21:32 UTC",
+  "date": "2026-10-28 21:37 UTC",
   "cash": 8529.05,
-  "equity": 9880.05,
-  "pnl": -119.95,
+  "equity": 9880.47,
+  "pnl": -119.53,
   "pnl_pct": -1.2,
   "open_positions": 4,
   "closed_trades": 121,
   "realized_usd": 32.62,
-  "unrealized_usd": -4.27,
-  "open_value_usd": 1350.99,
-  "legacy_usd": -148.3,
+  "unrealized_usd": -4.7,
+  "open_value_usd": 1351.42,
+  "legacy_usd": -147.44,
   "best_trade_usd": 4.08,
   "worst_trade_usd": -4.12,
   "sane_closed": 97,
@@ -124,7 +124,7 @@
       "sl": 0.14217366668021217,
       "tp_dist_pct": 0.99,
       "sl_dist_pct": -1.14,
-      "age_min": 320.4,
+      "age_min": 325.5,
       "trail_armed": false
     },
     {
@@ -140,7 +140,7 @@
       "sl": 0.1174014286682271,
       "tp_dist_pct": 3.95,
       "sl_dist_pct": -0.86,
-      "age_min": 320.5,
+      "age_min": 325.6,
       "trail_armed": false
     },
     {
@@ -156,7 +156,7 @@
       "sl": 1.5835118919081006,
       "tp_dist_pct": 0.96,
       "sl_dist_pct": -0.08,
-      "age_min": 320.6,
+      "age_min": 325.7,
       "trail_armed": false
     },
     {
@@ -165,14 +165,14 @@
       "symbol": "SHIB/USDT",
       "side": "SHORT",
       "entry": 4.936e-06,
-      "current": 4.957e-06,
-      "pnl_pct": -0.43,
-      "chg_pct": 0.43,
+      "current": 4.971e-06,
+      "pnl_pct": -0.71,
+      "chg_pct": 0.71,
       "tp": 4.799017841628671e-06,
       "sl": 5.038736618778496e-06,
-      "tp_dist_pct": 3.19,
-      "sl_dist_pct": -1.65,
-      "age_min": 320.6,
+      "tp_dist_pct": 3.46,
+      "sl_dist_pct": -1.36,
+      "age_min": 325.8,
       "trail_armed": false
     }
   ],
@@ -289,7 +289,7 @@
     }
   ],
   "tuner": {
-    "ts": 1793223129707,
+    "ts": 1793223434407,
     "n": 121,
     "overall": {
       "n": 121,
