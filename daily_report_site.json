@@ -1,15 +1,15 @@
 {
-  "date": "2026-10-28 22:59 UTC",
+  "date": "2026-10-28 23:07 UTC",
   "cash": 9235.48,
-  "equity": 9881.71,
-  "pnl": -118.29,
+  "equity": 9881.85,
+  "pnl": -118.15,
   "pnl_pct": -1.18,
   "open_positions": 3,
   "closed_trades": 122,
   "realized_usd": 28.64,
-  "unrealized_usd": -2.81,
-  "open_value_usd": 646.23,
-  "legacy_usd": -144.12,
+  "unrealized_usd": -2.94,
+  "open_value_usd": 646.36,
+  "legacy_usd": -143.85,
   "best_trade_usd": 4.08,
   "worst_trade_usd": -4.12,
   "sane_closed": 98,
@@ -124,7 +124,7 @@
       "sl": 0.14217366668021217,
       "tp_dist_pct": 1.2,
       "sl_dist_pct": -0.93,
-      "age_min": 407.7,
+      "age_min": 415.7,
       "trail_armed": false
     },
     {
@@ -133,14 +133,14 @@
       "symbol": "KITE/USDT",
       "side": "SHORT",
       "entry": 0.115,
-      "current": 0.1164,
-      "pnl_pct": -1.22,
-      "chg_pct": 1.22,
+      "current": 0.1165,
+      "pnl_pct": -1.3,
+      "chg_pct": 1.3,
       "tp": 0.11179809510903053,
       "sl": 0.1174014286682271,
-      "tp_dist_pct": 3.95,
-      "sl_dist_pct": -0.86,
-      "age_min": 407.8,
+      "tp_dist_pct": 4.04,
+      "sl_dist_pct": -0.77,
+      "age_min": 415.8,
       "trail_armed": false
     },
     {
@@ -156,7 +156,7 @@
       "sl": 5.038736618778496e-06,
       "tp_dist_pct": 3.44,
       "sl_dist_pct": -1.38,
-      "age_min": 407.8,
+      "age_min": 415.8,
       "trail_armed": false
     }
   ],
@@ -273,7 +273,7 @@
     }
   ],
   "tuner": {
-    "ts": 1793228364090,
+    "ts": 1793228843253,
     "n": 122,
     "overall": {
       "n": 122,
