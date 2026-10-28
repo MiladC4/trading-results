@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-28 23:42 UTC",
+  "date": "2026-10-28 23:47 UTC",
   "cash": 9235.48,
   "equity": 9881.62,
   "pnl": -118.38,
@@ -124,7 +124,7 @@
       "sl": 0.14217366668021217,
       "tp_dist_pct": 1.14,
       "sl_dist_pct": -0.98,
-      "age_min": 450.7,
+      "age_min": 455.8,
       "trail_armed": false
     },
     {
@@ -140,7 +140,7 @@
       "sl": 0.1174014286682271,
       "tp_dist_pct": 4.04,
       "sl_dist_pct": -0.77,
-      "age_min": 450.8,
+      "age_min": 455.9,
       "trail_armed": false
     },
     {
@@ -156,7 +156,7 @@
       "sl": 5.038736618778496e-06,
       "tp_dist_pct": 3.42,
       "sl_dist_pct": -1.4,
-      "age_min": 450.8,
+      "age_min": 456.0,
       "trail_armed": false
     }
   ],
@@ -273,7 +273,7 @@
     }
   ],
   "tuner": {
-    "ts": 1793230942894,
+    "ts": 1793231250858,
     "n": 122,
     "overall": {
       "n": 122,
