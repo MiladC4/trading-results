@@ -1,23 +1,23 @@
 {
-  "date": "2026-10-31 11:17 UTC",
-  "cash": 8456.22,
-  "equity": 9894.74,
-  "pnl": -17.41,
-  "pnl_pct": -0.17,
-  "open_positions": 7,
-  "closed_trades": 154,
-  "realized_usd": -17.27,
-  "unrealized_usd": -0.14,
-  "open_value_usd": 1438.52,
-  "legacy_usd": -87.85,
+  "date": "2026-10-31 11:27 UTC",
+  "cash": 8905.81,
+  "equity": 9896.15,
+  "pnl": -19.36,
+  "pnl_pct": -0.19,
+  "open_positions": 6,
+  "closed_trades": 155,
+  "realized_usd": -20.93,
+  "unrealized_usd": 1.57,
+  "open_value_usd": 990.34,
+  "legacy_usd": -84.49,
   "best_trade_usd": 4.11,
   "worst_trade_usd": -4.13,
-  "sane_closed": 154,
+  "sane_closed": 155,
   "dollar_window_note": "\u0627\u0639\u062f\u0627\u062f \u062f\u0644\u0627\u0631\u06cc (\u0633\u0648\u062f \u062a\u062d\u0642\u0642\u200c\u06cc\u0627\u0641\u062a\u0647\u060c \u0628\u0647\u062a\u0631\u06cc\u0646/\u0628\u062f\u062a\u0631\u06cc\u0646 \u0627\u0633\u062a\u0631\u0627\u062a\u0698\u06cc\u060c PnL \u0631\u0648\u0632) \u0641\u0642\u0637 \u0631\u0648\u06cc \u0645\u0639\u0627\u0645\u0644\u0627\u062a \u067e\u0633 \u0627\u0632 \u0641\u06cc\u06a9\u0633 \u0633\u0627\u06cc\u0632\u06cc\u0646\u06af (\u06f2\u06f0\u06f2\u06f6-\u06f1\u06f0-\u06f2\u06f2) \u0645\u062d\u0627\u0633\u0628\u0647 \u0645\u06cc\u200c\u0634\u0648\u0646\u062f \u2014 24 \u0645\u0639\u0627\u0645\u0644\u0647\u0654 \u06f1\u06f0-\u06f2\u06f0 \u062f\u0631 \u062f\u0648\u0631\u0647\u0654 \u0633\u0627\u06cc\u0632\u06cc\u0646\u06af \u062e\u0631\u0627\u0628 \u0628\u0648\u062f\u0646\u062f (notional \u062a\u0627 $\u06f1\u06f1M \u063a\u0644\u0637) \u0648 \u062f\u0631\u0635\u062f\u0634\u0627\u0646 \u0635\u0627\u062f\u0642\u0627\u0646\u0647 \u062f\u0631 \u0648\u06cc\u0646\u200c\u0631\u06cc\u062a \u0648 \u062a\u0639\u062f\u0627\u062f \u0645\u06cc\u200c\u0645\u0627\u0646\u062f \u0627\u0645\u0627 \u062f\u0644\u0627\u0631\u0634\u0627\u0646 \u0642\u0627\u0628\u0644 \u0645\u062d\u0627\u0633\u0628\u0647 \u0646\u06cc\u0633\u062a. Equity = cash + \u0627\u0631\u0632\u0634 \u0628\u0627\u0632\u0627\u0631 \u067e\u0648\u0632\u06cc\u0634\u0646\u200c\u0647\u0627\u06cc \u0628\u0627\u0632 \u0627\u0633\u062a \u0648 \u0628\u0647 \u0647\u0631 \u062f\u0648 \u062f\u0648\u0631\u0647 \u0645\u0631\u0628\u0648\u0637 \u0627\u0633\u062a.",
   "reset_closes_excluded": 0,
-  "win_rate": 22.7,
+  "win_rate": 22.6,
   "avg_win": 2.565,
-  "avg_loss": -0.915,
+  "avg_loss": -0.914,
   "reset_at": 1792484079114,
   "reset_note": "paper book reset on the trailing-stop geometry (TP 12 ATR / initial SL 9 ATR / trail 5 ATR) + regime filters (gate D + fee-dead zone + chop 135-155) + $135 size at a constant $3.13 risk per trade, max 12 open. Numbers before this timestamp are archived in backups/ and must not be mixed into this window.",
   "window": "post-reset",
@@ -117,14 +117,14 @@
       "symbol": "CHZ/USDT",
       "side": "SHORT",
       "entry": 0.01232,
-      "current": 0.01232,
-      "pnl_pct": -0.0,
-      "chg_pct": 0.0,
+      "current": 0.01236,
+      "pnl_pct": -0.32,
+      "chg_pct": 0.32,
       "tp": 0.011906191847855708,
       "sl": 0.012630356114108218,
-      "tp_dist_pct": 3.36,
-      "sl_dist_pct": -2.52,
-      "age_min": 1505.3,
+      "tp_dist_pct": 3.67,
+      "sl_dist_pct": -2.19,
+      "age_min": 1515.2,
       "trail_armed": false
     },
     {
@@ -133,30 +133,14 @@
       "symbol": "COMP/USDT",
       "side": "SHORT",
       "entry": 20.32,
-      "current": 20.34,
-      "pnl_pct": -0.1,
-      "chg_pct": 0.1,
+      "current": 20.36,
+      "pnl_pct": -0.2,
+      "chg_pct": 0.2,
       "tp": 19.53169923604398,
       "sl": 20.911225572967016,
-      "tp_dist_pct": 3.97,
-      "sl_dist_pct": -2.81,
-      "age_min": 1180.6,
-      "trail_armed": false
-    },
-    {
-      "strategy": "Volume-Profile",
-      "strategy_full": "0vL9Hcs2",
-      "symbol": "ASTER/USDT",
-      "side": "SHORT",
-      "entry": 0.68771,
-      "current": 0.69225,
-      "pnl_pct": -0.66,
-      "chg_pct": 0.66,
-      "tp": 0.6812855566292126,
-      "sl": 0.6925283325280907,
-      "tp_dist_pct": 1.58,
-      "sl_dist_pct": -0.04,
-      "age_min": 246.2,
+      "tp_dist_pct": 4.07,
+      "sl_dist_pct": -2.71,
+      "age_min": 1190.5,
       "trail_armed": false
     },
     {
@@ -172,7 +156,7 @@
       "sl": 0.20348522537579436,
       "tp_dist_pct": 3.5,
       "sl_dist_pct": -6.09,
-      "age_min": 246.3,
+      "age_min": 256.1,
       "trail_armed": true
     },
     {
@@ -181,14 +165,14 @@
       "symbol": "RAY/USDT",
       "side": "SHORT",
       "entry": 1.6444,
-      "current": 1.6507,
-      "pnl_pct": -0.38,
-      "chg_pct": 0.38,
+      "current": 1.65,
+      "pnl_pct": -0.34,
+      "chg_pct": 0.34,
       "tp": 1.6133757711413739,
       "sl": 1.6676681716439699,
-      "tp_dist_pct": 2.26,
-      "sl_dist_pct": -1.03,
-      "age_min": 246.3,
+      "tp_dist_pct": 2.22,
+      "sl_dist_pct": -1.07,
+      "age_min": 256.1,
       "trail_armed": false
     },
     {
@@ -204,7 +188,7 @@
       "sl": 0.0269791602799713,
       "tp_dist_pct": 1.27,
       "sl_dist_pct": -2.82,
-      "age_min": 246.4,
+      "age_min": 256.2,
       "trail_armed": true
     },
     {
@@ -213,29 +197,18 @@
       "symbol": "XEC/USDT",
       "side": "SHORT",
       "entry": 6.499e-06,
-      "current": 6.491e-06,
-      "pnl_pct": 0.12,
-      "chg_pct": -0.12,
+      "current": 6.51e-06,
+      "pnl_pct": -0.17,
+      "chg_pct": 0.17,
       "tp": 6.402498027016487e-06,
       "sl": 6.571376479737635e-06,
-      "tp_dist_pct": 1.36,
-      "sl_dist_pct": -1.24,
-      "age_min": 226.5,
+      "tp_dist_pct": 1.65,
+      "sl_dist_pct": -0.94,
+      "age_min": 236.3,
       "trail_armed": false
     }
   ],
   "recent_trades": [
-    {
-      "strategy": "Volume-Profile",
-      "symbol": "CFX/USDT",
-      "result": "LOSS",
-      "pnl_pct": -0.12,
-      "entry": 0.04606,
-      "exit": 0.046115,
-      "chg_pct": 0.12,
-      "candles": 74,
-      "exit_reason": "sl"
-    },
     {
       "strategy": "Volume-Profile",
       "symbol": "FARTCOIN/USDT",
@@ -334,16 +307,27 @@
       "chg_pct": 0.12,
       "candles": 38,
       "exit_reason": "sl"
+    },
+    {
+      "strategy": "Volume-Profile",
+      "symbol": "ASTER/USDT",
+      "result": "LOSS",
+      "pnl_pct": -0.82,
+      "entry": 0.68771,
+      "exit": 0.693349,
+      "chg_pct": 0.82,
+      "candles": 51,
+      "exit_reason": "sl"
     }
   ],
   "tuner": {
-    "ts": 1793445443655,
-    "n": 178,
+    "ts": 1793446039026,
+    "n": 179,
     "overall": {
-      "n": 178,
-      "wr": 21.9,
-      "exp": -0.00152,
-      "tot": -0.271
+      "n": 179,
+      "wr": 21.8,
+      "exp": -0.00156,
+      "tot": -0.279
     },
     "sides": {
       "long": {
@@ -357,10 +341,10 @@
         "long_sum": -0.3329
       },
       "short": {
-        "n": 178,
-        "wr": 21.9,
-        "exp": -0.00152,
-        "tot": -0.271,
+        "n": 179,
+        "wr": 21.8,
+        "exp": -0.00156,
+        "tot": -0.279,
         "banned": false,
         "long_n": 612,
         "long_wr": 45.588235294117645,
@@ -371,13 +355,13 @@
       {
         "kind": "overall",
         "msg": "system is net negative",
-        "n": 178,
-        "exp": -0.00152
+        "n": 179,
+        "exp": -0.00156
       },
       {
         "kind": "insufficient_sample",
         "strategy": "Volume-Profile",
-        "n": 141,
+        "n": 142,
         "long_n": 0,
         "msg": "quarantine blocked: not negative in the long window"
       },
@@ -391,7 +375,7 @@
       {
         "kind": "insufficient_sample",
         "side": "short",
-        "n": 178,
+        "n": 179,
         "long_n": 612,
         "msg": "short-side ban blocked: not negative in the long window"
       }
@@ -409,14 +393,14 @@
           3.0
         ],
         "tp_pct": 1.43,
-        "sl_pct": 0.72
+        "sl_pct": 0.71
       },
       {
         "action": "skip_quarantine",
         "strategy": "Volume-Profile",
-        "n": 141,
-        "wr": 17.7,
-        "exp": -0.00111,
+        "n": 142,
+        "wr": 17.6,
+        "exp": -0.00116,
         "long_n": 0,
         "long_wr": 0.0,
         "long_sum": 0.0,
@@ -448,7 +432,7 @@
           3.0
         ],
         "tp_pct": 1.37,
-        "sl_pct": 0.69
+        "sl_pct": 0.68
       },
       {
         "action": "widen",
@@ -476,7 +460,7 @@
           3.0
         ],
         "tp_pct": 1.37,
-        "sl_pct": 0.69
+        "sl_pct": 0.68
       },
       {
         "action": "widen",
@@ -534,9 +518,9 @@
       {
         "action": "skip_ban_side",
         "side": "short",
-        "n": 178,
-        "wr": 21.9,
-        "exp": -0.00152,
+        "n": 179,
+        "wr": 21.8,
+        "exp": -0.00156,
         "long_n": 612,
         "long_wr": 45.588235294117645,
         "long_sum": 0.5471,
@@ -549,15 +533,15 @@
       {
         "uid": "0vL9Hcs2",
         "name": "Volume-Profile",
-        "n": 141,
-        "wr": 17.7,
-        "exp": -0.00111,
-        "tot": -0.157,
+        "n": 142,
+        "wr": 17.6,
+        "exp": -0.00116,
+        "tot": -0.165,
         "tp": 6.0,
         "sl": 3.0,
-        "ap": 0.239,
+        "ap": 0.238,
         "tp_pct": 1.43,
-        "sl_pct": 0.72,
+        "sl_pct": 0.71,
         "src": "widen",
         "quarantined": false
       },
@@ -585,9 +569,9 @@
         "tot": 0.0,
         "tp": 6.0,
         "sl": 3.0,
-        "ap": 0.229,
+        "ap": 0.228,
         "tp_pct": 1.37,
-        "sl_pct": 0.69,
+        "sl_pct": 0.68,
         "src": "widen",
         "quarantined": false
       },
@@ -615,9 +599,9 @@
         "tot": 0.0,
         "tp": 6.0,
         "sl": 3.0,
-        "ap": 0.229,
+        "ap": 0.228,
         "tp_pct": 1.37,
-        "sl_pct": 0.69,
+        "sl_pct": 0.68,
         "src": "widen",
         "quarantined": false
       },
