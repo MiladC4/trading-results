@@ -1,15 +1,15 @@
 {
-  "date": "2026-10-31 17:59 UTC",
+  "date": "2026-10-31 18:09 UTC",
   "cash": 9410.9,
-  "equity": 9901.02,
-  "pnl": -24.82,
+  "equity": 9901.58,
+  "pnl": -25.38,
   "pnl_pct": -0.25,
   "open_positions": 4,
   "closed_trades": 157,
   "realized_usd": -24.66,
-  "unrealized_usd": -0.16,
-  "open_value_usd": 490.12,
-  "legacy_usd": -74.16,
+  "unrealized_usd": -0.72,
+  "open_value_usd": 490.68,
+  "legacy_usd": -73.04,
   "best_trade_usd": 4.11,
   "worst_trade_usd": -4.13,
   "sane_closed": 157,
@@ -117,14 +117,14 @@
       "symbol": "CHZ/USDT",
       "side": "SHORT",
       "entry": 0.01232,
-      "current": 0.01232,
-      "pnl_pct": -0.0,
-      "chg_pct": 0.0,
+      "current": 0.01234,
+      "pnl_pct": -0.16,
+      "chg_pct": 0.16,
       "tp": 0.011906191847855708,
       "sl": 0.012630356114108218,
-      "tp_dist_pct": 3.36,
-      "sl_dist_pct": -2.52,
-      "age_min": 1907.1,
+      "tp_dist_pct": 3.52,
+      "sl_dist_pct": -2.35,
+      "age_min": 1917.1,
       "trail_armed": false
     },
     {
@@ -140,7 +140,7 @@
       "sl": 20.911225572967016,
       "tp_dist_pct": 6.19,
       "sl_dist_pct": -0.44,
-      "age_min": 1582.4,
+      "age_min": 1592.3,
       "trail_armed": false
     },
     {
@@ -149,14 +149,14 @@
       "symbol": "ENA/USDT",
       "side": "SHORT",
       "entry": 0.1956,
-      "current": 0.1914,
-      "pnl_pct": 2.15,
-      "chg_pct": -2.15,
+      "current": 0.1923,
+      "pnl_pct": 1.69,
+      "chg_pct": -1.69,
       "tp": 0.18508636616560753,
       "sl": 0.20348522537579436,
-      "tp_dist_pct": 3.3,
-      "sl_dist_pct": -6.31,
-      "age_min": 647.9,
+      "tp_dist_pct": 3.75,
+      "sl_dist_pct": -5.82,
+      "age_min": 657.9,
       "trail_armed": true
     },
     {
@@ -172,7 +172,7 @@
       "sl": 0.0269791602799713,
       "tp_dist_pct": 1.86,
       "sl_dist_pct": -2.19,
-      "age_min": 648.0,
+      "age_min": 657.9,
       "trail_armed": true
     }
   ],
@@ -289,7 +289,7 @@
     }
   ],
   "tuner": {
-    "ts": 1793469555003,
+    "ts": 1793470151190,
     "n": 181,
     "overall": {
       "n": 181,
