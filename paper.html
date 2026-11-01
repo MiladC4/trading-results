@@ -211,7 +211,11 @@
             if (vs && data.validated_list && data.validated_list.length) {
                 vs.innerHTML = data.validated_list.map(v => {
                     const win = v.ev > v.control;
-                    const reg = v.up > 0 && v.down > 0;
+                    // رژیم-مستقلی: اگر فلگ صریح داریم همان معتبر است؛ وگرنه
+                    // از دادهٔ آرشیو (مثبت در هر دو بازار) استنتاج می‌شود
+                    const reg = v.regime_free !== undefined
+                        ? v.regime_free
+                        : (v.up > 0 && v.down > 0);
                     return `<tr>
                         <td><strong>${v.name}</strong></td>
                         <td>${v.side === 'short' ? 'SHORT' : 'LONG'}</td>
@@ -221,7 +225,7 @@
                         <td class="${v.down >= 0 ? 'positive' : 'negative'}">${v.down >= 0 ? '+' : ''}${(v.down || 0).toFixed(2)}%</td>
                         <td>${v.n}</td>
                         <td class="${win ? 'positive' : 'negative'}">${win ? '✓' : '✗'}</td>
-                        <td class="${reg ? 'positive' : 'negative'}">${reg ? '✓' : '✗'}</td>
+                        <td class="${reg ? 'positive' : 'negative'}">${reg ? '✓' : '✗'}${v.regime_note ? `<div style="font-size:10px;color:#8b949e;">${v.regime_note}</div>` : ''}</td>
                     </tr>`;
                 }).join('');
                 document.getElementById('validated-card').style.display = 'block';
