@@ -1,15 +1,15 @@
 {
-  "date": "2026-11-02 05:37 UTC",
+  "date": "2026-11-02 05:42 UTC",
   "cash": 9665.0,
-  "equity": 9894.79,
-  "pnl": -18.91,
+  "equity": 9894.59,
+  "pnl": -18.7,
   "pnl_pct": -0.19,
   "open_positions": 2,
   "closed_trades": 159,
   "realized_usd": -20.8,
-  "unrealized_usd": 1.9,
-  "open_value_usd": 229.79,
-  "legacy_usd": -86.31,
+  "unrealized_usd": 2.1,
+  "open_value_usd": 229.59,
+  "legacy_usd": -86.71,
   "best_trade_usd": 4.11,
   "worst_trade_usd": -4.13,
   "sane_closed": 159,
@@ -119,14 +119,14 @@
       "symbol": "CHZ/USDT",
       "side": "SHORT",
       "entry": 0.01232,
-      "current": 0.01209,
-      "pnl_pct": 1.87,
-      "chg_pct": -1.87,
+      "current": 0.01207,
+      "pnl_pct": 2.03,
+      "chg_pct": -2.03,
       "tp": 0.011906191847855708,
       "sl": 0.012630356114108218,
-      "tp_dist_pct": 1.52,
-      "sl_dist_pct": -4.47,
-      "age_min": 4045.4,
+      "tp_dist_pct": 1.36,
+      "sl_dist_pct": -4.64,
+      "age_min": 4050.4,
       "trail_armed": true
     },
     {
@@ -142,7 +142,7 @@
       "sl": 20.911225572967016,
       "tp_dist_pct": 4.26,
       "sl_dist_pct": -2.51,
-      "age_min": 3720.7,
+      "age_min": 3725.7,
       "trail_armed": false
     }
   ],
@@ -259,7 +259,7 @@
     }
   ],
   "tuner": {
-    "ts": 1793597852346,
+    "ts": 1793598149696,
     "n": 183,
     "overall": {
       "n": 183,
