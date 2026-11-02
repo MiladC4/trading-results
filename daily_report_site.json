@@ -1,15 +1,15 @@
 {
-  "date": "2026-11-02 11:37 UTC",
+  "date": "2026-11-02 11:43 UTC",
   "cash": 9281.7,
-  "equity": 9890.45,
-  "pnl": -15.32,
-  "pnl_pct": -0.15,
+  "equity": 9890.78,
+  "pnl": -15.65,
+  "pnl_pct": -0.16,
   "open_positions": 3,
   "closed_trades": 160,
   "realized_usd": -16.78,
-  "unrealized_usd": 1.46,
-  "open_value_usd": 608.75,
-  "legacy_usd": -94.23,
+  "unrealized_usd": 1.13,
+  "open_value_usd": 609.08,
+  "legacy_usd": -93.57,
   "best_trade_usd": 4.11,
   "worst_trade_usd": -4.13,
   "sane_closed": 160,
@@ -126,7 +126,7 @@
       "sl": 20.911225572967016,
       "tp_dist_pct": 3.36,
       "sl_dist_pct": -3.47,
-      "age_min": 4080.6,
+      "age_min": 4086.2,
       "trail_armed": false
     },
     {
@@ -142,7 +142,7 @@
       "sl": 0.0049996316557269094,
       "tp_dist_pct": 1.07,
       "sl_dist_pct": -1.08,
-      "age_min": 5.9,
+      "age_min": 11.5,
       "trail_armed": false
     },
     {
@@ -151,14 +151,14 @@
       "symbol": "WLFI/USDT",
       "side": "SHORT",
       "entry": 0.05,
-      "current": 0.0499,
-      "pnl_pct": 0.2,
-      "chg_pct": -0.2,
+      "current": 0.05,
+      "pnl_pct": -0.0,
+      "chg_pct": 0.0,
       "tp": 0.0487213332262279,
       "sl": 0.050959000080329074,
-      "tp_dist_pct": 2.36,
-      "sl_dist_pct": -2.12,
-      "age_min": 1.1,
+      "tp_dist_pct": 2.56,
+      "sl_dist_pct": -1.92,
+      "age_min": 6.6,
       "trail_armed": false
     }
   ],
@@ -275,7 +275,7 @@
     }
   ],
   "tuner": {
-    "ts": 1793619452423,
+    "ts": 1793619779731,
     "n": 184,
     "overall": {
       "n": 184,
