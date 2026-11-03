@@ -1,15 +1,15 @@
 {
-  "date": "2026-11-03 21:03 UTC",
+  "date": "2026-11-03 21:10 UTC",
   "cash": 9597.52,
-  "equity": 9901.28,
-  "pnl": -40.58,
+  "equity": 9901.33,
+  "pnl": -40.64,
   "pnl_pct": -0.41,
   "open_positions": 2,
   "closed_trades": 193,
   "realized_usd": -40.86,
-  "unrealized_usd": 0.28,
-  "open_value_usd": 303.76,
-  "legacy_usd": -58.13,
+  "unrealized_usd": 0.23,
+  "open_value_usd": 303.81,
+  "legacy_usd": -58.03,
   "best_trade_usd": 4.11,
   "worst_trade_usd": -4.13,
   "sane_closed": 193,
@@ -126,7 +126,7 @@
       "sl": 0.48075366631317723,
       "tp_dist_pct": 1.71,
       "sl_dist_pct": -2.29,
-      "age_min": 1840.9,
+      "age_min": 1848.2,
       "trail_armed": true
     },
     {
@@ -135,14 +135,14 @@
       "symbol": "GT/USDT",
       "side": "SHORT",
       "entry": 9.551,
-      "current": 9.612,
-      "pnl_pct": -0.64,
-      "chg_pct": 0.64,
+      "current": 9.616,
+      "pnl_pct": -0.68,
+      "chg_pct": 0.68,
       "tp": 9.220250241254586,
       "sl": 9.79906231905906,
-      "tp_dist_pct": 4.08,
-      "sl_dist_pct": -1.95,
-      "age_min": 1429.2,
+      "tp_dist_pct": 4.12,
+      "sl_dist_pct": -1.9,
+      "age_min": 1436.5,
       "trail_armed": false
     }
   ],
@@ -259,7 +259,7 @@
     }
   ],
   "tuner": {
-    "ts": 1793739763406,
+    "ts": 1793740179072,
     "n": 217,
     "overall": {
       "n": 217,
