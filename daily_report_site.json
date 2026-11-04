@@ -1,23 +1,23 @@
 {
-  "date": "2026-11-04 17:44 UTC",
-  "cash": 9747.3,
-  "equity": 9914.86,
-  "pnl": -57.62,
-  "pnl_pct": -0.58,
-  "open_positions": 2,
-  "closed_trades": 204,
-  "realized_usd": -57.27,
-  "unrealized_usd": -0.35,
-  "open_value_usd": 167.56,
-  "legacy_usd": -27.52,
+  "date": "2026-11-04 17:54 UTC",
+  "cash": 9870.87,
+  "equity": 9915.82,
+  "pnl": -58.72,
+  "pnl_pct": -0.59,
+  "open_positions": 1,
+  "closed_trades": 205,
+  "realized_usd": -60.54,
+  "unrealized_usd": 1.83,
+  "open_value_usd": 44.95,
+  "legacy_usd": -25.47,
   "best_trade_usd": 4.11,
   "worst_trade_usd": -4.13,
-  "sane_closed": 204,
+  "sane_closed": 205,
   "dollar_window_note": "\u0627\u0639\u062f\u0627\u062f \u062f\u0644\u0627\u0631\u06cc (\u0633\u0648\u062f \u062a\u062d\u0642\u0642\u200c\u06cc\u0627\u0641\u062a\u0647\u060c \u0628\u0647\u062a\u0631\u06cc\u0646/\u0628\u062f\u062a\u0631\u06cc\u0646 \u0627\u0633\u062a\u0631\u0627\u062a\u0698\u06cc\u060c PnL \u0631\u0648\u0632) \u0641\u0642\u0637 \u0631\u0648\u06cc \u0645\u0639\u0627\u0645\u0644\u0627\u062a \u067e\u0633 \u0627\u0632 \u0641\u06cc\u06a9\u0633 \u0633\u0627\u06cc\u0632\u06cc\u0646\u06af (\u06f2\u06f0\u06f2\u06f6-\u06f1\u06f0-\u06f2\u06f2) \u0645\u062d\u0627\u0633\u0628\u0647 \u0645\u06cc\u200c\u0634\u0648\u0646\u062f \u2014 24 \u0645\u0639\u0627\u0645\u0644\u0647\u0654 \u06f1\u06f0-\u06f2\u06f0 \u062f\u0631 \u062f\u0648\u0631\u0647\u0654 \u0633\u0627\u06cc\u0632\u06cc\u0646\u06af \u062e\u0631\u0627\u0628 \u0628\u0648\u062f\u0646\u062f (notional \u062a\u0627 $\u06f1\u06f1M \u063a\u0644\u0637) \u0648 \u062f\u0631\u0635\u062f\u0634\u0627\u0646 \u0635\u0627\u062f\u0642\u0627\u0646\u0647 \u062f\u0631 \u0648\u06cc\u0646\u200c\u0631\u06cc\u062a \u0648 \u062a\u0639\u062f\u0627\u062f \u0645\u06cc\u200c\u0645\u0627\u0646\u062f \u0627\u0645\u0627 \u062f\u0644\u0627\u0631\u0634\u0627\u0646 \u0642\u0627\u0628\u0644 \u0645\u062d\u0627\u0633\u0628\u0647 \u0646\u06cc\u0633\u062a. Equity = cash + \u0627\u0631\u0632\u0634 \u0628\u0627\u0632\u0627\u0631 \u067e\u0648\u0632\u06cc\u0634\u0646\u200c\u0647\u0627\u06cc \u0628\u0627\u0632 \u0627\u0633\u062a \u0648 \u0628\u0647 \u0647\u0631 \u062f\u0648 \u062f\u0648\u0631\u0647 \u0645\u0631\u0628\u0648\u0637 \u0627\u0633\u062a.",
   "reset_closes_excluded": 0,
-  "win_rate": 22.5,
+  "win_rate": 22.4,
   "avg_win": 2.598,
-  "avg_loss": -1.01,
+  "avg_loss": -1.019,
   "reset_at": 1792484079114,
   "reset_note": "paper book reset on the trailing-stop geometry (TP 12 ATR / initial SL 9 ATR / trail 5 ATR) + regime filters (gate D + fee-dead zone + chop 135-155) + $135 size at a constant $3.13 risk per trade, max 12 open. Numbers before this timestamp are archived in backups/ and must not be mixed into this window.",
   "window": "post-reset",
@@ -116,48 +116,21 @@
     {
       "strategy": "Volume-Profile",
       "strategy_full": "0vL9Hcs2",
-      "symbol": "GT/USDT",
-      "side": "SHORT",
-      "entry": 9.551,
-      "current": 9.746,
-      "pnl_pct": -2.04,
-      "chg_pct": 2.04,
-      "tp": 9.220250241254586,
-      "sl": 9.79906231905906,
-      "tp_dist_pct": 5.39,
-      "sl_dist_pct": -0.54,
-      "age_min": 2670.8,
-      "trail_armed": false
-    },
-    {
-      "strategy": "Volume-Profile",
-      "strategy_full": "0vL9Hcs2",
       "symbol": "WLFI/USDT",
       "side": "SHORT",
       "entry": 0.0487,
-      "current": 0.0465,
-      "pnl_pct": 4.52,
-      "chg_pct": -4.52,
+      "current": 0.0468,
+      "pnl_pct": 3.9,
+      "chg_pct": -3.9,
       "tp": 0.04435745240503779,
       "sl": 0.05195691069622166,
-      "tp_dist_pct": 4.61,
-      "sl_dist_pct": -11.74,
-      "age_min": 890.9,
+      "tp_dist_pct": 5.22,
+      "sl_dist_pct": -11.02,
+      "age_min": 900.7,
       "trail_armed": true
     }
   ],
   "recent_trades": [
-    {
-      "strategy": "Volume-Profile",
-      "symbol": "QNT/USDT",
-      "result": "LOSS",
-      "pnl_pct": -0.12,
-      "entry": 188.29,
-      "exit": 188.515948,
-      "chg_pct": 0.12,
-      "candles": 7,
-      "exit_reason": "sl"
-    },
     {
       "strategy": "Volume-Profile",
       "symbol": "COMP/USDT",
@@ -256,16 +229,27 @@
       "chg_pct": 1.963,
       "candles": 64,
       "exit_reason": "sl"
+    },
+    {
+      "strategy": "Volume-Profile",
+      "symbol": "GT/USDT",
+      "result": "LOSS",
+      "pnl_pct": -2.716,
+      "entry": 9.551,
+      "exit": 9.810405,
+      "chg_pct": 2.716,
+      "candles": 536,
+      "exit_reason": "sl"
     }
   ],
   "tuner": {
-    "ts": 1793814264836,
-    "n": 228,
+    "ts": 1793814863797,
+    "n": 229,
     "overall": {
-      "n": 228,
-      "wr": 21.9,
-      "exp": -0.00218,
-      "tot": -0.498
+      "n": 229,
+      "wr": 21.8,
+      "exp": -0.00229,
+      "tot": -0.525
     },
     "sides": {
       "long": {
@@ -279,10 +263,10 @@
         "long_sum": -0.3329
       },
       "short": {
-        "n": 228,
-        "wr": 21.9,
-        "exp": -0.00218,
-        "tot": -0.498,
+        "n": 229,
+        "wr": 21.8,
+        "exp": -0.00229,
+        "tot": -0.525,
         "banned": false,
         "long_n": 612,
         "long_wr": 45.588235294117645,
@@ -293,13 +277,13 @@
       {
         "kind": "overall",
         "msg": "system is net negative",
-        "n": 228,
-        "exp": -0.00218
+        "n": 229,
+        "exp": -0.00229
       },
       {
         "kind": "insufficient_sample",
         "strategy": "Volume-Profile",
-        "n": 191,
+        "n": 192,
         "long_n": 0,
         "msg": "quarantine blocked: not negative in the long window"
       },
@@ -313,7 +297,7 @@
       {
         "kind": "insufficient_sample",
         "side": "short",
-        "n": 228,
+        "n": 229,
         "long_n": 612,
         "msg": "short-side ban blocked: not negative in the long window"
       }
@@ -336,9 +320,9 @@
       {
         "action": "skip_quarantine",
         "strategy": "Volume-Profile",
-        "n": 191,
+        "n": 192,
         "wr": 18.8,
-        "exp": -0.00201,
+        "exp": -0.00214,
         "long_n": 0,
         "long_wr": 0.0,
         "long_sum": 0.0,
@@ -456,9 +440,9 @@
       {
         "action": "skip_ban_side",
         "side": "short",
-        "n": 228,
-        "wr": 21.9,
-        "exp": -0.00218,
+        "n": 229,
+        "wr": 21.8,
+        "exp": -0.00229,
         "long_n": 612,
         "long_wr": 45.588235294117645,
         "long_sum": 0.5471,
@@ -471,10 +455,10 @@
       {
         "uid": "0vL9Hcs2",
         "name": "Volume-Profile",
-        "n": 191,
+        "n": 192,
         "wr": 18.8,
-        "exp": -0.00201,
-        "tot": -0.384,
+        "exp": -0.00214,
+        "tot": -0.411,
         "tp": 6.0,
         "sl": 3.0,
         "ap": 0.235,
