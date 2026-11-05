@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>Whale Coin Detail — جزئیات کوین</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+:root{--bg:#0b0f14;--card:#111820;--fg:#e8edf2;--muted:#7a8a9a;--acc:#00d4aa;--acc2:#ff6b4a;--line:#1e2a3a;--gold:#ffd166}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Vazirmatn,Tahoma,sans-serif;background:var(--bg);color:var(--fg);line-height:1.6;min-height:100vh}
+.container{max-width:1000px;margin:0 auto;padding:16px}
+a{color:var(--acc);text-decoration:none}a:hover{text-decoration:underline}
+.back{display:inline-block;margin-bottom:14px;font-size:.85rem;color:var(--muted)}
+header{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+h1{font-size:1.6rem;color:var(--acc)}
+.badge{display:inline-block;padding:3px 10px;border-radius:6px;font-size:.72rem;font-weight:700}
+.badge.strong{background:#00d4aa22;color:var(--acc)}
+.badge.watch{background:#ffd16622;color:var(--gold)}
+.badge.neutral{background:#7a8a9a22;color:var(--muted)}
+.ct{font-family:monospace;font-size:.78rem;color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px;margin:18px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px}
+.card .v{font-size:1.25rem;font-weight:800}
+.card .k{font-size:.72rem;color:var(--muted);margin-top:2px}
+.up{color:#00d4aa}.down{color:var(--acc2)}
+h2{font-size:1rem;margin:22px 0 10px;color:var(--gold)}
+table{width:100%;border-collapse:collapse;font-size:.8rem}
+th,td{padding:9px 8px;text-align:right;border-bottom:1px solid var(--line)}
+th{background:var(--card);color:var(--muted)}
+tr:hover{background:#121a26}
+.addr{font-family:monospace;font-size:.75rem}
+.empty{text-align:center;padding:40px;color:var(--muted)}
+.disc{margin-top:24px;font-size:.75rem;color:var(--muted);border-top:1px solid var(--line);padding-top:12px}
+@media (max-width:600px){th:nth-child(3),td:nth-child(3){display:none}}
+</style>
+</head>
+<body>
+<div class="container">
+<a class="back" href="whales.html">→ بازگشت به رادار نهنگ‌ها</a>
+<div id="box"><div class="empty">در حال بارگذاری…</div></div>
+<div class="disc">⚠️ این تحلیل فقط الگوی انباشت نهنگ‌ها بر پایه زنجیره اتریوم است، توصیه سرمایه‌گذاری قطعی نیست.<br>🕐 داده‌ها هر ۳ ساعت به‌روزرسانی می‌شوند.</div>
+</div>
+<script>
+const q=new URLSearchParams(location.search).get('c');
+(async()=>{
+  const box=document.getElementById('box');
+  if(!q){box.innerHTML='<div class="empty">کوینی انتخاب نشده — از <a href="whales.html">رادار نهنگ‌ها</a> یک کوین را کلیک کنید.</div>';return;}
+  try{
+    const r=await fetch('whale_coins.json?v='+Date.now());
+    const d=await r.json();
+    const c=(d.details||{})[q.toLowerCase()];
+    if(!c){box.innerHTML='<div class="empty">این کوین در لیست ۴۰۰ کوین برتر نیست.<br><br><span class="ct">'+q+'</span><br><br><a href="https://etherscan.io/token/'+q+'" target="_blank">مشاهده در Etherscan ↗</a></div>';return;}
+    const score=c.score!==undefined?c.score:null;
+    const badge=c.cat==='strong'?'<span class="badge strong">🟢 خرید قوی</span>'
+              :c.cat==='watch'?'<span class="badge watch">🟡 تحت نظر</span>'
+              :'<span class="badge neutral">⚪ خنثی</span>';
+    const tr=c.delta>0?'<span class="up">▲ +'+c.delta+'</span>':c.delta<0?'<span class="down">▼ '+c.delta+'</span>':'—';
+    let h='<header><h1>'+c.symbol+'</h1>'+badge+'<span class="ct"><a href="https://etherscan.io/token/'+q+'" target="_blank">'+q+'</a></span></header>';
+    h+='<div class="cards">'
+      +'<div class="card"><div class="v">'+c.whale_count+'</div><div class="k">🐋 تعداد نهنگ</div></div>'
+      +'<div class="card"><div class="v">'+tr+'</div><div class="k">📈 روند از اسکن قبل'+(c.new_whales?' (+'+c.new_whales+' جدید)':'')+'</div></div>'
+      +'<div class="card"><div class="v">'+c.total_amount.toLocaleString('en-US')+'</div><div class="k">💰 موجودی نهنگ‌ها</div></div>'
+      +'<div class="card"><div class="v">'+c.pumps.length+'</div><div class="k">🔁 سابقه پامپ (۱۰ مورد اخیر)</div></div>'
+      +'<div class="card"><div class="v">'+(score!==null?score:'—')+'</div><div class="k">⭐ امتیاز</div></div>'
+      +'</div>';
+    h+='<h2>🔁 پامپ‌های تاریخی این کوین</h2>';
+    if(c.pumps.length){
+      h+='<table><thead><tr><th>تاریخ</th><th>حرکت</th><th>جهت</th></tr></thead><tbody>';
+      for(const p of c.pumps){
+        const up=p.dir==='up';
+        h+='<tr><td>'+p.date+'</td><td>'+(p.move!=null?p.move+'%':'—')+'</td><td>'+(up?'<span class="up">▲ '+p.sym+'</span>':'<span class="down">▼ '+p.sym+'</span>')+'</td></tr>';
+      }
+      h+='</tbody></table>';
+    }else h+='<div class="empty">سابقه پامپی ثبت نشده</div>';
+    h+='<h2>🐋 نهنگ‌های دارنده ('+c.whale_addrs.length+' از '+c.whale_count+')</h2><table><thead><tr><th>آدرس</th><th>لینک</th></tr></thead><tbody>';
+    for(const a of c.whale_addrs){
+      h+='<tr><td class="addr">'+a.slice(0,10)+'…'+a.slice(-8)+'</td><td><a href="https://etherscan.io/address/'+a+'" target="_blank">Etherscan ↗</a></td></tr>';
+    }
+    h+='</tbody></table>';
+    box.innerHTML=h;
+    document.title='Whale Coin — '+c.symbol;
+  }catch(e){
+    document.getElementById('box').innerHTML='<div class="empty">خطا در بارگذاری داده — دوباره تلاش کنید.</div>';
+  }
+})();
+</script>
+</body></html>
