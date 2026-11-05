@@ -23,6 +23,9 @@ h1{font-size:1.6rem;color:var(--acc)}
 .card .v{font-size:1.25rem;font-weight:800}
 .card .k{font-size:.72rem;color:var(--muted);margin-top:2px}
 .up{color:#00d4aa}.down{color:var(--acc2)}
+.chartwrap{position:relative;padding-top:52%;border:1px solid var(--line);border-radius:10px;overflow:hidden;background:#0b0f14}
+.chartwrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.links{display:flex;gap:14px;flex-wrap:wrap;font-size:.78rem;margin-top:8px}
 h2{font-size:1rem;margin:22px 0 10px;color:var(--gold)}
 table{width:100%;border-collapse:collapse;font-size:.8rem}
 th,td{padding:9px 8px;text-align:right;border-bottom:1px solid var(--line)}
@@ -62,8 +65,14 @@ const q=new URLSearchParams(location.search).get('c');
       +'<div class="card"><div class="v">'+c.total_amount.toLocaleString('en-US')+'</div><div class="k">💰 موجودی نهنگ‌ها</div></div>'
       +'<div class="card"><div class="v">'+c.pumps.length+'</div><div class="k">🔁 سابقه پامپ (۱۰ مورد اخیر)</div></div>'
       +'<div class="card"><div class="v">'+(score!==null?score:'—')+'</div><div class="k">⭐ امتیاز</div></div>'
-      +'</div>';
-    h+='<h2>🔁 پامپ‌های تاریخی این کوین</h2>';
+      h+='</div>';
+      h+='<h2>📊 نمودار قیمت</h2>'
+        +'<div class="chartwrap"><iframe src="https://dexscreener.com/ethereum/'+q+'?embed=1&theme=dark&trades=0&info=0" allowfullscreen loading="lazy"></iframe></div>'
+        +'<div class="links">اگر نمودار باز نشد: '
+        +'<a href="https://dexscreener.com/ethereum/'+q+'" target="_blank">DexScreener ↗</a>'
+        +'<a href="https://www.geckoterminal.com/eth/tokens/'+q+'" target="_blank">GeckoTerminal ↗</a>'
+        +'<a href="https://etherscan.io/token/'+q+'" target="_blank">Etherscan ↗</a></div>';
+      h+='<h2>🔁 پامپ‌های تاریخی این کوین</h2>';
     if(c.pumps.length){
       h+='<table><thead><tr><th>تاریخ</th><th>حرکت</th><th>جهت</th></tr></thead><tbody>';
       for(const p of c.pumps){
