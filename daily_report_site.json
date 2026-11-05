@@ -126,7 +126,7 @@
       "sl": 0.013364525299342997,
       "tp_dist_pct": 1.23,
       "sl_dist_pct": -7.23,
-      "age_min": 440.5,
+      "age_min": 440.8,
       "trail_armed": true
     },
     {
@@ -142,7 +142,7 @@
       "sl": 0.27062190038633144,
       "tp_dist_pct": 0.86,
       "sl_dist_pct": -5.92,
-      "age_min": 440.6,
+      "age_min": 440.9,
       "trail_armed": true
     }
   ],
