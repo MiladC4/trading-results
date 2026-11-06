@@ -57,15 +57,17 @@ const q=new URLSearchParams(location.search).get('c');
     const badge=c.cat==='strong'?'<span class="badge strong">🟢 خرید قوی</span>'
               :c.cat==='watch'?'<span class="badge watch">🟡 تحت نظر</span>'
               :'<span class="badge neutral">⚪ خنثی</span>';
-    const tr=c.delta>0?'<span class="up">▲ +'+c.delta+'</span>':c.delta<0?'<span class="down">▼ '+c.delta+'</span>':'—';
+    const trv=(v,extra)=>v==null?'<span class="flat">—</span>':v>0?'<span class="up">▲ +'+v+'</span>'+extra:v<0?'<span class="down">▼ '+v+'</span>':'—';
     let h='<header><h1>'+c.symbol+'</h1>'+badge+'<span class="ct"><a href="https://etherscan.io/token/'+q+'" target="_blank">'+q+'</a></span></header>';
     h+='<div class="cards">'
       +'<div class="card"><div class="v">'+c.whale_count+'</div><div class="k">🐋 تعداد نهنگ</div></div>'
-      +'<div class="card"><div class="v">'+tr+'</div><div class="k">📈 روند از اسکن قبل'+(c.new_whales?' (+'+c.new_whales+' جدید)':'')+'</div></div>'
+      +'<div class="card"><div class="v">'+trv(c.delta, c.new_whales?' <small>(+'+c.new_whales+' جدید)</small>':'')+'</div><div class="k">📈 روند ۳ ساعت</div></div>'
+      +'<div class="card"><div class="v">'+trv(c.delta_24h,'')+'</div><div class="k">📈 روند ۲۴ ساعت</div></div>'
+      +'<div class="card"><div class="v">'+trv(c.delta_7d,'')+'</div><div class="k">📈 روند هفته</div></div>'
       +'<div class="card"><div class="v">'+c.total_amount.toLocaleString('en-US')+'</div><div class="k">💰 موجودی نهنگ‌ها</div></div>'
       +'<div class="card"><div class="v">'+c.pumps.length+'</div><div class="k">🔁 سابقه پامپ (۱۰ مورد اخیر)</div></div>'
       +'<div class="card"><div class="v">'+(score!==null?score:'—')+'</div><div class="k">⭐ امتیاز</div></div>'
-      h+='</div>';
+      +'</div>';
       h+='<h2>📊 نمودار قیمت</h2>'
         +'<div class="chartwrap"><iframe src="https://dexscreener.com/ethereum/'+q+'?embed=1&theme=dark&trades=0&info=0" allowfullscreen loading="lazy"></iframe></div>'
         +'<div class="links">اگر نمودار باز نشد: '
