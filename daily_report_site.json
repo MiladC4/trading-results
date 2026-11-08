@@ -1,22 +1,22 @@
 {
-  "date": "2026-11-08 16:42 UTC",
-  "cash": 9261.14,
-  "equity": 9849.08,
-  "pnl": -7.05,
-  "pnl_pct": -0.07,
-  "open_positions": 5,
-  "closed_trades": 239,
-  "realized_usd": -15.61,
-  "unrealized_usd": 8.56,
-  "open_value_usd": 587.94,
-  "legacy_usd": -143.87,
+  "date": "2026-11-08 16:52 UTC",
+  "cash": 9319.8,
+  "equity": 9846.54,
+  "pnl": -4.58,
+  "pnl_pct": -0.05,
+  "open_positions": 4,
+  "closed_trades": 240,
+  "realized_usd": -11.51,
+  "unrealized_usd": 6.94,
+  "open_value_usd": 526.74,
+  "legacy_usd": -148.88,
   "best_trade_usd": 4.11,
   "worst_trade_usd": -4.13,
-  "sane_closed": 239,
+  "sane_closed": 240,
   "dollar_window_note": "\u0627\u0639\u062f\u0627\u062f \u062f\u0644\u0627\u0631\u06cc (\u0633\u0648\u062f \u062a\u062d\u0642\u0642\u200c\u06cc\u0627\u0641\u062a\u0647\u060c \u0628\u0647\u062a\u0631\u06cc\u0646/\u0628\u062f\u062a\u0631\u06cc\u0646 \u0627\u0633\u062a\u0631\u0627\u062a\u0698\u06cc\u060c PnL \u0631\u0648\u0632) \u0641\u0642\u0637 \u0631\u0648\u06cc \u0645\u0639\u0627\u0645\u0644\u0627\u062a \u067e\u0633 \u0627\u0632 \u0641\u06cc\u06a9\u0633 \u0633\u0627\u06cc\u0632\u06cc\u0646\u06af (\u06f2\u06f0\u06f2\u06f6-\u06f1\u06f0-\u06f2\u06f2) \u0645\u062d\u0627\u0633\u0628\u0647 \u0645\u06cc\u200c\u0634\u0648\u0646\u062f \u2014 24 \u0645\u0639\u0627\u0645\u0644\u0647\u0654 \u06f1\u06f0-\u06f2\u06f0 \u062f\u0631 \u062f\u0648\u0631\u0647\u0654 \u0633\u0627\u06cc\u0632\u06cc\u0646\u06af \u062e\u0631\u0627\u0628 \u0628\u0648\u062f\u0646\u062f (notional \u062a\u0627 $\u06f1\u06f1M \u063a\u0644\u0637) \u0648 \u062f\u0631\u0635\u062f\u0634\u0627\u0646 \u0635\u0627\u062f\u0642\u0627\u0646\u0647 \u062f\u0631 \u0648\u06cc\u0646\u200c\u0631\u06cc\u062a \u0648 \u062a\u0639\u062f\u0627\u062f \u0645\u06cc\u200c\u0645\u0627\u0646\u062f \u0627\u0645\u0627 \u062f\u0644\u0627\u0631\u0634\u0627\u0646 \u0642\u0627\u0628\u0644 \u0645\u062d\u0627\u0633\u0628\u0647 \u0646\u06cc\u0633\u062a. Equity = cash + \u0627\u0631\u0632\u0634 \u0628\u0627\u0632\u0627\u0631 \u067e\u0648\u0632\u06cc\u0634\u0646\u200c\u0647\u0627\u06cc \u0628\u0627\u0632 \u0627\u0633\u062a \u0648 \u0628\u0647 \u0647\u0631 \u062f\u0648 \u062f\u0648\u0631\u0647 \u0645\u0631\u0628\u0648\u0637 \u0627\u0633\u062a.",
   "reset_closes_excluded": 0,
-  "win_rate": 26.4,
-  "avg_win": 2.666,
+  "win_rate": 26.7,
+  "avg_win": 2.722,
   "avg_loss": -1.027,
   "reset_at": 1792484079114,
   "reset_note": "paper book reset on the trailing-stop geometry (TP 12 ATR / initial SL 9 ATR / trail 5 ATR) + regime filters (gate D + fee-dead zone + chop 135-155) + $135 size at a constant $3.13 risk per trade, max 12 open. Numbers before this timestamp are archived in backups/ and must not be mixed into this window.",
@@ -119,14 +119,14 @@
       "symbol": "BTC/USDT",
       "side": "SHORT",
       "entry": 75812.08,
-      "current": 75972.19,
-      "pnl_pct": -0.21,
-      "chg_pct": 0.21,
+      "current": 75939.49,
+      "pnl_pct": -0.17,
+      "chg_pct": 0.17,
       "tp": 73466.95295236343,
       "sl": 77570.92528572743,
-      "tp_dist_pct": 3.3,
-      "sl_dist_pct": -2.1,
-      "age_min": 2963.6,
+      "tp_dist_pct": 3.26,
+      "sl_dist_pct": -2.15,
+      "age_min": 2973.7,
       "trail_armed": false
     },
     {
@@ -135,30 +135,14 @@
       "symbol": "XLM/USDT",
       "side": "SHORT",
       "entry": 0.1549,
-      "current": 0.1506,
-      "pnl_pct": 2.78,
-      "chg_pct": -2.78,
+      "current": 0.1503,
+      "pnl_pct": 2.97,
+      "chg_pct": -2.97,
       "tp": 0.14771798452528057,
       "sl": 0.1602865116060396,
-      "tp_dist_pct": 1.91,
-      "sl_dist_pct": -6.43,
-      "age_min": 2963.4,
-      "trail_armed": true
-    },
-    {
-      "strategy": "Volume-Profile",
-      "strategy_full": "0vL9Hcs2",
-      "symbol": "XPL/USDT",
-      "side": "SHORT",
-      "entry": 0.05782,
-      "current": 0.05544,
-      "pnl_pct": 4.12,
-      "chg_pct": -4.12,
-      "tp": 0.05398173622712356,
-      "sl": 0.06069869782965734,
-      "tp_dist_pct": 2.63,
-      "sl_dist_pct": -9.49,
-      "age_min": 2963.5,
+      "tp_dist_pct": 1.72,
+      "sl_dist_pct": -6.64,
+      "age_min": 2973.5,
       "trail_armed": true
     },
     {
@@ -167,14 +151,14 @@
       "symbol": "OKB/USDT",
       "side": "SHORT",
       "entry": 104.58,
-      "current": 102.39,
-      "pnl_pct": 2.09,
-      "chg_pct": -2.09,
+      "current": 102.34,
+      "pnl_pct": 2.14,
+      "chg_pct": -2.14,
       "tp": 100.33850555502349,
       "sl": 107.76112083373238,
-      "tp_dist_pct": 2.0,
-      "sl_dist_pct": -5.25,
-      "age_min": 2941.0,
+      "tp_dist_pct": 1.96,
+      "sl_dist_pct": -5.3,
+      "age_min": 2951.0,
       "trail_armed": true
     },
     {
@@ -183,29 +167,18 @@
       "symbol": "AXS/USDT",
       "side": "SHORT",
       "entry": 0.8211,
-      "current": 0.8147,
-      "pnl_pct": 0.78,
-      "chg_pct": -0.78,
+      "current": 0.812,
+      "pnl_pct": 1.11,
+      "chg_pct": -1.11,
       "tp": 0.8044791727987879,
       "sl": 0.8335656204009092,
-      "tp_dist_pct": 1.25,
-      "sl_dist_pct": -2.32,
-      "age_min": 1176.2,
+      "tp_dist_pct": 0.93,
+      "sl_dist_pct": -2.66,
+      "age_min": 1186.2,
       "trail_armed": true
     }
   ],
   "recent_trades": [
-    {
-      "strategy": "Volume-Profile",
-      "symbol": "AR/USDT",
-      "result": "LOSS",
-      "pnl_pct": -1.705,
-      "entry": 3.144,
-      "exit": 3.197605,
-      "chg_pct": 1.705,
-      "candles": 32,
-      "exit_reason": "sl"
-    },
     {
       "strategy": "Volume-Profile",
       "symbol": "ATH/USDT",
@@ -304,16 +277,27 @@
       "chg_pct": 0.12,
       "candles": 224,
       "exit_reason": "sl"
+    },
+    {
+      "strategy": "Volume-Profile",
+      "symbol": "XPL/USDT",
+      "result": "WIN",
+      "pnl_pct": 6.514,
+      "entry": 0.05782,
+      "exit": 0.054054,
+      "chg_pct": -6.514,
+      "candles": 594,
+      "exit_reason": "tp"
     }
   ],
   "tuner": {
-    "ts": 1794156138829,
-    "n": 263,
+    "ts": 1794156745200,
+    "n": 264,
     "overall": {
-      "n": 263,
-      "wr": 25.5,
-      "exp": -0.00086,
-      "tot": -0.226
+      "n": 264,
+      "wr": 25.8,
+      "exp": -0.00061,
+      "tot": -0.161
     },
     "sides": {
       "long": {
@@ -327,10 +311,10 @@
         "long_sum": -0.3329
       },
       "short": {
-        "n": 263,
-        "wr": 25.5,
-        "exp": -0.00086,
-        "tot": -0.226,
+        "n": 264,
+        "wr": 25.8,
+        "exp": -0.00061,
+        "tot": -0.161,
         "banned": false,
         "long_n": 612,
         "long_wr": 45.588235294117645,
@@ -341,13 +325,13 @@
       {
         "kind": "overall",
         "msg": "system is net negative",
-        "n": 263,
-        "exp": -0.00086
+        "n": 264,
+        "exp": -0.00061
       },
       {
         "kind": "insufficient_sample",
         "strategy": "Volume-Profile",
-        "n": 226,
+        "n": 227,
         "long_n": 0,
         "msg": "quarantine blocked: not negative in the long window"
       },
@@ -361,7 +345,7 @@
       {
         "kind": "insufficient_sample",
         "side": "short",
-        "n": 263,
+        "n": 264,
         "long_n": 612,
         "msg": "short-side ban blocked: not negative in the long window"
       }
@@ -378,15 +362,15 @@
           6.0,
           3.0
         ],
-        "tp_pct": 1.43,
+        "tp_pct": 1.44,
         "sl_pct": 0.72
       },
       {
         "action": "skip_quarantine",
         "strategy": "Volume-Profile",
-        "n": 226,
-        "wr": 23.5,
-        "exp": -0.00049,
+        "n": 227,
+        "wr": 23.8,
+        "exp": -0.0002,
         "long_n": 0,
         "long_wr": 0.0,
         "long_sum": 0.0,
@@ -417,7 +401,7 @@
           6.0,
           3.0
         ],
-        "tp_pct": 1.39,
+        "tp_pct": 1.4,
         "sl_pct": 0.7
       },
       {
@@ -445,7 +429,7 @@
           6.0,
           3.0
         ],
-        "tp_pct": 1.39,
+        "tp_pct": 1.4,
         "sl_pct": 0.7
       },
       {
@@ -504,9 +488,9 @@
       {
         "action": "skip_ban_side",
         "side": "short",
-        "n": 263,
-        "wr": 25.5,
-        "exp": -0.00086,
+        "n": 264,
+        "wr": 25.8,
+        "exp": -0.00061,
         "long_n": 612,
         "long_wr": 45.588235294117645,
         "long_sum": 0.5471,
@@ -519,14 +503,14 @@
       {
         "uid": "0vL9Hcs2",
         "name": "Volume-Profile",
-        "n": 226,
-        "wr": 23.5,
-        "exp": -0.00049,
-        "tot": -0.112,
+        "n": 227,
+        "wr": 23.8,
+        "exp": -0.0002,
+        "tot": -0.046,
         "tp": 6.0,
         "sl": 3.0,
-        "ap": 0.239,
-        "tp_pct": 1.43,
+        "ap": 0.24,
+        "tp_pct": 1.44,
         "sl_pct": 0.72,
         "src": "widen",
         "quarantined": false
@@ -555,8 +539,8 @@
         "tot": 0.0,
         "tp": 6.0,
         "sl": 3.0,
-        "ap": 0.232,
-        "tp_pct": 1.39,
+        "ap": 0.233,
+        "tp_pct": 1.4,
         "sl_pct": 0.7,
         "src": "widen",
         "quarantined": false
@@ -585,8 +569,8 @@
         "tot": 0.0,
         "tp": 6.0,
         "sl": 3.0,
-        "ap": 0.232,
-        "tp_pct": 1.39,
+        "ap": 0.233,
+        "tp_pct": 1.4,
         "sl_pct": 0.7,
         "src": "widen",
         "quarantined": false
