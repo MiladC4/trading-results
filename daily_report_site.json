@@ -1,15 +1,15 @@
 {
-  "date": "2026-11-09 02:42 UTC",
+  "date": "2026-11-09 02:48 UTC",
   "cash": 9388.26,
-  "equity": 9804.71,
-  "pnl": 30.58,
+  "equity": 9804.21,
+  "pnl": 31.09,
   "pnl_pct": 0.31,
   "open_positions": 4,
   "closed_trades": 251,
   "realized_usd": 30.96,
-  "unrealized_usd": -0.38,
-  "open_value_usd": 416.45,
-  "legacy_usd": -225.86,
+  "unrealized_usd": 0.13,
+  "open_value_usd": 415.94,
+  "legacy_usd": -226.88,
   "best_trade_usd": 4.11,
   "worst_trade_usd": -4.13,
   "sane_closed": 251,
@@ -126,7 +126,7 @@
       "sl": 77570.92528572743,
       "tp_dist_pct": 2.63,
       "sl_dist_pct": -2.81,
-      "age_min": 3563.5,
+      "age_min": 3569.3,
       "trail_armed": true
     },
     {
@@ -142,7 +142,7 @@
       "sl": 0.6603348421542461,
       "tp_dist_pct": 4.58,
       "sl_dist_pct": -1.79,
-      "age_min": 73.9,
+      "age_min": 79.7,
       "trail_armed": false
     },
     {
@@ -151,14 +151,14 @@
       "symbol": "SOON/USDT",
       "side": "SHORT",
       "entry": 0.24,
-      "current": 0.2383,
-      "pnl_pct": 0.71,
-      "chg_pct": -0.71,
+      "current": 0.2369,
+      "pnl_pct": 1.29,
+      "chg_pct": -1.29,
       "tp": 0.22538738606490505,
       "sl": 0.2509594604513212,
-      "tp_dist_pct": 5.42,
-      "sl_dist_pct": -5.31,
-      "age_min": 74.0,
+      "tp_dist_pct": 4.86,
+      "sl_dist_pct": -5.93,
+      "age_min": 79.8,
       "trail_armed": false
     },
     {
@@ -167,14 +167,14 @@
       "symbol": "ZBCN/USDT",
       "side": "SHORT",
       "entry": 0.0017353,
-      "current": 0.0017428,
-      "pnl_pct": -0.43,
-      "chg_pct": 0.43,
+      "current": 0.0017409,
+      "pnl_pct": -0.32,
+      "chg_pct": 0.32,
       "tp": 0.0016624322518172421,
       "sl": 0.0017899508111370683,
-      "tp_dist_pct": 4.61,
-      "sl_dist_pct": -2.71,
-      "age_min": 74.1,
+      "tp_dist_pct": 4.51,
+      "sl_dist_pct": -2.82,
+      "age_min": 79.9,
       "trail_armed": false
     }
   ],
@@ -291,7 +291,7 @@
     }
   ],
   "tuner": {
-    "ts": 1794192137380,
+    "ts": 1794192447546,
     "n": 275,
     "overall": {
       "n": 275,
