@@ -126,7 +126,7 @@
       "sl": 77570.92528572743,
       "tp_dist_pct": 1.52,
       "sl_dist_pct": -3.98,
-      "age_min": 5368.9,
+      "age_min": 5369.5,
       "trail_armed": true
     },
     {
@@ -142,7 +142,7 @@
       "sl": 1.6733125649950569,
       "tp_dist_pct": 5.66,
       "sl_dist_pct": -5.57,
-      "age_min": 1419.0,
+      "age_min": 1419.5,
       "trail_armed": false
     },
     {
@@ -158,7 +158,7 @@
       "sl": 0.05429943747591381,
       "tp_dist_pct": 3.15,
       "sl_dist_pct": -4.97,
-      "age_min": 1321.5,
+      "age_min": 1322.0,
       "trail_armed": true
     }
   ],
