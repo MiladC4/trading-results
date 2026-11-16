@@ -1,23 +1,23 @@
 {
-  "date": "2026-11-16 16:57 UTC",
-  "cash": 9452.88,
-  "equity": 9816.29,
-  "pnl": -4.65,
-  "pnl_pct": -0.05,
-  "open_positions": 3,
-  "closed_trades": 321,
-  "realized_usd": -1.75,
-  "unrealized_usd": -2.9,
-  "open_value_usd": 363.41,
-  "legacy_usd": -179.06,
+  "date": "2026-11-16 17:10 UTC",
+  "cash": 9721.26,
+  "equity": 9817.96,
+  "pnl": -6.64,
+  "pnl_pct": -0.07,
+  "open_positions": 1,
+  "closed_trades": 323,
+  "realized_usd": -5.2,
+  "unrealized_usd": -1.44,
+  "open_value_usd": 96.7,
+  "legacy_usd": -175.4,
   "best_trade_usd": 4.11,
   "worst_trade_usd": -4.13,
-  "sane_closed": 321,
+  "sane_closed": 323,
   "dollar_window_note": "\u0627\u0639\u062f\u0627\u062f \u062f\u0644\u0627\u0631\u06cc (\u0633\u0648\u062f \u062a\u062d\u0642\u0642\u200c\u06cc\u0627\u0641\u062a\u0647\u060c \u0628\u0647\u062a\u0631\u06cc\u0646/\u0628\u062f\u062a\u0631\u06cc\u0646 \u0627\u0633\u062a\u0631\u0627\u062a\u0698\u06cc\u060c PnL \u0631\u0648\u0632) \u0641\u0642\u0637 \u0631\u0648\u06cc \u0645\u0639\u0627\u0645\u0644\u0627\u062a \u067e\u0633 \u0627\u0632 \u0641\u06cc\u06a9\u0633 \u0633\u0627\u06cc\u0632\u06cc\u0646\u06af (\u06f2\u06f0\u06f2\u06f6-\u06f1\u06f0-\u06f2\u06f2) \u0645\u062d\u0627\u0633\u0628\u0647 \u0645\u06cc\u200c\u0634\u0648\u0646\u062f \u2014 24 \u0645\u0639\u0627\u0645\u0644\u0647\u0654 \u06f1\u06f0-\u06f2\u06f0 \u062f\u0631 \u062f\u0648\u0631\u0647\u0654 \u0633\u0627\u06cc\u0632\u06cc\u0646\u06af \u062e\u0631\u0627\u0628 \u0628\u0648\u062f\u0646\u062f (notional \u062a\u0627 $\u06f1\u06f1M \u063a\u0644\u0637) \u0648 \u062f\u0631\u0635\u062f\u0634\u0627\u0646 \u0635\u0627\u062f\u0642\u0627\u0646\u0647 \u062f\u0631 \u0648\u06cc\u0646\u200c\u0631\u06cc\u062a \u0648 \u062a\u0639\u062f\u0627\u062f \u0645\u06cc\u200c\u0645\u0627\u0646\u062f \u0627\u0645\u0627 \u062f\u0644\u0627\u0631\u0634\u0627\u0646 \u0642\u0627\u0628\u0644 \u0645\u062d\u0627\u0633\u0628\u0647 \u0646\u06cc\u0633\u062a. Equity = cash + \u0627\u0631\u0632\u0634 \u0628\u0627\u0632\u0627\u0631 \u067e\u0648\u0632\u06cc\u0634\u0646\u200c\u0647\u0627\u06cc \u0628\u0627\u0632 \u0627\u0633\u062a \u0648 \u0628\u0647 \u0647\u0631 \u062f\u0648 \u062f\u0648\u0631\u0647 \u0645\u0631\u0628\u0648\u0637 \u0627\u0633\u062a.",
   "reset_closes_excluded": 0,
-  "win_rate": 27.4,
+  "win_rate": 27.2,
   "avg_win": 2.904,
-  "avg_loss": -1.054,
+  "avg_loss": -1.059,
   "reset_at": 1792484079114,
   "reset_note": "paper book reset on the trailing-stop geometry (TP 12 ATR / initial SL 9 ATR / trail 5 ATR) + regime filters (gate D + fee-dead zone + chop 135-155) + $135 size at a constant $3.13 risk per trade, max 12 open. Numbers before this timestamp are archived in backups/ and must not be mixed into this window.",
   "window": "post-reset",
@@ -119,72 +119,18 @@
       "symbol": "GT/USDT",
       "side": "SHORT",
       "entry": 7.416,
-      "current": 7.483,
-      "pnl_pct": -0.9,
-      "chg_pct": 0.9,
+      "current": 7.528,
+      "pnl_pct": -1.51,
+      "chg_pct": 1.51,
       "tp": 7.091307312209882,
       "sl": 7.659519515842589,
-      "tp_dist_pct": 5.23,
-      "sl_dist_pct": -2.36,
-      "age_min": 231.1,
-      "trail_armed": false
-    },
-    {
-      "strategy": "Volume-Profile",
-      "strategy_full": "0vL9Hcs2",
-      "symbol": "MNT/USDT",
-      "side": "SHORT",
-      "entry": 0.3665,
-      "current": 0.3657,
-      "pnl_pct": 0.22,
-      "chg_pct": -0.22,
-      "tp": 0.35746858362524325,
-      "sl": 0.3732735622810675,
-      "tp_dist_pct": 2.25,
-      "sl_dist_pct": -2.07,
-      "age_min": 201.2,
-      "trail_armed": true
-    },
-    {
-      "strategy": "Volume-Profile",
-      "strategy_full": "0vL9Hcs2",
-      "symbol": "XPL/USDT",
-      "side": "SHORT",
-      "entry": 0.04311,
-      "current": 0.04419,
-      "pnl_pct": -2.51,
-      "chg_pct": 2.51,
-      "tp": 0.0412370576678207,
-      "sl": 0.04451470674913448,
-      "tp_dist_pct": 6.68,
-      "sl_dist_pct": -0.73,
-      "age_min": 168.4,
+      "tp_dist_pct": 5.8,
+      "sl_dist_pct": -1.75,
+      "age_min": 243.6,
       "trail_armed": false
     }
   ],
   "recent_trades": [
-    {
-      "strategy": "Volume-Profile",
-      "symbol": "BCH/USDT",
-      "result": "WIN",
-      "pnl_pct": 3.084,
-      "entry": 226.4,
-      "exit": 219.417824,
-      "chg_pct": -3.084,
-      "candles": 337,
-      "exit_reason": "tp"
-    },
-    {
-      "strategy": "Volume-Profile",
-      "symbol": "PENDLE/USDT",
-      "result": "LOSS",
-      "pnl_pct": -0.12,
-      "entry": 1.553,
-      "exit": 1.554864,
-      "chg_pct": 0.12,
-      "candles": 847,
-      "exit_reason": "sl"
-    },
     {
       "strategy": "Volume-Profile",
       "symbol": "TRX/USDT",
@@ -272,16 +218,38 @@
       "chg_pct": 0.12,
       "candles": 40,
       "exit_reason": "sl"
+    },
+    {
+      "strategy": "Volume-Profile",
+      "symbol": "MNT/USDT",
+      "result": "LOSS",
+      "pnl_pct": -0.12,
+      "entry": 0.3665,
+      "exit": 0.36694,
+      "chg_pct": 0.12,
+      "candles": 41,
+      "exit_reason": "sl"
+    },
+    {
+      "strategy": "Volume-Profile",
+      "symbol": "XPL/USDT",
+      "result": "LOSS",
+      "pnl_pct": -3.376,
+      "entry": 0.04311,
+      "exit": 0.044565,
+      "chg_pct": 3.376,
+      "candles": 36,
+      "exit_reason": "sl"
     }
   ],
   "tuner": {
-    "ts": 1794848246172,
-    "n": 345,
+    "ts": 1794848994084,
+    "n": 347,
     "overall": {
-      "n": 345,
-      "wr": 26.7,
-      "exp": 2e-05,
-      "tot": 0.005
+      "n": 347,
+      "wr": 26.5,
+      "exp": -9e-05,
+      "tot": -0.03
     },
     "sides": {
       "long": {
@@ -295,10 +263,10 @@
         "long_sum": -0.3329
       },
       "short": {
-        "n": 345,
-        "wr": 26.7,
-        "exp": 2e-05,
-        "tot": 0.005,
+        "n": 347,
+        "wr": 26.5,
+        "exp": -9e-05,
+        "tot": -0.03,
         "banned": false,
         "long_n": 612,
         "long_wr": 45.588235294117645,
@@ -307,11 +275,24 @@
     },
     "problems": [
       {
+        "kind": "overall",
+        "msg": "system is net negative",
+        "n": 347,
+        "exp": -9e-05
+      },
+      {
         "kind": "insufficient_sample",
         "strategy": "Divergence-Scanner",
         "n": 16,
         "long_n": 37,
         "msg": "quarantine blocked: not negative in the long window"
+      },
+      {
+        "kind": "insufficient_sample",
+        "side": "short",
+        "n": 347,
+        "long_n": 612,
+        "msg": "short-side ban blocked: not negative in the long window"
       }
     ],
     "actions": [
@@ -354,7 +335,7 @@
           6.0,
           3.0
         ],
-        "tp_pct": 1.48,
+        "tp_pct": 1.49,
         "sl_pct": 0.74
       },
       {
@@ -382,7 +363,7 @@
           6.0,
           3.0
         ],
-        "tp_pct": 1.48,
+        "tp_pct": 1.49,
         "sl_pct": 0.74
       },
       {
@@ -437,6 +418,17 @@
         ],
         "tp_pct": 0.94,
         "sl_pct": 0.94
+      },
+      {
+        "action": "skip_ban_side",
+        "side": "short",
+        "n": 347,
+        "wr": 26.5,
+        "exp": -9e-05,
+        "long_n": 612,
+        "long_wr": 45.588235294117645,
+        "long_sum": 0.5471,
+        "msg": "too small a sample to overrule the long window"
       }
     ],
     "quarantined": [],
@@ -445,10 +437,10 @@
       {
         "uid": "0vL9Hcs2",
         "name": "Volume-Profile",
-        "n": 305,
-        "wr": 25.2,
-        "exp": 0.00018,
-        "tot": 0.054,
+        "n": 307,
+        "wr": 25.1,
+        "exp": 6e-05,
+        "tot": 0.019,
         "tp": 4.0,
         "sl": 3.0,
         "ap": 0.253,
@@ -481,8 +473,8 @@
         "tot": 0.0,
         "tp": 6.0,
         "sl": 3.0,
-        "ap": 0.247,
-        "tp_pct": 1.48,
+        "ap": 0.248,
+        "tp_pct": 1.49,
         "sl_pct": 0.74,
         "src": "widen",
         "quarantined": false
@@ -511,8 +503,8 @@
         "tot": 0.0,
         "tp": 6.0,
         "sl": 3.0,
-        "ap": 0.247,
-        "tp_pct": 1.48,
+        "ap": 0.248,
+        "tp_pct": 1.49,
         "sl_pct": 0.74,
         "src": "widen",
         "quarantined": false
