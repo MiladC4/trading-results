@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-16 08:06 UTC",
+  "date": "2026-11-16 09:37 UTC",
   "cash": 9796.49,
   "equity": 9796.49,
   "pnl": 18.45,
@@ -226,13 +226,13 @@
     }
   ],
   "tuner": {
-    "ts": 1794488234850,
-    "n": 326,
+    "ts": 1794821846024,
+    "n": 338,
     "overall": {
-      "n": 326,
-      "wr": 26.7,
-      "exp": -0.00017,
-      "tot": -0.057
+      "n": 338,
+      "wr": 27.2,
+      "exp": 0.00037,
+      "tot": 0.124
     },
     "sides": {
       "long": {
@@ -246,10 +246,10 @@
         "long_sum": -0.3329
       },
       "short": {
-        "n": 326,
-        "wr": 26.7,
-        "exp": -0.00017,
-        "tot": -0.057,
+        "n": 338,
+        "wr": 27.2,
+        "exp": 0.00037,
+        "tot": 0.124,
         "banned": false,
         "long_n": 612,
         "long_wr": 45.588235294117645,
@@ -258,31 +258,11 @@
     },
     "problems": [
       {
-        "kind": "overall",
-        "msg": "system is net negative",
-        "n": 326,
-        "exp": -0.00017
-      },
-      {
-        "kind": "insufficient_sample",
-        "strategy": "Volume-Profile",
-        "n": 286,
-        "long_n": 0,
-        "msg": "quarantine blocked: not negative in the long window"
-      },
-      {
         "kind": "insufficient_sample",
         "strategy": "Divergence-Scanner",
         "n": 16,
         "long_n": 37,
         "msg": "quarantine blocked: not negative in the long window"
-      },
-      {
-        "kind": "insufficient_sample",
-        "side": "short",
-        "n": 326,
-        "long_n": 612,
-        "msg": "short-side ban blocked: not negative in the long window"
       }
     ],
     "actions": [
@@ -294,22 +274,11 @@
           1.0
         ],
         "to": [
-          6.0,
+          4.0,
           3.0
         ],
-        "tp_pct": 1.49,
-        "sl_pct": 0.74
-      },
-      {
-        "action": "skip_quarantine",
-        "strategy": "Volume-Profile",
-        "n": 286,
-        "wr": 25.2,
-        "exp": -3e-05,
-        "long_n": 0,
-        "long_wr": 0.0,
-        "long_sum": 0.0,
-        "msg": "too small a sample to overrule the long window"
+        "tp_pct": 1.01,
+        "sl_pct": 0.76
       },
       {
         "action": "widen",
@@ -336,8 +305,8 @@
           6.0,
           3.0
         ],
-        "tp_pct": 1.46,
-        "sl_pct": 0.73
+        "tp_pct": 1.49,
+        "sl_pct": 0.74
       },
       {
         "action": "widen",
@@ -364,8 +333,8 @@
           6.0,
           3.0
         ],
-        "tp_pct": 1.46,
-        "sl_pct": 0.73
+        "tp_pct": 1.49,
+        "sl_pct": 0.74
       },
       {
         "action": "widen",
@@ -419,17 +388,6 @@
         ],
         "tp_pct": 0.94,
         "sl_pct": 0.94
-      },
-      {
-        "action": "skip_ban_side",
-        "side": "short",
-        "n": 326,
-        "wr": 26.7,
-        "exp": -0.00017,
-        "long_n": 612,
-        "long_wr": 45.588235294117645,
-        "long_sum": 0.5471,
-        "msg": "too small a sample to overrule the long window"
       }
     ],
     "quarantined": [],
@@ -438,15 +396,15 @@
       {
         "uid": "0vL9Hcs2",
         "name": "Volume-Profile",
-        "n": 286,
-        "wr": 25.2,
-        "exp": -3e-05,
-        "tot": -0.008,
-        "tp": 6.0,
+        "n": 298,
+        "wr": 25.8,
+        "exp": 0.00058,
+        "tot": 0.173,
+        "tp": 4.0,
         "sl": 3.0,
-        "ap": 0.248,
-        "tp_pct": 1.49,
-        "sl_pct": 0.74,
+        "ap": 0.253,
+        "tp_pct": 1.01,
+        "sl_pct": 0.76,
         "src": "widen",
         "quarantined": false
       },
@@ -474,9 +432,9 @@
         "tot": 0.0,
         "tp": 6.0,
         "sl": 3.0,
-        "ap": 0.243,
-        "tp_pct": 1.46,
-        "sl_pct": 0.73,
+        "ap": 0.248,
+        "tp_pct": 1.49,
+        "sl_pct": 0.74,
         "src": "widen",
         "quarantined": false
       },
@@ -504,9 +462,9 @@
         "tot": 0.0,
         "tp": 6.0,
         "sl": 3.0,
-        "ap": 0.243,
-        "tp_pct": 1.46,
-        "sl_pct": 0.73,
+        "ap": 0.248,
+        "tp_pct": 1.49,
+        "sl_pct": 0.74,
         "src": "widen",
         "quarantined": false
       },
