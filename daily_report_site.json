@@ -1,15 +1,15 @@
 {
-  "date": "2026-11-18 10:02 UTC",
+  "date": "2026-11-18 10:09 UTC",
   "cash": 8658.46,
-  "equity": 9856.43,
-  "pnl": -53.85,
-  "pnl_pct": -0.54,
+  "equity": 9855.94,
+  "pnl": -53.36,
+  "pnl_pct": -0.53,
   "open_positions": 6,
   "closed_trades": 343,
   "realized_usd": -49.58,
-  "unrealized_usd": -4.28,
-  "open_value_usd": 1197.97,
-  "legacy_usd": -89.71,
+  "unrealized_usd": -3.79,
+  "open_value_usd": 1197.48,
+  "legacy_usd": -90.69,
   "best_trade_usd": 4.11,
   "worst_trade_usd": -4.13,
   "sane_closed": 343,
@@ -119,14 +119,14 @@
       "symbol": "SKR/USDT",
       "side": "SHORT",
       "entry": 0.009992,
-      "current": 0.009816,
-      "pnl_pct": 1.76,
-      "chg_pct": -1.76,
+      "current": 0.009783,
+      "pnl_pct": 2.09,
+      "chg_pct": -2.09,
       "tp": 0.009196721223119991,
       "sl": 0.010588459082660005,
-      "tp_dist_pct": 6.31,
-      "sl_dist_pct": -7.87,
-      "age_min": 1426.0,
+      "tp_dist_pct": 5.99,
+      "sl_dist_pct": -8.23,
+      "age_min": 1432.8,
       "trail_armed": true
     },
     {
@@ -142,7 +142,7 @@
       "sl": 0.04724206890426376,
       "tp_dist_pct": 4.52,
       "sl_dist_pct": -2.26,
-      "age_min": 1416.1,
+      "age_min": 1422.9,
       "trail_armed": false
     },
     {
@@ -151,14 +151,14 @@
       "symbol": "MX/USDT",
       "side": "SHORT",
       "entry": 1.4097,
-      "current": 1.4109,
-      "pnl_pct": -0.09,
-      "chg_pct": 0.09,
+      "current": 1.4105,
+      "pnl_pct": -0.06,
+      "chg_pct": 0.06,
       "tp": 1.402173565853856,
       "sl": 1.415344825609608,
-      "tp_dist_pct": 0.62,
-      "sl_dist_pct": -0.32,
-      "age_min": 1343.4,
+      "tp_dist_pct": 0.59,
+      "sl_dist_pct": -0.34,
+      "age_min": 1350.1,
       "trail_armed": true
     },
     {
@@ -174,7 +174,7 @@
       "sl": 0.009861250215305765,
       "tp_dist_pct": 5.59,
       "sl_dist_pct": -1.14,
-      "age_min": 1090.8,
+      "age_min": 1097.6,
       "trail_armed": false
     },
     {
@@ -183,14 +183,14 @@
       "symbol": "PUMP/USDT",
       "side": "SHORT",
       "entry": 0.002656,
-      "current": 0.002724,
-      "pnl_pct": -2.56,
-      "chg_pct": 2.56,
+      "current": 0.002718,
+      "pnl_pct": -2.33,
+      "chg_pct": 2.33,
       "tp": 0.002391737075677517,
       "sl": 0.0028541971932418623,
-      "tp_dist_pct": 12.2,
-      "sl_dist_pct": -4.78,
-      "age_min": 1090.8,
+      "tp_dist_pct": 12.0,
+      "sl_dist_pct": -5.01,
+      "age_min": 1097.6,
       "trail_armed": false
     },
     {
@@ -206,7 +206,7 @@
       "sl": 66032.98198010471,
       "tp_dist_pct": 4.78,
       "sl_dist_pct": -2.14,
-      "age_min": 1059.1,
+      "age_min": 1065.9,
       "trail_armed": false
     }
   ],
@@ -323,7 +323,7 @@
     }
   ],
   "tuner": {
-    "ts": 1794996147030,
+    "ts": 1794996555164,
     "n": 367,
     "overall": {
       "n": 367,
