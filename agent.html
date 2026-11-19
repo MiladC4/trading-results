@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl"><head><meta charset="utf-8">
+<meta http-equiv="refresh" content="300">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>کتاب عامل — Agent Book</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<style>
+body{background:#0b0e14;color:#dbe2ef;font-family:Tahoma,Vazirmatn,sans-serif;margin:0;padding:16px}
+h1{font-size:20px;margin:4px 0} h2{font-size:15px;color:#7aa2f7;margin:18px 0 8px}
+.sub{color:#8892a8;font-size:12px}
+.cards{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0}
+.card{background:#131824;border:1px solid #232a3a;border-radius:10px;padding:10px 14px;min-width:110px}
+.card .v{font-size:18px;font-weight:bold} .card .k{font-size:11px;color:#8892a8}
+.pos{color:#2fd48e}.neg{color:#ff5c7a}
+table{width:100%;border-collapse:collapse;font-size:12px;background:#131824;border-radius:8px;overflow:hidden}
+th,td{padding:6px 8px;text-align:right;border-bottom:1px solid #1e2534}
+th{background:#1a2130;color:#7aa2f7;font-weight:600}
+.num{direction:ltr;text-align:left;font-family:monospace}
+.log{font-size:12px;line-height:1.9;background:#131824;border:1px solid #232a3a;border-radius:8px;padding:10px}
+.badge{font-size:10px;background:#1f2a44;color:#7aa2f7;border-radius:6px;padding:1px 6px;margin-inline-start:6px}
+canvas{background:#131824;border:1px solid #232a3a;border-radius:10px}
+</style></head><body>
+<h1>🤖 کتاب عامل — اختیار کامل با عامل</h1>
+<div class="sub">شبیه‌سازی با دادهٔ واقعی بازار • سرمایهٔ اولیه $1000 • به‌روزرسانی هر ۵ دقیقه • آخرین: <span dir="ltr">2026-11-19 12:46:02 UTC</span></div>
+<div class="cards">
+<div class="card"><div class="v num">$1,000.00</div><div class="k">ارزش کل ($)</div></div>
+<div class="card"><div class="v num pos">+0.00</div><div class="k">سود / زیان ($)</div></div>
+<div class="card"><div class="v num pos">+0.00٪</div><div class="k">بازده کل</div></div>
+<div class="card"><div class="v num">1,000.00</div><div class="k">نقد ($)</div></div>
+<div class="card"><div class="v num">0</div><div class="k">پوزیشن باز</div></div>
+<div class="card"><div class="v num">0</div><div class="k">معاملات بسته</div></div>
+<div class="card"><div class="v num">0.0٪</div><div class="k">نرخ برد</div></div>
+<div class="card"><div class="v num">+0.17</div><div class="k">رژیم بازار (نمره)</div></div>
+</div>
+<h2>📈 نمودار ارزش کل (دلار)</h2><canvas id="eq" height="90"></canvas>
+<h2>🔓 پوزیشن‌های باز</h2><div id="opent">…</div>
+<h2>🧭 استراتژی‌ها و وزن‌ها (خودتنظیم)</h2><div id="stratt">…</div>
+<h2>🕘 دفتر تغییرات و تصمیم‌های عامل</h2><div class="log" id="logt">…</div>
+<h2>🧾 آخرین معاملات بسته</h2><div id="closet">…</div>
+<div class="sub" style="margin-top:14px">خاموشی اضطراری نداریم (تصمیم مالک)؛ خطای داده = توقف موقت ورود جدید. <span dir="ltr">/root/tv_research/agent_lab</span></div>
+<script>
+const D = {"updated": "2026-11-19 12:46:02 UTC", "start": 1000.0, "equity": 1000.0, "cash": 1000.0, "pnl": 0.0, "pnl_pct": 0.0, "open": 0, "closed": 0, "wr": 0.0, "regime": {"score": 0.175, "btc24": -0.38, "btc12": 1.11, "allow_short": false, "allow_long": false}, "curve": [{"t": 1795091940621, "eq": 1000.0}, {"t": 1795092362042, "eq": 1000.0}], "positions": [], "strategies": [{"name": "Momentum-Break", "weight": 1.0, "status": "فعال", "open": 0, "closed": 0, "wr": 0.0, "pnl": 0}, {"name": "Grid-Close-Short", "weight": 0.5, "status": "فعال", "open": 0, "closed": 0, "wr": 0.0, "pnl": 0}, {"name": "Volume-Profile", "weight": 0.0, "status": "غیرفعال", "open": 0, "closed": 0, "wr": 0.0, "pnl": 0}, {"name": "Whale-Reversal", "weight": 0.0, "status": "غیرفعال", "open": 0, "closed": 0, "wr": 0.0, "pnl": 0}, {"name": "TH-DualMode", "weight": 0.0, "status": "غیرفعال", "open": 0, "closed": 0, "wr": 0.0, "pnl": 0}, {"name": "Po3-Minimal", "weight": 0.0, "status": "غیرفعال", "open": 0, "closed": 0, "wr": 0.0, "pnl": 0}, {"name": "Divergence-Scanner", "weight": 0.0, "status": "غیرفعال", "open": 0, "closed": 0, "wr": 0.0, "pnl": 0}, {"name": "MoM-Levels", "weight": 0.0, "status": "غیرفعال", "open": 0, "closed": 0, "wr": 0.0, "pnl": 0}], "logs": [{"t": "11-19 12:39", "kind": "decision", "text": "خودتنظیمی: هر ۱۰ معامله بسته هر استراتژی، اگر زیان‌ده باشد وزنش ۰.۶× می‌شود (کف ۰.۱۵) و اگر WR>55٪ و سودده باشد ۱.۲۵× (سقف ۲.۵)."}, {"t": "11-19 12:39", "kind": "decision", "text": "ریسک هر معامله ۲٪ سرمایه با حدضرر ۱.۵×ATR و حدسود ۲.۲×ATR؛ حداکثر ۸ پوزیشن؛ لوریج ۱x."}, {"t": "11-19 12:39", "kind": "decision", "text": "رژیم‌سنج: شورت فقط وقتی نمره رژیم (BTC 24h + 0.5×BTC 12h) منفی باشد."}, {"t": "11-19 12:39", "kind": "decision", "text": "گیت ضعف نسبی فعال: شورت فقط وقتی بازده ۲۴س alt ≤ BTC باشد (اثبات‌شده: سود شورت از +$0.60 به +$19.67 رسید)."}, {"t": "11-19 12:39", "kind": "decision", "text": "Volume-Profile حذف شد — زیان زنده -$88.65 با WR ۲۴٪ در ۳۲۷ معامله."}, {"t": "11-19 12:39", "kind": "decision", "text": "انتخاب Grid-Close-Short با وزن ۰.۵ — ESTABLISHED در تست تعیین‌کننده (P=0.990) ولی فقط ۴ ترید زنده؛ وزن نصف تا سابقه بیشتری بسازد."}, {"t": "11-19 12:39", "kind": "decision", "text": "انتخاب Momentum-Break با وزن ۱.۰ — سابقه زنده +$38.98 با WR ۸۳٪."}, {"t": "11-19 12:39", "kind": "decision", "text": "لانگ کاملاً خاموش — آرشیو ۱۲٬۱۹۴ معامله لانگ WR فقط ۲۹٪ و PnL منفی."}, {"t": "11-19 12:39", "kind": "decision", "text": "شروع کتاب عامل با سرمایه ۱۰۰۰ دلار مجازی — اختیار کامل با من است، بدون سقف افت سرمایه (تصمیم میلاد)."}], "closed_last": []};
+const f2=x=>x.toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});
+document.querySelectorAll('.card .v')[0].textContent=f2(D.equity);
+const pc=document.querySelectorAll('.card .v')[1], pp=document.querySelectorAll('.card .v')[2];
+pc.textContent=(D.pnl>=0?'+':'')+f2(D.pnl); pp.textContent=(D.pnl>=0?'+':'')+D.pnl_pct+'٪';
+const cls=D.pnl>=0?'pos':'neg'; pc.classList.add(cls); pp.classList.add(cls);
+document.querySelectorAll('.card .v')[3].textContent=f2(D.cash);
+document.querySelectorAll('.card .v')[4].textContent=D.open;
+document.querySelectorAll('.card .v')[5].textContent=D.closed;
+document.querySelectorAll('.card .v')[6].textContent=D.wr+'٪';
+document.querySelectorAll('.card .v')[7].textContent=(D.regime&&D.regime.score!==undefined?D.regime.score:'—');
+// equity chart
+const cv=D.curve.map(c=>({x:c.t,y:c.eq}));
+new Chart(document.getElementById('eq'),{type:'line',data:{datasets:[{label:'ارزش کل',data:cv,borderColor:'#7aa2f7',pointRadius:0,borderWidth:2,tension:.25,fill:false}]},
+options:{parsing:{xAxisKey:'x',yAxisKey:'y'},scales:{x:{type:'linear',ticks:{color:'#8892a8',callback:v=>{const d=new Date(v);return d.toLocaleDateString('en-GB',{day:'2-digit',month:'2-digit'})}},grid:{color:'#1e2534'}},y:{ticks:{color:'#8892a8'},grid:{color:'#1e2534'}}},plugins:{legend:{display:false},tooltip:{callbacks:{title:i=>new Date(i[0].parsed.x).toLocaleString('en-GB')}}}}});
+function tbl(head,rows,fmt){if(!rows.length)return '<div class="sub">هنوز موردی نیست.</div>';
+let h='<table><tr>'+head.map(x=>'<th>'+x+'</th>').join('')+'</tr>';
+rows.forEach(r=>{h+='<tr>'+fmt(r).map(c=>'<td>'+c+'</td>').join('')+'</tr>'});return h+'</table>'}
+const m=x=>'<span class="num">'+x+'</span>';
+document.getElementById('opent').innerHTML=tbl(['نماد','استراتژی','سمت','ورود','حجم $','حدضرر','حدسود','ساعت'],D.positions,
+r=>[r.sym,r.name,r.side,m(r.entry.toPrecision(6)),m(f2(r.notional)),m(r.sl.toPrecision(6)),m(r.tp.toPrecision(6)),m(r.age_h)]);
+document.getElementById('stratt').innerHTML=tbl(['استراتژی','وزن','وضعیت','باز','بسته','نرخ برد','سود $'],D.strategies,
+r=>[r.name,m(r.weight),(r.status==='فعال'?'<span class="pos">':'<span class="sub">')+r.status+'</span>',m(r.open),m(r.closed),m(r.wr+'٪'),m((r.pnl>=0?'+':'')+f2(r.pnl))]);
+document.getElementById('logt').innerHTML=D.logs.map(l=>'<div><span class="sub" dir="ltr">'+l.t+'</span> '+
+(l.kind==='trade'?'':'<span class="badge">'+(l.kind==='adapt'?'خودتنظیمی':'تصمیم')+'</span>')+' '+l.text+'</div>').join('')||'—';
+document.getElementById('closet').innerHTML=tbl(['زمان','نماد','استراتژی','سمت','نتیجه','سود $','تغییر قیمت','نگهداری(ساعت)'],D.closed_last,
+r=>{const cls=r.pnl>=0?'pos':'neg';const w={'sl':'حدضرر','tp':'حدسود','signal':'سیگنال','time':'زمان'}[r.why]||r.why;
+return [m(r.when),r.sym,r.name,r.side,'<span class="'+cls+'">'+w+'</span>','<span class="'+cls+'">'+(r.pnl>=0?'+':'')+f2(r.pnl)+'</span>','<span class="num">'+(r.chg>=0?'+':'')+r.chg+'٪</span>',m(r.hold)]});
+</script></body></html>
