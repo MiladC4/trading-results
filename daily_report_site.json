@@ -1,15 +1,15 @@
 {
-  "date": "2026-11-19 13:33 UTC",
+  "date": "2026-11-19 13:38 UTC",
   "cash": 9418.43,
-  "equity": 9864.89,
-  "pnl": -66.53,
-  "pnl_pct": -0.67,
+  "equity": 9864.56,
+  "pnl": -66.2,
+  "pnl_pct": -0.66,
   "open_positions": 4,
   "closed_trades": 356,
   "realized_usd": -64.65,
-  "unrealized_usd": -1.89,
-  "open_value_usd": 446.46,
-  "legacy_usd": -68.57,
+  "unrealized_usd": -1.55,
+  "open_value_usd": 446.12,
+  "legacy_usd": -69.24,
   "best_trade_usd": 4.11,
   "worst_trade_usd": -4.13,
   "sane_closed": 356,
@@ -126,7 +126,7 @@
       "sl": 0.04724206890426376,
       "tp_dist_pct": 5.14,
       "sl_dist_pct": -1.6,
-      "age_min": 3066.1,
+      "age_min": 3071.2,
       "trail_armed": false
     },
     {
@@ -135,14 +135,14 @@
       "symbol": "BTC/USDT",
       "side": "SHORT",
       "entry": 64116.24,
-      "current": 63727.69,
-      "pnl_pct": 0.61,
-      "chg_pct": -0.61,
+      "current": 63701.29,
+      "pnl_pct": 0.65,
+      "chg_pct": -0.65,
       "tp": 61560.58402652705,
       "sl": 66032.98198010471,
-      "tp_dist_pct": 3.4,
-      "sl_dist_pct": -3.62,
-      "age_min": 2708.8,
+      "tp_dist_pct": 3.36,
+      "sl_dist_pct": -3.66,
+      "age_min": 2713.9,
       "trail_armed": true
     },
     {
@@ -158,7 +158,7 @@
       "sl": 0.004096669685031719,
       "tp_dist_pct": 4.39,
       "sl_dist_pct": -1.18,
-      "age_min": 826.3,
+      "age_min": 831.4,
       "trail_armed": false
     },
     {
@@ -167,14 +167,14 @@
       "symbol": "KAITO/USDT",
       "side": "SHORT",
       "entry": 0.1779,
-      "current": 0.1767,
-      "pnl_pct": 0.67,
-      "chg_pct": -0.67,
+      "current": 0.1766,
+      "pnl_pct": 0.73,
+      "chg_pct": -0.73,
       "tp": 0.17073210605657926,
       "sl": 0.18327592045756555,
-      "tp_dist_pct": 3.38,
-      "sl_dist_pct": -3.72,
-      "age_min": 826.3,
+      "tp_dist_pct": 3.32,
+      "sl_dist_pct": -3.78,
+      "age_min": 831.4,
       "trail_armed": true
     }
   ],
@@ -291,7 +291,7 @@
     }
   ],
   "tuner": {
-    "ts": 1795095152293,
+    "ts": 1795095459542,
     "n": 380,
     "overall": {
       "n": 380,
