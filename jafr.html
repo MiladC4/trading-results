@@ -2,8 +2,7 @@
 <html lang="fa" dir="rtl"><head><meta charset="utf-8">
 <meta http-equiv="refresh" content="300">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>آزمایشگاه جفر — دفتر پیشگویی و کالیبراسیون</title>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<title>آزمایشگاه جفر — همهٔ پیش‌گویی‌ها و کالیبراسیون</title>
 <style>
 body{background:#0b0e14;color:#dbe2ef;font-family:Tahoma,Vazirmatn,sans-serif;margin:0;padding:16px}
 h1{font-size:20px;margin:4px 0} h2{font-size:15px;color:#c792ea;margin:18px 0 8px}
@@ -16,41 +15,40 @@ table{width:100%;border-collapse:collapse;font-size:12px;background:#161324;bord
 th,td{padding:6px 8px;text-align:right;border-bottom:1px solid #221d31}
 th{background:#1e1830;color:#c792ea;font-weight:600}
 .num{direction:ltr;text-align:left;font-family:monospace}
-.box{background:#161324;border:1px solid #2a233a;border-radius:8px;padding:10px;font-size:12px;line-height:1.9}
-.badge{font-size:10px;background:#2a2344;color:#c792ea;border-radius:6px;padding:1px 6px;margin-inline-start:6px}
+.box{background:#161324;border:1px solid #2a233a;border-radius:8px;padding:10px 12px;font-size:12px;line-height:2}
+.box b{color:#c792ea}
+.step{background:#131020;border-right:3px solid #c792ea;border-radius:6px;padding:6px 10px;margin:6px 0;font-size:12px}
 </style></head><body>
-<h1>🔮 آزمایشگاه جفر — دفتر پیشگویی از پیش ثبت‌شده</h1>
-<div class="sub">پیش‌گویی‌ها قبل از رویداد ثبت و بعد از ددلاین خودکار وارسی می‌شوند • پایه = نرخ تاریخی طبیعی همان رویداد • لِفت = نرخ درست منهای پایه • <span dir="ltr">2026-11-21 14:46 UTC</span></div>
+<h1>🔮 آزمایشگاه جفر — همهٔ پیش‌گویی‌ها</h1>
+<div class="sub">پیش‌گویی‌ها قبل از رویداد ثبت و بعد از آن خودکار وارسی می‌شوند • پایه = نرخ تاریخی طبیعی رویداد • لِفت = نرخ درست منهای پایه • <span dir="ltr">2026-11-21 14:51 UTC</span></div>
 <div class="cards">
 <div class="card"><div class="v">21</div><div class="k">پیش‌گویی باز</div></div>
 <div class="card"><div class="v">0</div><div class="k">وارسی‌شده</div></div>
 <div class="card"><div class="v neg">—٪</div><div class="k">نرخ درست کل</div></div>
-<div class="card"><div class="v neg">—pp</div><div class="k">لِفت میانگین (مهارت واقعی)</div></div>
+<div class="card"><div class="v neg">—pp</div><div class="k">لِفت میانگین (مهارت)</div></div>
 <div class="card"><div class="v warn">100٪</div><div class="k">بک‌تست: بله/خیر</div></div>
 <div class="card"><div class="v warn">780 سال</div><div class="k">بک‌تست: خطای سال</div></div>
 </div>
-<div class="box">🧪 <b>نتیجهٔ بک‌تست گذشته</b>: بله/خیر روی ۱۰ رخداد تاریخی 100٪ «درست» به نظر رسید، ولی کنترل‌های ساختگی هم 100٪ قریب گفتند (سیگنال تمایزناپذیر)؛ خطای پیش‌بینی سال = 780 سال، برخورد ±۱۵ سال فقط 0٪. مفهوم: مکانیزم صرفِ جفر در بک‌تست مهارت نداشت — این دفتر همین را روی آینده می‌سنجد.</div>
-<h2>⚽ پیش‌بینی مسابقات (قبل از نتیجه ثبت‌شده)</h2><div id="matches">…</div>
-<h2>⚖️ کالیبراسیون بر پایهٔ طبع حرف (وارسی‌شده‌ها)</h2><div id="calib">…</div>
-<h2>⏳ پیش‌گویی‌های باز (منتظر ددلاین)</h2><div id="open">…</div>
-<h2>🧾 تاریخچهٔ وارسی‌شده</h2><div id="done">…</div>
-<div class="sub" style="margin-top:14px">قاعدهٔ داوری: حرف مؤثر از گروه گرم (آتش/هوا) = «رخ می‌دهد» • منبع قواعد: رساله‌های جفر (ارسلانی/ده‌دار/بونی) • موتور: <span dir="ltr">/root/jafr_lab</span></div>
-<script>
-const D = {"updated": "2026-11-21 14:46 UTC", "open_n": 21, "done_n": 0, "hits": 0, "rate": null, "mean_lift": null, "calib": [], "matches": [{"home": "نساجی", "away": "آلومینیوم", "power_home": 318, "power_away": 346, "ms_home": "نسنانانون", "ms_away": "اماداباوالاوازاماراا", "result": "مساوی", "score": "2-2", "asked": "2026-11-21T14:15:24.230289+00:00", "outcome": null}, {"home": "فولاد", "away": "سپاهان", "power_home": 443, "power_away": 313, "ms_home": "فوفلفافوف", "ms_away": "ساسهساسوس", "result": "برد فولاد", "score": "2-1", "asked": "2026-11-21T14:15:24.230477+00:00", "outcome": null}], "open": [{"q": "آیا افت بیت‌کوین فردا تا ددلاین رخ می‌دهد؟", "deadline": "2026-11-22", "hz": "day", "pred": "رخ می‌دهد", "nature": "هوا", "base": 48.0}, {"q": "آیا افت بیت‌کوین فردا تا ددلاین رخ می‌دهد؟", "deadline": "2026-11-23", "hz": "day", "pred": "رخ می‌دهد", "nature": "هوا", "base": 48.0}, {"q": "آیا افت بیت‌کوین فردا تا ددلاین رخ می‌دهد؟", "deadline": "2026-11-24", "hz": "day", "pred": "رخ می‌دهد", "nature": "هوا", "base": 48.0}, {"q": "آیا نوسان دو درصدی بیت‌کوین فردا تا ددلاین رخ می‌دهد؟", "deadline": "2026-11-22", "hz": "day", "pred": "رخ می‌دهد", "nature": "هوا", "base": 24.0}, {"q": "آیا افت پنج درصدی بیت‌کوین تا پایان هفته تا ددلاین رخ می‌دهد؟", "deadline": "2026-11-28", "hz": "week", "pred": "رخ می‌دهد", "nature": "هوا", "base": 10.0}, {"q": "آیا رشد پنج درصدی بیت‌کوین تا پایان هفته تا ددلاین رخ می‌دهد؟", "deadline": "2026-11-28", "hz": "week", "pred": "رخ می‌دهد", "nature": "هوا", "base": 15.0}, {"q": "آیا آرامش بازار تا پایان هفته تا ددلاین رخ می‌دهد؟", "deadline": "2026-11-28", "hz": "week", "pred": "رخ می‌دهد", "nature": "هوا", "base": 87.0}, {"q": "آیا رشد ده درصدی بیت‌کوین تا پایان ماه تا ددلاین رخ می‌دهد؟", "deadline": "2026-12-21", "hz": "month", "pred": "رخ می‌دهد", "nature": "هوا", "base": 28.0}, {"q": "آیا افت ده درصدی بیت‌کوین تا پایان ماه تا ددلاین رخ می‌دهد؟", "deadline": "2026-12-21", "hz": "month", "pred": "رخ می‌دهد", "nature": "هوا", "base": 8.0}, {"q": "آیا روز سخت بازار در این ماه تا ددلاین رخ می‌دهد؟", "deadline": "2026-12-21", "hz": "month", "pred": "رخ می‌دهد", "nature": "هوا", "base": 51.0}, {"q": "آیا رشد بیت‌کوین در 1 روز آینده تا ددلاین رخ می‌دهد؟", "deadline": "2026-11-22", "hz": "day", "pred": "رخ می‌دهد", "nature": "هوا", "base": 52.0}, {"q": "آیا رشد بیت‌کوین در 2 روز آینده تا ددلاین رخ می‌دهد؟", "deadline": "2026-11-23", "hz": "day", "pred": "رخ می‌دهد", "nature": "هوا", "base": 52.0}, {"q": "آیا نوسان دو درصدی بیت‌کوین در 2 روز آینده تا ددلاین رخ می‌دهد؟", "deadline": "2026-11-23", "hz": "day", "pred": "رخ می‌دهد", "nature": "هوا", "base": 24.0}, {"q": "آیا رشد بیت‌کوین در 3 روز آینده تا ددلاین رخ می‌دهد؟", "deadline": "2026-11-24", "hz": "day", "pred": "رخ می‌دهد", "nature": "هوا", "base": 52.0}, {"q": "آیا نوسان دو درصدی بیت‌کوین در 3 روز آینده تا ددلاین رخ می‌دهد؟", "deadline": "2026-11-24", "hz": "day", "pred": "رخ می‌دهد", "nature": "هوا", "base": 24.0}, {"q": "آیا افت بیت‌کوین در 4 روز آینده تا ددلاین رخ می‌دهد؟", "deadline": "2026-11-25", "hz": "day", "pred": "رخ می‌دهد", "nature": "هوا", "base": 48.0}, {"q": "آیا رشد بیت‌کوین در 4 روز آینده تا ددلاین رخ می‌دهد؟", "deadline": "2026-11-25", "hz": "day", "pred": "رخ می‌دهد", "nature": "هوا", "base": 52.0}, {"q": "آیا نوسان دو درصدی بیت‌کوین در 4 روز آینده تا ددلاین رخ می‌دهد؟", "deadline": "2026-11-25", "hz": "day", "pred": "رخ می‌دهد", "nature": "هوا", "base": 24.0}, {"q": "آیا افت بیت‌کوین در 5 روز آینده تا ددلاین رخ می‌دهد؟", "deadline": "2026-11-26", "hz": "day", "pred": "رخ می‌دهد", "nature": "هوا", "base": 48.0}, {"q": "آیا رشد بیت‌کوین در 5 روز آینده تا ددلاین رخ می‌دهد؟", "deadline": "2026-11-26", "hz": "day", "pred": "رخ می‌دهد", "nature": "هوا", "base": 52.0}, {"q": "آیا نوسان دو درصدی بیت‌کوین در 5 روز آینده تا ددلاین رخ می‌دهد؟", "deadline": "2026-11-26", "hz": "day", "pred": "رخ می‌دهد", "nature": "هوا", "base": 24.0}], "done": [], "backtest": {"binary": 100, "year_err": 780, "within15": 0, "control": 100}};
-document.querySelector('.sub').innerHTML += '';
-function f2(x){return x.toLocaleString('en-US',{minimumFractionDigits:1,maximumFractionDigits:1})}
-function tbl(head,rows,fmt){if(!rows.length)return '<div class="sub">هنوز موردی نیست.</div>';
-let h='<table><tr>'+head.map(x=>'<th>'+x+'</th>').join('')+'</tr>';
-rows.forEach(r=>{h+='<tr>'+fmt(r).map(c=>'<td>'+c+'</td>').join('')+'</tr>'});return h+'</table>'}
-const m=x=>'<span class="num">'+x+'</span>';
-document.getElementById('matches').innerHTML=tbl(['مسابقه','پیش‌بینی','نتیجهٔ دقیق','قدرت میزبان','قدرت مهمان','وضعیت'],D.matches,
-r=>{const st=r.outcome?('hit'===r.outcome?'<span class="pos">✓ درست</span>':'<span class="neg">✗ نادرست</span>'):'<span class="warn">در انتظار نتیجه</span>';
-return [r.home+' – '+r.away,'<b>'+(r.result==='مساوی'?'مساوی':r.result)+'</b>',m(r.score),m(r.power_home),m(r.power_away),st]});
-document.getElementById('calib').innerHTML=tbl(['طبع','n','درست','نرخ','پایه','لِفت (pp)'],D.calib,
-r=>[r.nature,m(r.n),m(r.hits),m(r.rate+'٪'),m(r.base+'٪'),'<span class="'+(r.lift>0?'pos':(r.lift<0?'neg':'sub'))+'">'+(r.lift>0?'+':'')+r.lift+'</span>']);
-document.getElementById('open').innerHTML=tbl(['سؤال','افق','ددلاین','پیش‌بینی','طبع','پایه'],D.open,
-r=>[r.q,'<span class="badge">'+r.hz+'</span>',m(r.deadline),(r.pred==='رخ می‌دهد'?'<span class="pos">':'<span class="neg">')+r.pred+'</span>',r.nature,m(r.base+'٪')]);
-document.getElementById('done').innerHTML=tbl(['سؤال','ددلاین','پیش‌بینی','واقعیت','نتیجه'],D.done,
-r=>{const cls=r.outcome==='hit'?'pos':'neg';
-return [r.q,m(r.deadline),(r.pred==='رخ می‌دهد'?'<span class="pos">':'<span class="neg">')+r.pred+'</span>',r.truth,'<span class="'+cls+'">'+(r.outcome==='hit'?'✓ درست':'✗ نادرست')+'</span>]'.replace(']','')});
-</script></body></html>
+<div class="box">🧪 <b>بک‌تست گذشته:</b> بله/خیر روی ۱۰ رخداد تاریخی 100٪ «درست» به نظر رسید ولی کنترل‌های ساختگی هم 100٪ قریب گفتند (تمایزناپذیر)؛ خطای سال 780 سال، برخورد ±۱۵سال فقط 0٪ — یعنی مکانیزم صرف مهارت نداشت. این دفتر همان آزمون را روی آینده اجرا می‌کند.</div>
+
+<h2>📋 همهٔ پیش‌گویی‌ها (بازی‌ها + بازار — باز و وارسی‌شده)</h2>
+<table><tr><th>ثبت</th><th>نوع</th><th>پیش‌گویی</th><th>پاسخ موتور</th><th>واقعیت</th><th>وضعیت</th></tr>
+<tr><td class='num'>2026-11-21</td><td>⚽</td><td>نساجی – آلومینیوم</td><td><b>مساوی</b> | دقیق: <span class='num'>2-2</span></td><td>—</td><td><span class="pos">✓ درست</span></td></tr><tr><td class='num'>2026-11-21</td><td>⚽</td><td>فولاد – سپاهان</td><td><b>برد فولاد</b> | دقیق: <span class='num'>2-1</span></td><td>—</td><td><span class="warn">⏳ در انتظار نتیجه</span></td></tr><tr><td class='num'>2026-11-21</td><td>📈</td><td>آیا افت بیت‌کوین فردا تا ددلاین رخ می‌دهد؟</td><td>رخ می‌دهد</td><td>طبع: هوا</td><td><span class="warn">⏳ باز</span></td></tr><tr><td class='num'>2026-11-21</td><td>📈</td><td>آیا نوسان دو درصدی بیت‌کوین فردا تا ددلاین رخ می‌دهد؟</td><td>رخ می‌دهد</td><td>طبع: هوا</td><td><span class="warn">⏳ باز</span></td></tr><tr><td class='num'>2026-11-21</td><td>📈</td><td>آیا رشد بیت‌کوین در 1 روز آینده تا ددلاین رخ می‌دهد؟</td><td>رخ می‌دهد</td><td>طبع: هوا</td><td><span class="warn">⏳ باز</span></td></tr><tr><td class='num'>2026-11-21</td><td>📈</td><td>آیا افت بیت‌کوین فردا تا ددلاین رخ می‌دهد؟</td><td>رخ می‌دهد</td><td>طبع: هوا</td><td><span class="warn">⏳ باز</span></td></tr><tr><td class='num'>2026-11-21</td><td>📈</td><td>آیا رشد بیت‌کوین در 2 روز آینده تا ددلاین رخ می‌دهد؟</td><td>رخ می‌دهد</td><td>طبع: هوا</td><td><span class="warn">⏳ باز</span></td></tr><tr><td class='num'>2026-11-21</td><td>📈</td><td>آیا نوسان دو درصدی بیت‌کوین در 2 روز آینده تا ددلاین رخ می‌دهد؟</td><td>رخ می‌دهد</td><td>طبع: هوا</td><td><span class="warn">⏳ باز</span></td></tr><tr><td class='num'>2026-11-21</td><td>📈</td><td>آیا افت بیت‌کوین فردا تا ددلاین رخ می‌دهد؟</td><td>رخ می‌دهد</td><td>طبع: هوا</td><td><span class="warn">⏳ باز</span></td></tr><tr><td class='num'>2026-11-21</td><td>📈</td><td>آیا رشد بیت‌کوین در 3 روز آینده تا ددلاین رخ می‌دهد؟</td><td>رخ می‌دهد</td><td>طبع: هوا</td><td><span class="warn">⏳ باز</span></td></tr><tr><td class='num'>2026-11-21</td><td>📈</td><td>آیا نوسان دو درصدی بیت‌کوین در 3 روز آینده تا ددلاین رخ می‌دهد؟</td><td>رخ می‌دهد</td><td>طبع: هوا</td><td><span class="warn">⏳ باز</span></td></tr><tr><td class='num'>2026-11-21</td><td>📈</td><td>آیا افت بیت‌کوین در 4 روز آینده تا ددلاین رخ می‌دهد؟</td><td>رخ می‌دهد</td><td>طبع: هوا</td><td><span class="warn">⏳ باز</span></td></tr><tr><td class='num'>2026-11-21</td><td>📈</td><td>آیا رشد بیت‌کوین در 4 روز آینده تا ددلاین رخ می‌دهد؟</td><td>رخ می‌دهد</td><td>طبع: هوا</td><td><span class="warn">⏳ باز</span></td></tr><tr><td class='num'>2026-11-21</td><td>📈</td><td>آیا نوسان دو درصدی بیت‌کوین در 4 روز آینده تا ددلاین رخ می‌دهد؟</td><td>رخ می‌دهد</td><td>طبع: هوا</td><td><span class="warn">⏳ باز</span></td></tr><tr><td class='num'>2026-11-21</td><td>📈</td><td>آیا افت بیت‌کوین در 5 روز آینده تا ددلاین رخ می‌دهد؟</td><td>رخ می‌دهد</td><td>طبع: هوا</td><td><span class="warn">⏳ باز</span></td></tr><tr><td class='num'>2026-11-21</td><td>📈</td><td>آیا رشد بیت‌کوین در 5 روز آینده تا ددلاین رخ می‌دهد؟</td><td>رخ می‌دهد</td><td>طبع: هوا</td><td><span class="warn">⏳ باز</span></td></tr><tr><td class='num'>2026-11-21</td><td>📈</td><td>آیا نوسان دو درصدی بیت‌کوین در 5 روز آینده تا ددلاین رخ می‌دهد؟</td><td>رخ می‌دهد</td><td>طبع: هوا</td><td><span class="warn">⏳ باز</span></td></tr><tr><td class='num'>2026-11-21</td><td>📈</td><td>آیا افت پنج درصدی بیت‌کوین تا پایان هفته تا ددلاین رخ می‌دهد؟</td><td>رخ می‌دهد</td><td>طبع: هوا</td><td><span class="warn">⏳ باز</span></td></tr><tr><td class='num'>2026-11-21</td><td>📈</td><td>آیا رشد پنج درصدی بیت‌کوین تا پایان هفته تا ددلاین رخ می‌دهد؟</td><td>رخ می‌دهد</td><td>طبع: هوا</td><td><span class="warn">⏳ باز</span></td></tr><tr><td class='num'>2026-11-21</td><td>📈</td><td>آیا آرامش بازار تا پایان هفته تا ددلاین رخ می‌دهد؟</td><td>رخ می‌دهد</td><td>طبع: هوا</td><td><span class="warn">⏳ باز</span></td></tr><tr><td class='num'>2026-11-21</td><td>📈</td><td>آیا رشد ده درصدی بیت‌کوین تا پایان ماه تا ددلاین رخ می‌دهد؟</td><td>رخ می‌دهد</td><td>طبع: هوا</td><td><span class="warn">⏳ باز</span></td></tr><tr><td class='num'>2026-11-21</td><td>📈</td><td>آیا افت ده درصدی بیت‌کوین تا پایان ماه تا ددلاین رخ می‌دهد؟</td><td>رخ می‌دهد</td><td>طبع: هوا</td><td><span class="warn">⏳ باز</span></td></tr><tr><td class='num'>2026-11-21</td><td>📈</td><td>آیا روز سخت بازار در این ماه تا ددلاین رخ می‌دهد؟</td><td>رخ می‌دهد</td><td>طبع: هوا</td><td><span class="warn">⏳ باز</span></td></tr></table>
+
+<h2>🧮 روش محاسبه سؤال ← جواب (روی یک نمونهٔ واقعی دفتر)</h2>
+<div class="box">
+<div class="step"><b>۱. سؤال:</b> طالب «میلاد» + خواسته «آیا افت بیت‌کوین فردا تا ددلاین رخ می‌دهد؟»</div>
+<div class="step"><b>۲. تمازج (درآمیختن یکی‌درمیان حروف طالب و خواسته):</b> سطر اساس = <span class="num">—</span></div>
+<div class="step"><b>۳. تکسیر صدرمؤخر + متوسط:</b> حروف یکی‌درمیان از سر و ته سطر جابه‌جا می‌شوند تا سطر به خودش برگردد (دورهٔ — سطر) — تکسیر جایگشت است، بازگشت اجتناب‌ناپذیر</div>
+<div class="step"><b>۴. مستحصله (حروف برکشیده از سطرها):</b> <span class="num">مکمبمامفمدمیمنمدم</span></div>
+<div class="step"><b>۵. نظیره (نگاشت نیمهٔ اساس ↔ نیمهٔ نظیرهٔ الفبای ابجد):</b> سطر جوابِ «ناطق» = <span class="num">فظفصفففافرفضفصفرف</span></div>
+<div class="step"><b>۶. طبع حرف نخستِ جواب:</b> «هوا» → <b>هوا</b> — آتش/هوا = گرم ← «رخ می‌دهد»؛ آب/خاک = سرد ← «رخ نمی‌دهد»</div>
+<div class="step"><b>۷. ثبت در دفتر قبل از رویداد</b> و وارسی خودکار بعد از ددلاین از دادهٔ واقعی (کندل بازار / نتیجهٔ بازی)</div>
+<div class="sub">قواعد ۱-۶ از رساله‌ها (ارسلانی: «نظیرهٔ ناطق را جواب می‌نامند» + قاعدهٔ جمهور)؛ قاعدهٔ داوری باینری و قاعدهٔ گلِ بازی‌ها اشتقاقیِ موتور است و در خروجی‌ها به‌عنوان قاعدهٔ اجراشده مستند می‌شود.</div>
+</div>
+
+<h2>⚖️ کالیبراسیون بر پایهٔ طبع (وارسی‌شده‌ها)</h2>
+<table><tr><th>طبع</th><th>n</th><th>درست</th><th>نرخ</th><th>پایه</th><th>لِفت (pp)</th></tr>
+<tr><td colspan='6' class='sub'>هنوز وارسی‌ای نیست — اولین ددلاین‌ها از فردا (۲۲ نوامبر) پر می‌شوند.</td></tr></table>
+<div class="sub" style="margin-top:14px">لِفت ≈ صفر = الگو فقط نرخ طبیعی رویداد را می‌زند • لِفت مثبت پایدار = مهارت واقعی • موتور: <span dir="ltr">/root/jafr_lab</span></div>
+</body></html>
