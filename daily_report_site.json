@@ -1,23 +1,23 @@
 {
-  "date": "2026-11-25 19:22 UTC",
-  "cash": 9570.05,
-  "equity": 9738.74,
-  "pnl": 36.22,
+  "date": "2026-11-25 19:32 UTC",
+  "cash": 9667.99,
+  "equity": 9739.19,
+  "pnl": 35.66,
   "pnl_pct": 0.36,
-  "open_positions": 2,
-  "closed_trades": 429,
-  "realized_usd": 41.31,
-  "unrealized_usd": -5.09,
-  "open_value_usd": 168.69,
-  "legacy_usd": -297.47,
+  "open_positions": 1,
+  "closed_trades": 430,
+  "realized_usd": 38.07,
+  "unrealized_usd": -2.41,
+  "open_value_usd": 71.2,
+  "legacy_usd": -296.46,
   "best_trade_usd": 4.11,
   "worst_trade_usd": -4.13,
-  "sane_closed": 429,
+  "sane_closed": 430,
   "dollar_window_note": "\u0627\u0639\u062f\u0627\u062f \u062f\u0644\u0627\u0631\u06cc (\u0633\u0648\u062f \u062a\u062d\u0642\u0642\u200c\u06cc\u0627\u0641\u062a\u0647\u060c \u0628\u0647\u062a\u0631\u06cc\u0646/\u0628\u062f\u062a\u0631\u06cc\u0646 \u0627\u0633\u062a\u0631\u0627\u062a\u0698\u06cc\u060c PnL \u0631\u0648\u0632) \u0641\u0642\u0637 \u0631\u0648\u06cc \u0645\u0639\u0627\u0645\u0644\u0627\u062a \u067e\u0633 \u0627\u0632 \u0641\u06cc\u06a9\u0633 \u0633\u0627\u06cc\u0632\u06cc\u0646\u06af (\u06f2\u06f0\u06f2\u06f6-\u06f1\u06f0-\u06f2\u06f2) \u0645\u062d\u0627\u0633\u0628\u0647 \u0645\u06cc\u200c\u0634\u0648\u0646\u062f \u2014 24 \u0645\u0639\u0627\u0645\u0644\u0647\u0654 \u06f1\u06f0-\u06f2\u06f0 \u062f\u0631 \u062f\u0648\u0631\u0647\u0654 \u0633\u0627\u06cc\u0632\u06cc\u0646\u06af \u062e\u0631\u0627\u0628 \u0628\u0648\u062f\u0646\u062f (notional \u062a\u0627 $\u06f1\u06f1M \u063a\u0644\u0637) \u0648 \u062f\u0631\u0635\u062f\u0634\u0627\u0646 \u0635\u0627\u062f\u0642\u0627\u0646\u0647 \u062f\u0631 \u0648\u06cc\u0646\u200c\u0631\u06cc\u062a \u0648 \u062a\u0639\u062f\u0627\u062f \u0645\u06cc\u200c\u0645\u0627\u0646\u062f \u0627\u0645\u0627 \u062f\u0644\u0627\u0631\u0634\u0627\u0646 \u0642\u0627\u0628\u0644 \u0645\u062d\u0627\u0633\u0628\u0647 \u0646\u06cc\u0633\u062a. Equity = cash + \u0627\u0631\u0632\u0634 \u0628\u0627\u0632\u0627\u0631 \u067e\u0648\u0632\u06cc\u0634\u0646\u200c\u0647\u0627\u06cc \u0628\u0627\u0632 \u0627\u0633\u062a \u0648 \u0628\u0647 \u0647\u0631 \u062f\u0648 \u062f\u0648\u0631\u0647 \u0645\u0631\u0628\u0648\u0637 \u0627\u0633\u062a.",
   "reset_closes_excluded": 0,
-  "win_rate": 29.4,
+  "win_rate": 29.3,
   "avg_win": 2.988,
-  "avg_loss": -1.145,
+  "avg_loss": -1.152,
   "reset_at": 1792484079114,
   "reset_note": "paper book reset on the trailing-stop geometry (TP 12 ATR / initial SL 9 ATR / trail 5 ATR) + regime filters (gate D + fee-dead zone + chop 135-155) + $135 size at a constant $3.13 risk per trade, max 12 open. Numbers before this timestamp are archived in backups/ and must not be mixed into this window.",
   "window": "post-reset",
@@ -119,45 +119,18 @@
       "symbol": "A/USDT",
       "side": "SHORT",
       "entry": 0.06329,
-      "current": 0.0653,
-      "pnl_pct": -3.18,
-      "chg_pct": 3.18,
+      "current": 0.06551,
+      "pnl_pct": -3.51,
+      "chg_pct": 3.51,
       "tp": 0.05945247764964324,
       "sl": 0.06616814176276757,
-      "tp_dist_pct": 8.95,
-      "sl_dist_pct": -1.33,
-      "age_min": 218.7,
-      "trail_armed": false
-    },
-    {
-      "strategy": "Momentum-Break",
-      "strategy_full": "1UtA1u3v",
-      "symbol": "BTC/USDT",
-      "side": "SHORT",
-      "entry": 58312.59,
-      "current": 60099.41,
-      "pnl_pct": -3.06,
-      "chg_pct": 3.06,
-      "tp": 55747.46145602181,
-      "sl": 60236.43640798364,
-      "tp_dist_pct": 7.24,
-      "sl_dist_pct": -0.23,
-      "age_min": 218.8,
+      "tp_dist_pct": 9.25,
+      "sl_dist_pct": -1.0,
+      "age_min": 228.7,
       "trail_armed": false
     }
   ],
   "recent_trades": [
-    {
-      "strategy": "Momentum-Break",
-      "symbol": "AXS/USDT",
-      "result": "LOSS",
-      "pnl_pct": -0.12,
-      "entry": 0.6161,
-      "exit": 0.616839,
-      "chg_pct": 0.12,
-      "candles": 165,
-      "exit_reason": "sl"
-    },
     {
       "strategy": "Momentum-Break",
       "symbol": "CC/USDT",
@@ -256,16 +229,27 @@
       "chg_pct": 4.553,
       "candles": 42,
       "exit_reason": "sl"
+    },
+    {
+      "strategy": "Momentum-Break",
+      "symbol": "BTC/USDT",
+      "result": "LOSS",
+      "pnl_pct": -3.417,
+      "entry": 58312.59,
+      "exit": 60305.1312,
+      "chg_pct": 3.417,
+      "candles": 45,
+      "exit_reason": "sl"
     }
   ],
   "tuner": {
-    "ts": 1795634553459,
-    "n": 453,
+    "ts": 1795635152648,
+    "n": 454,
     "overall": {
-      "n": 453,
-      "wr": 28.7,
-      "exp": 0.00041,
-      "tot": 0.188
+      "n": 454,
+      "wr": 28.6,
+      "exp": 0.00034,
+      "tot": 0.154
     },
     "sides": {
       "long": {
@@ -279,10 +263,10 @@
         "long_sum": -0.3329
       },
       "short": {
-        "n": 453,
-        "wr": 28.7,
-        "exp": 0.00041,
-        "tot": 0.188,
+        "n": 454,
+        "wr": 28.6,
+        "exp": 0.00034,
+        "tot": 0.154,
         "banned": false,
         "long_n": 612,
         "long_wr": 45.588235294117645,
@@ -343,7 +327,7 @@
           3.0
         ],
         "tp_pct": 1.13,
-        "sl_pct": 0.84
+        "sl_pct": 0.85
       },
       {
         "action": "widen",
@@ -462,15 +446,15 @@
       {
         "uid": "1UtA1u3v",
         "name": "Momentum-Break",
-        "n": 92,
-        "wr": 50.0,
-        "exp": 0.0087,
-        "tot": 0.801,
+        "n": 93,
+        "wr": 49.5,
+        "exp": 0.00824,
+        "tot": 0.766,
         "tp": 4.0,
         "sl": 3.0,
         "ap": 0.282,
         "tp_pct": 1.13,
-        "sl_pct": 0.84,
+        "sl_pct": 0.85,
         "src": "widen",
         "quarantined": false
       },
