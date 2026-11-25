@@ -1,23 +1,23 @@
 {
-  "date": "2026-11-25 18:47 UTC",
-  "cash": 9360.32,
-  "equity": 9735.73,
-  "pnl": 39.47,
-  "pnl_pct": 0.39,
-  "open_positions": 5,
-  "closed_trades": 426,
-  "realized_usd": 50.94,
-  "unrealized_usd": -11.46,
-  "open_value_usd": 375.41,
-  "legacy_usd": -303.75,
+  "date": "2026-11-25 18:53 UTC",
+  "cash": 9427.44,
+  "equity": 9736.69,
+  "pnl": 38.43,
+  "pnl_pct": 0.38,
+  "open_positions": 4,
+  "closed_trades": 427,
+  "realized_usd": 47.73,
+  "unrealized_usd": -9.3,
+  "open_value_usd": 309.25,
+  "legacy_usd": -301.74,
   "best_trade_usd": 4.11,
   "worst_trade_usd": -4.13,
-  "sane_closed": 426,
+  "sane_closed": 427,
   "dollar_window_note": "\u0627\u0639\u062f\u0627\u062f \u062f\u0644\u0627\u0631\u06cc (\u0633\u0648\u062f \u062a\u062d\u0642\u0642\u200c\u06cc\u0627\u0641\u062a\u0647\u060c \u0628\u0647\u062a\u0631\u06cc\u0646/\u0628\u062f\u062a\u0631\u06cc\u0646 \u0627\u0633\u062a\u0631\u0627\u062a\u0698\u06cc\u060c PnL \u0631\u0648\u0632) \u0641\u0642\u0637 \u0631\u0648\u06cc \u0645\u0639\u0627\u0645\u0644\u0627\u062a \u067e\u0633 \u0627\u0632 \u0641\u06cc\u06a9\u0633 \u0633\u0627\u06cc\u0632\u06cc\u0646\u06af (\u06f2\u06f0\u06f2\u06f6-\u06f1\u06f0-\u06f2\u06f2) \u0645\u062d\u0627\u0633\u0628\u0647 \u0645\u06cc\u200c\u0634\u0648\u0646\u062f \u2014 24 \u0645\u0639\u0627\u0645\u0644\u0647\u0654 \u06f1\u06f0-\u06f2\u06f0 \u062f\u0631 \u062f\u0648\u0631\u0647\u0654 \u0633\u0627\u06cc\u0632\u06cc\u0646\u06af \u062e\u0631\u0627\u0628 \u0628\u0648\u062f\u0646\u062f (notional \u062a\u0627 $\u06f1\u06f1M \u063a\u0644\u0637) \u0648 \u062f\u0631\u0635\u062f\u0634\u0627\u0646 \u0635\u0627\u062f\u0642\u0627\u0646\u0647 \u062f\u0631 \u0648\u06cc\u0646\u200c\u0631\u06cc\u062a \u0648 \u062a\u0639\u062f\u0627\u062f \u0645\u06cc\u200c\u0645\u0627\u0646\u062f \u0627\u0645\u0627 \u062f\u0644\u0627\u0631\u0634\u0627\u0646 \u0642\u0627\u0628\u0644 \u0645\u062d\u0627\u0633\u0628\u0647 \u0646\u06cc\u0633\u062a. Equity = cash + \u0627\u0631\u0632\u0634 \u0628\u0627\u0632\u0627\u0631 \u067e\u0648\u0632\u06cc\u0634\u0646\u200c\u0647\u0627\u06cc \u0628\u0627\u0632 \u0627\u0633\u062a \u0648 \u0628\u0647 \u0647\u0631 \u062f\u0648 \u062f\u0648\u0631\u0647 \u0645\u0631\u0628\u0648\u0637 \u0627\u0633\u062a.",
   "reset_closes_excluded": 0,
-  "win_rate": 29.6,
+  "win_rate": 29.5,
   "avg_win": 2.988,
-  "avg_loss": -1.11,
+  "avg_loss": -1.122,
   "reset_at": 1792484079114,
   "reset_note": "paper book reset on the trailing-stop geometry (TP 12 ATR / initial SL 9 ATR / trail 5 ATR) + regime filters (gate D + fee-dead zone + chop 135-155) + $135 size at a constant $3.13 risk per trade, max 12 open. Numbers before this timestamp are archived in backups/ and must not be mixed into this window.",
   "window": "post-reset",
@@ -119,14 +119,14 @@
       "symbol": "A/USDT",
       "side": "SHORT",
       "entry": 0.06329,
-      "current": 0.06479,
-      "pnl_pct": -2.37,
-      "chg_pct": 2.37,
+      "current": 0.0648,
+      "pnl_pct": -2.39,
+      "chg_pct": 2.39,
       "tp": 0.05945247764964324,
       "sl": 0.06616814176276757,
-      "tp_dist_pct": 8.24,
-      "sl_dist_pct": -2.13,
-      "age_min": 183.7,
+      "tp_dist_pct": 8.25,
+      "sl_dist_pct": -2.11,
+      "age_min": 189.7,
       "trail_armed": false
     },
     {
@@ -135,14 +135,14 @@
       "symbol": "AR/USDT",
       "side": "SHORT",
       "entry": 2.207,
-      "current": 2.289,
-      "pnl_pct": -3.72,
-      "chg_pct": 3.72,
+      "current": 2.296,
+      "pnl_pct": -4.03,
+      "chg_pct": 4.03,
       "tp": 2.067168196690828,
       "sl": 2.3118738524818787,
-      "tp_dist_pct": 9.69,
-      "sl_dist_pct": -1.0,
-      "age_min": 183.8,
+      "tp_dist_pct": 9.97,
+      "sl_dist_pct": -0.69,
+      "age_min": 189.8,
       "trail_armed": false
     },
     {
@@ -151,14 +151,14 @@
       "symbol": "ATOM/USDT",
       "side": "SHORT",
       "entry": 1.213,
-      "current": 1.254,
-      "pnl_pct": -3.38,
-      "chg_pct": 3.38,
+      "current": 1.257,
+      "pnl_pct": -3.63,
+      "chg_pct": 3.63,
       "tp": 1.141268550009438,
       "sl": 1.2667985874929215,
-      "tp_dist_pct": 8.99,
-      "sl_dist_pct": -1.02,
-      "age_min": 183.9,
+      "tp_dist_pct": 9.21,
+      "sl_dist_pct": -0.78,
+      "age_min": 189.9,
       "trail_armed": false
     },
     {
@@ -167,45 +167,18 @@
       "symbol": "BTC/USDT",
       "side": "SHORT",
       "entry": 58312.59,
-      "current": 59661.94,
-      "pnl_pct": -2.31,
-      "chg_pct": 2.31,
+      "current": 59812.43,
+      "pnl_pct": -2.57,
+      "chg_pct": 2.57,
       "tp": 55747.46145602181,
       "sl": 60236.43640798364,
-      "tp_dist_pct": 6.56,
-      "sl_dist_pct": -0.96,
-      "age_min": 184.0,
-      "trail_armed": false
-    },
-    {
-      "strategy": "Momentum-Break",
-      "strategy_full": "1UtA1u3v",
-      "symbol": "FARTCOIN/USDT",
-      "side": "SHORT",
-      "entry": 0.07602,
-      "current": 0.07935,
-      "pnl_pct": -4.38,
-      "chg_pct": 4.38,
-      "tp": 0.07106487417927049,
-      "sl": 0.07973634436554713,
-      "tp_dist_pct": 10.44,
-      "sl_dist_pct": -0.49,
-      "age_min": 184.1,
+      "tp_dist_pct": 6.8,
+      "sl_dist_pct": -0.71,
+      "age_min": 190.0,
       "trail_armed": false
     }
   ],
   "recent_trades": [
-    {
-      "strategy": "Momentum-Break",
-      "symbol": "CRCLB/USDT",
-      "result": "WIN",
-      "pnl_pct": 2.332,
-      "entry": 46.75,
-      "exit": 45.65979,
-      "chg_pct": -2.332,
-      "candles": 46,
-      "exit_reason": "tp"
-    },
     {
       "strategy": "Momentum-Break",
       "symbol": "FARTCOIN/USDT",
@@ -304,16 +277,27 @@
       "chg_pct": 3.609,
       "candles": 27,
       "exit_reason": "sl"
+    },
+    {
+      "strategy": "Momentum-Break",
+      "symbol": "FARTCOIN/USDT",
+      "result": "LOSS",
+      "pnl_pct": -5.006,
+      "entry": 0.07602,
+      "exit": 0.079826,
+      "chg_pct": 5.006,
+      "candles": 38,
+      "exit_reason": "sl"
     }
   ],
   "tuner": {
-    "ts": 1795632449009,
-    "n": 450,
+    "ts": 1795632807958,
+    "n": 451,
     "overall": {
-      "n": 450,
-      "wr": 28.9,
-      "exp": 0.00074,
-      "tot": 0.332
+      "n": 451,
+      "wr": 28.8,
+      "exp": 0.00063,
+      "tot": 0.282
     },
     "sides": {
       "long": {
@@ -327,10 +311,10 @@
         "long_sum": -0.3329
       },
       "short": {
-        "n": 450,
-        "wr": 28.9,
-        "exp": 0.00074,
-        "tot": 0.332,
+        "n": 451,
+        "wr": 28.8,
+        "exp": 0.00063,
+        "tot": 0.282,
         "banned": false,
         "long_n": 612,
         "long_wr": 45.588235294117645,
@@ -390,8 +374,8 @@
           4.0,
           3.0
         ],
-        "tp_pct": 1.09,
-        "sl_pct": 0.82
+        "tp_pct": 1.11,
+        "sl_pct": 0.83
       },
       {
         "action": "widen",
@@ -404,8 +388,8 @@
           4.0,
           3.0
         ],
-        "tp_pct": 1.03,
-        "sl_pct": 0.77
+        "tp_pct": 1.04,
+        "sl_pct": 0.78
       },
       {
         "action": "widen",
@@ -432,8 +416,8 @@
           4.0,
           3.0
         ],
-        "tp_pct": 1.03,
-        "sl_pct": 0.77
+        "tp_pct": 1.04,
+        "sl_pct": 0.78
       },
       {
         "action": "widen",
@@ -510,15 +494,15 @@
       {
         "uid": "1UtA1u3v",
         "name": "Momentum-Break",
-        "n": 89,
-        "wr": 51.7,
-        "exp": 0.01062,
-        "tot": 0.945,
+        "n": 90,
+        "wr": 51.1,
+        "exp": 0.00994,
+        "tot": 0.895,
         "tp": 4.0,
         "sl": 3.0,
-        "ap": 0.273,
-        "tp_pct": 1.09,
-        "sl_pct": 0.82,
+        "ap": 0.276,
+        "tp_pct": 1.11,
+        "sl_pct": 0.83,
         "src": "widen",
         "quarantined": false
       },
@@ -531,9 +515,9 @@
         "tot": 0.0,
         "tp": 4.0,
         "sl": 3.0,
-        "ap": 0.258,
-        "tp_pct": 1.03,
-        "sl_pct": 0.77,
+        "ap": 0.259,
+        "tp_pct": 1.04,
+        "sl_pct": 0.78,
         "src": "widen",
         "quarantined": false
       },
@@ -561,9 +545,9 @@
         "tot": 0.0,
         "tp": 4.0,
         "sl": 3.0,
-        "ap": 0.258,
-        "tp_pct": 1.03,
-        "sl_pct": 0.77,
+        "ap": 0.259,
+        "tp_pct": 1.04,
+        "sl_pct": 0.78,
         "src": "widen",
         "quarantined": false
       },
