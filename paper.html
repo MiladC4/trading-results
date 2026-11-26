@@ -102,6 +102,11 @@
             <h2>📊 ارزش حساب در طول زمان — ساعتانه، از فیکس سایزینگ (1404/08/01)</h2>
             <div style="font-size:0.75rem;color:#8b949e;margin-bottom:8px;">منحنی = ۱۰٬۰۰۰$ + اثر دورهٔ قدیمی + سود تحقق‌یافتهٔ تجمعی + سود/زیان بازِ موقعیت‌های باز (با قیمت لحظه‌ای هر ساعت). نقطهٔ آخر هم‌خوانِ «ارزش حساب» بالای صفحه است — اختلاف چند دلاری فقط به‌خاطر رفرش زندهٔ کتاب بین دو محاسبه طبیعی است، پرشی در کار نیست.</div>
             <div style="height: 300px; position: relative;">
+                <div style="display:flex;gap:8px;justify-content:center;margin-bottom:8px">
+                    <button class="rng on" data-h="168" style="background:#161b22;color:#58a6ff;border:1px solid #30363d;border-radius:8px;padding:5px 16px;font-family:inherit;font-size:12px;cursor:pointer; background:#58a6ff;color:#0b0e14;border-color:#58a6ff">هفتگی</button>
+                    <button class="rng" data-h="720" style="background:#161b22;color:#58a6ff;border:1px solid #30363d;border-radius:8px;padding:5px 16px;font-family:inherit;font-size:12px;cursor:pointer">ماهانه</button>
+                    <button class="rng" data-h="0" style="background:#161b22;color:#58a6ff;border:1px solid #30363d;border-radius:8px;padding:5px 16px;font-family:inherit;font-size:12px;cursor:pointer">کل</button>
+                </div>
                 <canvas id="equity-chart"></canvas>
             </div>
             <div class="equity-stats" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; margin-top: 15px; text-align: center;">
@@ -389,7 +394,19 @@
                         }
                     }
 
+                    let eqChart = null; let eqFull = null; let eqRange = 168;
                     function renderEquityChart(equityData) {
+                        eqFull = equityData;
+                        const cut = eqRange > 0 ? equityData.slice(-eqRange) : equityData;
+                        drawEq(cut);
+                    }
+                    document.querySelectorAll('.rng').forEach(b => b.addEventListener('click', () => {
+                        document.querySelectorAll('.rng').forEach(x => { x.classList.remove('on'); x.style.background = '#161b22'; x.style.color = '#58a6ff'; });
+                        b.classList.add('on'); b.style.background = '#58a6ff'; b.style.color = '#0b0e14';
+                        eqRange = parseInt(b.dataset.h);
+                        if (eqFull) renderEquityChart(eqFull);
+                    }));
+                    function drawEq(equityData) {
                         const ctx = document.getElementById('equity-chart').getContext('2d');
                         const labels = equityData.map(d => d.dt.slice(5, 16)); // MM-DD HH:MM
                         const values = equityData.map(d => d.equity);
@@ -420,7 +437,8 @@
                                                 // Starting line at $10,000
                                                 const startLineVal = 10000;
 
-                                                new Chart(ctx, {
+                                                if (eqChart) { eqChart.destroy(); }
+                                                eqChart = new Chart(ctx, {
                                                     type: 'line',
                                                     data: {
                                                         labels: labels,
